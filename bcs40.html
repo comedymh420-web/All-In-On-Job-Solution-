@@ -20,6 +20,8 @@
             --accent-color: #2563eb;
             --correct-bg: #d1fae5;
             --correct-text: #065f46;
+            --exp-bg: #f0fdf4;
+            --exp-border: #bbf7d0;
         }
 
         * {
@@ -38,26 +40,31 @@
         header {
             background-color: var(--header-bg);
             color: var(--header-text);
-            padding: 16px;
-            text-align: center;
-            font-size: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
             position: sticky;
             top: 0;
             z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         .back-btn {
-            position: absolute;
-            left: 16px;
-            top: 50%;
-            transform: translateY(-50%);
             color: white;
             text-decoration: none;
             font-size: 16px;
             background: rgba(255,255,255,0.2);
-            padding: 6px 12px;
-            border-radius: 4px;
+            padding: 6px 14px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        header h2 {
+            font-size: 19px;
+            font-weight: 500;
         }
 
         .container {
@@ -70,7 +77,7 @@
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            padding: 16px 20px;
+            padding: 18px 20px;
             margin-bottom: 16px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
@@ -78,8 +85,9 @@
         .q-title {
             font-size: 18px;
             font-weight: 500;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             color: var(--text-color);
+            line-height: 1.5;
         }
 
         .options-list {
@@ -87,6 +95,7 @@
             display: flex;
             flex-direction: column;
             gap: 8px;
+            margin-bottom: 12px;
         }
 
         .option-item {
@@ -95,14 +104,33 @@
             padding: 10px 14px;
             border-radius: 6px;
             font-size: 17px;
-            cursor: pointer;
         }
 
+        /* সঠিক উত্তর হাইলাইট করার জন্য */
         .option-item.correct {
             background-color: var(--correct-bg);
             color: var(--correct-text);
             border-color: #34d399;
             font-weight: 500;
+        }
+
+        /* ব্যাখ্যা বা নোট বক্স */
+        .explanation-box {
+            background-color: var(--exp-bg);
+            border: 1px solid var(--exp-border);
+            border-left: 4px solid #22c55e;
+            padding: 12px 14px;
+            border-radius: 6px;
+            font-size: 16px;
+            color: #166534;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .explanation-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+            display: block;
         }
 
         .loading, .error {
@@ -117,7 +145,7 @@
 
     <header>
         <a href="index.html" class="back-btn">⬅ হোম</a>
-        ৪০তম BCS প্রিলিমিনারি টেস্ট
+        <h2>৪০তম BCS প্রিলিমিনারি টেস্ট</h2>
     </header>
 
     <div class="container" id="quiz-container">
@@ -128,24 +156,25 @@
         async function loadQuestions() {
             const container = document.getElementById('quiz-container');
             try {
-                // সরাসরি আপনার bcs40.json ফাইল থেকে ডাটা ফেচ করা হচ্ছে
                 const response = await fetch('bcs40.json');
                 if (!response.ok) {
                     throw new Error('ফাইলটি পাওয়া যায়নি!');
                 }
                 const questions = await response.json();
                 
-                container.innerHTML = ''; // লোডিং টেক্সট মুছে ফেলা
+                container.innerHTML = '';
 
                 questions.forEach((q, index) => {
                     const card = document.createElement('div');
                     card.className = 'question-card';
 
+                    // প্রশ্ন প্রিন্ট
                     const qTitle = document.createElement('div');
                     qTitle.className = 'q-title';
                     qTitle.innerText = (index + 1) + '. ' + q.question;
                     card.appendChild(qTitle);
 
+                    // অপশন লিস্ট তৈরি
                     const optionsList = document.createElement('ul');
                     optionsList.className = 'options-list';
 
@@ -154,16 +183,24 @@
                         optItem.className = 'option-item';
                         optItem.innerText = opt;
 
-                        // সঠিক উত্তর স্বয়ংক্রিয়ভাবে মার্ক করার জন্য
-                        if (optIndex === q.answer || opt === q.answer) {
+                        // সঠিক উত্তর চেক করার লজিক (ইন্ডেক্স বা সরাসরি টেক্সট ম্যাচিং)
+                        if (optIndex === q.correct || opt === q.correct) {
                             optItem.classList.add('correct');
                             optItem.innerText += ' ✔ (সঠিক উত্তর)';
                         }
 
                         optionsList.appendChild(optItem);
                     });
-
                     card.appendChild(optionsList);
+
+                    // ব্যাখ্যা (Explanation) থাকলে তা যোগ করা
+                    if (q.explanation) {
+                        const expBox = document.createElement('div');
+                        expBox.className = 'explanation-box';
+                        expBox.innerHTML = `<span class="explanation-title">💡 ব্যাখ্যা:</span> ${q.explanation}`;
+                        card.appendChild(expBox);
+                    }
+
                     container.appendChild(card);
                 });
 
