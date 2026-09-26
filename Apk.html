@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All In One Job Solution</title>
+    <!-- SolaimanLipi Font Embed -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/solaiman-lipi/1.0.0/solaiman-lipi.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --header-bg: #1e3c72;
+            --header-text: #ffffff;
+            --border-color: #e1e8ed;
+            --option-bg: #f8f9fa;
+            --drawer-bg: #ffffff;
+        }
+
+        /* Dark Mode Colors */
+        body.dark-mode {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --header-bg: #0f172a;
+            --header-text: #ffffff;
+            --border-color: #333333;
+            --option-bg: #2a2a2a;
+            --drawer-bg: #1e1e1e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'SolaimanLipi', 'Hind Siliguri', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding-bottom: 75px;
+        }
+        
+        /* Top Header Area */
+        header {
+            background-color: var(--header-bg);
+            color: var(--header-text);
+            padding: 12px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        header h1 {
+            font-size: 19px;
+            font-weight: 600;
+        }
+        .header-actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        .icon-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Slide-out Settings Menu */
+        .side-drawer {
+            position: fixed;
+            top: 0;
+            left: -260px;
+            width: 250px;
+            height: 100%;
+            background-color: var(--drawer-bg);
+            box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            z-index: 200;
+            padding-top: 20px;
+        }
+        .side-drawer.open {
+            left: 0;
+        }
+        .drawer-header {
+            padding: 0 20px 15px;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: bold;
+            color: var(--text-color);
+            display: flex;
+            justify-content: space-between;
+        }
+        .drawer-menu {
+            list-style: none;
+            padding: 10px 0;
+        }
+        .drawer-menu li {
+            padding: 12px 20px;
+            font-size: 16px;
+            color: var(--text-color);
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 150;
+        }
+
+        /* Container Layout */
+        .container {
+            padding: 15px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-color);
+            border-left: 4px solid var(--header-bg);
+            padding-left: 8px;
+        }
+
+        /* Category Box Cards */
+        .box-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .box-card {
+            background-color: var(--card-bg);
+            padding: 14px 16px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-color);
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        /* Dropdown Accordion List */
+        .dropdown-container {
+            display: none;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+            padding: 5px 0;
+            margin-top: -8px;
+            margin-bottom: 10px;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+        .dropdown-item {
+            padding: 10px 20px;
+            font-size: 15px;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            color: var(--text-color);
+        }
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+        .dropdown-item:hover {
+            background-color: var(--option-bg);
+        }
+
+        /* Question and Answer Card Design */
+        .question-card {
+            background: var(--card-bg);
+            padding: 16px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+            border: 1px solid var(--border-color);
+        }
+        .question-title {
+            font-weight: 700;
+            font-size: 17px;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+        .options {
+            list-style: none;
+            margin-bottom: 12px;
+        }
+        .options li {
+            padding: 8px 12px;
+            background: var(--option-bg);
+            margin-top: 6px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            font-size: 15px;
+            color: var(--text-color);
+        }
+
+        /* Correct Answer Box */
+        .answer-box {
+            background-color: #10b98120;
+            border: 1px solid #10b981;
+            color: #10b981;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* Explanation Section */
+        .explain-btn {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .explanation {
+            display: none;
+            margin-top: 10px;
+            padding: 12px;
+            background-color: var(--option-bg);
+            border-radius: 6px;
+            color: var(--text-color);
+            border-left: 3px solid #10b981;
+            font-size: 15px;
+        }
+
+        /* Online Exam Specific Styles */
+        .timer-box {
+            background-color: #ef4444;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-align: center;
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        .exam-option {
+            display: block;
+            margin-top: 8px;
+            padding: 10px;
+            background: var(--option-bg);
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            color: var(--text-color);
+        }
+        .exam-option input {
+            margin-right: 8px;
+        }
+        .submit-btn {
+            width: 100%;
+            background-color: var(--header-bg);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .result-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Bottom Mobile UI Navigation Bar */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: var(--card-bg);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            border-top: 1px solid var(--border-color);
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+            z-index: 90;
+        }
+        .nav-item {
+            text-align: center;
+            color: var(--text-color);
+            opacity: 0.7;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            flex: 1;
+        }
+        .nav-item.active {
+            opacity: 1;
+            color: #3b82f6;
+            font-weight: 700;
+        }
+        .back-btn {
+            background: #6b7280;
+            color: white;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== হেডার ও ড্রয়ার ==================== -->
+    <header>
+        <button class="icon-btn" onclick="toggleDrawer()">☰</button>
+        <h1>All In One Job Solution</h1>
+        <div class="header-actions">
+            <button class="icon-btn" id="theme-toggle" onclick="toggleDarkMode()">🌙</button>
+            <button class="icon-btn">🔍</button>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay" onclick="toggleDrawer()"></div>
+    <div class="side-drawer" id="sideDrawer">
+        <div class="drawer-header">
+            <span>মেনু ও সেটিং</span>
+            <span style="cursor:pointer;" onclick="toggleDrawer()">✕</span>
+        </div>
+        <ul class="drawer-menu">
+            <li>📌 পরিচিতি</li>
+            <li>⚙️ সেটিংস</li>
+            <li>💬 যোগাযোগ করুন</li>
+            <li>❓ সাহায্য ও সহায়তা</li>
+        </ul>
+    </div>
+
+
+    <!-- ==================== ১. মূল হোম পেজ ==================== -->
+    <div class="container" id="home-view">
+        <h2 class="section-title">পরীক্ষা ক্যাটাগরি</h2>
+        <div class="box-grid">
+            <div class="box-card" onclick="toggleBcsDropdown()">
+                <span>১. BCS প্রিলিমিনারি টেস্ট (১০ম - ৪৫তম)</span> 
+                <span id="bcs-arrow">▼</span>
+            </div>
+
+            <div class="dropdown-container" id="bcs-dropdown-list">
+                <!-- জাভাস্ক্রিপ্ট দিয়ে ১ থেকে ৪০ পর্যন্ত লিস্ট তৈরি হবে -->
+            </div>
+
+            <div class="box-card" onclick="openQuestions('bcs-bangla')">২. BCS লিখিত (বাংলা) <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">৩. BCS ইংরেজি <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">৪. BCS লিখিত (বাংলাদেশ বিষয়াবলি) <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">৫. BCS লিখিত (আন্তর্জাতিক বিষয়াবলি) <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">৬. BCS লিখিত (গাণিতিক যুক্তি ও মানসিক দক্ষতা) <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">৭. BCS লিখিত (সাধারণ বিজ্ঞান ও প্রযুক্তি) <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">৮. পিএসসি ও অন্যান্য নিয়োগ পরীক্ষা <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">৯. জুডিশিয়াল সার্ভিস সহকারী জজ নিয়োগ পরীক্ষা <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">১০. প্রাথমিক বিদ্যালয় সহকারী ও প্রধান শিক্ষক নিয়োগ <span>➔</span></div>
+        </div>
+    </div>
+
+
+    <!-- ==================== ২. টপিকস পেজ ==================== -->
+    <div class="container" id="topics-view" style="display: none;">
+        <h2 class="section-title">বিষয়ভিত্তিক তালিকা (Topics)</h2>
+        <div class="box-grid">
+            <div class="box-card" onclick="openQuestions('bcs-bangla')">১. বাংলা <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">২. ইংরেজি <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">৩. বাংলাদেশ বিষয়াবলি <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">৪. আন্তর্জাতিক বিষয়াবলি <span>➔</span></div>
+            <div class="box-card" onclick="openQuestions('bcs-preli-10')">৫. সাধারণ বিজ্ঞান ও প্রযুক্তি <span>➔</span></div>
+        </div>
+    </div>
+
+
+    <!-- ==================== ৩. অনলাইন এক্সাম ক্যাটাগরি পেজ ==================== -->
+    <div class="container" id="exam-topics-view" style="display: none;">
+        <h2 class="section-title">অনলাইন পরীক্ষা - বিষয় নির্বাচন করুন</h2>
+        <div class="box-grid">
+            <div class="box-card" onclick="startExam('bangla-exam')">📚 ১. বাংলা অনলাইন পরীক্ষা <span>➔</span></div>
+            <div class="box-card" onclick="startExam('english-exam')">🇬🇧 ২. ইংরেজি অনলাইন পরীক্ষা <span>➔</span></div>
+            <div class="box-card" onclick="startExam('bangla-exam')">🇧🇩 ৩. বাংলাদেশ বিষয়াবলি <span>➔</span></div>
+            <div class="box-card" onclick="startExam('bangla-exam')">🌐 ৪. আন্তর্জাতিক বিষয়াবলি / সাধারণ জ্ঞান <span>➔</span></div>
+            <div class="box-card" onclick="startExam('bangla-exam')">🔢 ৫. গণিত ও মানসিক দক্ষতা <span>➔</span></div>
+            <div class="box-card" onclick="startExam('bangla-exam')">🔬 ৬. সাধারণ বিজ্ঞান <span>➔</span></div>
+            <div class="box-card" onclick="startExam('bangla-exam')">🎯 ৭. সব বিষয় (All Subjects) <span>➔</span></div>
+        </div>
+    </div>
+
+
+    <!-- ==================== ৪. অনলাইন লাইভ কুইজ পেজ (Dynamic Questions) ==================== -->
+    <div class="container exam-page" id="bangla-exam" style="display: none;">
+        <button class="back-btn" onclick="showView('exam-topics-view')">← বিষয় তালিকায় ফিরুন</button>
+        <h2 class="section-title">লাইভ অনলাইন মডেল টেস্ট (৫০টি প্রশ্ন)</h2>
+        
+        <div class="timer-box" id="timer-bangla">⏱️ সময় বাকি: 20:00</div>
+
+        <form id="form-bangla">
+            <!-- জাভাস্ক্রিপ্ট দিয়ে এখানে অটোমেটিক ৫০টি প্রশ্ন চলে আসবে -->
+            <div id="dynamic-exam-questions"></div>
+
+            <button type="button" class="submit-btn" onclick="submitExam('bangla-exam', 'form-bangla')">পরীক্ষা জমা দিন (Submit)</button>
+        </form>
+
+        <div class="result-card" id="result-bangla" style="display: none;">
+            <h2>🎉 পরীক্ষার ফলাফল</h2>
+            <div style="font-size: 24px; font-weight: bold; color: #10b981; margin: 10px 0;" id="score-bangla">প্রাপ্ত নম্বর: ০/৫০</div>
+            <p id="pass-fail-bangla" style="font-weight: 600; font-size: 16px;"></p>
+            <button class="submit-btn" style="background-color: #10b981; margin-top: 15px;" onclick="startExam('bangla-exam')">আবার পরীক্ষা দিন</button>
+        </div>
+    </div>
+
+
+    <!-- ==================== ৫. নির্দিষ্ট BCS প্রিলিমিনারি প্রশ্নের পেজ ==================== -->
+    <div class="container question-page" id="bcs-preli-dynamic" style="display: none;">
+        <button class="back-btn" onclick="showView('home-view')">← হোমপেজে ফিরুন</button>
+        <h2 class="section-title" id="bcs-title">বিসিএস প্রশ্ন ও সমাধান</h2>
+        
+        <div class="question-card">
+            <div class="question-title">১. 'প্রাতরাশ' এর সঠিক সন্ধি বিচ্ছেদ কোনটি?</div>
+            <ul class="options">
+                <li>(ক) প্রাতঃ + আশ</li>
+                <li>(খ) প্রাত + আশ</li>
+                <li>(গ) প্রাতঃ + রাশ</li>
+                <li>(ঘ) প্রা + তরাশ</li>
+            </ul>
+            <div class="answer-box">✅ সঠিক উত্তর: (ক) প্রাতঃ + আশ</div>
+            <button class="explain-btn" onclick="toggleExplain('exp1')">ব্যাখ্যা দেখুন</button>
+            <div class="explanation" id="exp1">
+                <strong>ব্যাখ্যা:</strong> বিসর্গ (ঃ) সন্ধির নিয়ম অনুযায়ী বিসর্গের পর স্বরধ্বনি থাকলে বিসর্গ 'র' এ পরিণত হয়।
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================== বটম নেভিগেশন বার ==================== -->
+    <div class="bottom-nav">
+        <div class="nav-item active" id="nav-home" onclick="showView('home-view')">🏠 <br>হোম</div>
+        <div class="nav-item" id="nav-topics" onclick="showView('topics-view')">📚 <br>টপিকস</div>
+        <div class="nav-item" id="nav-exam" onclick="showView('exam-topics-view')">📝 <br>অনলাইন এক্সাম</div>
+    </div>
+
+
+    <!-- ==================== জাভাস্ক্রিপ্ট লজিক ==================== -->
+    <script>
+        var timerInterval;
+
+        // আপনার প্রদান করা ৫০টি প্রশ্ন-উত্তরের ডাটা সেট
+        const examQuestions = [
+            {
+                id: 1,
+                question: "'প্রভাতি' ও 'সন্ধ্যা' পত্রিকার সম্পাদক কে ছিলেন?",
+                options: ["প্রমথ চৌধুরী", "কাজী নজরুল ইসলাম", "জীবনানন্দ দাশ", "মুজতবা আলী"],
+                correctAnswer: 1
+            },
+            {
+                id: 2,
+                question: "'প্রোষিতভর্তৃকা' শব্দটির অর্থ কী?",
+                options: ["যে নারীর স্বামী দ্বিতীয় বিয়ে করেছে", "যে নারীর স্বামী বিদেশে অবস্থান করে", "যে নারীর নতুন বিয়ে হয়েছে", "যে নারী স্বামীকে ভালোবাসে না"],
+                correctAnswer: 1
+            },
+            {
+                id: 3,
+                question: "'শরতের শিশির' বাগধারা শব্দটির অর্থ কী?",
+                options: ["সুসময়ের বন্ধু", "ক্ষণস্থায়ী", "অসময়ের বন্ধু", "অতি অমায়িক"],
+                correctAnswer: 0
+            },
+            {
+                id: 4,
+                question: "'শিবরাত্রির সলতে' বাগধারাটির অর্থ কী?",
+                options: ["সলতে দিয়ে প্রদীপ জ্বালানো", "শিবপূজার উপচার", "একমাত্র সন্তান", "অতি আদরের সন্তান"],
+                correctAnswer: 2
+            },
+            {
+                id: 5,
+                question: "'পর্তুগিজ' ভাষার শব্দ কোনটি?",
+                options: ["কার্তুজ", "গির্জা", "হরতন", "আইন"],
+                correctAnswer: 1
+            },
+            {
+                id: 6,
+                question: "বাক্যের ক্রিয়ার সাথে অন্যান্য পদের যে সম্পর্ক তাকে কী বলে?",
+                options: ["কারক", "সমাস", "সন্ধি", "প্রত্যয়"],
+                correctAnswer: 0
+            },
+            {
+                id: 7,
+                question: "'বাংলা ব্যাকরণ' প্রথম কোন্ ভাষায় রচিত হয়?",
+                options: ["বাংলা", "ইংরেজি", "পর্তুগিজ", "ফারসি"],
+                correctAnswer: 2
+            },
+            {
+                id: 8,
+                question: "'বিদ্রোহী' কবিতাটি কোন্ কাব্যগ্রন্থের অন্তর্গত?",
+                options: ["বিষের বাঁশী", "অগ্নিবীণা", "প্রলয়শিখা", "সাম্যবাদী"],
+                correctAnswer: 1
+            },
+            {
+                id: 9,
+                question: "'রক্তকরবী' রবীন্দ্রনাথ ঠাকুরের একটি —",
+                options: ["উপন্যাস", "ছোটগল্প", "কাব্যগ্রন্থ", "নাটক"],
+                correctAnswer: 3
+            },
+            {
+                id: 10,
+                question: "'কমলাকান্তের দপ্তর' কার রচিত গ্রন্থ?",
+                options: ["রবীন্দ্রনাথ ঠাকুর", "বঙ্কিমচন্দ্র চট্টোপাধ্যায়", "শরৎচন্দ্র চট্টোপাধ্যায়", "কাজী নজরুল ইসলাম"],
+                correctAnswer: 1
+            },
+            {
+                id: 11,
+                question: "'অনুলোম' শব্দটির বিপরীত শব্দ কোনটি?",
+                options: ["বিলোম", "প্রতিলোম", "সলোম", "কোনোটিই নয়"],
+                correctAnswer: 1
+            },
+            {
+                id: 12,
+                question: "'মহাশ্মশান' মহাকাব্যটির রচয়িতা কে?",
+                options: ["কায়কোবাদ", "মীর মশাররফ হোসেন", "মাইকেল মধুসূদন দত্ত", "হেমাচন্দ্র বন্দ্যোপাধ্যায়"],
+                correctAnswer: 0
+            },
+            {
+                id: 13,
+                question: "'ধ্বনি পরিবর্তন' কয় প্রকার?",
+                options: ["দুই প্রকার", "তিন প্রকার", "চার প্রকার", "পাঁচ প্রকার"],
+                correctAnswer: 1
+            },
+            {
+                id: 14,
+                question: "'উপমান কর্মধারয় সমাস'-এর উদাহরণ কোনটি?",
+                options: ["তুষারশুভ্র", "মুখচন্দ্র", "পুরুষসিংহ", "ক্রোধাগ্নি"],
+                correctAnswer: 0
+            },
+            {
+                id: 15,
+                question: "'সন্ধি' ব্যাকরণের কোন অংশে আলোচিত হয়?",
+                options: ["রূপতত্ত্ব", "বাক্যতত্ত্ব", "ধ্বনিতত্ত্ব", "অর্থতত্ত্ব"],
+                correctAnswer: 2
+            },
+            {
+                id: 16,
+                question: "Please write to me at the above address. The word 'above' in this sentence is a/an —",
+                options: ["Noun", "Adjective", "Adverb", "Preposition"],
+                correctAnswer: 1
+            },
+            {
+                id: 17,
+                question: "In which sentence is the word 'past' used as a preposition?",
+                options: ["I have seen him in the past.", "He walked past without saying a word.", "The past is gone forever.", "Tania was a wonderful singer, but she's past her prime."],
+                correctAnswer: 3
+            },
+            {
+                id: 18,
+                question: "The word 'sibling' means —",
+                options: ["a friend", "a brother or sister", "a parent", "a relative"],
+                correctAnswer: 1
+            },
+            {
+                id: 19,
+                question: "Fill in the blank: As she was talking, he suddenly broke ____, saying \"That's a lie!\"",
+                options: ["away", "in", "down", "off"],
+                correctAnswer: 1
+            },
+            {
+                id: 20,
+                question: "You may go for a walk if you feel ____ it.",
+                options: ["like", "for", "on", "about"],
+                correctAnswer: 0
+            },
+            {
+                id: 21,
+                question: "Choose the correct spelling:",
+                options: ["Ascertain", "Assertain", "Ascertan", "Asertain"],
+                correctAnswer: 0
+            },
+            {
+                id: 22,
+                question: "Select the word with the correct spelling:",
+                options: ["Schizophrenia", "Scizophrenia", "Schizophrenia", "Skizophrenia"],
+                correctAnswer: 0
+            },
+            {
+                id: 23,
+                question: "Identify the word which remains the same in its plural form:",
+                options: ["Aircraft", "Mouse", "Tooth", "Fungus"],
+                correctAnswer: 0
+            },
+            {
+                id: 24,
+                question: "\"A lost opportunity never returns.\" Here 'lost' is a —",
+                options: ["Gerund", "Verbal noun", "Participle", "Adverb"],
+                correctAnswer: 2
+            },
+            {
+                id: 25,
+                question: "The poem 'The Solitary Reaper' is written by —",
+                options: ["John Keats", "William Wordsworth", "P. B. Shelley", "Lord Byron"],
+                correctAnswer: 1
+            },
+            {
+                id: 26,
+                question: "The merchant in Shakespeare's 'The Merchant of Venice' refers to —",
+                options: ["Shylock", "Antonio", "Bassanio", "Lorenzo"],
+                correctAnswer: 1
+            },
+            {
+                id: 27,
+                question: "Who wrote the play 'Mrs. Warren's Profession'?",
+                options: ["George Bernard Shaw", "Oscar Wilde", "T. S. Eliot", "W. B. Yeats"],
+                correctAnswer: 0
+            },
+            {
+                id: 28,
+                question: "What is the antonym of 'Formidable'?",
+                options: ["Dangerous", "Comforting", "Frightening", "Tough"],
+                correctAnswer: 1
+            },
+            {
+                id: 29,
+                question: "'Frailty, thy name is woman' is a famous dialogue from —",
+                options: ["Macbeth", "Hamlet", "Othello", "King Lear"],
+                correctAnswer: 1
+            },
+            {
+                id: 30,
+                question: "x^4 - x^2 + 1 = 0 হলে, x^3 + 1/(x^3) = কত?",
+                options: ["1", "-1", "2", "0"],
+                correctAnswer: 3
+            },
+            {
+                id: 31,
+                question: "কোন শর্তে log_a 1 = 0?",
+                options: ["a > 0, a ≠ 1", "a ≠ 0, a > 1", "a > 0, a = 1", "a < 0, a ≠ 1"],
+                correctAnswer: 0
+            },
+            {
+                id: 32,
+                question: "একটি মোটরসাইকেল ১২% ক্ষতিতে বিক্রি করা হলো। যদি বিক্রয়মূল্য ১২০০ টাকা বেশি হতো, তবে ৮% লাভ হতো। মোটরসাইকেলের ক্রয়মূল্য কত?",
+                options: ["৬০০০ টাকা", "৭০০০ টাকা", "৮০০০ টাকা", "৯০০০ টাকা"],
+                correctAnswer: 0
+            },
+            {
+                id: 33,
+                question: "a + b = 7 এবং ab = 10 হলে, a^2 + b^2 + 3ab = কত?",
+                options: ["৪১", "৪৯", "৫৯", "৬৯"],
+                correctAnswer: 2
+            },
+            {
+                id: 34,
+                question: "একটি সমকোণী ত্রিভুজের অতিভুজ ১৩ সেমি এবং ভূমি ১২ সেমি হলে, ত্রিভুজটির ক্ষেত্রফল কত?",
+                options: ["৩০ বর্গ সেমি", "৬০ বর্গ সেমি", "৬৫ বর্গ সেমি", "৭৮ বর্গ সেমি"],
+                correctAnswer: 0
+            },
+            {
+                id: 35,
+                question: "1, 2, 3, 5, 8, 13, 21, 34, ... ধারাটির পরবর্তী সংখ্যাটি কত?",
+                options: ["৫৫", "৪০", "৫০", "৪৫"],
+                correctAnswer: 0
+            },
+            {
+                id: 36,
+                question: "আলাউদ্দিন হোসেন শাহ কখন বৃহত্তর বাংলা শাসন করেন?",
+                options: ["১৪৯৮–১৫১৯", "১৩৩৮–১৩৫৮", "১৫২৬–১৫৫৬", "১৫৭৬–১৬০৫"],
+                correctAnswer: 0
+            },
+            {
+                id: 37,
+                question: "১৯৭১ সালে মুক্তিযুদ্ধের সময় জাতিসংঘে কোন দেশ বাংলাদেশের পক্ষে ভেটো প্রদান করেছিল?",
+                options: ["যুক্তরাষ্ট্র", "চীন", "যুক্তরাজ্য", "সোভিয়েত ইউনিয়ন"],
+                correctAnswer: 3
+            },
+            {
+                id: 38,
+                question: "বঙ্গবন্ধুর ঐতিহাসিক ৭ মার্চের ভাষণ সংবিধানের কোন তফসিলে অন্তর্ভুক্ত করা হয়েছে?",
+                options: ["চতুর্থ তফসিলে", "পঞ্চম তফসিলে", "ষষ্ঠ তফসিলে", "সপ্তম তফসিলে"],
+                correctAnswer: 1
+            },
+            {
+                id: 39,
+                question: "বাংলাদেশ সংবিধানের কোন অনুচ্ছেদে 'পরিবেশ ও জীববৈচিত্র্য সংরক্ষণ ও উন্নয়ন'-এর কথা বলা হয়েছে?",
+                options: ["১৮ অনুচ্ছেদ", "১৮ক অনুচ্ছেদ", "১৯ অনুচ্ছেদ", "২০ অনুচ্ছেদ"],
+                correctAnswer: 1
+            },
+            {
+                id: 40,
+                question: "'মুজিবনগর সরকার' কবে গঠিত হয়?",
+                options: ["১০ এপ্রিল ১৯৭১", "১৭ এপ্রিল ১৯৭১", "২৫ মার্চ ১৯৭১", "৭ মার্চ ১৯৭১"],
+                correctAnswer: 0
+            },
+            {
+                id: 41,
+                question: "রক্তে লোহিত রক্তকণিকায় (RBC) আয়রনযুক্ত প্রোটিনের নাম কী?",
+                options: ["মায়োগ্লোবিন", "হিমোগ্লোবিন", "অ্যালবুমিন", "গ্লোবুলিন"],
+                correctAnswer: 1
+            },
+            {
+                id: 42,
+                question: "রক্তচাপ মাপার যন্ত্রের নাম কী?",
+                options: ["স্ফিগমোম্যানোমিটার", "ব্যালেন্স", "থার্মোমিটার", "ব্যারোমিটার"],
+                correctAnswer: 0
+            },
+            {
+                id: 43,
+                question: "প্রাকৃতিক গ্যাসের প্রধান উপাদান কোনটি?",
+                options: ["ইথেন", "প্রোপেন", "মিথেন", "বিউটেন"],
+                correctAnswer: 2
+            },
+            {
+                id: 44,
+                question: "সিএফসি (CFC) গ্যাস বায়ুমণ্ডলের কোন স্তরের ক্ষতি করে?",
+                options: ["ট্রপোস্ফিয়ার", "মেসোস্ফিয়ার", "ওজোন স্তর", "থার্মোস্ফিয়ার"],
+                correctAnswer: 2
+            },
+            {
+                id: 45,
+                question: "কম্পিউটারের স্থায়ী স্মৃতিশক্তি (Non-volatile Memory) কোনটি?",
+                options: ["RAM", "Cache Memory", "ROM", "Register"],
+                correctAnswer: 2
+            },
+            {
+                id: 46,
+                question: "'Wi-Fi' প্রযুক্তিতে কোন ধরনের তরঙ্গ ব্যবহার করা হয়?",
+                options: ["ইনফ্রারেড", "রেডিও তরঙ্গ", "মাইক্রোওয়েভ", "আল্ট্রাসাউন্ড"],
+                correctAnswer: 1
+            },
+            {
+                id: 47,
+                question: "বিশ্বব্যাংকের অঙ্গসংস্থা 'IDA'-কে কী বলা হয়?",
+                options: ["Hard loan window", "Soft loan window", "Private sector window", "Commercial window"],
+                correctAnswer: 1
+            },
+            {
+                id: 48,
+                question: "'ন্যাটো' (NATO) কোন ধরনের জোট?",
+                options: ["অর্থনৈতিক জোট", "সামরিক জোট", "সাংস্কৃতিক জোট", "পরিবেশবাদী জোট"],
+                correctAnswer: 1
+            },
+            {
+                id: 49,
+                question: "কাস্পিয়ান সাগর ঘেরা দেশ নয় কোনটি?",
+                options: ["রাশিয়া", "ইরান", "আজারবাইজান", "ইরাক"],
+                correctAnswer: 3
+            },
+            {
+                id: 50,
+                question: "'গ্রিনহাউস ইফেক্ট' সৃষ্টির প্রধান কারণ কী?",
+                options: ["কার্বন ডাই-অক্সাইডের বৃদ্ধি", "অক্সিজেন বৃদ্ধি", "নাইট্রোজেন হ্রাস", "জলীয় বাষ্প হ্রাস"],
+                correctAnswer: 0
+            }
+        ];
+
+        // ১ থেকে ৪৫ পর্যন্ত বিসিএস প্রিলিমিনারি লিস্ট অটো-জেনারেট
+        window.onload = function() {
+            var dropdown = document.getElementById('bcs-dropdown-list');
+            var bnNumbers = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+            
+            function toBanglaNum(num) {
+                return num.toString().split('').map(n => bnNumbers[n]).join('');
+            }
+
+            for (var i = 10; i <= 45; i++) {
+                var item = document.createElement('div');
+                item.className = 'dropdown-item';
+                var banglaNum = toBanglaNum(i);
+                item.innerText = banglaNum + 'তম BCS প্রিলিমিনারি টেস্ট';
+                
+                item.setAttribute('onclick', "openBcsExam('" + banglaNum + "তম BCS প্রিলিমিনারি টেস্ট')");
+                dropdown.appendChild(item);
+            }
+
+            // ডায়নামিক্যালি ৫০টি প্রশ্ন পেজে যোগ করা
+            renderExamQuestions();
+        };
+
+        function renderExamQuestions() {
+            const container = document.getElementById('dynamic-exam-questions');
+            const prefixes = ['(ক)', '(খ)', '(গ)', '(ঘ)'];
+            let html = '';
+
+            examQuestions.forEach((q, index) => {
+                html += `<div class="question-card">`;
+                html += `<div class="question-title">${index + 1}. ${q.question}</div>`;
+                q.options.forEach((opt, optIdx) => {
+                    html += `
+                        <label class="exam-option">
+                            <input type="radio" name="q${q.id}" value="${optIdx}">
+                            ${prefixes[optIdx]} ${opt}
+                        </label>
+                    `;
+                });
+                html += `</div>`;
+            });
+
+            container.innerHTML = html;
+        }
+
+        // বিসিএস ড্রপডাউন টগল করা
+        function toggleBcsDropdown() {
+            var list = document.getElementById('bcs-dropdown-list');
+            var arrow = document.getElementById('bcs-arrow');
+            if (list.style.display === 'block') {
+                list.style.display = 'none';
+                arrow.innerText = '▼';
+            } else {
+                list.style.display = 'block';
+                arrow.innerText = '▲';
+            }
+        }
+
+        function openBcsExam(title) {
+            document.getElementById('bcs-title').innerText = title + " - প্রশ্ন ও সমাধান";
+            showView('bcs-preli-dynamic');
+        }
+
+        function toggleDarkMode() {
+            var body = document.body;
+            var btn = document.getElementById('theme-toggle');
+            body.classList.toggle('dark-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                btn.innerText = '☀️';
+            } else {
+                btn.innerText = '🌙';
+            }
+        }
+
+        function toggleDrawer() {
+            var drawer = document.getElementById('sideDrawer');
+            var overlay = document.getElementById('overlay');
+            if (drawer.classList.contains('open')) {
+                drawer.classList.remove('open');
+                overlay.style.display = 'none';
+            } else {
+                drawer.classList.add('open');
+                overlay.style.display = 'block';
+            }
+        }
+
+        function showView(viewId) {
+            clearInterval(timerInterval);
+            
+            document.getElementById('home-view').style.display = 'none';
+            document.getElementById('topics-view').style.display = 'none';
+            document.getElementById('exam-topics-view').style.display = 'none';
+            
+            var examPages = document.getElementsByClassName('exam-page');
+            for(var i = 0; i < examPages.length; i++) {
+                examPages[i].style.display = 'none';
+            }
+
+            var pages = document.getElementsByClassName('question-page');
+            for(var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+            
+            document.getElementById(viewId).style.display = 'block';
+
+            document.getElementById('nav-home').classList.remove('active');
+            document.getElementById('nav-topics').classList.remove('active');
+            document.getElementById('nav-exam').classList.remove('active');
+            
+            if(viewId === 'home-view') document.getElementById('nav-home').classList.add('active');
+            if(viewId === 'topics-view') document.getElementById('nav-topics').classList.add('active');
+            if(viewId === 'exam-topics-view') document.getElementById('nav-exam').classList.add('active');
+        }
+
+        function openQuestions(pageId) {
+            showView(pageId);
+        }
+
+        function toggleExplain(id) {
+            var exp = document.getElementById(id);
+            exp.style.display = (exp.style.display === "block") ? "none" : "block";
+        }
+
+        // অনলাইন পরীক্ষা শুরু
+        function startExam(examId) {
+            showView(examId);
+            
+            var formId = 'form-bangla';
+            var resultId = 'result-bangla';
+            var timerId = 'timer-bangla';
+
+            document.getElementById(formId).reset();
+            document.getElementById(formId).style.display = 'block';
+            document.getElementById(resultId).style.display = 'none';
+            
+            var timeRemaining = 1200; // ২০ মিনিট সময় ৫০টি প্রশ্নের জন্য
+            var timerDisplay = document.getElementById(timerId);
+            
+            clearInterval(timerInterval);
+            timerInterval = setInterval(function() {
+                var minutes = Math.floor(timeRemaining / 60);
+                var seconds = timeRemaining % 60;
+                
+                if (seconds < 10) seconds = '0' + seconds;
+                if (minutes < 10) minutes = '0' + minutes;
+                
+                timerDisplay.innerText = "⏱️ সময় বাকি: " + minutes + ":" + seconds;
+                
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    alert('সময় শেষ! আপনার উত্তর জমা দেওয়া হয়েছে।');
+                    submitExam('bangla-exam', 'form-bangla');
+                }
+                timeRemaining--;
+            }, 1000);
+        }
+
+        // পরীক্ষা সাবমিট ও রেজাল্ট হিসাব
+        function submitExam(examId, formId) {
+            clearInterval(timerInterval);
+            
+            var score = 0;
+            var totalQuestions = examQuestions.length;
+            var form = document.getElementById(formId);
+            
+            examQuestions.forEach(function(q) {
+                var fieldName = 'q' + q.id;
+                if (form[fieldName] && form[fieldName].value !== '') {
+                    if (parseInt(form[fieldName].value) === q.correctAnswer) {
+                        score++;
+                    }
+                }
+            });
+
+            var resultId = 'result-bangla';
+            var scoreId = 'score-bangla';
+            var passFailId = 'pass-fail-bangla';
+
+            document.getElementById(formId).style.display = 'none';
+            document.getElementById(resultId).style.display = 'block';
+            document.getElementById(scoreId).innerText = "প্রাপ্ত নম্বর: " + score + " / " + totalQuestions;
+            
+            var passStatus = document.getElementById(passFailId);
+            if (score >= Math.ceil(totalQuestions / 2)) {
+                passStatus.innerText = "স্ট্যাটাস: অভিনন্দন! আপনি পাস করেছেন।";
+                passStatus.style.color = "#10b981";
+            } else {
+                passStatus.innerText = "স্ট্যাটাস: দুঃখিত, আপনি ফেল করেছেন। আবার চেষ্টা করুন।";
+                passStatus.style.color = "#ef4444";
+            }
+        }
+    </script>
+</body>
+</html>
