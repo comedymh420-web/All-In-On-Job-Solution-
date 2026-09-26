@@ -333,13 +333,13 @@
                 var banglaNum = toBanglaNum(i);
                 item.innerText = banglaNum + 'তম BCS প্রিলিমিনারি টেস্ট';
                 
-                // যদি ৪০তম বিসিএস হয়, তবে সরাসরি json ফাইলের লিংক বসাবে
+                                // ৪০তম বিসিএস-এর জন্য আমাদের তৈরি করা সুন্দর ডিজাইন পেজটি লিংক করে দেওয়া
                 if (i === 40) {
-                    item.setAttribute('href', 'bcs40.json');
-                    item.setAttribute('target', '_blank'); // নতুন ট্যাবে ওপেন হওয়ার জন্য (ঐচ্ছিক)
+                    item.setAttribute('href', 'bcs40.html');
                 } else {
                     item.setAttribute('href', 'bcs' + i + '.html');
                 }
+
                 
                 dropdown.appendChild(item);
             }
