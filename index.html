@@ -325,14 +325,22 @@
             return num.toString().split('').map(n => bnNumbers[n]).join('');
         }
 
-        window.onload = function() {
+                window.onload = function() {
             var dropdown = document.getElementById('bcs-dropdown-list');
             for (var i = 10; i <= 45; i++) {
                 var item = document.createElement('a');
                 item.className = 'dropdown-item';
                 var banglaNum = toBanglaNum(i);
                 item.innerText = banglaNum + 'তম BCS প্রিলিমিনারি টেস্ট';
-                item.setAttribute('href', 'bcs' + i + '.html');
+                
+                // যদি ৪০তম বিসিএস হয়, তবে সরাসরি json ফাইলের লিংক বসাবে
+                if (i === 40) {
+                    item.setAttribute('href', 'bcs40.json');
+                    item.setAttribute('target', '_blank'); // নতুন ট্যাবে ওপেন হওয়ার জন্য (ঐচ্ছিক)
+                } else {
+                    item.setAttribute('href', 'bcs' + i + '.html');
+                }
+                
                 dropdown.appendChild(item);
             }
         };
