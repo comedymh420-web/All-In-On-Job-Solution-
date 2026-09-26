@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>৪০তম BCS প্রিলিমিনারি প্রশ্ন ও সমাধান</title>
+    
+    <!-- SolaimanLipi Web Font -->
+    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-color: #212529;
+            --header-bg: #1a365d;
+            --header-text: #ffffff;
+            --border-color: #e2e8f0;
+            --option-bg: #f8fafc;
+            --accent-color: #2563eb;
+            --correct-bg: #d1fae5;
+            --correct-text: #065f46;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'SolaimanLipi', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding-bottom: 40px;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--header-text);
+            padding: 16px;
+            text-align: center;
+            font-size: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .back-btn {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 0 16px;
+        }
+
+        .question-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .q-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        .options-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .option-item {
+            background-color: var(--option-bg);
+            border: 1px solid var(--border-color);
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .option-item.correct {
+            background-color: var(--correct-bg);
+            color: var(--correct-text);
+            border-color: #34d399;
+            font-weight: 500;
+        }
+
+        .loading, .error {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 50px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-btn">⬅ হোম</a>
+        ৪০তম BCS প্রিলিমিনারি টেস্ট
+    </header>
+
+    <div class="container" id="quiz-container">
+        <div class="loading">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</div>
+    </div>
+
+    <script>
+        async function loadQuestions() {
+            const container = document.getElementById('quiz-container');
+            try {
+                // সরাসরি আপনার bcs40.json ফাইল থেকে ডাটা ফেচ করা হচ্ছে
+                const response = await fetch('bcs40.json');
+                if (!response.ok) {
+                    throw new Error('ফাইলটি পাওয়া যায়নি!');
+                }
+                const questions = await response.json();
+                
+                container.innerHTML = ''; // লোডিং টেক্সট মুছে ফেলা
+
+                questions.forEach((q, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'question-card';
+
+                    const qTitle = document.createElement('div');
+                    qTitle.className = 'q-title';
+                    qTitle.innerText = (index + 1) + '. ' + q.question;
+                    card.appendChild(qTitle);
+
+                    const optionsList = document.createElement('ul');
+                    optionsList.className = 'options-list';
+
+                    q.options.forEach((opt, optIndex) => {
+                        const optItem = document.createElement('li');
+                        optItem.className = 'option-item';
+                        optItem.innerText = opt;
+
+                        // সঠিক উত্তর স্বয়ংক্রিয়ভাবে মার্ক করার জন্য
+                        if (optIndex === q.answer || opt === q.answer) {
+                            optItem.classList.add('correct');
+                            optItem.innerText += ' ✔ (সঠিক উত্তর)';
+                        }
+
+                        optionsList.appendChild(optItem);
+                    });
+
+                    card.appendChild(optionsList);
+                    container.appendChild(card);
+                });
+
+            } catch (error) {
+                container.innerHTML = `<div class="error">প্রশ্ন লোড করতে সমস্যা হয়েছে: ${error.message}</div>`;
+            }
+        }
+
+        window.onload = loadQuestions;
+    </script>
+</body>
+</html>
