@@ -14,14 +14,14 @@
             --card-bg: #ffffff;
             --text-color: #212529;
             --header-bg: #1a365d;
-            --header-text: #ffffff;
             --border-color: #e2e8f0;
             --option-bg: #f8fafc;
-            --accent-color: #2563eb;
             --correct-bg: #d1fae5;
             --correct-text: #065f46;
-            --exp-bg: #f0fdf4;
-            --exp-border: #bbf7d0;
+            --btn-bg: #10b981;
+            --btn-hover: #059669;
+            --exp-bg: #f8fafc;
+            --exp-border: #cbd5e1;
         }
 
         * {
@@ -37,33 +37,22 @@
             padding-bottom: 40px;
         }
 
+        /* মূল হেডার স্টাইল */
         header {
             background-color: var(--header-bg);
-            color: var(--header-text);
-            padding: 16px 20px;
+            color: #ffffff;
+            padding: 14px 16px;
             display: flex;
             align-items: center;
-            gap: 15px;
+            justify-content: space-between;
             position: sticky;
             top: 0;
             z-index: 100;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        .back-btn {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            background: rgba(255,255,255,0.2);
-            padding: 6px 14px;
-            border-radius: 6px;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        header h2 {
-            font-size: 19px;
+        .header-title {
+            font-size: 18px;
             font-weight: 500;
         }
 
@@ -73,10 +62,34 @@
             padding: 0 16px;
         }
 
+        /* হোমপেজে ফিরুন বাটন */
+        .back-home-btn {
+            display: inline-block;
+            background-color: #334155;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        /* পেজের মূল টাইটেল বার */
+        .page-heading {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border-left: 4px solid #2563eb;
+        }
+
+        /* প্রশ্ন কার্ড */
         .question-card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 10px;
             padding: 18px 20px;
             margin-bottom: 16px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
@@ -106,31 +119,52 @@
             font-size: 17px;
         }
 
-        /* সঠিক উত্তর হাইলাইট করার জন্য */
-        .option-item.correct {
+        /* সঠিক উত্তর বক্স */
+        .correct-answer-box {
             background-color: var(--correct-bg);
             color: var(--correct-text);
-            border-color: #34d399;
+            border: 1px solid #34d399;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 16px;
             font-weight: 500;
+            margin-bottom: 12px;
         }
 
-        /* ব্যাখ্যা বা নোট বক্স */
+        /* ব্যাখ্যা দেখুন বাটন */
+        .exp-toggle-btn {
+            background-color: var(--btn-bg);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: 'SolaimanLipi', sans-serif;
+            cursor: pointer;
+            display: inline-block;
+            transition: background 0.2s;
+        }
+
+        .exp-toggle-btn:hover {
+            background-color: var(--btn-hover);
+        }
+
+        /* ব্যাখ্যা বক্স (প্রথমে লুকানো থাকবে) */
         .explanation-box {
             background-color: var(--exp-bg);
             border: 1px solid var(--exp-border);
-            border-left: 4px solid #22c55e;
+            border-left: 4px solid #3b82f6;
             padding: 12px 14px;
             border-radius: 6px;
-            font-size: 16px;
-            color: #166534;
-            margin-top: 10px;
+            font-size: 15px;
+            color: #334155;
+            margin-top: 12px;
             line-height: 1.5;
+            display: none; /* ডিফল্টভাবে হাইড থাকবে */
         }
 
-        .explanation-title {
-            font-weight: 600;
-            margin-bottom: 4px;
-            display: block;
+        .explanation-box.show {
+            display: block; /* বাটনে ক্লিক করলে শো হবে */
         }
 
         .loading, .error {
@@ -144,12 +178,18 @@
 <body>
 
     <header>
-        <a href="index.html" class="back-btn">⬅ হোম</a>
-        <h2>৪০তম BCS প্রিলিমিনারি টেস্ট</h2>
+        <div class="header-title">All In One Job Solution</div>
     </header>
 
-    <div class="container" id="quiz-container">
-        <div class="loading">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</div>
+    <div class="container">
+        <!-- হোমপেজে ফিরুন বাটন -->
+        <a href="index.html" class="back-home-btn">← হোমপেজে ফিরুন</a>
+        
+        <div class="page-heading">৪০তম BCS প্রিলিমিনারি টেস্ট - প্রশ্ন ও সমাধান</div>
+
+        <div id="quiz-container">
+            <div class="loading">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</div>
+        </div>
     </div>
 
     <script>
@@ -178,26 +218,52 @@
                     const optionsList = document.createElement('ul');
                     optionsList.className = 'options-list';
 
+                    let correctOptText = '';
+
                     q.options.forEach((opt, optIndex) => {
                         const optItem = document.createElement('li');
                         optItem.className = 'option-item';
                         optItem.innerText = opt;
-
-                        // সঠিক উত্তর চেক করার লজিক (ইন্ডেক্স বা সরাসরি টেক্সট ম্যাচিং)
-                        if (optIndex === q.correct || opt === q.correct) {
-                            optItem.classList.add('correct');
-                            optItem.innerText += ' ✔ (সঠিক উত্তর)';
-                        }
-
                         optionsList.appendChild(optItem);
+
+                        // সঠিক উত্তর কোনটি তা সংরক্ষণ করা
+                        if (optIndex === q.correct || opt === q.correct) {
+                            correctOptText = opt;
+                        }
                     });
                     card.appendChild(optionsList);
 
-                    // ব্যাখ্যা (Explanation) থাকলে তা যোগ করা
+                    // সঠিক উত্তর বক্স
+                    if (correctOptText) {
+                        const correctBox = document.div || document.createElement('div');
+                        correctBox.className = 'correct-answer-box';
+                        correctBox.innerHTML = `✅ সঠিক উত্তর: ${correctOptText}`;
+                        card.appendChild(correctBox);
+                    }
+
+                    // ব্যাখ্যা বাটন এবং ব্যাখ্যা বক্স তৈরি (যদি ব্যাখ্যা থাকে)
                     if (q.explanation) {
+                        const expBtn = document.createElement('button');
+                        expBtn.className = 'exp-toggle-btn';
+                        expBtn.innerText = 'ব্যাখ্যা দেখুন';
+
                         const expBox = document.createElement('div');
                         expBox.className = 'explanation-box';
-                        expBox.innerHTML = `<span class="explanation-title">💡 ব্যাখ্যা:</span> ${q.explanation}`;
+                        expBox.innerHTML = `<strong>ব্যাখ্যা:</strong> ${q.explanation}`;
+
+                        // বাটনে ক্লিক করলে ব্যাখ্যা দেখাবে বা লুকিয়ে ফেলবে
+                        expBtn.onclick = function() {
+                            expBox.classList.toggle('show');
+                            if (expBox.classList.contains('show')) {
+                                expBtn.innerText = 'ব্যাখ্যা লুকান';
+                                expBtn.style.backgroundColor = '#64748b';
+                            } else {
+                                expBtn.innerText = 'ব্যাখ্যা দেখুন';
+                                expBtn.style.backgroundColor = 'var(--btn-bg)';
+                            }
+                        };
+
+                        card.appendChild(expBtn);
                         card.appendChild(expBox);
                     }
 
