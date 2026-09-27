@@ -599,4 +599,604 @@
         "correct": 0,
         "explanation": "'Arrogant' (অহংকারী বা উদ্ধত) শব্দের সবচেয়ে কাছাকাছি অর্থপূর্ণ শব্দ হলো 'rude' (অসভ্য বা রুক্ষ স্বভাবের)।"
     },
+    {
+        "id": 51,
+        "question": "Don Juan was composed by—",
+        "options": [
+            "(a) W B Yeats",
+            "(b) E. B. Browning",
+            "(c) George Gordon Byron",
+            "(d) Alexander Pope"
+        ],
+        "correct": 2,
+        "explanation": "Don Juan হলো Lord Byron-এর বিখ্যাত ব্যঙ্গাত্মক narrative poem।"
+    },
+    {
+        "id": 52,
+        "question": "Identify the imperative sentence:",
+        "options": [
+            "(a) Shut up!",
+            "(b) Shahin is playing football.",
+            "(c) I shall cook dinner now.",
+            "(d) What is your name?"
+        ],
+        "correct": 0,
+        "explanation": "Imperative sentence দ্বারা আদেশ, নির্দেশ, অনুরোধ ইত্যাদি বোঝানো হয়। “Shut up!” একটি আদেশসূচক বাক্য।"
+    },
+    {
+        "id": 53,
+        "question": "“Black Death” is the name of a—",
+        "options": [
+            "(a) fever",
+            "(b) black fever",
+            "(c) plague pandemic",
+            "(d) death of black people"
+        ],
+        "correct": 2,
+        "explanation": "Black Death ছিল ইতিহাসের ভয়াবহ plague pandemic।"
+    },
+    {
+        "id": 54,
+        "question": "‘Ulysses’ is a poem written by—",
+        "options": [
+            "(a) Robert Browning",
+            "(b) Wordsworth",
+            "(c) S.T. Coleridge",
+            "(d) Alfred Tennyson"
+        ],
+        "correct": 3,
+        "explanation": "Alfred Lord Tennyson-এর বিখ্যাত কবিতা Ulysses।"
+    },
+    {
+        "id": 55,
+        "question": "Who wrote the poem ‘Ozymandias’?",
+        "options": [
+            "(a) Thomas Hardy",
+            "(b) Robert Frost",
+            "(c) P.B. Shelley",
+            "(d) Edmund Spenser"
+        ],
+        "correct": 2,
+        "explanation": "Ozymandias Percy Bysshe Shelley-এর বিখ্যাত sonnet।"
+    },
+    {
+        "id": 56,
+        "question": "Clym Yeobright is the protagonist of the novel—",
+        "options": [
+            "(a) David Copperfield",
+            "(b) Adam Bede",
+            "(c) A Passage to India",
+            "(d) The Return of the Native"
+        ],
+        "correct": 3,
+        "explanation": "Thomas Hardy-এর The Return of the Native উপন্যাসের অন্যতম প্রধান চরিত্র Clym Yeobright।"
+    },
+    {
+        "id": 57,
+        "question": "The train is running ––– forty miles an hour.",
+        "options": [
+            "(a) on",
+            "(b) to",
+            "(c) at",
+            "(d) for"
+        ],
+        "correct": 2,
+        "explanation": "গতি প্রকাশের ক্ষেত্রে at ব্যবহৃত হয়—at forty miles an hour।"
+    },
+    {
+        "id": 58,
+        "question": "He divided the money ––– the two children.",
+        "options": [
+            "(a) between",
+            "(b) over",
+            "(c) among",
+            "(d) in between"
+        ],
+        "correct": 0,
+        "explanation": "দুই ব্যক্তি বা বস্তুর মধ্যে ভাগ বোঝাতে সাধারণত between ব্যবহৃত হয়।"
+    },
+    {
+        "id": 59,
+        "question": "No one can ––– that he is clever.",
+        "options": [
+            "(a) defy",
+            "(b) deny",
+            "(c) admire",
+            "(d) denounce"
+        ],
+        "correct": 1,
+        "explanation": "Deny অর্থ অস্বীকার করা।"
+    },
+    {
+        "id": 60,
+        "question": "Choose the right form of verb: The boy (to lie) on the floor yesterday.",
+        "options": [
+            "(a) lies",
+            "(b) lied",
+            "(c) lay",
+            "(d) layed"
+        ],
+        "correct": 2,
+        "explanation": "Lie (শোয়া)-এর past form হলো lay।"
+    },
+    {
+        "id": 61,
+        "question": "She played on the flute. Passive form is—",
+        "options": [
+            "(a) The flute was played by her.",
+            "(b) The flute was played on by her.",
+            "(c) The flute was played to her.",
+            "(d) The flute was being played by her."
+        ],
+        "correct": 1,
+        "explanation": "Appropriate preposition যুক্ত intransitive verb-এর ক্ষেত্রে passive করার সময় preposition অপরিবর্তিত থাকে।"
+    },
+    {
+        "id": 62,
+        "question": "Antonym for Adieu—",
+        "options": [
+            "(a) Farewell",
+            "(b) Good bye",
+            "(c) Hello",
+            "(d) Valediction"
+        ],
+        "correct": 2,
+        "explanation": "Adieu অর্থ বিদায়; এর বিপরীত ভাব হলো greeting বা Hello।"
+    },
+    {
+        "id": 63,
+        "question": "‘Walk fast lest you should miss the train’. This is a—",
+        "options": [
+            "(a) Simple sentence",
+            "(b) Compound sentence",
+            "(c) Complex sentence",
+            "(d) Interrogative sentence"
+        ],
+        "correct": 2,
+        "explanation": "এখানে একটি main clause এবং একটি subordinate clause রয়েছে। তাই এটি complex sentence।"
+    },
+    {
+        "id": 64,
+        "question": "A number of singers in a church is called—",
+        "options": [
+            "(a) Choir",
+            "(b) Cast",
+            "(c) Claque",
+            "(d) Clump"
+        ],
+        "correct": 0,
+        "explanation": "গির্জায় একসঙ্গে গান গাওয়া গায়কদের দলকে choir বলা হয়।"
+    },
+    {
+        "id": 65,
+        "question": "He reached the ––– of his literary career.",
+        "options": [
+            "(a) abattoir",
+            "(b) acme",
+            "(c) admonish",
+            "(d) abdicate"
+        ],
+        "correct": 1,
+        "explanation": "Acme অর্থ সর্বোচ্চ পর্যায় বা শিখর।"
+    },
+    {
+        "id": 66,
+        "question": "Anger may be compared ––– fire.",
+        "options": [
+            "(a) to",
+            "(b) within",
+            "(c) against",
+            "(d) into"
+        ],
+        "correct": 0,
+        "explanation": "সঠিক ব্যবহার হলো compared to।"
+    },
+    {
+        "id": 67,
+        "question": "Choose the correct sentence:",
+        "options": [
+            "(a) He discussed the matter.",
+            "(b) He discussed about the matter.",
+            "(c) He discussed on the matter.",
+            "(d) None of the above"
+        ],
+        "correct": 0,
+        "explanation": "Discuss নিজেই transitive verb, তাই এর পরে সরাসরি object বসে।"
+    },
+    {
+        "id": 68,
+        "question": "Identify the correctly spelt word.",
+        "options": [
+            "(a) Horroscope",
+            "(b) Pneumonia",
+            "(c) Occassion",
+            "(d) Embarass"
+        ],
+        "correct": 1,
+        "explanation": "সঠিক বানান Pneumonia।"
+    },
+    {
+        "id": 69,
+        "question": "Desdemona is a character in the following Shakespearean play:",
+        "options": [
+            "(a) Macbeth",
+            "(b) Othello",
+            "(c) Hamlet",
+            "(d) King Lear"
+        ],
+        "correct": 1,
+        "explanation": "Desdemona হলো Shakespeare-এর Othello নাটকের অন্যতম প্রধান চরিত্র।"
+    },
+    {
+        "id": 70,
+        "question": "Meteorology is related to—",
+        "options": [
+            "(a) concrete slabs",
+            "(b) motor vehicles",
+            "(c) weather forecasting",
+            "(d) motor neurone disease"
+        ],
+        "correct": 2,
+        "explanation": "Meteorology হলো আবহাওয়া ও বায়ুমণ্ডল নিয়ে বিজ্ঞান।"
+    },
+    {
+        "id": 71,
+        "question": "‘ভারত ছাড়’ আন্দোলন শুরু হয়—",
+        "options": [
+            "ক. ১৯১৭ সালে",
+            "খ. ১৯২৭ সালে",
+            "গ. ১৯৩৭ সালে",
+            "ঘ. ১৯৪২ সালে"
+        ],
+        "correct": 3,
+        "explanation": "মহাত্মা গান্ধীর নেতৃত্বে ১৯৪২ সালে Quit India Movement শুরু হয়।"
+    },
+    {
+        "id": 72,
+        "question": "‘সর্বদলীয় রাষ্ট্রভাষা সংগ্রাম কমিটি’ গঠিত হয়—",
+        "options": [
+            "ক. ১৯৪৮ সালে",
+            "খ. ১৯৫০ সালে",
+            "গ. ১৯৫২ সালে",
+            "ঘ. ১৯৫৪ সালে"
+        ],
+        "correct": 2,
+        "explanation": "ভাষা আন্দোলনের সময় ১৯৫২ সালে সর্বদলীয় রাষ্ট্রভাষা সংগ্রাম কমিটি গঠিত হয়।"
+    },
+    {
+        "id": 73,
+        "question": "বাংলাদেশের জাতীয় সংসদের অধিবেশন আহ্বান করেন কে?",
+        "options": [
+            "ক. রাষ্ট্রপতি",
+            "খ. স্পিকার",
+            "গ. চিফ হুইপ",
+            "ঘ. প্রধানমন্ত্রী"
+        ],
+        "correct": 0,
+        "explanation": "সংবিধান অনুযায়ী রাষ্ট্রপতি জাতীয় সংসদের অধিবেশন আহ্বান করেন।"
+    },
+    {
+        "id": 74,
+        "question": "ঐতিহাসিক ‘ছয়-দফা’ বঙ্গবন্ধু শেখ মুজিবুর রহমান আনুষ্ঠানিকভাবে ঘোষণা করেন—",
+        "options": [
+            "ক. ৫ ফেব্রুয়ারি, ১৯৬৬",
+            "খ. ২৩ মার্চ, ১৯৬৬",
+            "গ. ২৬ মার্চ, ১৯৬৬",
+            "ঘ. ৩১ মার্চ, ১৯৬৬"
+        ],
+        "correct": 1,
+        "explanation": "লাহোরে ঐতিহাসিক ছয় দফা প্রস্তাব পেশ করার পর ২৩ মার্চ ১৯৬৬ আনুষ্ঠানিকভাবে তা ঘোষণা করা হয়।"
+    },
+    {
+        "id": 75,
+        "question": "‘পূর্ব পাকিস্তান আওয়ামী মুসলিম লীগ’ প্রতিষ্ঠাকালীন সাধারণ সম্পাদক—",
+        "options": [
+            "ক. শেখ মুজিবুর রহমান",
+            "খ. শামছুল হক",
+            "গ. আতাউর রহমান খান",
+            "ঘ. আবুল হাশিম"
+        ],
+        "correct": 1,
+        "explanation": "১৯৪৯ সালে প্রতিষ্ঠিত পূর্ব পাকিস্তান আওয়ামী মুসলিম লীগের প্রথম সাধারণ সম্পাদক ছিলেন শামছুল হক।"
+    },
+    {
+        "id": 76,
+        "question": "‘প্রজাতন্ত্রের রাষ্ট্রভাষা বাংলা’ কথাটি সংবিধানের কোন অনুচ্ছেদে বলা হয়েছে?",
+        "options": [
+            "ক. অনুচ্ছেদ ২",
+            "খ. অনুচ্ছেদ ৩",
+            "গ. অনুচ্ছেদ ৪",
+            "ঘ. অনুচ্ছেদ ৫"
+        ],
+        "correct": 1,
+        "explanation": "বাংলাদেশের সংবিধানের ৩ অনুচ্ছেদে রাষ্ট্রভাষা বাংলা বলা হয়েছে।"
+    },
+    {
+        "id": 77,
+        "question": "ঐতিহাসিক ৭ মার্চের ভাষণ সংবিধানের কোন তফসিলে আছে?",
+        "options": [
+            "ক. চতুর্থ তফসিল",
+            "খ. পঞ্চম তফসিল",
+            "গ. ষষ্ঠ তফসিল",
+            "ঘ. সপ্তম তফসিল"
+        ],
+        "correct": 1,
+        "explanation": "ঐতিহাসিক ৭ মার্চের ভাষণ সংবিধানের পঞ্চম তফসিলে সন্নিবেশিত আছে।"
+    },
+    {
+        "id": 78,
+        "question": "বাংলাদেশের সংবিধান অনুযায়ী “কোর্ট অব রেকর্ড” হিসাবে গণ্য—",
+        "options": [
+            "ক. লেবার কোর্ট",
+            "খ. জজ কোর্ট",
+            "গ. হাই কোর্ট",
+            "ঘ. সুপ্রিম কোর্ট"
+        ],
+        "correct": 3,
+        "explanation": "সংবিধানের ১০৮ অনুচ্ছেদ অনুযায়ী সুপ্রিম কোর্ট একটি কোর্ট অব রেকর্ড।"
+    },
+    {
+        "id": 79,
+        "question": "বাংলাদেশ মোট কতটি পঞ্চবার্ষিকী পরিকল্পনা গ্রহণ করা হয়েছে?",
+        "options": [
+            "ক. ৬টি",
+            "খ. ৭টি",
+            "গ. ৮টি",
+            "ঘ. ৯টি"
+        ],
+        "correct": 2,
+        "explanation": "এ পর্যন্ত বাংলাদেশে মোট ৮টি পঞ্চবার্ষিকী পরিকল্পনা গ্রহণ করা হয়েছে।"
+    },
+    {
+        "id": 80,
+        "question": "বাংলাদেশের কয়টি জেলার সাথে ‘সুন্দরবন’ সংযুক্ত আছে?",
+        "options": [
+            "ক. ৪টি",
+            "খ. ৫টি",
+            "গ. ৬টি",
+            "ঘ. ৭টি"
+        ],
+        "correct": 1,
+        "explanation": "সুন্দরবন বাংলাদেশের ৫টি জেলার (বাগেরহাট, খুলনা, সাতক্ষীরা, বরগুনা ও পটুয়াখালী) সাথে সংযুক্ত।"
+    },
+    {
+        "id": 81,
+        "question": "মহান মুক্তিযুদ্ধের সময় ঢাকা শহর কোন সেক্টরের অন্তর্ভুক্ত ছিল?",
+        "options": [
+            "ক. ২ নম্বর",
+            "খ. ৩ নম্বর",
+            "গ. ৪ নম্বর",
+            "ঘ. ৫ নম্বর"
+        ],
+        "correct": 0,
+        "explanation": "মুক্তিযুদ্ধের সময় ঢাকা শহর ২ নম্বর সেক্টরের আওতাধীন ছিল।"
+    },
+    {
+        "id": 82,
+        "question": "‘জয় বাংলা’কে জাতীয় স্লোগান হিসেবে মন্ত্রিসভায় কত তারিখে অনুমোদন করা হয়?",
+        "options": [
+            "ক. ২ মার্চ, ২০২২",
+            "খ. ৩ মার্চ, ২০২২",
+            "গ. ৪ মার্চ, ২০২২",
+            "ঘ. ৫ মার্চ, ২০২২"
+        ],
+        "correct": 0,
+        "explanation": "২০২২ সালের ২ মার্চ জয় বাংলাকে জাতীয় স্লোগান হিসেবে মন্ত্রিসভায় অনুমোদন দেওয়া হয়।"
+    },
+    {
+        "id": 83,
+        "question": "বাংলাদেশ সরকারি কর্ম কমিশন কবে গঠিত হয়?",
+        "options": [
+            "ক. ৬ এপ্রিল, ১৯৭২",
+            "খ. ৭ এপ্রিল, ১৯৭২",
+            "গ. ৮ এপ্রিল, ১৯৭২",
+            "ঘ. ৫ মার্চ, ১৯৭২"
+        ],
+        "correct": 2,
+        "explanation": "বাংলাদেশ সরকারি কর্ম কমিশন (PSC) গঠিত হয় ৮ এপ্রিল, ১৯৭২ সালে।"
+    },
+    {
+        "id": 84,
+        "question": "‘e-TIN’ চালু করা হয় কত সালে?",
+        "options": [
+            "ক. ২০১৩ সালে",
+            "খ. ২০১৪ সালে",
+            "গ. ২০১৫ সালে",
+            "ঘ. ২০১৬ সালে"
+        ],
+        "correct": 0,
+        "explanation": "অনলাইনভিত্তিক ই-টিন (e-TIN) ব্যবস্থা ২০১৩ সালে চালু করা হয়।"
+    },
+    {
+        "id": 85,
+        "question": "কত সালে মানি লন্ডারিং প্রতিরোধ আইনটি প্রবর্তন করা হয়?",
+        "options": [
+            "ক. ২০১১ সালে",
+            "খ. ২০১২ সালে",
+            "গ. ২০১৩ সালে",
+            "ঘ. ২০১৪ সালে"
+        ],
+        "correct": 1,
+        "explanation": "মানি লন্ডারিং প্রতিরোধ আইন প্রবর্তন করা হয় ২০১২ সালে।"
+    },
+    {
+        "id": 86,
+        "question": "দেশের কোন জেলায় সর্ববৃহৎ সৌরবিদ্যুৎ কেন্দ্র অবস্থিত?",
+        "options": [
+            "ক. চট্টগ্রাম",
+            "খ. ফেনী",
+            "গ. নরসিংদী",
+            "ঘ. গাইবান্ধা"
+        ],
+        "correct": 3,
+        "explanation": "দেশের সর্ববৃহৎ সৌরবিদ্যুৎ কেন্দ্র গাইবান্ধা জেলার সুন্দরগঞ্জে অবস্থিত।"
+    },
+    {
+        "id": 87,
+        "question": "বাংলাদেশে বন গবেষণা কেন্দ্র কোথায় অবস্থিত?",
+        "options": [
+            "ক. রাজশাহী",
+            "খ. কুমিল্লা",
+            "গ. চট্টগ্রাম",
+            "ঘ. গাজীপুর"
+        ],
+        "correct": 2,
+        "explanation": "বাংলাদেশ বন গবেষণা কেন্দ্র চট্টগ্রামে অবস্থিত।"
+    },
+    {
+        "id": 88,
+        "question": "বাংলাদেশের মৎস্য প্রজাতি গবেষণাগার কোথায় অবস্থিত?",
+        "options": [
+            "ক. চাঁদপুর",
+            "খ. ফরিদপুর",
+            "গ. ময়মনসিংহ",
+            "ঘ. ভোলা"
+        ],
+        "correct": 2,
+        "explanation": "প্রধান মৎস্য গবেষণা ইনস্টিটিউট বা প্রজাতি গবেষণাগার ময়মনসিংহে অবস্থিত।"
+    },
+    {
+        "id": 89,
+        "question": "বাংলাদেশের প্রধান খনিজ সম্পদ কোনটি?",
+        "options": [
+            "ক. কয়লা",
+            "খ. প্রাকৃতিক গ্যাস",
+            "গ. চুনাপাথর",
+            "ঘ. চীনামাটি"
+        ],
+        "correct": 1,
+        "explanation": "বাংলাদেশের প্রধান ও সবচেয়ে গুরুত্বপূর্ণ খনিজ সম্পদ হলো প্রাকৃতিক গ্যাস।"
+    },
+    {
+        "id": 90,
+        "question": "ইউরিয়া সারের কাঁচামাল কী?",
+        "options": [
+            "ক. প্রাকৃতিক গ্যাস",
+            "খ. চুনাপাথর",
+            "গ. মিথেন গ্যাস",
+            "ঘ. ইলমেনাইট"
+        ],
+        "correct": 2,
+        "explanation": "ইউরিয়া সার উৎপাদনের প্রধান কাঁচামাল হলো মিথেন গ্যাস (প্রাকৃতিক গ্যাস থেকে সংগৃহীত)।"
+    },
+    {
+        "id": 91,
+        "question": "কোনটি বিচার বিভাগের কাজ নয়?",
+        "options": [
+            "ক. আইনের প্রয়োগ",
+            "খ. আইনের ব্যাখ্যা",
+            "গ. সংবিধানের ব্যাখ্যা",
+            "ঘ. সংবিধান প্রণয়ন"
+        ],
+        "correct": 3,
+        "explanation": "সংবিধান প্রণয়ন আইনসভার কাজ, বিচার বিভাগের কাজ নয়।"
+    },
+    {
+        "id": 92,
+        "question": "পারিবারিক আদালত অধ্যাদেশ কত সালে জারি হয়?",
+        "options": [
+            "ক. ১৯৮০ সালে",
+            "খ. ১৯৮১ সালে",
+            "গ. ১৯৮৫ সালে",
+            "ঘ. ১৯৯১ সালে"
+        ],
+        "correct": 2,
+        "explanation": "পারিবারিক আদালত অধ্যাদেশ জারি হয় ১৯৮৫ সালে।"
+    },
+    {
+        "id": 93,
+        "question": "‘গণহত্যা যাদুঘর’ কোথায় অবস্থিত?",
+        "options": [
+            "ক. ঢাকা",
+            "খ. চট্টগ্রাম",
+            "গ. কুমিল্লা",
+            "ঘ. খুলনা"
+        ],
+        "correct": 3,
+        "explanation": "১৯৭১ সালের গণহত্যার স্মরণে প্রতিষ্ঠিত 'গণহত্যা যাদুঘর' খুলনায় অবস্থিত।"
+    },
+    {
+        "id": 94,
+        "question": "নভেরা আহমেদের পরিচয় কী হিসেবে?",
+        "options": [
+            "ক. কবি",
+            "খ. নাট্যকার",
+            "গ. কণ্ঠশিল্পী",
+            "ঘ. ভাস্কর"
+        ],
+        "correct": 3,
+        "explanation": "নভেরা আহমেদ বাংলাদেশের আধুনিক ভাস্কর্যের অগ্রপথিক ও ভাস্কর।"
+    },
+    {
+        "id": 95,
+        "question": "আয়তনে বাংলাদেশের সবচেয়ে বড় জেলা কোনটি?",
+        "options": [
+            "ক. রাঙ্গামাটি",
+            "খ. বরিশাল",
+            "গ. চট্টগ্রাম",
+            "ঘ. ময়মনসিংহ"
+        ],
+        "correct": 0,
+        "explanation": "আয়তনের দিক থেকে রাঙ্গামাটি বাংলাদেশের সবচেয়ে বড় জেলা।"
+    },
+    {
+        "id": 96,
+        "question": "কোন এলাকাকে ‘Marine Protected Area’ (MPA) ঘোষণা করা হয়েছে?",
+        "options": [
+            "ক. সেন্টমার্টিন",
+            "খ. সেন্টমার্টিন এবং এর আশেপাশের এলাকা",
+            "গ. পটুয়াখালী ও বরগুনা",
+            "ঘ. হিরন পয়েন্ট"
+        ],
+        "correct": 1,
+        "explanation": "জৈববৈচিত্র্য রক্ষার্থে সেন্টমার্টিন এবং এর আশেপাশের সামুদ্রিক এলাকাকে মেরিন প্রটেক্টেড এরিয়া ঘোষণা করা হয়েছে।"
+    },
+    {
+        "id": 97,
+        "question": "বাংলাদেশের ভৌগলিক নির্দেশক (GI) পণ্য কয়টি?",
+        "options": [
+            "ক. ৯টি",
+            "খ. ১০টি",
+            "গ. ১১টি",
+            "ঘ. ১২টি"
+        ],
+        "correct": 2,
+        "explanation": "প্রদত্ত তথ্য অনুযায়ী জিআই পণ্যের সংখ্যা ১১টি হিসেবে উল্লেখ করা হয়েছে।"
+    },
+    {
+        "id": 98,
+        "question": "ক্ষুদ্র নৃ-গোষ্ঠী ‘মনিপুরী’ বাংলাদেশের কোন জেলায় বেশি বসবাস করে?",
+        "options": [
+            "ক. সিলেট",
+            "খ. মৌলভীবাজার",
+            "গ. হবিগঞ্জ",
+            "ঘ. সুনামগঞ্জ"
+        ],
+        "correct": 1,
+        "explanation": "মণিপরি ক্ষুদ্র নৃ-গোষ্ঠীর লোকজন প্রধানত মৌলভীবাজার জেলায় বেশি বসবাস করে।"
+    },
+    {
+        "id": 99,
+        "question": "বাংলাদেশের ষষ্ঠ জাতীয় জনশুমারি ও গৃহ গণনা কোন সময়ে অনুষ্ঠিত হয়?",
+        "options": [
+            "ক. ১০ জুন থেকে ১৬ জুন, ২০২২",
+            "খ. ১৫ জুন থেকে ২১ জুন, ২০২২",
+            "গ. ১৫ জুলাই থেকে ২১ জুলাই, ২০২২",
+            "ঘ. ২০ জুলাই থেকে ২৬ জুলাই, ২০২২"
+        ],
+        "correct": 1,
+        "explanation": "ষষ্ঠ জনশুমারি ও গৃহ গণনা ২০২২ সালের ১৫ জুন থেকে ২১ জুনের মধ্যে অনুষ্ঠিত হয়।"
+    },
+    {
+        "id": 100,
+        "question": "কূটনৈতিক ক্ষেত্রে অবদানের জন্য ২০২০ সালে প্রবর্তিত পুরস্কারের নাম কী?",
+        "options": [
+            "ক. বঙ্গবন্ধু ডিপ্লোমেটিক অ্যাওয়ার্ড ফর এক্সিলেন্স",
+            "খ. বঙ্গবন্ধু ডিপ্লোমেটিক এক্সিলেন্স অ্যাওয়ার্ড",
+            "গ. বাংলাদেশ ডিপ্লোমেটিক অ্যাওয়ার্ড ফর এক্সিলেন্স",
+            "ঘ. বঙ্গবন্ধু ডিপ্লোমেটিক অ্যাওয়ার্ড"
+        ],
+        "correct": 0,
+        "explanation": "কূটনৈতিক উৎকর্ষ সাধনের জন্য প্রবর্তিত এই পুরস্কারটির নাম 'বঙ্গবন্ধু ডিপ্লোমেটিক অ্যাওয়ার্ড ফর এক্সিলেন্স'।"
+    },
   
