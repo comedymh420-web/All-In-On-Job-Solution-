@@ -599,4 +599,606 @@
         "correct": 1,
         "explanation": "‘ব্যক্ত প্রেম’ ও ‘গুপ্ত প্রেম’ রবীন্দ্রনাথ ঠাকুরের ‘মানসী’ কাব্যগ্রন্থের অন্তর্ভুক্ত।"
     },
+    
+    {
+        "id": 51,
+        "question": "‘অভীক’ রবীন্দ্রনাথের কোন গল্পের নায়ক?",
+        "options": [
+            "ক. নষ্টনীড়",
+            "খ. নামঞ্জুর গল্প",
+            "গ. রবিবার",
+            "ঘ. ল্যাবরেটরি"
+        ],
+        "correct": 2,
+        "explanation": "‘অভীক’ রবীন্দ্রনাথ ঠাকুরের ‘রবিবার’ গল্পের প্রধান চরিত্র।"
+    },
+    {
+        "id": 52,
+        "question": "‘সকলের তরে সকলে আমরা/প্রত্যেকে আমরা পরের তরে।’ কার রচিত পঙ্‌ক্তি?",
+        "options": [
+            "ক. রজনীকান্ত সেন",
+            "খ. ইসমাইল হোসেন সিরাজী",
+            "গ. কামিনী রায়",
+            "ঘ. দ্বিজেন্দ্রলাল রায়"
+        ],
+        "correct": 2,
+        "explanation": "পঙ্‌ক্তিদুটি কবি কামিনী রায়ের মানবতাবাদী কবিতা থেকে নেওয়া।"
+    },
+    {
+        "id": 53,
+        "question": "‘খোকা’ ও ‘রঞ্জু’ মাহমুদুল হক-এর কোন উপন্যাসের চরিত্র?",
+        "options": [
+            "ক. কালো বরফ",
+            "খ. খেলাঘর",
+            "গ. অনুর পাঠশালা",
+            "ঘ. জীবন আমার বোন"
+        ],
+        "correct": 3,
+        "explanation": "‘খোকা’ ও ‘রঞ্জু’ মাহমুদুল হকের ‘জীবন আমার বোন’ উপন্যাসের চরিত্র।"
+    },
+    {
+        "id": 54,
+        "question": "সৈয়দ ওয়ালীউল্লাহর লেখা নাটক কোনটি?",
+        "options": [
+            "ক. কবর",
+            "খ. বহিপীর",
+            "গ. পায়ের আওয়াজ পাওয়া যায়",
+            "ঘ. ওরা কদম আলী"
+        ],
+        "correct": 1,
+        "explanation": "‘বহিপীর’ সৈয়দ ওয়ালীউল্লাহ রচিত একটি বিখ্যাত নাটক।"
+    },
+    {
+        "id": 55,
+        "question": "মীর মশাররফ হোসেনের ‘বিষাদসিন্ধু’ একটি—",
+        "options": [
+            "ক. মহাকাব্য",
+            "খ. ইতিহাস গ্রন্থ",
+            "গ. উপন্যাস",
+            "ঘ. ইতিহাস-আশ্রিত জীবনীগ্রন্থ"
+        ],
+        "correct": 2,
+        "explanation": "‘বিষাদসিন্ধু’ ঐতিহাসিক ঘটনাকে অবলম্বন করে রচিত একটি উপন্যাস।"
+    },
+    {
+        "id": 56,
+        "question": "‘By and large’ means—",
+        "options": [
+            "ক. everywhere",
+            "খ. very large",
+            "গ. mostly",
+            "ঘ. far away"
+        ],
+        "correct": 2,
+        "explanation": "‘By and large’ একটি idiom, যার অর্থ ‘mostly’ বা ‘সাধারণভাবে/মোটের ওপর’।"
+    },
+    {
+        "id": 57,
+        "question": "Francis Bacon is an illustrious—",
+        "options": [
+            "ক. essayist",
+            "খ. dramatist",
+            "গ. novelist",
+            "ঘ. journalist"
+        ],
+        "correct": 0,
+        "explanation": "Francis Bacon ইংরেজি সাহিত্যের বিখ্যাত প্রাবন্ধিক (essayist)।"
+    },
+    {
+        "id": 58,
+        "question": "‘He could not win but learnt a lot.’ Which part of speech is the word ‘but’?",
+        "options": [
+            "ক. an adverb",
+            "খ. a verb",
+            "গ. an adjective",
+            "ঘ. a conjunction"
+        ],
+        "correct": 3,
+        "explanation": "এখানে ‘but’ দুটি clause/ভাবকে যুক্ত করেছে, তাই এটি conjunction।"
+    },
+    {
+        "id": 59,
+        "question": "Select the appropriate preposition: ‘Are you doing anything special –– the weekend?’",
+        "options": [
+            "ক. at",
+            "খ. with",
+            "গ. on",
+            "ঘ. for"
+        ],
+        "correct": 0,
+        "explanation": "Biddabari-এর মূল পেজে উত্তর ‘at’ দেওয়া হয়েছে। তবে প্রচলিত ইংরেজি ব্যবহারে ‘at the weekend’ (বিশেষত British English) ব্যবহৃত হয়; American English-এ ‘on the weekend’ বেশি প্রচলিত।"
+    },
+    {
+        "id": 60,
+        "question": "What is the plural form of ‘sheep’?",
+        "options": [
+            "ক. sheeps",
+            "খ. sheep",
+            "গ. sheepes",
+            "ঘ. sheepes"
+        ],
+        "correct": 1,
+        "explanation": "‘Sheep’ একটি irregular noun; singular ও plural—দুই ক্ষেত্রেই sheep ব্যবহৃত হয়।"
+    },
+    {
+        "id": 61,
+        "question": "‘Sweet are the uses of adversity’ is quoted from Shakespeare’s—",
+        "options": [
+            "ক. Julius Caesar",
+            "খ. Macbeth",
+            "গ. Comedy of Errors",
+            "ঘ. As You Like It"
+        ],
+        "correct": 3,
+        "explanation": "উক্তিটি Shakespeare-এর ‘As You Like It’ নাটক থেকে নেওয়া।"
+    },
+    {
+        "id": 62,
+        "question": "‘To get along with’ means—",
+        "options": [
+            "ক. to adjust",
+            "খ. to interest",
+            "গ. to accompany",
+            "ঘ. to walk"
+        ],
+        "correct": 0,
+        "explanation": "‘Get along with’ অর্থ কারও সঙ্গে মানিয়ে চলা বা সুসম্পর্ক বজায় রাখা।"
+    },
+    {
+        "id": 63,
+        "question": "The synonym for ‘panoramic’ is—",
+        "options": [
+            "ক. scenic",
+            "খ. narrow",
+            "গ. limited",
+            "ঘ. restricted"
+        ],
+        "correct": 0,
+        "explanation": "‘Panoramic’ অর্থ বিস্তৃত বা মনোরম দৃশ্যসম্পন্ন; ‘scenic’ এর কাছাকাছি অর্থ বহন করে।"
+    },
+    {
+        "id": 64,
+        "question": "Alexander Pope’s ‘Essay on Man’ is a—",
+        "options": [
+            "ক. novel",
+            "খ. treatise",
+            "গ. short story",
+            "ঘ. poem"
+        ],
+        "correct": 3,
+        "explanation": "‘An Essay on Man’ Alexander Pope-এর একটি বিখ্যাত দার্শনিক কবিতা।"
+    },
+    {
+        "id": 65,
+        "question": "The antonym for ‘slothful’ is—",
+        "options": [
+            "ক. playful",
+            "খ. sluggish",
+            "গ. energetic",
+            "ঘ. quarrelsome"
+        ],
+        "correct": 2,
+        "explanation": "‘Slothful’ অর্থ অলস; এর বিপরীত শব্দ ‘energetic’ অর্থ কর্মচঞ্চল/উদ্যমী।"
+    },
+    {
+        "id": 66,
+        "question": "What is the verb form of the word ‘ability’?",
+        "options": [
+            "ক. capable",
+            "খ. inability",
+            "গ. enable",
+            "ঘ. unable"
+        ],
+        "correct": 2,
+        "explanation": "‘Ability’ হলো noun; এর verb form হিসেবে ‘enable’ ব্যবহৃত হয়।"
+    },
+    {
+        "id": 67,
+        "question": "The word ‘equivocation’ refers to—",
+        "options": [
+            "ক. starting like an author",
+            "খ. two contradictory things in the same statement",
+            "গ. free expression of opinions",
+            "ঘ. a true statement"
+        ],
+        "correct": 1,
+        "explanation": "‘Equivocation’ বলতে দ্ব্যর্থক বা অস্পষ্ট বক্তব্য বোঝায়, যেখানে কথার অর্থ ইচ্ছাকৃতভাবে অস্পষ্ট রাখা হয়।"
+    },
+    {
+        "id": 68,
+        "question": "“Life’s but a walking shadow, a poor player,\nThat struts and frets his hour upon the stage,\nAnd then is heard no more.”\n\nThese memorable lines in Shakespearean tragedy are spoken by—",
+        "options": [
+            "ক. Lady Macbeth",
+            "খ. Banquo",
+            "গ. Duncan",
+            "ঘ. Macbeth"
+        ],
+        "correct": 3,
+        "explanation": "Shakespeare-এর ‘Macbeth’ নাটকে Macbeth-এর বিখ্যাত soliloquy-এর অংশ এটি।"
+    },
+    {
+        "id": 69,
+        "question": "Which of the following words is spelt correctly?",
+        "options": [
+            "ক. authoratative",
+            "খ. autheritative",
+            "গ. authoritative",
+            "ঘ. authoratative"
+        ],
+        "correct": 2,
+        "explanation": "সঠিক বানান হলো ‘authoritative’।"
+    },
+    {
+        "id": 70,
+        "question": "Find out the active form for the sentence: ‘By whom can our country be saved?’",
+        "options": [
+            "ক. Who can save our country?",
+            "খ. Our country has been saved by who?",
+            "গ. Who save our country?",
+            "ঘ. Who will save our country?"
+        ],
+        "correct": 0,
+        "explanation": "Passive voice-এর ‘By whom’ active voice-এ ‘Who’ হবে এবং ‘can be saved’ হবে ‘can save’।"
+    },
+    {
+        "id": 71,
+        "question": "“All changed, changed utterly.\nA terrible beauty is born.”\n\nThis extract is taken from W.B. Yeats poem titled—",
+        "options": [
+            "ক. No Second Troy",
+            "খ. Easter 1916",
+            "গ. The Second Coming",
+            "ঘ. The Wild Swans at Coole"
+        ],
+        "correct": 1,
+        "explanation": "পঙ্‌ক্তিগুলো W. B. Yeats-এর বিখ্যাত কবিতা ‘Easter 1916’ থেকে নেওয়া।"
+    },
+    {
+        "id": 72,
+        "question": "Identify the correct passive form: ‘Do not close the door.’",
+        "options": [
+            "ক. Let not the door close.",
+            "খ. Let not the door be closed.",
+            "গ. Let not the door close.",
+            "ঘ. Let not door closed."
+        ],
+        "correct": 1,
+        "explanation": "Imperative sentence-এর passive রূপে সাধারণত ‘Let + object + be + past participle’ গঠন ব্যবহৃত হয়।"
+    },
+    {
+        "id": 73,
+        "question": "The poetic drama ‘Murder in the Cathedral’ was written by—",
+        "options": [
+            "ক. Harold Pinter",
+            "খ. G.B. Shaw",
+            "গ. T.S. Eliot",
+            "ঘ. Samuel Beckett"
+        ],
+        "correct": 2,
+        "explanation": "‘Murder in the Cathedral’ T. S. Eliot-এর বিখ্যাত poetic drama।"
+    },
+    {
+        "id": 74,
+        "question": "‘All for Love’ is a drama written by—",
+        "options": [
+            "ক. John Dryden",
+            "খ. William Congreve",
+            "গ. John Bunyan",
+            "ঘ. Francis Bacon"
+        ],
+        "correct": 0,
+        "explanation": "‘All for Love’ John Dryden-এর একটি heroic tragedy।"
+    },
+    {
+        "id": 75,
+        "question": "‘Sitting happily, the chicken laid eggs.’\n\nThe underlined part is a/an—",
+        "options": [
+            "ক. noun clause",
+            "খ. subordinate clause",
+            "গ. independent clause",
+            "ঘ. coordinate clause"
+        ],
+        "correct": 1,
+        "explanation": "‘Sitting happily’ একটি participial phrase; মূল পেজে এটিকে subordinate clause হিসেবে উত্তর দেওয়া হয়েছে।"
+    },
+    {
+        "id": 76,
+        "question": "Caliban is an important character from Shakespeare’s—",
+        "options": [
+            "ক. The Tempest",
+            "খ. Hamlet",
+            "গ. Macbeth",
+            "ঘ. Othello"
+        ],
+        "correct": 0,
+        "explanation": "Caliban Shakespeare-এর ‘The Tempest’ নাটকের একটি গুরুত্বপূর্ণ চরিত্র।"
+    },
+    {
+        "id": 77,
+        "question": "What kind of noun is ‘river’?",
+        "options": [
+            "ক. Material",
+            "খ. Collective",
+            "গ. Proper",
+            "ঘ. Common"
+        ],
+        "correct": 3,
+        "explanation": "‘River’ কোনো নির্দিষ্ট নদীর নাম নয়; সাধারণভাবে নদী বোঝায়। তাই এটি common noun।"
+    },
+    {
+        "id": 78,
+        "question": "‘Caesar and Cleopatra’ is—",
+        "options": [
+            "ক. a tragedy by William Shakespeare",
+            "খ. a poem by Lord Byron",
+            "গ. a play by Bernard Shaw",
+            "ঘ. a novel by S.T. Coleridge"
+        ],
+        "correct": 2,
+        "explanation": "‘Caesar and Cleopatra’ George Bernard Shaw রচিত একটি নাটক।"
+    },
+    {
+        "id": 79,
+        "question": "Identify the right tense: ‘My father –– before I came.’",
+        "options": [
+            "ক. would be leaving",
+            "খ. had been leaving",
+            "গ. had left",
+            "ঘ. will leave"
+        ],
+        "correct": 2,
+        "explanation": "অতীতে একটি কাজ অন্য একটি অতীত কাজের আগে সম্পন্ন হয়েছিল; তাই past perfect tense ‘had left’ ব্যবহৃত হয়েছে।"
+    },
+    {
+        "id": 80,
+        "question": "Which of the following words is spelt incorrectly?",
+        "options": [
+            "ক. reminescence",
+            "খ. glycerin",
+            "গ. idiosyncrasy",
+            "ঘ. lexicography"
+        ],
+        "correct": 0,
+        "explanation": "সঠিক বানান হলো ‘reminiscence’।"
+    },
+    {
+        "id": 81,
+        "question": "Who wrote the picaresque novel titled ‘Tom Jones’?",
+        "options": [
+            "ক. Samuel Richardson",
+            "খ. Horace Walpole",
+            "গ. Henry Fielding",
+            "ঘ. Laurence Sterne"
+        ],
+        "correct": 2,
+        "explanation": "‘Tom Jones’ Henry Fielding-এর বিখ্যাত picaresque novel।"
+    },
+    {
+        "id": 82,
+        "question": "The story of ‘Moby Dick’ centers on—",
+        "options": [
+            "ক. a mermaid",
+            "খ. a whale",
+            "গ. a crocodile",
+            "ঘ. a shark"
+        ],
+        "correct": 1,
+        "explanation": "Herman Melville-এর ‘Moby-Dick’ উপন্যাসের কেন্দ্রীয় বিষয় হলো সাদা তিমি Moby Dick।"
+    },
+    {
+        "id": 83,
+        "question": "‘He prayeth best, who loveth best’—Who said it?",
+        "options": [
+            "ক. John Milton",
+            "খ. John Donne",
+            "গ. Lord Byron",
+            "ঘ. S.T. Coleridge"
+        ],
+        "correct": 3,
+        "explanation": "পঙ্‌ক্তিটি Samuel Taylor Coleridge-এর ‘The Rime of the Ancient Mariner’ থেকে নেওয়া।"
+    },
+    {
+        "id": 84,
+        "question": "The controlling sentence of a paragraph is known as—",
+        "options": [
+            "ক. content modulator",
+            "খ. terminator",
+            "গ. thesis statement",
+            "ঘ. topic sentence"
+        ],
+        "correct": 3,
+        "explanation": "Paragraph-এর মূল বক্তব্য যে বাক্যে প্রকাশ পায় তাকে topic sentence বলা হয়।"
+    },
+    {
+        "id": 85,
+        "question": "Choose the correct comparative form of the sentence ‘Very few boys are as industrious as Zaman.’",
+        "options": [
+            "ক. Zaman is one of the most industrious boys.",
+            "খ. Zaman is more industrious than most other boys.",
+            "গ. Zaman is really industrious like other boys.",
+            "ঘ. Zaman is as industrious are other boys."
+        ],
+        "correct": 1,
+        "explanation": "‘Very few boys are as…as’ কাঠামোকে comparative degree-তে রূপান্তর করলে ‘more…than most other’ ব্যবহার করা যায়।"
+    },
+    {
+        "id": 86,
+        "question": "Identify the appropriate preposition: Your opinion is identical –– mine.",
+        "options": [
+            "ক. for",
+            "খ. in",
+            "গ. with",
+            "ঘ. by"
+        ],
+        "correct": 2,
+        "explanation": "সঠিক phrase হলো ‘identical with’—অর্থাৎ সম্পূর্ণ একই বা অভিন্ন।"
+    },
+    {
+        "id": 87,
+        "question": "‘Paradise Lost’ attempted to—",
+        "options": [
+            "ক. justify the ways of man to God",
+            "খ. show that Satan and God have equal power",
+            "গ. justify the ways of God to man",
+            "ঘ. explain why both good and evil are necessary"
+        ],
+        "correct": 2,
+        "explanation": "John Milton-এর ‘Paradise Lost’-এর বিখ্যাত উদ্দেশ্য হলো ‘justify the ways of God to man’।"
+    },
+    {
+        "id": 88,
+        "question": "“Oh, lift me as a wave, a leaf, a cloud!\nI fall upon the thorns of life! I bleed!”\n\nThe extract is taken from P.B. Shelley’s poem—",
+        "options": [
+            "ক. The Cloud",
+            "খ. To a Skylark",
+            "গ. Ode to the West Wind",
+            "ঘ. Adonais"
+        ],
+        "correct": 2,
+        "explanation": "পঙ্‌ক্তিগুলো Percy Bysshe Shelley-এর ‘Ode to the West Wind’ কবিতা থেকে নেওয়া।"
+    },
+    {
+        "id": 89,
+        "question": "Who wrote the short story ‘The Ant and the Grasshopper’?",
+        "options": [
+            "ক. Guy de Maupassant",
+            "খ. W. Somerset Maugham",
+            "গ. J. K. Rowling",
+            "ঘ. O. Henry"
+        ],
+        "correct": 1,
+        "explanation": "W. Somerset Maugham-এর ‘The Ant and the Grasshopper’ বিখ্যাত ছোটগল্প।"
+    },
+    {
+        "id": 90,
+        "question": "The word ‘vital’ is a/an—",
+        "options": [
+            "ক. noun",
+            "খ. adverb",
+            "গ. adjective",
+            "ঘ. verb"
+        ],
+        "correct": 2,
+        "explanation": "‘Vital’ অর্থ অত্যন্ত গুরুত্বপূর্ণ/জীবনীশক্তিসংক্রান্ত এবং এটি adjective হিসেবে ব্যবহৃত হয়।"
+    },
+    {
+        "id": 91,
+        "question": "2 log₁₀ 5 + log₁₀ 36 − log₁₀ 9 = ?",
+        "options": [
+            "ক. 2",
+            "খ. 100",
+            "গ. 37",
+            "ঘ. 4.6"
+        ],
+        "correct": 0,
+        "explanation": "2log5 = log25। তাই log25 + log36 − log9 = log(25×36/9) = log100 = 2।"
+    },
+    {
+        "id": 92,
+        "question": "ক্রয়মূল্য বিক্রয়মূল্যের দ্বিগুণ হলে শতকরা লাভ বা ক্ষতির পরিমাণ কত?",
+        "options": [
+            "ক. লাভ ২৫%",
+            "খ. ক্ষতি ২৫%",
+            "গ. লাভ ১০%",
+            "ঘ. ক্ষতি ৫০%"
+        ],
+        "correct": 3,
+        "explanation": "ক্রয়মূল্য 100 টাকা হলে বিক্রয়মূল্য 50 টাকা। ক্ষতি = 50 টাকা, অর্থাৎ 50%।"
+    },
+    {
+        "id": 93,
+        "question": "একটি ফাংশন f : R → R, f(x) = 2x + 1 দ্বারা সংজ্ঞায়িত হলে f⁻¹(2)-এর মান কত?",
+        "options": [
+            "ক. 0",
+            "খ. 1/2",
+            "গ. 5",
+            "ঘ. 1"
+        ],
+        "correct": 1,
+        "explanation": "y=2x+1 হলে y=2 বসিয়ে 2=2x+1 ⇒ x=1/2। তাই f⁻¹(2)=1/2।"
+    },
+    {
+        "id": 94,
+        "question": "ABC ত্রিভুজে B কোণের পরিমাণ ৪৮° এবং AB = AC। যদি E এবং F, AB এবং AC-কে এমনভাবে ছেদ করে যেন EF || BC হয়, তাহলে ∠A + ∠AFE = ?",
+        "options": [
+            "ক. ১৩২°",
+            "খ. ১৮০°",
+            "গ. ১০৮°",
+            "ঘ. ১৬০°"
+        ],
+        "correct": 0,
+        "explanation": "AB=AC হওয়ায় B ও C কোণ সমান। তাই A = 180°−48°−48° = 84°। EF || BC হওয়ার কারণে সংশ্লিষ্ট কোণ ব্যবহার করে ∠AFE = 48°। অতএব মোট = 84°+48° = 132°।"
+    },
+    {
+        "id": 95,
+        "question": "যদি প্রদত্ত সমীকরণটি সত্য হয়, তাহলে নিচের x-এর মান কত?",
+        "options": [
+            "ক. 0.1",
+            "খ. 0.001",
+            "গ. 1/10000",
+            "ঘ. 0.001"
+        ],
+        "correct": 0,
+        "explanation": "মূল Biddabari পেজে প্রশ্নটির গাণিতিক অংশটি ওয়েব টেক্সটে সঠিকভাবে প্রদর্শিত হয়নি; সেখানে উত্তর 0.1 দেওয়া আছে। তাই মূল সমীকরণ ছাড়া নির্ভুল ধাপ দেখানো সম্ভব নয়।"
+    },
+    {
+        "id": 96,
+        "question": "i⁻⁴⁹-এর মান কত?",
+        "options": [
+            "ক. −1",
+            "খ. i",
+            "গ. 1",
+            "ঘ. −i"
+        ],
+        "correct": 3,
+        "explanation": "i-এর ঘাত 4 পরপর পুনরাবৃত্ত হয়। −49 ≡ 3 (mod 4), তাই i⁻⁴⁹ = i³ = −i।"
+    },
+    {
+        "id": 97,
+        "question": "যদি −5, p, 1, 16 সমান্তর অনুক্রমে থাকে, তাহলে p ও q-এর মান হবে যথাক্রমে—",
+        "options": [
+            "ক. −2, 9",
+            "খ. 2, 9",
+            "গ. −2, −9",
+            "ঘ. 2, −9"
+        ],
+        "correct": 1,
+        "explanation": "−5, p, 1, q, 16 যদি সমান্তর অনুক্রম হয়, সাধারণ অন্তর 7। তাই p=2 এবং q=9।"
+    },
+    {
+        "id": 98,
+        "question": "১৮ এবং ৭২-এর গুণোত্তর গড় কোনটি?",
+        "options": [
+            "ক. ৪৫",
+            "খ. ১২৯৬",
+            "গ. ৩৬",
+            "ঘ. ৪"
+        ],
+        "correct": 2,
+        "explanation": "গুণোত্তর গড় = √(18×72) = √1296 = 36।"
+    },
+    {
+        "id": 99,
+        "question": "মূল Biddabari পেজে ৯৯ নম্বর প্রশ্নটি দেওয়া নেই।",
+        "options": [
+            "ক. তথ্য অনুপস্থিত",
+            "খ. তথ্য অনুপস্থিত",
+            "গ. তথ্য অনুপস্থিত",
+            "ঘ. তথ্য অনুপস্থিত"
+        ],
+        "correct": 0,
+        "explanation": "মূল উৎসে এই প্রশ্নটি অনুপস্থিত।"
+    },
+    {
+        "id": 100,
+        "question": "একটি সুষম বহুভুজের প্রত্যেকটি কোণ ১৬৮°। এর বাহুসংখ্যা কত?",
+        "options": [
+            "ক. ৩০",
+            "খ. ২০",
+            "গ. ১৮",
+            "ঘ. ১০"
+        ],
+        "correct": 0,
+        "explanation": "সষম বহুভুজের একটি বহিঃকোণ = 180°−168° = 12°। তাই বাহুর সংখ্যা = 360°÷12° = 30।"
+    },
+    
   
