@@ -2,7 +2,7 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>All In One Job Solution</title>
     
     <!-- SolaimanLipi Correct Web Font CDN -->
@@ -37,7 +37,7 @@
             margin: 0;
             padding: 0;
             font-family: 'SolaimanLipi', sans-serif;
-            transition: background-color 0.2s, color 0.2s;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
@@ -51,7 +51,7 @@
         header {
             background-color: var(--header-bg);
             color: var(--header-text);
-            padding: 14px 16px;
+            padding: 12px 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -61,13 +61,17 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         header h1 {
-            font-size: 21px;
+            font-size: 18px;
             font-weight: 500;
             letter-spacing: 0.3px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 65%;
         }
         .header-actions {
             display: flex;
-            gap: 14px;
+            gap: 12px;
             align-items: center;
         }
         .icon-btn {
@@ -76,18 +80,19 @@
             color: white;
             font-size: 20px;
             cursor: pointer;
+            padding: 4px;
         }
 
         /* সাইড ড্রয়ার সেটিংস */
         .side-drawer {
             position: fixed;
             top: 0;
-            left: -270px;
-            width: 260px;
+            left: -280px;
+            width: 270px;
             height: 100%;
             background-color: var(--drawer-bg);
             box-shadow: 2px 0 10px rgba(0,0,0,0.15);
-            transition: 0.3s ease;
+            transition: left 0.3s ease;
             z-index: 200;
             padding-top: 20px;
         }
@@ -97,10 +102,11 @@
         .drawer-header {
             padding: 0 20px 15px;
             border-bottom: 1px solid var(--border-color);
-            font-size: 19px;
+            font-size: 18px;
             color: var(--text-color);
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
         .drawer-menu {
             list-style: none;
@@ -108,7 +114,7 @@
         }
         .drawer-menu li {
             padding: 14px 20px;
-            font-size: 18px;
+            font-size: 17px;
             color: var(--text-color);
             border-bottom: 1px solid var(--border-color);
             cursor: pointer;
@@ -124,16 +130,17 @@
             z-index: 150;
         }
 
-        /* মূল কন্টেইনার */
+        /* মূল কন্টেইনার - মোবাইল রেসপন্সিভ মার্জিন */
         .container {
-            padding: 16px;
+            padding: 12px;
             max-width: 600px;
             margin: 0 auto;
+            width: 100%;
         }
         .section-title {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 500;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             color: var(--text-color);
             border-left: 4px solid var(--accent-color);
             padding-left: 10px;
@@ -146,28 +153,30 @@
         }
         .box-card {
             background-color: var(--card-bg);
-            padding: 14px 18px;
+            padding: 14px 16px;
             border-radius: 8px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            font-size: 19px;
-            font-weight: 400; /* সোলাইমান লিপির স্বাভাবিক সুন্দর লুক */
+            font-size: 17px;
+            font-weight: 400;
             color: var(--text-color);
             cursor: pointer;
             border: 1px solid var(--border-color);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            line-height: 1.5;
+            line-height: 1.4;
+            word-break: break-word;
         }
         
         .box-card:active {
-            scale: 0.99;
             background-color: var(--option-bg);
         }
 
         .arrow-icon {
-            font-size: 16px;
+            font-size: 14px;
             color: #64748b;
+            flex-shrink: 0;
+            margin-left: 8px;
         }
 
         /* ড্রপডাউন লিংক ডিজাইন */
@@ -182,11 +191,12 @@
             margin-bottom: 8px;
             max-height: 280px;
             overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
         .dropdown-item {
             display: block;
-            padding: 12px 20px;
-            font-size: 18px;
+            padding: 12px 18px;
+            font-size: 16px;
             border-bottom: 1px solid var(--border-color);
             color: var(--text-color);
             text-decoration: none;
@@ -202,11 +212,12 @@
         .bottom-nav {
             position: fixed;
             bottom: 0;
+            left: 0;
             width: 100%;
             background-color: var(--card-bg);
             display: flex;
             justify-content: space-around;
-            padding: 10px 0 6px;
+            padding: 8px 0 6px;
             border-top: 1px solid var(--border-color);
             box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
             z-index: 90;
@@ -214,14 +225,14 @@
         .nav-item {
             text-align: center;
             color: #64748b;
-            font-size: 14px;
+            font-size: 13px;
             cursor: pointer;
             flex: 1;
         }
         .nav-item span {
             font-size: 18px;
             display: block;
-            margin-bottom: 2px;
+            margin-bottom: 1px;
         }
         .nav-item.active {
             color: var(--accent-color);
@@ -260,11 +271,11 @@
         <h2 class="section-title">পরীক্ষা ক্যাটাগরি</h2>
         <div class="box-grid">
             <div class="box-card" onclick="toggleBcsDropdown()">
-                <span>১. BCS প্রিলিমিনারি টেস্ট (১০ম - ৪৫তম)</span> 
+                <span>১. BCS প্রিলিমিনারি টেস্ট (৪৬ম - ১০ম)</span> 
                 <span class="arrow-icon" id="bcs-arrow">▼</span>
             </div>
 
-            <!-- আলাদা ফাইল লিংক করা ড্রপডাউন -->
+            <!-- ড্রপডাউন তালিকা (বড় থেকে ছোট ক্রমানুসারে তৈরি হবে) -->
             <div class="dropdown-container" id="bcs-dropdown-list"></div>
 
             <div class="box-card" onclick="alert('শীঘ্রই আসছে!')">২. BCS লিখিত (বাংলা) <span class="arrow-icon">➔</span></div>
@@ -325,21 +336,20 @@
             return num.toString().split('').map(n => bnNumbers[n]).join('');
         }
 
-                window.onload = function() {
+        // ৪৬তম থেকে ১০ম পর্যন্ত বড় থেকে ছোট ক্রমানুসারে জেনারেট করা
+        window.onload = function() {
             var dropdown = document.getElementById('bcs-dropdown-list');
-            for (var i = 10; i <= 45; i++) {
+            for (var i = 46; i >= 10; i--) {
                 var item = document.createElement('a');
                 item.className = 'dropdown-item';
                 var banglaNum = toBanglaNum(i);
                 item.innerText = banglaNum + 'তম BCS প্রিলিমিনারি টেস্ট';
                 
-                                // ৪০তম বিসিএস-এর জন্য আমাদের তৈরি করা সুন্দর ডিজাইন পেজটি লিংক করে দেওয়া
                 if (i === 40) {
                     item.setAttribute('href', 'bcs40.html');
                 } else {
                     item.setAttribute('href', 'bcs' + i + '.html');
                 }
-
                 
                 dropdown.appendChild(item);
             }
