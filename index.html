@@ -270,6 +270,46 @@
             text-align: center;
         }
 
+        /* দ্বিতীয় ছবির স্টাইলে ছোট ছোট "Last Read" চিপস/বাটন স্টাইল */
+        .last-read-section {
+            margin-bottom: 16px;
+        }
+        .last-read-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+        .last-read-chips-container {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 4px;
+            scrollbar-width: none; /* ফায়ারফক্সে স্ক্রলবার হাইড */
+        }
+        .last-read-chips-container::-webkit-scrollbar {
+            display: none; /* ক্রোম/সাফারিতে স্ক্রলবার হাইড */
+        }
+        .last-read-chip {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #10b981;
+            font-weight: 500;
+            cursor: pointer;
+            white-space: nowrap;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-shrink: 0;
+        }
+        .last-read-chip:active {
+            background-color: var(--option-bg);
+        }
+
         /* কুইক হাইলাইট কার্ড */
         .quick-highlights {
             display: grid;
@@ -475,6 +515,16 @@
             <div class="streak-badge">৩ দিন</div>
         </div>
 
+        <!-- দ্বিতীয় ছবির স্টাইলে ছোট ছোট চিপস/বাটন "Last Read" সেকশন -->
+        <div class="last-read-section">
+            <h3 class="last-read-title">Last Read</h3>
+            <div class="last-read-chips-container" id="lastReadContainer">
+                <div class="last-read-chip" onclick="goToLastRead()">
+                    📌 <span id="last-read-label">কোনো রেকর্ড নেই</span>
+                </div>
+            </div>
+        </div>
+
         <!-- কুইক হাইলাইট কার্ড -->
         <div class="quick-highlights">
             <div class="highlight-card searchable" onclick="showView('exam-topics-view')">
@@ -606,15 +656,35 @@
                 var banglaNum = toBanglaNum(i);
                 item.innerText = '• ' + banglaNum + 'তম BCS প্রিলিমিনারি টেস্ট';
                 
-                if (i === 40) {
-                    item.setAttribute('href', 'bcs40.html');
-                } else {
-                    item.setAttribute('href', 'bcs' + i + '.html');
-                }
+                let pageFile = (i === 40) ? 'bcs40.html' : ('bcs' + i + '.html');
+                let pageTitle = banglaNum + 'তম BCS';
+                
+                // লিংক ক্লিক করার সময় লাস্ট রেড ডেটা সেভ করা
+                item.setAttribute('href', pageFile);
+                item.onclick = function(e) {
+                    localStorage.setItem('bcs_last_page', pageFile);
+                    localStorage.setItem('bcs_last_title', pageTitle);
+                };
                 
                 dropdown.appendChild(item);
             }
+
+            // হোম পেজে ছোট লাস্ট রেড চিপসের টেক্সট আপডেট করা
+            let savedTitle = localStorage.getItem('bcs_last_title');
+            if (savedTitle) {
+                document.getElementById('last-read-label').innerText = savedTitle;
+            }
         };
+
+        // লাস্ট রেড পেজে রিডাইরেক্ট করার ফাংশন
+        function goToLastRead() {
+            let lastPage = localStorage.getItem('bcs_last_page');
+            if (lastPage) {
+                window.location.href = lastPage;
+            } else {
+                alert('দুঃখিত, পূর্বে পড়ার কোনো রেকর্ড পাওয়া যায়নি! যেকোনো একটি বিসিএস টেস্ট ওপেন করুন।');
+            }
+        }
 
         // ড্রপডাউন টগল ফাংশন
         function toggleDropdown(listId, arrowId) {
