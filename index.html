@@ -19,6 +19,7 @@
             --option-bg: #f8fafc;
             --drawer-bg: #ffffff;
             --accent-color: #2563eb;
+            --banner-bg: linear-gradient(135deg, #2563eb, #1d4ed8);
             --font-size-base: 17px;
         }
 
@@ -31,6 +32,7 @@
             --border-color: #334155;
             --option-bg: #1e293b;
             --drawer-bg: #1e293b;
+            --banner-bg: linear-gradient(135deg, #1e293b, #0f172a);
         }
 
         /* ফন্ট সাইজ ক্লাস */
@@ -238,6 +240,63 @@
             margin: 0 auto;
             width: 100%;
         }
+
+        /* ডেইলি স্ট্রিক ও নোটিশ ব্যানার */
+        .streak-banner {
+            background: var(--banner-bg);
+            color: #ffffff;
+            padding: 14px 16px;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .streak-banner h3 {
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+        .streak-banner p {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+        .streak-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* কুইক হাইলাইট সেকশন (কারেন্ট অ্যাফেয়ার্স ও লাইভ এক্সাম) */
+        .quick-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .highlight-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .highlight-card span {
+            font-size: 22px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .highlight-card h4 {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
         .section-title {
             font-size: 18px;
             font-weight: 500;
@@ -399,13 +458,35 @@
         <!-- সাধারণ মেনু -->
         <ul class="drawer-menu">
             <li onclick="alert('All In One Job Solution অ্যাপে আপনাকে স্বাগতম!')">📌 পরিচিতি</li>
+            <li onclick="alert('বুকমার্ক করা প্রশ্ন বা টপিকসগুলো এখানে সংরক্ষিত থাকবে।')">⭐ সেভ করা প্রশ্ন (বুকমার্ক)</li>
             <li onclick="alert('যোগাযোগ: support@job-solution.com')">💬 যোগাযোগ করুন</li>
-            <li onclick="alert('সহায়তার জন্য মেনু অপশনগুলো ব্যবহার করুন।')">❓ সাহায্য ও সহায়তা</li>
         </ul>
     </div>
 
     <!-- ১. হোম পেজ -->
     <div class="container" id="home-view">
+        
+        <!-- ডেইলি স্ট্রিক ও রিওয়ার্ড ব্যানার -->
+        <div class="streak-banner">
+            <div>
+                <h3>🔥 পড়ার ধারা (Streak)</h3>
+                <p>নিয়মিত পড়াশোনা চালিয়ে যান, লক্ষ্য পূরণ করুন!</p>
+            </div>
+            <div class="streak-badge">৩ দিন</div>
+        </div>
+
+        <!-- কুইক হাইলাইট কার্ড (কারেন্ট অ্যাফেয়ার্স ও লাইভ এক্সাম) -->
+        <div class="quick-highlights">
+            <div class="highlight-card searchable" onclick="showView('exam-topics-view')">
+                <span>⚡</span>
+                <h4>লাইভ এক্সাম</h4>
+            </div>
+            <div class="highlight-card searchable" onclick="alert('চলতি মাসের কারেন্ট অ্যাফেয়ার্স শীঘ্রই যুক্ত করা হবে!')">
+                <span>📰</span>
+                <h4>কারেন্ট অ্যাফেয়ার্স</h4>
+            </div>
+        </div>
+
         <h2 class="section-title">পরীক্ষা ক্যাটাগরি</h2>
         <div class="box-grid" id="main-card-grid">
             <div class="box-card searchable" onclick="toggleBcsDropdown()">
@@ -413,7 +494,7 @@
                 <span class="arrow-icon" id="bcs-arrow">▼</span>
             </div>
 
-            <!-- ড্রপডাউন তালিকা -->
+            <!-- ড্রপডাউন তালিকা (৪৬ থেকে ১০ ক্রম) -->
             <div class="dropdown-container" id="bcs-dropdown-list"></div>
 
             <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">২. BCS লিখিত (বাংলা) <span class="arrow-icon">➔</span></div>
@@ -474,6 +555,7 @@
             return num.toString().split('').map(n => bnNumbers[n]).join('');
         }
 
+        // ৪৬তম থেকে ১০ম পর্যন্ত বড় থেকে ছোট ক্রমানুসারে জেনারেট করা
         window.onload = function() {
             var dropdown = document.getElementById('bcs-dropdown-list');
             for (var i = 46; i >= 10; i--) {
