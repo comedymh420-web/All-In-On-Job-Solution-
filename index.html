@@ -270,7 +270,7 @@
             text-align: center;
         }
 
-        /* কুইক হাইলাইট সেকশন (কারেন্ট অ্যাফেয়ার্স ও লাইভ এক্সাম) */
+        /* কুইক হাইলাইট কার্ড */
         .quick-highlights {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -475,7 +475,7 @@
             <div class="streak-badge">৩ দিন</div>
         </div>
 
-        <!-- কুইক হাইলাইট কার্ড (কারেন্ট অ্যাফেয়ার্স ও লাইভ এক্সাম) -->
+        <!-- কুইক হাইলাইট কার্ড -->
         <div class="quick-highlights">
             <div class="highlight-card searchable" onclick="showView('exam-topics-view')">
                 <span>⚡</span>
@@ -487,25 +487,67 @@
             </div>
         </div>
 
-        <h2 class="section-title">পরীক্ষা ক্যাটাগরি</h2>
+        <h2 class="section-title">প্রফেসরস স্টাইল সূচিপত্র ও ক্যাটাগরি</h2>
         <div class="box-grid" id="main-card-grid">
-            <div class="box-card searchable" onclick="toggleBcsDropdown()">
-                <span>১. BCS প্রিলিমিনারি টেস্ট (৪৬ম - ১০ম)</span> 
+            
+            <!-- ১. বিসিএস প্রিলিমিনারি টেস্ট -->
+            <div class="box-card searchable" onclick="toggleDropdown('bcs-dropdown-list', 'bcs-arrow')">
+                <span>📚 ১. BCS প্রিলিমিনারি টেস্ট (৪৬ম - ১০ম)</span> 
                 <span class="arrow-icon" id="bcs-arrow">▼</span>
             </div>
+            <div class="dropdown-container" id="bcs-dropdown-list">
+                <!-- জাভাস্ক্রিপ্ট দিয়ে ৪৬ থেকে ১০ ড্রপডাউন এখানে লোড হবে -->
+            </div>
 
-            <!-- ড্রপডাউন তালিকা (৪৬ থেকে ১০ ক্রম) -->
-            <div class="dropdown-container" id="bcs-dropdown-list"></div>
+            <!-- ২. বিসিএস লিখিত সিরিজ -->
+            <div class="box-card searchable" onclick="toggleDropdown('bcs-written-list', 'written-arrow')">
+                <span>📝 ২. BCS লিখিত ও ডাইজেস্ট সিরিজ</span> 
+                <span class="arrow-icon" id="written-arrow">▼</span>
+            </div>
+            <div class="dropdown-container" id="bcs-written-list">
+                <a href="#" class="dropdown-item searchable-sub">• বিসিএস লিখিত বাংলা ও ইংরেজি</a>
+                <a href="#" class="dropdown-item searchable-sub">• বাংলাদেশ ও আন্তর্জাতিক বিষয়াবলি</a>
+                <a href="#" class="dropdown-item searchable-sub">• গাণিতিক যুক্তি ও মানসিক দক্ষতা</a>
+                <a href="#" class="dropdown-item searchable-sub">• সাধারণ বিজ্ঞান ও প্রযুক্তি</a>
+                <a href="#" class="dropdown-item searchable-sub">• বিসিএস ভাইভা সহায়ক</a>
+            </div>
 
-            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">২. BCS লিখিত (বাংলা) <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৩. BCS ইংরেজি <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৪. BCS লিখিত (বাংলাদেশ বিষয়াবলি) <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৫. BCS লিখিত (আন্তর্জাতিক বিষয়াবলি) <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৬. BCS লিখিত (গাণিতিক যুক্তি ও মানসিক দক্ষতা) <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৭. BCS লিখিত (সাধারণ বিজ্ঞান ও প্রযুক্তি) <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৮. পিএসসি ও অন্যান্য নিয়োগ পরীক্ষা <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৯. জুডিশিয়াল সার্ভিস সহকারী জজ নিয়োগ পরীক্ষা <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">১০. প্রাথমিক বিদ্যালয় সহকারী ও প্রধান শিক্ষক নিয়োগ <span class="arrow-icon">➔</span></div>
+            <!-- ৩. ব্যাংক জব সলিউশন -->
+            <div class="box-card searchable" onclick="toggleDropdown('bank-list', 'bank-arrow')">
+                <span>🏦 ৩. ব্যাংক জব ও ম্যাথ সলিউশন</span> 
+                <span class="arrow-icon" id="bank-arrow">▼</span>
+            </div>
+            <div class="dropdown-container" id="bank-list">
+                <a href="#" class="dropdown-item searchable-sub">• Bank Math Solution</a>
+                <a href="#" class="dropdown-item searchable-sub">• Key to Govt. & Private Bank Job</a>
+                <a href="#" class="dropdown-item searchable-sub">• Bankers Recruitment Text (সকল ব্যাংক)</a>
+                <a href="#" class="dropdown-item searchable-sub">• সোনালী, জনতা, কৃষি ও বাংলাদেশ ব্যাংক নিয়োগ</a>
+            </div>
+
+            <!-- ৪. শিক্ষক নিবন্ধন ও প্রাথমিক নিয়োগ -->
+            <div class="box-card searchable" onclick="toggleDropdown('teacher-list', 'teacher-arrow')">
+                <span>👨‍🏫 ৪. শিক্ষক নিবন্ধন ও প্রাথমিক নিয়োগ</span> 
+                <span class="arrow-icon" id="teacher-arrow">▼</span>
+            </div>
+            <div class="dropdown-container" id="teacher-list">
+                <a href="#" class="dropdown-item searchable-sub">• প্রাথমিক সহকারী ও প্রধান শিক্ষক নিয়োগ</a>
+                <a href="#" class="dropdown-item searchable-sub">• বেসরকারি শিক্ষক নিবন্ধন (স্কুল ও কলেজ পর্যায়)</a>
+                <a href="#" class="dropdown-item searchable-sub">• মাধ্যমিক শিক্ষক নিয়োগ সহায়তা</a>
+            </div>
+
+            <!-- ৫. অন্যান্য সরকারি ও অধিদপ্তর নিয়োগ -->
+            <div class="box-card searchable" onclick="toggleDropdown('other-job-list', 'other-arrow')">
+                <span>🎯 ৫. পিএসসি নন-ক্যাডার ও অন্যান্য অধিদপ্তর</span> 
+                <span class="arrow-icon" id="other-arrow">▼</span>
+            </div>
+            <div class="dropdown-container" id="other-job-list">
+                <a href="#" class="dropdown-item searchable-sub">• পিএসসি নন-ক্যাডার জব সলিউশন</a>
+                <a href="#" class="dropdown-item searchable-sub">• জুডিশিয়াল সার্ভিস সহকারী জজ নিয়োগ</a>
+                <a href="#" class="dropdown-item searchable-sub">• খাদ্য অধিদপ্তর, স্বাস্থ্য সহকারী ও পরিবার পরিকল্পনা</a>
+                <a href="#" class="dropdown-item searchable-sub">• সাব-ইন্সপেক্টর ও পুলিশ সার্জেন্ট নিয়োগ</a>
+                <a href="#" class="dropdown-item searchable-sub">• সিনিয়র স্টাফ নার্স ও অন্যান্য স্কেল সহায়তা</a>
+            </div>
+
         </div>
     </div>
 
@@ -513,8 +555,8 @@
     <div class="container" id="topics-view" style="display: none;">
         <h2 class="section-title">বিষয়ভিত্তিক তালিকা (Topics)</h2>
         <div class="box-grid">
-            <div class="box-card searchable">১. বাংলা <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">২. ইংরেজি <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">১. বাংলা সাহিত্য ও ব্যাকরণ <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">২. ইংরেজি গ্রাম ও লিটারেচার <span class="arrow-icon">➔</span></div>
             <div class="box-card searchable">৩. বাংলাদেশ বিষয়াবলি <span class="arrow-icon">➔</span></div>
             <div class="box-card searchable">৪. আন্তর্জাতিক বিষয়াবলি <span class="arrow-icon">➔</span></div>
             <div class="box-card searchable">৫. সাধারণ বিজ্ঞান ও প্রযুক্তি <span class="arrow-icon">➔</span></div>
@@ -562,7 +604,7 @@
                 var item = document.createElement('a');
                 item.className = 'dropdown-item searchable-sub';
                 var banglaNum = toBanglaNum(i);
-                item.innerText = banglaNum + 'তম BCS প্রিলিমিনারি টেস্ট';
+                item.innerText = '• ' + banglaNum + 'তম BCS প্রিলিমিনারি টেস্ট';
                 
                 if (i === 40) {
                     item.setAttribute('href', 'bcs40.html');
@@ -574,9 +616,10 @@
             }
         };
 
-        function toggleBcsDropdown() {
-            var list = document.getElementById('bcs-dropdown-list');
-            var arrow = document.getElementById('bcs-arrow');
+        // ড্রপডাউন টগল ফাংশন
+        function toggleDropdown(listId, arrowId) {
+            var list = document.getElementById(listId);
+            var arrow = document.getElementById(arrowId);
             if (list.style.display === 'block') {
                 list.style.display = 'none';
                 arrow.innerText = '▼';
