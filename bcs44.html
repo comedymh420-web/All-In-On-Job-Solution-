@@ -193,6 +193,24 @@
     </div>
 
     <script>
+        // ইউজার যখন স্ক্রোল করবেন, বর্তমান পেজের পজিশন ব্রাউজারে সেভ হবে
+window.addEventListener('scroll', function() {
+    localStorage.setItem('scroll_pos_' + window.location.pathname, window.scrollY);
+});
+
+// স্ক্রোল পজিশন ফিরিয়ে আনার ফাংশন
+function restoreScrollPosition() {
+    let savedScroll = localStorage.getItem('scroll_pos_' + window.location.pathname);
+    if (savedScroll) {
+        setTimeout(function() {
+            window.scrollTo({
+                top: parseInt(savedScroll),
+                behavior: 'smooth'
+            });
+        }, 300); 
+    }
+}
+
         async function loadQuestions() {
             const container = document.getElementById('quiz-container');
             try {
@@ -204,7 +222,9 @@
                 
                 container.innerHTML = '';
 
-                questions.forEach((q, index) => {
+                questions.forEach((q, index) => restoreScrollPosition();
+
+                    {
                     const card = document.createElement('div');
                     card.className = 'question-card';
 
