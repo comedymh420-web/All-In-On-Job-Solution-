@@ -19,6 +19,7 @@
             --option-bg: #f8fafc;
             --drawer-bg: #ffffff;
             --accent-color: #2563eb;
+            --font-size-base: 17px;
         }
 
         body.dark-mode {
@@ -30,6 +31,19 @@
             --border-color: #334155;
             --option-bg: #1e293b;
             --drawer-bg: #1e293b;
+        }
+
+        /* ফন্ট সাইজ ক্লাস */
+        body.font-small { --font-size-base: 14px; }
+        body.font-medium { --font-size-base: 17px; }
+        body.font-large { --font-size-base: 20px; }
+
+        /* কপি কন্ট্রোল */
+        body.no-copy {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
         * {
@@ -44,6 +58,7 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             padding-bottom: 75px;
+            font-size: var(--font-size-base);
             -webkit-font-smoothing: antialiased;
         }
         
@@ -83,42 +98,128 @@
             padding: 4px;
         }
 
+        /* সার্চ বার পপআপ */
+        .search-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--card-bg);
+            padding: 12px 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 250;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-modal input {
+            flex: 1;
+            padding: 8px 12px;
+            font-size: 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            outline: none;
+        }
+
         /* সাইড ড্রয়ার সেটিংস */
         .side-drawer {
             position: fixed;
             top: 0;
-            left: -280px;
-            width: 270px;
+            left: -300px;
+            width: 280px;
             height: 100%;
             background-color: var(--drawer-bg);
             box-shadow: 2px 0 10px rgba(0,0,0,0.15);
             transition: left 0.3s ease;
             z-index: 200;
-            padding-top: 20px;
+            overflow-y: auto;
         }
         .side-drawer.open {
             left: 0;
         }
         .drawer-header {
-            padding: 0 20px 15px;
+            padding: 18px 20px 15px;
             border-bottom: 1px solid var(--border-color);
             font-size: 18px;
+            font-weight: bold;
             color: var(--text-color);
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+        .drawer-section {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .drawer-section h4 {
+            font-size: 15px;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+        .setting-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .setting-row:last-child {
+            margin-bottom: 0;
+        }
         .drawer-menu {
             list-style: none;
-            padding: 10px 0;
         }
         .drawer-menu li {
             padding: 14px 20px;
-            font-size: 17px;
+            font-size: 16px;
             color: var(--text-color);
             border-bottom: 1px solid var(--border-color);
             cursor: pointer;
         }
+        .drawer-menu li:hover {
+            background-color: var(--option-bg);
+        }
+
+        /* সুইচ ডিজাইন */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 22px;
+        }
+        .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: #ccc;
+            transition: .3s;
+            border-radius: 22px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .3s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: var(--accent-color);
+        }
+        input:checked + .slider:before {
+            transform: translateX(22px);
+        }
+
         .overlay {
             display: none;
             position: fixed;
@@ -130,7 +231,7 @@
             z-index: 150;
         }
 
-        /* মূল কন্টেইনার - মোবাইল রেসপন্সিভ মার্জিন */
+        /* মূল কন্টেইনার */
         .container {
             padding: 12px;
             max-width: 600px;
@@ -156,7 +257,6 @@
             padding: 14px 16px;
             border-radius: 8px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            font-size: 17px;
             font-weight: 400;
             color: var(--text-color);
             cursor: pointer;
@@ -196,7 +296,6 @@
         .dropdown-item {
             display: block;
             padding: 12px 18px;
-            font-size: 16px;
             border-bottom: 1px solid var(--border-color);
             color: var(--text-color);
             text-decoration: none;
@@ -240,7 +339,7 @@
         }
     </style>
 </head>
-<body>
+<body class="font-medium">
 
     <!-- হেডার -->
     <header>
@@ -248,45 +347,84 @@
         <h1>All In One Job Solution</h1>
         <div class="header-actions">
             <button class="icon-btn" id="theme-toggle" onclick="toggleDarkMode()">🌙</button>
-            <button class="icon-btn">🔍</button>
+            <button class="icon-btn" onclick="toggleSearchModal()">🔍</button>
         </div>
     </header>
 
+    <!-- সার্চ পপআপ -->
+    <div class="search-modal" id="searchModal">
+        <input type="text" id="searchInput" placeholder="এখানে সার্চ করুন..." onkeyup="filterItems()">
+        <button class="icon-btn" style="color:var(--text-color);" onclick="toggleSearchModal()">✕</button>
+    </div>
+
     <div class="overlay" id="overlay" onclick="toggleDrawer()"></div>
+    
+    <!-- সাইড ড্রয়ার ও সেটিংস প্যানেল -->
     <div class="side-drawer" id="sideDrawer">
         <div class="drawer-header">
             <span>মেনু ও সেটিংস</span>
             <span style="cursor:pointer;" onclick="toggleDrawer()">✕</span>
         </div>
+
+        <!-- অ্যাপ সেটিংস সেকশন -->
+        <div class="drawer-section">
+            <h4>⚙️ অ্যাপ সেটিংস</h4>
+            
+            <div class="setting-row">
+                <span>ফন্ট সাইজ</span>
+                <select id="fontSizeSelect" onchange="changeFontSize(this.value)" style="padding: 4px; border-radius: 4px; background:var(--bg-color); color:var(--text-color); border:1px solid var(--border-color);">
+                    <option value="small">ছোট</option>
+                    <option value="medium" selected>মাঝারি</option>
+                    <option value="large">বড়</option>
+                </select>
+            </div>
+
+            <div class="setting-row">
+                <span>স্ক্রিন আলো সচল রাখা</span>
+                <label class="switch">
+                    <input type="checkbox" id="wakeLockToggle" onchange="toggleWakeLock(this)">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-row">
+                <span>টেক্সট কপি ব্লক</span>
+                <label class="switch">
+                    <input type="checkbox" id="copyToggle" onchange="toggleCopyProtection(this)">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <!-- সাধারণ মেনু -->
         <ul class="drawer-menu">
-            <li>📌 পরিচিতি</li>
-            <li>⚙️ সেটিংস</li>
-            <li>💬 যোগাযোগ করুন</li>
-            <li>❓ সাহায্য ও সহায়তা</li>
+            <li onclick="alert('All In One Job Solution অ্যাপে আপনাকে স্বাগতম!')">📌 পরিচিতি</li>
+            <li onclick="alert('যোগাযোগ: support@job-solution.com')">💬 যোগাযোগ করুন</li>
+            <li onclick="alert('সহায়তার জন্য মেনু অপশনগুলো ব্যবহার করুন।')">❓ সাহায্য ও সহায়তা</li>
         </ul>
     </div>
 
     <!-- ১. হোম পেজ -->
     <div class="container" id="home-view">
         <h2 class="section-title">পরীক্ষা ক্যাটাগরি</h2>
-        <div class="box-grid">
-            <div class="box-card" onclick="toggleBcsDropdown()">
+        <div class="box-grid" id="main-card-grid">
+            <div class="box-card searchable" onclick="toggleBcsDropdown()">
                 <span>১. BCS প্রিলিমিনারি টেস্ট (৪৬ম - ১০ম)</span> 
                 <span class="arrow-icon" id="bcs-arrow">▼</span>
             </div>
 
-            <!-- ড্রপডাউন তালিকা (বড় থেকে ছোট ক্রমানুসারে তৈরি হবে) -->
+            <!-- ড্রপডাউন তালিকা -->
             <div class="dropdown-container" id="bcs-dropdown-list"></div>
 
-            <div class="box-card" onclick="alert('শীঘ্রই আসছে!')">২. BCS লিখিত (বাংলা) <span class="arrow-icon">➔</span></div>
-            <div class="box-card" onclick="alert('শীঘ্রই আসছে!')">৩. BCS ইংরেজি <span class="arrow-icon">➔</span></div>
-            <div class="box-card" onclick="alert('শীঘ্রই আসছে!')">৪. BCS লিখিত (বাংলাদেশ বিষয়াবলি) <span class="arrow-icon">➔</span></div>
-            <div class="box-card" onclick="alert('শীঘ্রই আসছে!')">৫. BCS লিখিত (আন্তর্জাতিক বিষয়াবলি) <span class="arrow-icon">➔</span></div>
-            <div class="box-card" onclick="alert('শীঘ্রই আসছে!')">৬. BCS লিখিত (গাণিতিক যুক্তি ও মানসিক দক্ষতা) <span class="arrow-icon">➔</span></div>
-            <div class="box-card" onclick="alert('শীঘ্রই আসছে!')">৭. BCS লিখিত (সাধারণ বিজ্ঞান ও প্রযুক্তি) <span class="arrow-icon">➔</span></div>
-            <div class="box-card" onclick="alert('শীঘ্রই আসছে!')">৮. পিএসসি ও অন্যান্য নিয়োগ পরীক্ষা <span class="arrow-icon">➔</span></div>
-            <div class="box-card" onclick="alert('শীঘ্রই আসছে!')">৯. জুডিশিয়াল সার্ভিস সহকারী জজ নিয়োগ পরীক্ষা <span class="arrow-icon">➔</span></div>
-            <div class="box-card" onclick="alert('শীঘ্রই আসছে!')">১০. প্রাথমিক বিদ্যালয় সহকারী ও প্রধান শিক্ষক নিয়োগ <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">২. BCS লিখিত (বাংলা) <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৩. BCS ইংরেজি <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৪. BCS লিখিত (বাংলাদেশ বিষয়াবলি) <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৫. BCS লিখিত (আন্তর্জাতিক বিষয়াবলি) <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৬. BCS লিখিত (গাণিতিক যুক্তি ও মানসিক দক্ষতা) <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৭. BCS লিখিত (সাধারণ বিজ্ঞান ও প্রযুক্তি) <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৮. পিএসসি ও অন্যান্য নিয়োগ পরীক্ষা <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">৯. জুডিশিয়াল সার্ভিস সহকারী জজ নিয়োগ পরীক্ষা <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable" onclick="alert('শীঘ্রই আসছে!')">১০. প্রাথমিক বিদ্যালয় সহকারী ও প্রধান শিক্ষক নিয়োগ <span class="arrow-icon">➔</span></div>
         </div>
     </div>
 
@@ -294,11 +432,11 @@
     <div class="container" id="topics-view" style="display: none;">
         <h2 class="section-title">বিষয়ভিত্তিক তালিকা (Topics)</h2>
         <div class="box-grid">
-            <div class="box-card">১. বাংলা <span class="arrow-icon">➔</span></div>
-            <div class="box-card">২. ইংরেজি <span class="arrow-icon">➔</span></div>
-            <div class="box-card">৩. বাংলাদেশ বিষয়াবলি <span class="arrow-icon">➔</span></div>
-            <div class="box-card">৪. আন্তর্জাতিক বিষয়াবলি <span class="arrow-icon">➔</span></div>
-            <div class="box-card">৫. সাধারণ বিজ্ঞান ও প্রযুক্তি <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">১. বাংলা <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">২. ইংরেজি <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">৩. বাংলাদেশ বিষয়াবলি <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">৪. আন্তর্জাতিক বিষয়াবলি <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">৫. সাধারণ বিজ্ঞান ও প্রযুক্তি <span class="arrow-icon">➔</span></div>
         </div>
     </div>
 
@@ -306,13 +444,13 @@
     <div class="container" id="exam-topics-view" style="display: none;">
         <h2 class="section-title">অনলাইন পরীক্ষা - বিষয় নির্বাচন করুন</h2>
         <div class="box-grid">
-            <div class="box-card">📚 ১. বাংলা অনলাইন পরীক্ষা <span class="arrow-icon">➔</span></div>
-            <div class="box-card">🇬🇧 ২. ইংরেজি অনলাইন পরীক্ষা <span class="arrow-icon">➔</span></div>
-            <div class="box-card">🇧🇩 ৩. বাংলাদেশ বিষয়াবলি <span class="arrow-icon">➔</span></div>
-            <div class="box-card">🌐 ৪. আন্তর্জাতিক বিষয়াবলি / সাধারণ জ্ঞান <span class="arrow-icon">➔</span></div>
-            <div class="box-card">🔢 ৫. গণিত ও মানসিক দক্ষতা <span class="arrow-icon">➔</span></div>
-            <div class="box-card">🔬 ৬. সাধারণ বিজ্ঞান <span class="arrow-icon">➔</span></div>
-            <div class="box-card">🎯 ৭. সব বিষয় (All Subjects) <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">📚 ১. বাংলা অনলাইন পরীক্ষা <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">🇬🇧 ২. ইংরেজি অনলাইন পরীক্ষা <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">🇧🇩 ৩. বাংলাদেশ বিষয়াবলি <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">🌐 ৪. আন্তর্জাতিক বিষয়াবলি / সাধারণ জ্ঞান <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">🔢 ৫. গণিত ও মানসিক দক্ষতা <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">🔬 ৬. সাধারণ বিজ্ঞান <span class="arrow-icon">➔</span></div>
+            <div class="box-card searchable">🎯 ৭. সব বিষয় (All Subjects) <span class="arrow-icon">➔</span></div>
         </div>
     </div>
 
@@ -336,12 +474,11 @@
             return num.toString().split('').map(n => bnNumbers[n]).join('');
         }
 
-        // ৪৬তম থেকে ১০ম পর্যন্ত বড় থেকে ছোট ক্রমানুসারে জেনারেট করা
         window.onload = function() {
             var dropdown = document.getElementById('bcs-dropdown-list');
             for (var i = 46; i >= 10; i--) {
                 var item = document.createElement('a');
-                item.className = 'dropdown-item';
+                item.className = 'dropdown-item searchable-sub';
                 var banglaNum = toBanglaNum(i);
                 item.innerText = banglaNum + 'তম BCS প্রিলিমিনারি টেস্ট';
                 
@@ -383,6 +520,65 @@
             } else {
                 drawer.classList.add('open');
                 overlay.style.display = 'block';
+            }
+        }
+
+        // সার্চ বার টগল ও ফিল্টার ফাংশন
+        function toggleSearchModal() {
+            var modal = document.getElementById('searchModal');
+            if (modal.style.display === 'flex') {
+                modal.style.display = 'none';
+                document.getElementById('searchInput').value = '';
+                filterItems();
+            } else {
+                modal.style.display = 'flex';
+                document.getElementById('searchInput').focus();
+            }
+        }
+
+        function filterItems() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let cards = document.querySelectorAll('.searchable');
+            
+            cards.forEach(card => {
+                let text = card.textContent || card.innerText;
+                if (text.toLowerCase().indexOf(input) > -1) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        // ফন্ট সাইজ পরিবর্তনের ফাংশন
+        function changeFontSize(size) {
+            document.body.classList.remove('font-small', 'font-medium', 'font-large');
+            document.body.classList.add('font-' + size);
+        }
+
+        // স্ক্রিন অলওয়েজ অন (Wake Lock API)
+        let wakeLock = null;
+        async function toggleWakeLock(checkbox) {
+            if (checkbox.checked) {
+                try {
+                    wakeLock = await navigator.wakeup?.request?.('screen') || await navigator.wakeLock?.request('screen');
+                } catch (err) {
+                    console.log('Wake Lock error:', err);
+                }
+            } else {
+                if (wakeLock) {
+                    wakeLock.release();
+                    wakeLock = null;
+                }
+            }
+        }
+
+        // টেক্সট কপি প্রোটেকশন
+        function toggleCopyProtection(checkbox) {
+            if (checkbox.checked) {
+                document.body.classList.add('no-copy');
+            } else {
+                document.body.classList.remove('no-copy');
             }
         }
 
