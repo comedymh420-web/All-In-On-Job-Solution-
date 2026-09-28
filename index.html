@@ -270,7 +270,7 @@
             text-align: center;
         }
 
-        /* দ্বিতীয় ছবির স্টাইলে ছোট ছোট "Last Read" চিপস/বাটন স্টাইল */
+        /* মাল্টিপল লাস্ট রিড চিপস স্টাইল */
         .last-read-section {
             margin-bottom: 16px;
         }
@@ -285,10 +285,10 @@
             gap: 10px;
             overflow-x: auto;
             padding-bottom: 4px;
-            scrollbar-width: none; /* ফায়ারফক্সে স্ক্রলবার হাইড */
+            scrollbar-width: none;
         }
         .last-read-chips-container::-webkit-scrollbar {
-            display: none; /* ক্রোম/সাফারিতে স্ক্রলবার হাইড */
+            display: none;
         }
         .last-read-chip {
             background-color: var(--card-bg);
@@ -515,13 +515,11 @@
             <div class="streak-badge">৩ দিন</div>
         </div>
 
-        <!-- দ্বিতীয় ছবির স্টাইলে ছোট ছোট চিপস/বাটন "Last Read" সেকশন -->
+        <!-- একাধিক লাস্ট রিড চিপস সেকশন (Last Read History) -->
         <div class="last-read-section">
-            <h3 class="last-read-title">Last Read</h3>
+            <h3 class="last-read-title">Last Read (সাম্প্রতিক পঠিত)</h3>
             <div class="last-read-chips-container" id="lastReadContainer">
-                <div class="last-read-chip" onclick="goToLastRead()">
-                    📌 <span id="last-read-label">কোনো রেকর্ড নেই</span>
-                </div>
+                <!-- ডায়নামিকভাবে পঠিত বিসিএসগুলো এখানে চিপস আকারে যুক্ত হবে -->
             </div>
         </div>
 
@@ -546,7 +544,7 @@
                 <span class="arrow-icon" id="bcs-arrow">▼</span>
             </div>
             <div class="dropdown-container" id="bcs-dropdown-list">
-                <!-- জাভাস্ক্রিপ্ট দিয়ে ৪৬ থেকে ১০ ড্রপডাউন এখানে লোড হবে -->
+                <!-- জেনারেট হবে -->
             </div>
 
             <!-- ২. বিসিএস লিখিত সিরিজ -->
@@ -647,7 +645,7 @@
             return num.toString().split('').map(n => bnNumbers[n]).join('');
         }
 
-        // ৪৬তম থেকে ১০ম পর্যন্ত বড় থেকে ছোট ক্রমানুসারে জেনারেট করা
+        // ৪৬তম থেকে ১০ম পর্যন্ত জেনারেট করা এবং মাল্টিপল হিস্ট্রি সেভ করার লজিক
         window.onload = function() {
             var dropdown = document.getElementById('bcs-dropdown-list');
             for (var i = 46; i >= 10; i--) {
@@ -659,31 +657,54 @@
                 let pageFile = (i === 40) ? 'bcs40.html' : ('bcs' + i + '.html');
                 let pageTitle = banglaNum + 'তম BCS';
                 
-                // লিংক ক্লিক করার সময় লাস্ট রেড ডেটা সেভ করা
                 item.setAttribute('href', pageFile);
                 item.onclick = function(e) {
-                    localStorage.setItem('bcs_last_page', pageFile);
-                    localStorage.setItem('bcs_last_title', pageTitle);
+                    saveToLastReadHistory(pageFile, pageTitle);
                 };
                 
                 dropdown.appendChild(item);
             }
 
-            // হোম পেজে ছোট লাস্ট রেড চিপসের টেক্সট আপডেট করা
-            let savedTitle = localStorage.getItem('bcs_last_title');
-            if (savedTitle) {
-                document.getElementById('last-read-label').innerText = savedTitle;
-            }
+            // হোম পেজে সাম্প্রতিক পঠিত চিপস রেন্ডার করা
+            renderLastReadChips();
         };
 
-        // লাস্ট রেড পেজে রিডাইরেক্ট করার ফাংশন
-        function goToLastRead() {
-            let lastPage = localStorage.getItem('bcs_last_page');
-            if (lastPage) {
-                window.location.href = lastPage;
-            } else {
-                alert('দুঃখিত, পূর্বে পড়ার কোনো রেকর্ড পাওয়া যায়নি! যেকোনো একটি বিসিএস টেস্ট ওপেন করুন।');
+        // মাল্টিপল হিস্ট্রি অ্যারেতে সেভ করার ফাংশন
+        function saveToLastReadHistory(url, title) {
+            let history = JSON.parse(localStorage.getItem('bcs_read_history')) || [];
+            
+            // যদি আগে থেকেই থাকে তবে সেটি রিমুভ করে নতুনটিকে সামনে নিয়ে আসা
+            history = history.filter(item => item.url !== url);
+            history.unshift({ url: url, title: title });
+            
+            // সর্বোচ্চ ৫টি হিস্ট্রি সেভ রাখবে
+            if (history.length > 5) {
+                history.pop();
             }
+            
+            localStorage.setItem('bcs_read_history', JSON.stringify(history));
+        }
+
+        // হোম পেজে চিপসগুলো দেখানোর ফাংশন
+        function renderLastReadChips() {
+            let container = document.getElementById('lastReadContainer');
+            let history = JSON.parse(localStorage.getItem('bcs_read_history')) || [];
+            
+            if (history.length === 0) {
+                container.innerHTML = `<div class="last-read-chip" style="color:var(--text-color); opacity:0.7;">📌 কোনো পড়ার রেকর্ড নেই</div>`;
+                return;
+            }
+
+            container.innerHTML = '';
+            history.forEach(item => {
+                let chip = document.createElement('div');
+                chip.className = 'last-read-chip';
+                chip.innerHTML = `📌 ${item.title}`;
+                chip.onclick = function() {
+                    window.location.href = item.url;
+                };
+                container.appendChild(chip);
+            });
         }
 
         // ড্রপডাউন টগল ফাংশন
@@ -718,7 +739,6 @@
             }
         }
 
-        // সার্চ বার টগল ও ফিল্টার ফাংশন
         function toggleSearchModal() {
             var modal = document.getElementById('searchModal');
             if (modal.style.display === 'flex') {
@@ -745,13 +765,11 @@
             });
         }
 
-        // ফন্ট সাইজ পরিবর্তনের ফাংশন
         function changeFontSize(size) {
             document.body.classList.remove('font-small', 'font-medium', 'font-large');
             document.body.classList.add('font-' + size);
         }
 
-        // স্ক্রিন অলওয়েজ অন (Wake Lock API)
         let wakeLock = null;
         async function toggleWakeLock(checkbox) {
             if (checkbox.checked) {
@@ -768,7 +786,6 @@
             }
         }
 
-        // টেক্সট কপি প্রোটেকশন
         function toggleCopyProtection(checkbox) {
             if (checkbox.checked) {
                 document.body.classList.add('no-copy');
