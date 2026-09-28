@@ -182,7 +182,7 @@
     </header>
 
     <div class="container">
-        <!-- হোমপেজে ফিরুন বাটন -->
+        <!-- হোম পেজে ফিরুন বাটন -->
         <a href="index.html" class="back-home-btn">← হোমপেজে ফিরুন</a>
         
         <div class="page-heading">৪০তম BCS প্রিলিমিনারি টেস্ট - প্রশ্ন ও সমাধান</div>
@@ -192,24 +192,24 @@
         </div>
     </div>
 
-    <script>
+        <script>
         // ১. ইউজার যখন স্ক্রোল করবেন, বর্তমান পেজের পজিশন ব্রাউজারে সেভ হবে
-window.addEventListener('scroll', function() {
-    localStorage.setItem('scroll_pos_' + window.location.pathname, window.scrollY);
-});
+        window.addEventListener('scroll', function() {
+            localStorage.setItem('scroll_pos_' + window.location.pathname, window.scrollY);
+        });
 
-// ২. JSON থেকে প্রশ্নগুলো লোড হয়ে পেজে দেখানোর ঠিক পরের লাইনে বা ফাংশনে এই ফাংশনটি কল করবেন
-function restoreScrollPosition() {
-    let savedScroll = localStorage.getItem('scroll_pos_' + window.location.pathname);
-    if (savedScroll) {
-        setTimeout(function() {
-            window.scrollTo({
-                top: parseInt(savedScroll),
-                behavior: 'smooth'
-            });
-        }, 300); 
-    }
-}
+        // ২. JSON থেকে প্রশ্নগুলো লোড হয়ে পেজে দেখানোর পর স্ক্রোল পজিশন ফিরিয়ে আনার ফাংশন
+        function restoreScrollPosition() {
+            let savedScroll = localStorage.getItem('scroll_pos_' + window.location.pathname);
+            if (savedScroll) {
+                setTimeout(function() {
+                    window.scrollTo({
+                        top: parseInt(savedScroll),
+                        behavior: 'smooth'
+                    });
+                }, 300); 
+            }
+        }
 
         async function loadQuestions() {
             const container = document.getElementById('quiz-container');
@@ -250,19 +250,10 @@ function restoreScrollPosition() {
                         }
                     });
                     card.appendChild(optionsList);
-        } // এটি অপশন লুপের সেকেন্ড ব্র্যাকেট বন্ধ হলো (ছবির ২৫০ নম্বর লাইনের কাছাকাছি)
-
-        // ঠিক এই জায়গায় (আনুমানিক ২৫১ বা ২৫২ নম্বর লাইনে) নিচের লাইনটি বসিয়ে দিন:
-        restoreScrollPosition();
-
-    } catch (error) {
-        container.innerHTML = `<div class="error">ডেটা লোড করতে সমস্যা হয়েছে!</div>`;
-    }
-}
 
                     // সঠিক উত্তর বক্স
                     if (correctOptText) {
-                        const correctBox = document.div || document.createElement('div');
+                        const correctBox = document.createElement('div');
                         correctBox.className = 'correct-answer-box';
                         correctBox.innerHTML = `✅ সঠিক উত্তর: ${correctOptText}`;
                         card.appendChild(correctBox);
@@ -297,12 +288,15 @@ function restoreScrollPosition() {
                     container.appendChild(card);
                 });
 
+                // সমস্ত প্রশ্ন রেন্ডার করা শেষ হওয়ার পর স্ক্রোল পজিশন রিস্টোর করবে
+                restoreScrollPosition();
+
             } catch (error) {
                 container.innerHTML = `<div class="error">প্রশ্ন লোড করতে সমস্যা হয়েছে: ${error.message}</div>`;
             }
         }
 
         window.onload = loadQuestions;
-    </script>
+        </script>
 </body>
 </html>
