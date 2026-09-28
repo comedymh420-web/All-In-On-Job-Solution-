@@ -193,6 +193,24 @@
     </div>
 
     <script>
+        // ১. ইউজার যখন স্ক্রোল করবেন, বর্তমান পেজের পজিশন ব্রাউজারে সেভ হবে
+window.addEventListener('scroll', function() {
+    localStorage.setItem('scroll_pos_' + window.location.pathname, window.scrollY);
+});
+
+// ২. JSON থেকে প্রশ্নগুলো লোড হয়ে পেজে দেখানোর ঠিক পরের লাইনে বা ফাংশনে এই ফাংশনটি কল করবেন
+function restoreScrollPosition() {
+    let savedScroll = localStorage.getItem('scroll_pos_' + window.location.pathname);
+    if (savedScroll) {
+        setTimeout(function() {
+            window.scrollTo({
+                top: parseInt(savedScroll),
+                behavior: 'smooth'
+            });
+        }, 300); 
+    }
+}
+
         async function loadQuestions() {
             const container = document.getElementById('quiz-container');
             try {
@@ -232,6 +250,15 @@
                         }
                     });
                     card.appendChild(optionsList);
+        } // এটি অপশন লুপের সেকেন্ড ব্র্যাকেট বন্ধ হলো (ছবির ২৫০ নম্বর লাইনের কাছাকাছি)
+
+        // ঠিক এই জায়গায় (আনুমানিক ২৫১ বা ২৫২ নম্বর লাইনে) নিচের লাইনটি বসিয়ে দিন:
+        restoreScrollPosition();
+
+    } catch (error) {
+        container.innerHTML = `<div class="error">ডেটা লোড করতে সমস্যা হয়েছে!</div>`;
+    }
+}
 
                     // সঠিক উত্তর বক্স
                     if (correctOptText) {
