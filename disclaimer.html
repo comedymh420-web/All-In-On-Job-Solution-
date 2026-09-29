@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ডিসক্লেইমার - All In One Job Solution</title>
+    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f6f9; --card-bg: #ffffff; --text-color: #212529;
+            --header-bg: #1a365d; --header-text: #ffffff; --border-color: #e2e8f0; --accent-color: #2563eb;
+        }
+        body.dark-mode {
+            --bg-color: #0f172a; --card-bg: #1e293b; --text-color: #f8fafc;
+            --header-bg: #0b1329; --header-text: #ffffff; --border-color: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'SolaimanLipi', sans-serif; -webkit-tap-highlight-color: transparent; }
+        body { background-color: var(--bg-color); color: var(--text-color); padding-bottom: 40px; font-size: 17px; line-height: 1.6; }
+        header { background-color: var(--header-bg); color: var(--header-text); padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        header h1 { font-size: 18px; font-weight: 500; }
+        .back-btn { background: none; border: none; color: white; font-size: 16px; cursor: pointer; text-decoration: none; }
+        .container { padding: 16px; max-width: 600px; margin: 0 auto; width: 100%; }
+        .card { background-color: var(--card-bg); border: 1px solid var(--border-color); padding: 20px; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-top: 15px; }
+        h2 { font-size: 18px; color: var(--accent-color); margin-bottom: 12px; border-left: 4px solid var(--accent-color); padding-left: 8px; }
+        h3 { font-size: 16px; margin-top: 15px; margin-bottom: 6px; }
+        p, ul { font-size: 15px; margin-bottom: 12px; opacity: 0.95; }
+        ul { padding-left: 20px; } li { margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← হোম</a>
+        <h1>ডিসক্লেইমার</h1>
+        <button style="background:none; border:none; color:white; font-size:20px; cursor:pointer;" onclick="toggleDarkMode()">🌙</button>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>দায়মুক্তি বা ডিসক্লেইমার (Disclaimer)</h2>
+            <p>এই অ্যাপে প্রকাশিত সমস্ত তথ্য, পিডিএফ এবং প্রশ্ন-উত্তরসমূহ শুধুমাত্র শিক্ষার্থীদের বিসিএস, ব্যাংক ও অন্যান্য চাকরির প্রস্তুতি এবং শিক্ষামূলক সহায়তার উদ্দেশ্যে প্রদান করা হয়েছে।</p>
+            <h3>১. কোনো সরকারি অ্যাপ নয়</h3>
+            <p>এটি কোনো সরকারি অফিসিয়াল অ্যাপ নয়। সরকারি চাকুরির চূড়ান্ত ও নির্ভুল তথ্যের জন্য অনুগ্রহ করে সংশ্লিষ্ট সরকারি দপ্তরের অফিশিয়াল ওয়েবসাইট বা নোটিশ বোর্ড ভিজিট করুন।</p>
+            <h3>২. তথ্যের উৎস</h3>
+            <p>এখানে থাকা বিভিন্ন লেকচার ও সাজেশন্স বিভিন্ন উন্মুক্ত শিক্ষামূলক উৎস এবং বিগত বছরের প্রশ্নপত্রের ওপর ভিত্তি করে সংকলিত হয়েছে। এর কোনো বাণিজ্যিক উদ্দেশ্য নেই।</p>
+        </div>
+    </div>
+    <script>function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }</script>
+</body>
+</html>
