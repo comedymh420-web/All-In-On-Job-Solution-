@@ -183,6 +183,11 @@
         .drawer-menu li:hover {
             background-color: var(--option-bg);
         }
+        .drawer-menu a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
 
         /* সুইচ ডিজাইন */
         .switch {
@@ -499,6 +504,8 @@
         <ul class="drawer-menu">
             <li onclick="alert('All In One Job Solution অ্যাপে আপনাকে স্বাগতম!')">📌 পরিচিতি</li>
             <li onclick="alert('বুকমার্ক করা প্রশ্ন বা টপিকসগুলো এখানে সংরক্ষিত থাকবে।')">⭐ সেভ করা প্রশ্ন (বুকমার্ক)</li>
+            <!-- প্রাইভেসি পলিসি পেজের গিটহাব লিংক (privacy.html) -->
+            <li><a href="privacy.html">🔒 প্রাইভেসি পলিসি</a></li>
             <li onclick="alert('যোগাযোগ: support@job-solution.com')">💬 যোগাযোগ করুন</li>
         </ul>
     </div>
@@ -539,18 +546,11 @@
             </div>
         </div>
 
-        <!-- কারেন্ট অ্যাফেয়ার্সের ড্রপডাউন লিস্ট (এখানে আপনার ড্রাইভ লিংকগুলো বসাবেন) -->
+        <!-- কারেন্ট অ্যাফেয়ার্সের ড্রপডাউন লিস্ট -->
         <div class="dropdown-container" id="current-affairs-list" style="margin-top: -10px; margin-bottom: 16px;">
-            
-            <!-- 📌 এখানে আগস্ট ২০২৬ কারেন্ট অ্যাফেয়ার্সের গুগল ড্রাইভ লিংক লিখবেন -->
             <a href="javascript:void(0);" onclick="openCustomModal('https://drive.google.com/file/d/10Uw_V4zq0OC2mbmkGr0isQd_mxXIDpyh/view')" class="dropdown-item searchable-sub">• কারেন্ট অ্যাফেয়ার্স আগস্ট ২০২৬ PDF</a>
-            
-            <!-- 📌 এখানে ফেব্রুয়ারি ২০২৬ কারেন্ট অ্যাফেয়ার্সের গুগল ড্রাইভ লিংক লিখবেন -->
             <a href="javascript:void(0);" onclick="openCustomModal('https://drive.google.com/file/d/1aVFRPpntGF5n9Fp_5kHrKsTVUQ-tKEcM/view?usp=drivesdk')" class="dropdown-item searchable-sub">• কারেন্ট অ্যাফেয়ার্স সেপ্টেম্বর ২০২৬ PDF</a>
-            
-            <!-- 📌 এখানে মার্চ ২০২৬ কারেন্ট অ্যাফেয়ার্সের গুগল ড্রাইভ লিংক লিখবেন -->
             <a href="javascript:void(0);" onclick="openCustomModal('আপনার_গুগল_ড্রাইভ_লিংক_এখানে_দিন')" class="dropdown-item searchable-sub">• কারেন্ট অ্যাফেয়ার্স অক্টোবর শীঘ্রই আসছে</a>
-            
         </div>
 
         <h2 class="section-title">সূচিপত্র ও ক্যাটাগরি</h2>
@@ -631,7 +631,7 @@
 
     <!-- ৩. অনলাইন এক্সাম পেজ -->
     <div class="container" id="exam-topics-view" style="display: none;">
-        <h2 class="section-title">অনলাইন পরীক্ষা - বিষয় নির্বাচন করুন</h2>
+        <h2 class="section-title">অনلاین পরীক্ষা - বিষয় নির্বাচন করুন</h2>
         <div class="box-grid">
             <div class="box-card searchable">📚 ১. বাংলা অনলাইন পরীক্ষা <span class="arrow-icon">➔</span></div>
             <div class="box-card searchable">🇬🇧 ২. ইংরেজি অনলাইন পরীক্ষা <span class="arrow-icon">➔</span></div>
@@ -679,7 +679,6 @@
             return num.toString().split('').map(n => bnNumbers[n]).join('');
         }
 
-        // ৪৬তম থেকে ১০ম পর্যন্ত জেনারেট করা এবং মাল্টিপল হিস্ট্রি সেভ করার লজিক
         window.onload = function() {
             var dropdown = document.getElementById('bcs-dropdown-list');
             for (var i = 46; i >= 10; i--) {
@@ -699,25 +698,19 @@
                 dropdown.appendChild(item);
             }
 
-            // হোম পেজে সাম্প্রতিক পঠিত চিপস রেন্ডার করা
             renderLastReadChips();
         };
 
-        // মাল্টিপল হিস্ট্রি অ্যারেতে সেভ করার ফাংশন
         function saveToLastReadHistory(url, title) {
             let history = JSON.parse(localStorage.getItem('bcs_read_history')) || [];
-            
             history = history.filter(item => item.url !== url);
             history.unshift({ url: url, title: title });
-            
             if (history.length > 5) {
                 history.pop();
             }
-            
             localStorage.setItem('bcs_read_history', JSON.stringify(history));
         }
 
-        // হোম পেজে চিপসগুলো দেখানোর ফাংশন
         function renderLastReadChips() {
             let container = document.getElementById('lastReadContainer');
             let history = JSON.parse(localStorage.getItem('bcs_read_history')) || [];
@@ -739,7 +732,6 @@
             });
         }
 
-        // ড্রপডাউন টগল ফাংশন
         function toggleDropdown(listId, arrowId) {
             var list = document.getElementById(listId);
             var arrow = document.getElementById(arrowId);
@@ -752,7 +744,6 @@
             }
         }
 
-        // পপ-আপ মোডাল ওপেন করার ফাংশন
         function openCustomModal(driveLink) {
             const modal = document.getElementById('custom-download-modal');
             const readBtn = document.getElementById('modal-read-btn');
@@ -764,12 +755,10 @@
             modal.style.display = 'flex';
         }
 
-        // পপ-আপ মোডাল বন্ধ করার ফাংশন
         function closeCustomModal() {
             document.getElementById('custom-download-modal').style.display = 'none';
         }
 
-        // মোডালের বাইরে ক্লিক করলে বন্ধ হয়ে যাবে
         window.onclick = function(event) {
             const modal = document.getElementById('custom-download-modal');
             if (event.target == modal) {
