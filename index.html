@@ -523,29 +523,27 @@
             </div>
         </div>
 
-        <!-- কুইক হাইলাইট কার্ড -->
+                <!-- কুইক হাইলাইট কার্ড -->
         <div class="quick-highlights">
             <div class="highlight-card searchable" onclick="showView('exam-topics-view')">
                 <span>⚡</span>
                 <h4>লাইভ এক্সাম</h4>
             </div>
-            <div class="highlight-card searchable" onclick="alert('চলতি মাসের কারেন্ট অ্যাফেয়ার্স শীঘ্রই যুক্ত করা হবে!')">
+            <!-- টিক চিহ্ন দেওয়া কারেন্ট অ্যাফেয়ার্স কার্ড -->
+            <div class="highlight-card searchable" onclick="toggleDropdown('current-affairs-list', 'ca-arrow')" style="cursor: pointer;">
                 <span>📰</span>
-                <h4>কারেন্ট অ্যাফেয়ার্স</h4>
+                <h4 style="display: flex; justify-content: center; align-items: center; gap: 4px;">
+                    কারেন্ট অ্যাফেয়ার্স 
+                    <span class="arrow-icon" id="ca-arrow" style="font-size: 12px;">▼</span>
+                </h4>
             </div>
         </div>
 
-        <!-- কারেন্ট অ্যাফেয়ার্স ড্রপডাউন বক্স (অন্যান্য ক্যাটাগরির স্টাইলে) -->
-        <div class="box-grid" style="margin-bottom: 12px;">
-            <div class="box-card searchable" onclick="toggleDropdown('current-affairs-list', 'ca-arrow')">
-                <span>📰 চলতি মাসের কারেন্ট অ্যাফেয়ার্স (সকল মাস)</span> 
-                <span class="arrow-icon" id="ca-arrow">▼</span>
-            </div>
-            <div class="dropdown-container" id="current-affairs-list">
-                <a href="আপনার_গুগল_ড্রাইভ_লিংক_১" target="_blank" class="dropdown-item searchable-sub">• জানুয়ারি ২০২৬ কারেন্ট অ্যাফেয়ার্স</a>
-                <a href="আপনার_গুগল_ড্রাইভ_লিংক_২" target="_blank" class="dropdown-item searchable-sub">• ফেব্রুয়ারি ২০২৬ কারেন্ট অ্যাফেয়ার্স</a>
-                <a href="আপনার_গুগল_ড্রাইভ_লিংক_৩" target="_blank" class="dropdown-item searchable-sub">• মার্চ ২০২৬ কারেন্ট অ্যাফেয়ার্স</a>
-            </div>
+        <!-- কারেন্ট অ্যাফেয়ার্সের ড্রপডাউন লিস্ট (যা কার্ডের ঠিক নিচেই খুলবে) -->
+        <div class="dropdown-container" id="current-affairs-list" style="margin-top: -10px; margin-bottom: 16px;">
+            <a href="আপনার_গুগল_ড্রাইভ_লিংক_১" target="_blank" class="dropdown-item searchable-sub">• জানুয়ারি ২০২৬ কারেন্ট অ্যাফেয়ার্স</a>
+            <a href="আপনার_গুগল_ড্রাইভ_লিংক_২" target="_blank" class="dropdown-item searchable-sub">• ফেব্রুয়ারি ২০২৬ কারেন্ট অ্যাফেয়ার্স</a>
+            <a href="আপনার_গুগল_ড্রাইভ_লিংক_৩" target="_blank" class="dropdown-item searchable-sub">• মার্চ ২০২৬ কারেন্ট অ্যাফেয়ার্স</a>
         </div>
 
         <h2 class="section-title">সূচিপত্র ও ক্যাটাগরি</h2>
