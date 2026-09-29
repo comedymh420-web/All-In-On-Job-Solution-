@@ -523,13 +523,13 @@
             </div>
         </div>
 
-                <!-- কুইক হাইলাইট কার্ড -->
+        <!-- কুইক হাইলাইট কার্ড -->
         <div class="quick-highlights">
             <div class="highlight-card searchable" onclick="showView('exam-topics-view')">
                 <span>⚡</span>
                 <h4>লাইভ এক্সাম</h4>
             </div>
-            <!-- টিক চিহ্ন দেওয়া কারেন্ট অ্যাফেয়ার্স কার্ড -->
+            <!-- কারেন্ট অ্যাফেয়ার্স কার্ড -->
             <div class="highlight-card searchable" onclick="toggleDropdown('current-affairs-list', 'ca-arrow')" style="cursor: pointer;">
                 <span>📰</span>
                 <h4 style="display: flex; justify-content: center; align-items: center; gap: 4px;">
@@ -539,11 +539,18 @@
             </div>
         </div>
 
-        <!-- কারেন্ট অ্যাফেয়ার্সের ড্রপডাউন লিস্ট (যা কার্ডের ঠিক নিচেই খুলবে) -->
+        <!-- কারেন্ট অ্যাফেয়ার্সের ড্রপডাউন লিস্ট (এখানে আপনার ড্রাইভ লিংকগুলো বসাবেন) -->
         <div class="dropdown-container" id="current-affairs-list" style="margin-top: -10px; margin-bottom: 16px;">
-            <a href="https://drive.google.com/file/d/10Uw_V4zq0OC2mbmkGr0isQd_mxXIDpyh/view" target="_blank" class="dropdown-item searchable-sub">• কারেন্ট অ্যাফেয়ার্স আগস্ট ২০২৬ PDF Download</a>
-            <a href="আপনার_গুগল_ড্রাইভ_লিংক_২" target="_blank" class="dropdown-item searchable-sub">• ফেব্রুয়ারি ২০২৬ কারেন্ট অ্যাফেয়ার্স</a>
-            <a href="আপনার_গুগল_ড্রাইভ_লিংক_৩" target="_blank" class="dropdown-item searchable-sub">• মার্চ ২০২৬ কারেন্ট অ্যাফেয়ার্স</a>
+            
+            <!-- 📌 এখানে আগস্ট ২০২৬ কারেন্ট অ্যাফেয়ার্সের গুগল ড্রাইভ লিংক লিখবেন -->
+            <a href="javascript:void(0);" onclick="openCustomModal('https://drive.google.com/file/d/10Uw_V4zq0OC2mbmkGr0isQd_mxXIDpyh/view')" class="dropdown-item searchable-sub">• কারেন্ট অ্যাফেয়ার্স আগস্ট ২০২৬ PDF Download</a>
+            
+            <!-- 📌 এখানে ফেব্রুয়ারি ২০২৬ কারেন্ট অ্যাফেয়ার্সের গুগল ড্রাইভ লিংক লিখবেন -->
+            <a href="javascript:void(0);" onclick="openCustomModal('আপনার_গুগল_ড্রাইভ_লিংক_এখানে_দিন')" class="dropdown-item searchable-sub">• ফেব্রুয়ারি ২০২৬ কারেন্ট অ্যাফেয়ার্স</a>
+            
+            <!-- 📌 এখানে মার্চ ২০২৬ কারেন্ট অ্যাফেয়ার্সের গুগল ড্রাইভ লিংক লিখবেন -->
+            <a href="javascript:void(0);" onclick="openCustomModal('আপনার_গুগল_ড্রাইভ_লিংক_এখানে_দিন')" class="dropdown-item searchable-sub">• মার্চ ২০২৬ কারেন্ট অ্যাফেয়ার্স</a>
+            
         </div>
 
         <h2 class="section-title">সূচিপত্র ও ক্যাটাগরি</h2>
@@ -636,6 +643,22 @@
         </div>
     </div>
 
+    <!-- কাস্টম শিক্ষা বিষয়ক পপ-আপ মোডাল HTML -->
+    <div id="custom-download-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000; justify-content: center; align-items: center;">
+        <div style="background: var(--card-bg); color: var(--text-color); padding: 24px; border-radius: 12px; width: 90%; max-width: 400px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.2); border: 1px solid var(--border-color);">
+            <h3 style="margin-bottom: 12px; font-size: 18px;">শিক্ষা বিষয়ক নির্দেশিকা</h3>
+            <p style="font-size: 14px; line-height: 1.5; margin-bottom: 20px; opacity: 0.9;">
+                আপনি কি ফাইলটি পড়ার জন্য বা ডাউনলোড করার জন্য প্রস্তুত আছেন? <br><br>
+                <strong style="color: #0ea5e9; font-size: 13px;">⚠️ এটি শুধুমাত্র শিক্ষামূলক বিষয়ের জন্য, এর কোনো বাণিজ্যিক উদ্দেশ্য নেই।</strong>
+            </p>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <a id="modal-read-btn" href="#" target="_blank" style="flex: 1; padding: 10px; background: #0ea5e9; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">অনলাইনে পড়ুন</a>
+                <a id="modal-download-btn" href="#" target="_blank" style="flex: 1; padding: 10px; background: #10b981; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">ডাউনলোড নাও</a>
+            </div>
+            <button onclick="closeCustomModal()" style="margin-top: 15px; background: none; border: none; color: #ef4444; font-size: 14px; cursor: pointer; text-decoration: underline;">বাতিল করুন</button>
+        </div>
+    </div>
+
     <!-- বটম নেভিগেশন বার -->
     <div class="bottom-nav">
         <div class="nav-item active" id="nav-home" onclick="showView('home-view')">
@@ -684,11 +707,9 @@
         function saveToLastReadHistory(url, title) {
             let history = JSON.parse(localStorage.getItem('bcs_read_history')) || [];
             
-            // যদি আগে থেকেই থাকে তবে সেটি রিমুভ করে নতুনটিকে সামনে নিয়ে আসা
             history = history.filter(item => item.url !== url);
             history.unshift({ url: url, title: title });
             
-            // সর্বোচ্চ ৫টি হিস্ট্রি সেভ রাখবে
             if (history.length > 5) {
                 history.pop();
             }
@@ -728,6 +749,31 @@
             } else {
                 list.style.display = 'block';
                 arrow.innerText = '▲';
+            }
+        }
+
+        // পপ-আপ মোডাল ওপেন করার ফাংশন
+        function openCustomModal(driveLink) {
+            const modal = document.getElementById('custom-download-modal');
+            const readBtn = document.getElementById('modal-read-btn');
+            const downloadBtn = document.getElementById('modal-download-btn');
+            
+            readBtn.href = driveLink; 
+            downloadBtn.href = driveLink;
+            
+            modal.style.display = 'flex';
+        }
+
+        // পপ-আপ মোডাল বন্ধ করার ফাংশন
+        function closeCustomModal() {
+            document.getElementById('custom-download-modal').style.display = 'none';
+        }
+
+        // মোডালের বাইরে ক্লিক করলে বন্ধ হয়ে যাবে
+        window.onclick = function(event) {
+            const modal = document.getElementById('custom-download-modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
             }
         }
 
