@@ -2,857 +2,397 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>All In One Job Solution</title>
-    
-    <!-- SolaimanLipi Correct Web Font CDN -->
-    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright-TechBD - চাকরির প্রস্তুতি ও কুইজ প্ল্যাটফর্ম</title>
+    <!-- Tailwind CSS CDN for modern, fast styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        :root {
-            --bg-color: #f4f6f9;
-            --card-bg: #ffffff;
-            --text-color: #212529;
-            --header-bg: #1a365d;
-            --header-text: #ffffff;
-            --border-color: #e2e8f0;
-            --option-bg: #f8fafc;
-            --drawer-bg: #ffffff;
-            --accent-color: #2563eb;
-            --banner-bg: linear-gradient(135deg, #2563eb, #1d4ed8);
-            --font-size-base: 17px;
-        }
-
-        body.dark-mode {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-color: #f8fafc;
-            --header-bg: #0b1329;
-            --header-text: #ffffff;
-            --border-color: #334155;
-            --option-bg: #1e293b;
-            --drawer-bg: #1e293b;
-            --banner-bg: linear-gradient(135deg, #1e293b, #0f172a);
-        }
-
-        /* ফন্ট সাইজ ক্লাস */
-        body.font-small { --font-size-base: 14px; }
-        body.font-medium { --font-size-base: 17px; }
-        body.font-large { --font-size-base: 20px; }
-
-        /* কপি কন্ট্রোল */
-        body.no-copy {
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'SolaimanLipi', sans-serif;
-            -webkit-tap-highlight-color: transparent;
-        }
-
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
         body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            padding-bottom: 75px;
-            font-size: var(--font-size-base);
-            -webkit-font-smoothing: antialiased;
+            font-family: 'Hind Siliguri', sans-serif;
         }
-        
-        /* হেডার */
-        header {
-            background-color: var(--header-bg);
-            color: var(--header-text);
-            padding: 12px 16px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            font-size: 18px;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 65%;
-        }
-        .header-actions {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
-        .icon-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-            padding: 4px;
-        }
-
-        /* সার্চ বার পপআপ */
-        .search-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: var(--card-bg);
-            padding: 12px 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            z-index: 250;
-            align-items: center;
-            gap: 10px;
-        }
-        .search-modal input {
-            flex: 1;
-            padding: 8px 12px;
-            font-size: 16px;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            outline: none;
-        }
-
-        /* সাইড ড্রয়ার সেটিংস */
-        .side-drawer {
-            position: fixed;
-            top: 0;
-            left: -300px;
-            width: 280px;
-            height: 100%;
-            background-color: var(--drawer-bg);
-            box-shadow: 2px 0 10px rgba(0,0,0,0.15);
-            transition: left 0.3s ease;
-            z-index: 200;
-            overflow-y: auto;
-        }
-        .side-drawer.open {
-            left: 0;
-        }
-        .drawer-header {
-            padding: 18px 20px 15px;
-            border-bottom: 1px solid var(--border-color);
-            font-size: 18px;
-            font-weight: bold;
-            color: var(--text-color);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .drawer-section {
-            padding: 15px 20px;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .drawer-section h4 {
-            font-size: 15px;
-            color: var(--accent-color);
-            margin-bottom: 10px;
-        }
-        .setting-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-        .setting-row:last-child {
-            margin-bottom: 0;
-        }
-        .drawer-menu {
-            list-style: none;
-        }
-        .drawer-menu li {
-            padding: 14px 20px;
-            font-size: 16px;
-            color: var(--text-color);
-            border-bottom: 1px solid var(--border-color);
-            cursor: pointer;
-        }
-        .drawer-menu li:hover {
-            background-color: var(--option-bg);
-        }
-        .drawer-menu a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        /* সুইচ ডিজাইন */
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 44px;
-            height: 22px;
-        }
-        .switch input { 
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-color: #ccc;
-            transition: .3s;
-            border-radius: 22px;
-        }
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 16px;
-            width: 16px;
-            left: 3px;
-            bottom: 3px;
-            background-color: white;
-            transition: .3s;
-            border-radius: 50%;
-        }
-        input:checked + .slider {
-            background-color: var(--accent-color);
-        }
-        input:checked + .slider:before {
-            transform: translateX(22px);
-        }
-
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.4);
-            z-index: 150;
-        }
-
-        /* মূল কন্টেইনার */
-        .container {
-            padding: 12px;
-            max-width: 600px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        /* ডেইলি স্ট্রিক ও নোটিশ ব্যানার */
-        .streak-banner {
-            background: var(--banner-bg);
-            color: #ffffff;
-            padding: 14px 16px;
-            border-radius: 12px;
-            margin-bottom: 14px;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .streak-banner h3 {
-            font-size: 16px;
-            margin-bottom: 2px;
-        }
-        .streak-banner p {
-            font-size: 13px;
-            opacity: 0.9;
-        }
-        .streak-badge {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        /* মাল্টিপল লাস্ট রিড চিপস স্টাইল */
-        .last-read-section {
-            margin-bottom: 16px;
-        }
-        .last-read-title {
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 8px;
-            color: var(--text-color);
-        }
-        .last-read-chips-container {
-            display: flex;
-            gap: 10px;
-            overflow-x: auto;
-            padding-bottom: 4px;
-            scrollbar-width: none;
-        }
-        .last-read-chips-container::-webkit-scrollbar {
-            display: none;
-        }
-        .last-read-chip {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            color: #10b981;
-            font-weight: 500;
-            cursor: pointer;
-            white-space: nowrap;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex-shrink: 0;
-        }
-        .last-read-chip:active {
-            background-color: var(--option-bg);
-        }
-
-        /* কুইক হাইলাইট কার্ড */
-        .quick-highlights {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 16px;
-        }
-        .highlight-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 12px;
-            border-radius: 8px;
-            text-align: center;
-            cursor: pointer;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-        .highlight-card span {
-            font-size: 22px;
-            display: block;
-            margin-bottom: 4px;
-        }
-        .highlight-card h4 {
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--text-color);
-        }
-
-        .section-title {
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 12px;
-            color: var(--text-color);
-            border-left: 4px solid var(--accent-color);
-            padding-left: 10px;
-        }
-
-        .box-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .box-card {
-            background-color: var(--card-bg);
-            padding: 14px 16px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            font-weight: 400;
-            color: var(--text-color);
-            cursor: pointer;
-            border: 1px solid var(--border-color);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            line-height: 1.4;
-            word-break: break-word;
-        }
-        
-        .box-card:active {
-            background-color: var(--option-bg);
-        }
-
-        .arrow-icon {
-            font-size: 14px;
-            color: #64748b;
-            flex-shrink: 0;
-            margin-left: 8px;
-        }
-
-        /* ড্রপডাউন লিংক ডিজাইন */
-        .dropdown-container {
-            display: none;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-top: none;
-            border-radius: 0 0 8px 8px;
-            padding: 4px 0;
-            margin-top: -8px;
-            margin-bottom: 8px;
-            max-height: 280px;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        .dropdown-item {
-            display: block;
-            padding: 12px 18px;
-            border-bottom: 1px solid var(--border-color);
-            color: var(--text-color);
-            text-decoration: none;
-        }
-        .dropdown-item:last-child {
-            border-bottom: none;
-        }
-        .dropdown-item:hover {
-            background-color: var(--option-bg);
-        }
-
-        /* বটম নেভিগেশন বার */
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: var(--card-bg);
-            display: flex;
-            justify-content: space-around;
-            padding: 8px 0 6px;
-            border-top: 1px solid var(--border-color);
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
-            z-index: 90;
-        }
-        .nav-item {
-            text-align: center;
-            color: #64748b;
-            font-size: 13px;
-            cursor: pointer;
-            flex: 1;
-        }
-        .nav-item span {
-            font-size: 18px;
-            display: block;
-            margin-bottom: 1px;
-        }
-        .nav-item.active {
-            color: var(--accent-color);
-            font-weight: 500;
+        /* ব্লগার ডিফল্ট নেভিগেশন বার রিমুভ বা হাইড করার জন্য স্টাইল */
+        #navbar-iframe, .navbar {
+            display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
         }
     </style>
+    <b:skin><![CDATA[
+        body { margin: 0; padding: 0; }
+        /* ব্লগার থিম মোডেও বারটি হাইড রাখার জন্য */
+        #navbar-iframe { display: none !important; }
+    ]]></b:skin>
 </head>
-<body class="font-medium">
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
 
-    <!-- হেডার -->
-    <header>
-        <button class="icon-btn" onclick="toggleDrawer()">☰</button>
-        <h1>All In One Job Solution</h1>
-        <div class="header-actions">
-            <button class="icon-btn" id="theme-toggle" onclick="toggleDarkMode()">🌙</button>
-            <button class="icon-btn" onclick="toggleSearchModal()">🔍</button>
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-sm border-b border-slate-200 dark:border-slate-700">
+        <div class="max-w-md mx-auto px-4 py-3.5 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-primary dark:text-blue-400">Bright-TechBD</h1>
+            <div class="flex items-center space-x-3">
+                <!-- Dark Mode Toggle Button -->
+                <button id="darkModeToggle" class="p-2.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition text-lg" title="ডার্ক মোড পরিবর্তন">
+                    🌓
+                </button>
+                <!-- Notification Button -->
+                <button onclick="openNotificationModal()" class="p-2.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition text-lg" title="নোটিফিকেশন">
+                    🔔
+                </button>
+                <!-- Menu Button -->
+                <button onclick="openMenuModal()" class="p-2.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition text-lg" title="মেনু">
+                    ☰
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- সার্চ পপআপ -->
-    <div class="search-modal" id="searchModal">
-        <input type="text" id="searchInput" placeholder="এখানে সার্চ করুন..." onkeyup="filterItems()">
-        <button class="icon-btn" style="color:var(--text-color);" onclick="toggleSearchModal()">✕</button>
-    </div>
+    <!-- Main Container (Mobile Frame Look) -->
+    <main class="max-w-md mx-auto p-4 space-y-6">
 
-    <div class="overlay" id="overlay" onclick="toggleDrawer()"></div>
-    
-    <!-- সাইড ড্রয়ার ও সেটিংস প্যানেল -->
-    <div class="side-drawer" id="sideDrawer">
-        <div class="drawer-header">
-            <span>মেনু ও সেটিংস</span>
-            <span style="cursor:pointer;" onclick="toggleDrawer()">✕</span>
-        </div>
+        <!-- Hero Search Box -->
+        <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-5 rounded-2xl shadow-md">
+            <h2 class="text-xl font-bold mb-1.5">চাকরির প্রস্তুতি হোক আরও সহজ</h2>
+            <p class="text-sm text-blue-100 mb-4">BCS, ব্যাংক, প্রাইমারি, NTRCA ও সরকারি চাকরির MCQ অনুশীলন করুন।</p>
+            <div class="relative">
+                <input type="text" id="searchInput" onkeyup="handleSearch()" placeholder="প্রশ্ন, বিষয় বা পরীক্ষা খুঁজুন..." class="w-full px-4 py-3 rounded-xl text-slate-800 text-base focus:outline-none focus:ring-2 focus:ring-blue-300 shadow-inner">
+                <span class="absolute right-3.5 top-3 text-xs bg-blue-600 text-white px-2.5 py-1.5 rounded-lg font-medium">Search</span>
+            </div>
+        </section>
 
-        <!-- অ্যাপ সেটিংস সেকশন -->
-        <div class="drawer-section">
-            <h4>⚙️ অ্যাপ সেটিংস</h4>
+        <!-- Popular Subjects Grid -->
+        <section>
+            <h3 class="text-lg font-bold mb-3 text-slate-700 dark:text-slate-200 flex items-center justify-between">
+                <span>জনপ্রিয় বিষয়</span>
+                <span onclick="openAllSubjects()" class="text-sm font-normal text-primary dark:text-blue-400 cursor-pointer hover:underline">সব দেখুন</span>
+            </h3>
             
-            <div class="setting-row">
-                <span>ফন্ট সাইজ</span>
-                <select id="fontSizeSelect" onchange="changeFontSize(this.value)" style="padding: 4px; border-radius: 4px; background:var(--bg-color); color:var(--text-color); border:1px solid var(--border-color);">
-                    <option value="small">ছোট</option>
-                    <option value="medium" selected>মাঝারি</option>
-                    <option value="large">বড়</option>
-                </select>
+            <div id="subjectGrid" class="grid grid-cols-2 gap-3.5">
+                <!-- Box 1: নতুনদের BCS প্রস্তুতি -->
+                <button onclick="openSubPage('bcsNew')" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition text-left w-full">
+                    <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">নতুনদের BCS প্রস্তুতি</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">বিসিএস জব সলিউশন, ব্যাংক, প্রাইমারি, NTRCA ইত্যাদি।</p>
+                </button>
+
+                <!-- Box 2: টপিক গুরু -->
+                <button onclick="openSubPage('topicGuru')" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition text-left w-full">
+                    <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">টপিক গুরু</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">সাম্প্রতিক, বাংলা, ইংরেজি, গণিত, আইসিটি ও অন্যান্য।</p>
+                </button>
+
+                <!-- Box 3: জব সলিউশন -->
+                <button onclick="openSubPage('jobSolution')" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition text-left w-full">
+                    <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">BCS প্রিলিমিনারি প্রশ্ন ও সমাধান</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">৪৬ থেকে ১০ম বিসিএস প্রিলিমিনারি প্রশ্ন ও সমাধান।</p>
+                </button>
+
+                <!-- Box 4: বিসিএস জব সলিউশন রিভিশন -->
+                <button onclick="openSubPage('bcsRevision')" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition text-left w-full">
+                    <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">বিসিএস জব সলিউশন রিভিশন</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">লাইভ এক্সাম সিস্টেম ও বিশেষ প্রশ্নব্যাংক রিভিশন।</p>
+                </button>
+
+                <!-- Box 5: ব্যাংক নিয়োগ প্রস্তুতি -->
+                <a href="#bank-prep" onclick="handleLinkClick('ব্যাংক নিয়োগ প্রস্তুতি')" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition block">
+                    <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">ব্যাংক নিয়োগ প্রস্তুতি</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">ব্যাংক নিয়োগের যাবতীয় প্রশ্ন ও MCQ পোস্টসমূহ।</p>
+                </a>
+
+                <!-- Box 6: শিক্ষক নিবন্ধন প্রস্তুতি -->
+                <a href="#teacher-prep" onclick="handleLinkClick('শিক্ষক নিবন্ধন প্রস্তুতি')" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition block">
+                    <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">শিক্ষক নিবন্ধন প্রস্তুতি</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">এনটিআরসিএ (NTRCA) পরীক্ষার স্পেশাল প্রস্তুতি।</p>
+                </a>
+
+                <!-- Box 7: প্রাইমারি থেকে প্রস্তুতি -->
+                <a href="#primary-prep" onclick="handleLinkClick('প্রাইমারি নিয়োগ প্রস্তুতি')" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition block">
+                    <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">প্রাইমারি নিয়োগ প্রস্তুতি</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">প্রাথমিক সহকারী শিক্ষক নিয়োগের প্রশ্ন ও মডেল টেস্ট।</p>
+                </a>
+
+                <!-- Box 8: বার কাউন্সিল ও বিজিএসএম -->
+                <a href="https://bright-techbd.blogspot.com/2026/10/online-quiz-platform.html" target="_blank" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition block">
+                    <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">বার কাউন্সিল ও বিজিএসএম</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">আইন ও সাধারণ জ্ঞানভিত্তিক এমসিকিউ প্রশ্ন ব্যাংক।</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Utility Buttons: PDF Section & Quiz Master -->
+        <section class="grid grid-cols-2 gap-3.5">
+            <button onclick="openPdfModal()" class="bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-xl shadow-sm font-bold text-sm flex items-center justify-center space-x-2 transition">
+                <span>📥 PDF Section</span>
+            </button>
+
+            <button onclick="startQuiz()" class="bg-purple-600 hover:bg-purple-700 text-white p-4 rounded-xl shadow-sm font-bold text-sm flex items-center justify-center space-x-2 transition">
+                <span>🎯 Quiz Master</span>
+            </button>
+        </section>
+
+        <!-- Scroll Section -->
+        <section class="bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+            <div class="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700/50 p-4 rounded-xl text-center mb-4">
+                <h4 class="font-bold text-amber-800 dark:text-amber-300 text-base mb-1">আপনার মেধা যাচাই করুন</h4>
+                <p class="text-xs text-amber-700 dark:text-amber-400 mb-3">১০০ নম্বরের পূর্ণাঙ্গ পরীক্ষা, সময় ও ব্যাখ্যাসহ।</p>
+                <button onclick="startExamMode()" class="bg-amber-600 hover:bg-amber-700 text-white text-xs px-4 py-2 rounded-lg font-semibold shadow transition">পরীক্ষা শুরু করুন (Exam Mode)</button>
             </div>
 
-            <div class="setting-row">
-                <span>স্ক্রিন আলো সচল রাখা</span>
-                <label class="switch">
-                    <input type="checkbox" id="wakeLockToggle" onchange="toggleWakeLock(this)">
-                    <span class="slider"></span>
-                </label>
-            </div>
-
-            <div class="setting-row">
-                <span>টেক্সট কপি ব্লক</span>
-                <label class="switch">
-                    <input type="checkbox" id="copyToggle" onchange="toggleCopyProtection(this)">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-        <!-- সাধারণ মেনু -->
-        <ul class="drawer-menu">
-            <li onclick="alert('All In One Job Solution অ্যাপে আপনাকে স্বাগতম!')">📌 পরিচিতি</li>
-            <li onclick="alert('বুকমার্ক করা প্রশ্ন বা টপিকসগুলো এখানে সংরক্ষিত থাকবে।')">⭐ সেভ করা প্রশ্ন (বুকমার্ক)</li>
-            <li><a href="privacy.html">🔒 প্রাইভেসি পলিসি</a></li>
-            <li><a href="disclaimer.html">⚠️️ ডিসক্লেইমার</a></li>
-            <li><a href="contact.html">📞 যোগাযোগ করুন</a></li>
-        </ul>
-    </div>
-
-    <!-- ১. হোম পেজ -->
-    <div class="container" id="home-view">
-        
-        <!-- ডেইলি স্ট্রিক ও রিওয়ার্ড ব্যানার -->
-        <div class="streak-banner">
-            <div>
-                <h3>🔥 পড়ার ধারা (Streak)</h3>
-                <p>নিয়মিত পড়াশোনা চালিয়ে যান, লক্ষ্য পূরণ করুন!</p>
-            </div>
-            <div class="streak-badge">৩ দিন</div>
-        </div>
-
-        <!-- একাধিক লাস্ট রিড চিপস সেকশন (Last Read History) -->
-        <div class="last-read-section">
-            <h3 class="last-read-title">Last Read (সাম্প্রতিক পঠিত)</h3>
-            <div class="last-read-chips-container" id="lastReadContainer">
-                <!-- ডায়নামিকভাবে পঠিত বিসিএসগুলো এখানে চিপস আকারে যুক্ত হবে -->
-            </div>
-        </div>
-
-        <!-- কুইক হাইলাইট কার্ড -->
-        <div class="quick-highlights">
-            <div class="highlight-card searchable" onclick="showView('exam-topics-view')">
-                <span>⚡</span>
-                <h4>লাইভ এক্সাম</h4>
-            </div>
-            <!-- কারেন্ট অ্যাফেয়ার্স কার্ড -->
-            <div class="highlight-card searchable" onclick="toggleDropdown('current-affairs-list', 'ca-arrow')" style="cursor: pointer;">
-                <span>📰</span>
-                <h4 style="display: flex; justify-content: center; align-items: center; gap: 4px;">
-                    কারেন্ট অ্যাফেয়ার্স 
-                    <span class="arrow-icon" id="ca-arrow" style="font-size: 12px;">▼</span>
-                </h4>
-            </div>
-        </div>
-
-        <!-- কারেন্ট অ্যাফেয়ার্সের ড্রপডাউন লিস্ট -->
-        <div class="dropdown-container" id="current-affairs-list" style="margin-top: -10px; margin-bottom: 16px;">
-            <a href="javascript:void(0);" onclick="openCustomModal('https://drive.google.com/file/d/10Uw_V4zq0OC2mbmkGr0isQd_mxXIDpyh/view')" class="dropdown-item searchable-sub">• কারেন্ট অ্যাফেয়ার্স আগস্ট ২০২৬ PDF</a>
-            <a href="javascript:void(0);" onclick="openCustomModal('https://drive.google.com/file/d/1aVFRPpntGF5n9Fp_5kHrKsTVUQ-tKEcM/view?usp=drivesdk')" class="dropdown-item searchable-sub">• কারেন্ট অ্যাফেয়ার্স সেপ্টেম্বর ২০২৬ PDF</a>
-            <a href="javascript:void(0);" onclick="openCustomModal('আপনার_গুগল_ড্রাইভ_লিংক_এখানে_দিন')" class="dropdown-item searchable-sub">• কারেন্ট অ্যাফেয়ার্স অক্টোবর শীঘ্রই আসছে</a>
-        </div>
-
-        <h2 class="section-title">সূচিপত্র ও ক্যাটাগরি</h2>
-        <div class="box-grid" id="main-card-grid">
+            <h3 class="text-lg font-bold mb-3 text-slate-700 dark:text-slate-200">আরও গুরুত্বপূর্ণ লিস্ট (ব্লগ পোস্ট ও প্রশ্নব্যাংক)</h3>
             
-            <!-- ১. বিসিএস প্রিলিমিনারি টেস্ট -->
-            <div class="box-card searchable" onclick="toggleDropdown('bcs-dropdown-list', 'bcs-arrow')">
-                <span>📚 ১. BCS প্রিলিমিনারি টেস্ট (৪৬ম - ১০ম)</span> 
-                <span class="arrow-icon" id="bcs-arrow">▼</span>
+            <div class="space-y-3">
+                <a href="#post-1" onclick="alert('পোস্টটি লোড হচ্ছে...'); return false;" class="flex items-center space-x-3 p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-100 dark:border-slate-700 transition">
+                    <div class="w-14 h-14 bg-slate-200 dark:bg-slate-700 rounded-lg overflow-hidden flex-shrink-0 flex items-center justify-center text-xs text-slate-500">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=100&auto=format&fit=crop&q=60" alt="Logo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h5 class="text-sm font-bold text-slate-800 dark:text-slate-100 truncate">বিসিএস প্রিলিমিনারি চূড়ান্ত প্রস্তুতি ও বিগত প্রশ্ন বিশ্লেষণ</h5>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">পরীক্ষার কৌশল ও গুরুত্বপূর্ণ সাজেশন...</p>
+                    </div>
+                    <span class="text-slate-400 text-base font-bold">→</span>
+                </a>
             </div>
-            <div class="dropdown-container" id="bcs-dropdown-list">
-                <!-- জেনারেট হবে -->
-            </div>
+        </section>
 
-            <!-- ২. বিসিএস লিখিত সিরিজ -->
-            <div class="box-card searchable" onclick="toggleDropdown('bcs-written-list', 'written-arrow')">
-                <span>📝 ২. BCS লিখিত ও ডাইজেস্ট সিরিজ</span> 
-                <span class="arrow-icon" id="written-arrow">▼</span>
-            </div>
-            <div class="dropdown-container" id="bcs-written-list">
-                <a href="#" class="dropdown-item searchable-sub">• বিসিএস লিখিত বাংলা ও ইংরেজি</a>
-                <a href="#" class="dropdown-item searchable-sub">• বাংলাদেশ ও আন্তর্জাতিক বিষয়াবলি</a>
-                <a href="#" class="dropdown-item searchable-sub">• গাণিতিক যুক্তি ও মানসিক দক্ষতা</a>
-                <a href="#" class="dropdown-item searchable-sub">• সাধারণ বিজ্ঞান ও প্রযুক্তি</a>
-                <a href="#" class="dropdown-item searchable-sub">• বিসিএস ভাইভা সহায়ক</a>
-            </div>
+    </main>
 
-            <!-- ৩. ব্যাংক জব সলিউশন -->
-            <div class="box-card searchable" onclick="toggleDropdown('bank-list', 'bank-arrow')">
-                <span>🏦 ৩. ব্যাংক জব ও ম্যাথ সলিউশন</span> 
-                <span class="arrow-icon" id="bank-arrow">▼</span>
+    <!-- Dynamic Sub-Page View Modal (Modern Mobile Friendly Layout) -->
+    <div id="subPageModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-end sm:items-center justify-center z-50 p-0 sm:p-4">
+        <div class="bg-white dark:bg-slate-800 rounded-t-3xl sm:rounded-2xl max-w-md w-full max-h-[85vh] overflow-y-auto shadow-2xl p-5 space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-200 dark:border-slate-700 pb-3">
+                <h3 id="subPageTitle" class="text-lg font-bold text-slate-800 dark:text-slate-100">সিলেক্টেড ক্যাটেগরি</h3>
+                <button onclick="closeSubPage()" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 font-bold text-lg">✕</button>
             </div>
-            <div class="dropdown-container" id="bank-list">
-                <a href="#" class="dropdown-item searchable-sub">• Bank Math Solution</a>
-                <a href="#" class="dropdown-item searchable-sub">• Key to Govt. & Private Bank Job</a>
-                <a href="#" class="dropdown-item searchable-sub">• Bankers Recruitment Text (সকল ব্যাংক)</a>
-                <a href="#" class="dropdown-item searchable-sub">• সোনালী, জনতা, কৃষি ও বাংলাদেশ ব্যাংক নিয়োগ</a>
+            <div id="subPageContent" class="space-y-2.5 pb-4">
+                <!-- Dynamic Content Will Load Here -->
             </div>
-
-            <!-- ৪. শিক্ষক নিবন্ধন ও প্রাথমিক নিয়োগ -->
-            <div class="box-card searchable" onclick="toggleDropdown('teacher-list', 'teacher-arrow')">
-                <span>👨‍🏫 ৪. শিক্ষক নিবন্ধন ও প্রাথমিক নিয়োগ</span> 
-                <span class="arrow-icon" id="teacher-arrow">▼</span>
-            </div>
-            <div class="dropdown-container" id="teacher-list">
-                <a href="#" class="dropdown-item searchable-sub">• প্রাথমিক সহকারী ও প্রধান শিক্ষক নিয়োগ</a>
-                <a href="#" class="dropdown-item searchable-sub">• বেসরকারি শিক্ষক নিবন্ধন (স্কুল ও কলেজ পর্যায়)</a>
-                <a href="#" class="dropdown-item searchable-sub">• মাধ্যমিক শিক্ষক নিয়োগ সহায়তা</a>
-            </div>
-
-            <!-- ৫. অন্যান্য সরকারি ও অধিদপ্তর নিয়োগ -->
-            <div class="box-card searchable" onclick="toggleDropdown('other-job-list', 'other-arrow')">
-                <span>🎯 ৫. পিএসসি নন-ক্যাডার ও অন্যান্য অধিদপ্তর</span> 
-                <span class="arrow-icon" id="other-arrow">▼</span>
-            </div>
-            <div class="dropdown-container" id="other-job-list">
-                <a href="#" class="dropdown-item searchable-sub">• পিএসসি নন-ক্যাডার জব সলিউশন</a>
-                <a href="#" class="dropdown-item searchable-sub">• জুডিশিয়াল সার্ভিস সহকারী জজ নিয়োগ</a>
-                <a href="#" class="dropdown-item searchable-sub">• খাদ্য অধিদপ্তর, স্বাস্থ্য সহকারী ও পরিবার পরিকল্পনা</a>
-                <a href="#" class="dropdown-item searchable-sub">• সাব-ইন্সপেক্টর ও পুলিশ সার্জেন্ট নিয়োগ</a>
-                <a href="#" class="dropdown-item searchable-sub">• সিনিয়র স্টাফ নার্স ও অন্যান্য স্কেল সহায়তা</a>
-            </div>
-
         </div>
     </div>
 
-    <!-- ২. টপিকস পেজ -->
-    <div class="container" id="topics-view" style="display: none;">
-        <h2 class="section-title">বিষয়ভিত্তিক তালিকা (Topics)</h2>
-        <div class="box-grid">
-            <div class="box-card searchable">১. বাংলা সাহিত্য ও ব্যাকরণ <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">২. ইংরেজি গ্রাম ও লিটারেচার <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">৩. বাংলাদেশ বিষয়াবলি <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">৪. আন্তর্জাতিক বিষয়াবলি <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">৫. সাধারণ বিজ্ঞান ও প্রযুক্তি <span class="arrow-icon">➔</span></div>
-        </div>
-    </div>
-
-    <!-- ৩. অনলাইন এক্সাম পেজ -->
-    <div class="container" id="exam-topics-view" style="display: none;">
-        <h2 class="section-title">অনلاین পরীক্ষা - বিষয় নির্বাচন করুন</h2>
-        <div class="box-grid">
-            <div class="box-card searchable">📚 ১. বাংলা অনলাইন পরীক্ষা <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">🇬🇧 ২. ইংরেজি অনলাইন পরীক্ষা <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">🇧🇩 ৩. বাংলাদেশ বিষয়াবলি <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">🌐 ৪. আন্তর্জাতিক বিষয়াবলি / সাধারণ জ্ঞান <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">🔢 ৫. গণিত ও মানসিক দক্ষতা <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">🔬 ৬. সাধারণ বিজ্ঞান <span class="arrow-icon">➔</span></div>
-            <div class="box-card searchable">🎯 ৭. সব বিষয় (All Subjects) <span class="arrow-icon">➔</span></div>
-        </div>
-    </div>
-
-    <!-- কাস্টম শিক্ষা বিষয়ক পপ-আপ মোডাল HTML -->
-    <div id="custom-download-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000; justify-content: center; align-items: center;">
-        <div style="background: var(--card-bg); color: var(--text-color); padding: 24px; border-radius: 12px; width: 90%; max-width: 400px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.2); border: 1px solid var(--border-color);">
-            <h3 style="margin-bottom: 12px; font-size: 18px;">শিক্ষা বিষয়ক নির্দেশিকা</h3>
-            <p style="font-size: 14px; line-height: 1.5; margin-bottom: 20px; opacity: 0.9;">
-                আপনি কি ফাইলটি পড়ার জন্য বা ডাউনলোড করার জন্য প্রস্তুত আছেন? <br><br>
-                <strong style="color: #0ea5e9; font-size: 13px;">⚠️ এটি শুধুমাত্র শিক্ষামূলক বিষয়ের জন্য, এর কোনো বাণিজ্যিক উদ্দেশ্য নেই।</strong>
-            </p>
-            <div style="display: flex; gap: 10px; justify-content: center;">
-                <a id="modal-read-btn" href="#" target="_blank" style="flex: 1; padding: 10px; background: #0ea5e9; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">অনলাইনে পড়ুন</a>
-                <a id="modal-download-btn" href="#" target="_blank" style="flex: 1; padding: 10px; background: #10b981; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">ডাউনলোড নাও</a>
+    <!-- General Info Modal (Menu / Notification / About / Terms / Privacy) -->
+    <div id="infoModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-sm w-full p-6 space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-slate-200 dark:border-slate-700 pb-3">
+                <h3 id="infoModalTitle" class="text-lg font-bold text-slate-800 dark:text-slate-100">তথ্য</h3>
+                <button onclick="closeInfoModal()" class="p-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 font-bold text-base">✕</button>
             </div>
-            <button onclick="closeCustomModal()" style="margin-top: 15px; background: none; border: none; color: #ef4444; font-size: 14px; cursor: pointer; text-decoration: underline;">বাতিল করুন</button>
+            <div id="infoModalBody" class="text-sm text-slate-600 dark:text-slate-300 space-y-2">
+                <!-- Dynamic Content -->
+            </div>
         </div>
     </div>
 
-    <!-- বটম নেভিগেশন বার -->
-    <div class="bottom-nav">
-        <div class="nav-item active" id="nav-home" onclick="showView('home-view')">
-            <span>🏠</span> হোম
+    <!-- Footer -->
+    <footer class="max-w-md mx-auto px-4 py-6 text-center text-sm text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800 mt-6 space-y-2">
+        <div class="flex justify-center space-x-4 font-medium">
+            <a href="#about" onclick="openFooterPage('about')" class="hover:underline">About us</a>
+            <a href="#terms" onclick="openFooterPage('terms')" class="hover:underline">Terms & Condition</a>
+            <a href="#privacy" onclick="openFooterPage('privacy')" class="hover:underline">Privacy</a>
         </div>
-        <div class="nav-item" id="nav-topics" onclick="showView('topics-view')">
-            <span>📚</span> টপিকস
-        </div>
-        <div class="nav-item" id="nav-exam" onclick="showView('exam-topics-view')">
-            <span>📝</span> অনলাইন এক্সাম
+        <p>© 2026 Bright Tech BD. All rights reserved.</p>
+    </footer>
+
+    <!-- PDF Download Popup Modal -->
+    <div id="pdfModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+        <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl max-w-xs w-full shadow-xl text-center space-y-4">
+            <h4 class="font-bold text-lg text-slate-800 dark:text-slate-100">পিডিএফ ডাউনলোড কনফার্মেশন</h4>
+            <p class="text-sm text-slate-600 dark:text-slate-300">আপনি কি ডাউনলোড করতে ইচ্ছুক কি না?</p>
+            <p class="text-xs text-slate-400 italic">এটি শুধু শিক্ষণীয় উদ্দেশ্যে, কোনো বাণিজ্যিক উদ্দেশ্যে নয়।</p>
+            <div class="flex space-x-2 pt-2">
+                <button onclick="closePdfModal()" class="flex-1 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 py-2.5 rounded-xl text-sm font-semibold hover:bg-slate-300 transition">বাতিল</button>
+                <button onclick="confirmDownload()" class="flex-1 bg-emerald-600 text-white py-2.5 rounded-xl text-sm font-semibold hover:bg-emerald-700 transition">ডাউনলোড করুন</button>
+            </div>
         </div>
     </div>
 
-    <!-- জাভাস্ক্রিপ্ট লজিক -->
+    <!-- JavaScript for Dynamic Modern Sub-Pages & Features -->
     <script>
-        const bnNumbers = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
-        function toBanglaNum(num) {
-            return num.toString().split('').map(n => bnNumbers[n]).join('');
-        }
+        const toggleBtn = document.getElementById('darkModeToggle');
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
 
-        window.onload = function() {
-            var dropdown = document.getElementById('bcs-dropdown-list');
-            for (var i = 46; i >= 10; i--) {
-                var item = document.createElement('a');
-                item.className = 'dropdown-item searchable-sub';
-                var banglaNum = toBanglaNum(i);
-                item.innerText = '• ' + banglaNum + 'তম BCS প্রিলিমিনারি টেস্ট';
-                
-                let pageFile = (i === 40) ? 'bcs40.html' : ('bcs' + i + '.html');
-                let pageTitle = banglaNum + 'তম BCS';
-                
-                item.setAttribute('href', pageFile);
-                item.onclick = function(e) {
-                    saveToLastReadHistory(pageFile, pageTitle);
-                };
-                
-                dropdown.appendChild(item);
+        // Sub-page Content Database
+        const subPagesData = {
+            'bcsNew': {
+                title: 'নতুনদের BCS প্রস্তুতি ও অন্যান্য জব',
+                items: [
+                    'বিসিএস জব সলিউশন',
+                    'ব্যাংক জব সলিউশন',
+                    'প্রাইভেট ব্যাংক জব সলিউশন',
+                    'প্রাইমারি জব সলিউশন',
+                    'NTRCA জব সলিউশন',
+                    'অন্যান্য জব সলিউশন রিভিশন'
+                ]
+            },
+            'topicGuru': {
+                title: 'টপিক গুরু - স্পেশাল লেকচার',
+                items: [
+                    'সাম্প্রতিক সমাচার পরীক্ষা',
+                    'বাংলা ভাষা ও সাহিত্য',
+                    'ইংরেজি ভাষা ও সাহিত্য',
+                    'গণিত ও গাণিতিক যুক্তি',
+                    'মানসিক দক্ষতা',
+                    'বাংলাদেশ বিষয়াবলি',
+                    'আন্তর্জাতিক বিষয়াবলি',
+                    'আইসিটি এক্সপার্ট',
+                    'ভূগোল পরিবেশ ও দুর্যোগ ব্যবস্থাপনা'
+                ]
+            },
+            'jobSolution': {
+                title: 'বিসিএস প্রশ্ন ও সমাধান (১০ম - ৪৬তম)',
+                items: [
+                    '৪৬ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
+                    '৪৫ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
+                    '৪৪ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
+                    '৪৩ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
+                    '৪২ BCS (বিশেষ) প্রিলিমিনারি প্রশ্ন ও সমাধান',
+                    '৪১ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
+                    '৪০ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
+                    '১০ম - ৩৯ম BCS প্রিলিমিনারি প্রশ্ন ও সমাধান'
+                ]
+            },
+            'bcsRevision': {
+                title: 'বিসিএস জব সলিউশন রিভিশন (Live Exam)',
+                isLive: true,
+                items: [
+                    '🔴 LIVE EXAM NOW: আজকের মডেল টেস্ট পরীক্ষা',
+                    'বিগত বছরের ভুল সংশোধনী ও সুপার রিভিশন সেট',
+                    'গুরুত্বপূর্ণ প্রশ্ন ব্যাংক ও স্পেশাল শর্টকাট টেস্ট'
+                ]
             }
-
-            renderLastReadChips();
         };
 
-        function saveToLastReadHistory(url, title) {
-            let history = JSON.parse(localStorage.getItem('bcs_read_history')) || [];
-            history = history.filter(item => item.url !== url);
-            history.unshift({ url: url, title: title });
-            if (history.length > 5) {
-                history.pop();
-            }
-            localStorage.setItem('bcs_read_history', JSON.stringify(history));
-        }
+        function openSubPage(pageKey) {
+            const data = subPagesData[pageKey];
+            if (!data) return;
 
-        function renderLastReadChips() {
-            let container = document.getElementById('lastReadContainer');
-            let history = JSON.parse(localStorage.getItem('bcs_read_history')) || [];
-            
-            if (history.length === 0) {
-                container.innerHTML = `<div class="last-read-chip" style="color:var(--text-color); opacity:0.7;">📌 কোনো পড়ার রেকর্ড নেই</div>`;
-                return;
-            }
-
+            document.getElementById('subPageTitle').innerText = data.title;
+            const container = document.getElementById('subPageContent');
             container.innerHTML = '';
-            history.forEach(item => {
-                let chip = document.createElement('div');
-                chip.className = 'last-read-chip';
-                chip.innerHTML = `📌 ${item.title}`;
-                chip.onclick = function() {
-                    window.location.href = item.url;
+
+            data.items.forEach(item => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-3.5 rounded-xl bg-slate-100 dark:bg-slate-700/60 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary transition font-semibold text-sm flex items-center justify-between border border-slate-200/60 dark:border-slate-600";
+                
+                if(data.isLive && item.includes('LIVE EXAM')) {
+                    btn.className = "w-full text-left p-4 rounded-xl bg-red-600 hover:bg-red-700 text-white transition font-bold text-sm flex items-center justify-between shadow-md";
+                }
+
+                btn.innerHTML = `<span>${item}</span> <span class="text-xs opacity-70">➔</span>`;
+                
+                btn.onclick = () => {
+                    alert(item + ' সিলেক্ট করা হয়েছে। খুব শীঘ্রই এর MCQ চার্ট লোড হবে!');
+                    closeSubPage();
                 };
-                container.appendChild(chip);
+
+                container.appendChild(btn);
             });
+
+            const modal = document.getElementById('subPageModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
         }
 
-        function toggleDropdown(listId, arrowId) {
-            var list = document.getElementById(listId);
-            var arrow = document.getElementById(arrowId);
-            if (list.style.display === 'block') {
-                list.style.display = 'none';
-                arrow.innerText = '▼';
-            } else {
-                list.style.display = 'block';
-                arrow.innerText = '▲';
-            }
+        function closeSubPage() {
+            const modal = document.getElementById('subPageModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
         }
 
-        function openCustomModal(driveLink) {
-            const modal = document.getElementById('custom-download-modal');
-            const readBtn = document.getElementById('modal-read-btn');
-            const downloadBtn = document.getElementById('modal-download-btn');
-            
-            readBtn.href = driveLink; 
-            downloadBtn.href = driveLink;
-            
-            modal.style.display = 'flex';
+        function openPdfModal() {
+            document.getElementById('pdfModal').classList.remove('hidden');
+            document.getElementById('pdfModal').classList.add('flex');
+        }
+        function closePdfModal() {
+            document.getElementById('pdfModal').classList.remove('flex');
+            document.getElementById('pdfModal').classList.add('hidden');
+        }
+        function confirmDownload() {
+            alert('আপনার পিডিএফ ডাউনলোড শুরু হচ্ছে...');
+            closePdfModal();
         }
 
-        function closeCustomModal() {
-            document.getElementById('custom-download-modal').style.display = 'none';
+        function startQuiz() {
+            alert('কুইজ মাস্টার শুরু হচ্ছে! প্রস্তুত থাকুন।');
         }
 
-        window.onclick = function(event) {
-            const modal = document.getElementById('custom-download-modal');
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
+        function startExamMode() {
+            alert('১০০ নম্বরের এক্সাম মোড খুব শীঘ্রই শুরু হবে। প্রস্তুতি নিন!');
         }
 
-        function toggleDarkMode() {
-            var body = document.body;
-            var btn = document.getElementById('theme-toggle');
-            body.classList.toggle('dark-mode');
-            btn.innerText = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        function handleLinkClick(title) {
+            alert(title + ' ক্যাটেগরি ভিজিট করা হচ্ছে...');
         }
 
-        function toggleDrawer() {
-            var drawer = document.getElementById('sideDrawer');
-            var overlay = document.getElementById('overlay');
-            if (drawer.classList.contains('open')) {
-                drawer.classList.remove('open');
-                overlay.style.display = 'none';
-            } else {
-                drawer.classList.add('open');
-                overlay.style.display = 'block';
-            }
-        }
-
-        function toggleSearchModal() {
-            var modal = document.getElementById('searchModal');
-            if (modal.style.display === 'flex') {
-                modal.style.display = 'none';
-                document.getElementById('searchInput').value = '';
-                filterItems();
-            } else {
-                modal.style.display = 'flex';
-                document.getElementById('searchInput').focus();
-            }
-        }
-
-        function filterItems() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let cards = document.querySelectorAll('.searchable');
+        // Live Search Filter Functionality
+        function handleSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.subject-card');
             
             cards.forEach(card => {
-                let text = card.textContent || card.innerText;
-                if (text.toLowerCase().indexOf(input) > -1) {
-                    card.style.display = "";
+                const text = card.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    card.style.display = 'block';
                 } else {
-                    card.style.display = "none";
+                    card.style.display = 'none';
                 }
             });
         }
 
-        function changeFontSize(size) {
-            document.body.classList.remove('font-small', 'font-medium', 'font-large');
-            document.body.classList.add('font-' + size);
+        function openAllSubjects() {
+            alert('সব ক্যাটেগরি ও বিষয়সমূহ লোড করা হচ্ছে...');
         }
 
-        let wakeLock = null;
-        async function toggleWakeLock(checkbox) {
-            if (checkbox.checked) {
-                try {
-                    wakeLock = await navigator.wakeup?.request?.('screen') || await navigator.wakeLock?.request('screen');
-                } catch (err) {
-                    console.log('Wake Lock error:', err);
-                }
-            } else {
-                if (wakeLock) {
-                    wakeLock.release();
-                    wakeLock = null;
-                }
+        // Header and Footer Interactive Modals
+        function openNotificationModal() {
+            showInfoModal('নোটিফিকেশনসমূহ', '<p>বর্তমানে কোনো নতুন নোটিফিকেশন নেই। নিয়মিত আপডেট পেতে সাথেই থাকুন!</p>');
+        }
+
+        function openMenuModal() {
+            showInfoModal('কুইক মেনু', `
+                <div class="space-y-2">
+                    <button onclick="closeInfoModal(); openSubPage('bcsNew');" class="w-full text-left p-2.5 rounded bg-slate-100 dark:bg-slate-700 font-medium">📌 নতুনদের প্রস্তুতি</button>
+                    <button onclick="closeInfoModal(); openSubPage('topicGuru');" class="w-full text-left p-2.5 rounded bg-slate-100 dark:bg-slate-700 font-medium">📚 টপিক গুরু</button>
+                    <button onclick="closeInfoModal(); openPdfModal();" class="w-full text-left p-2.5 rounded bg-slate-100 dark:bg-slate-700 font-medium">📥 পিডিএফ সেকশন</button>
+                </div>
+            `);
+        }
+
+        function openFooterPage(type) {
+            if(type === 'about') {
+                showInfoModal('About Us', '<p>Bright-TechBD হলো একটি আধুনিক চাকরির প্রস্তুতি ও অনলাইন কুইজ প্ল্যাটফর্ম, যা প্রতিযোগিতামূলক পরীক্ষার প্রস্তুতিকে সহজতর করে।</p>');
+            } else if(type === 'terms') {
+                showInfoModal('Terms & Condition', '<p>এই ওয়েবসাইটের সকল কন্টেন্ট শিক্ষামূলক উদ্দেশ্যে ব্যবহৃত। কোনো ধরনের বাণিজ্যিক অপব্যবহার নিষিদ্ধ।</p>');
+            } else if(type === 'privacy') {
+                showInfoModal('Privacy Policy', '<p>আমরা আপনার গোপনীয়তাকে গুরুত্ব দিই এবং কোনো ব্যক্তিগত তথ্য অপব্যবহার করি না।</p>');
             }
         }
 
-        function toggleCopyProtection(checkbox) {
-            if (checkbox.checked) {
-                document.body.classList.add('no-copy');
-            } else {
-                document.body.classList.remove('no-copy');
-            }
+        function showInfoModal(title, htmlContent) {
+            document.getElementById('infoModalTitle').innerText = title;
+            document.getElementById('infoModalBody').innerHTML = htmlContent;
+            const modal = document.getElementById('infoModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
         }
 
-        function showView(viewId) {
-            document.getElementById('home-view').style.display = 'none';
-            document.getElementById('topics-view').style.display = 'none';
-            document.getElementById('exam-topics-view').style.display = 'none';
-            
-            document.getElementById(viewId).style.display = 'block';
-
-            document.getElementById('nav-home').classList.remove('active');
-            document.getElementById('nav-topics').classList.remove('active');
-            document.getElementById('nav-exam').classList.remove('active');
-            
-            if(viewId === 'home-view') document.getElementById('nav-home').classList.add('active');
-            if(viewId === 'topics-view') document.getElementById('nav-topics').classList.add('active');
-            if(viewId === 'exam-topics-view') document.getElementById('nav-exam').classList.add('active');
+        function closeInfoModal() {
+            const modal = document.getElementById('infoModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
         }
     </script>
 </body>
