@@ -13,8 +13,9 @@
   "lang": "bn",
   "orientation": "any",
   "display_override": [
-    "standalone"
-  ],
+  "window-controls-overlay",
+  "standalone"
+],
   "prefer_related_applications": false,
   "categories": [
     "education"
