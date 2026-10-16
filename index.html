@@ -31,18 +31,13 @@
             height: 0 !important;
         }
     </style>
-    <b:skin><![CDATA[
-        body { margin: 0; padding: 0; }
-        /* ব্লগার থিম মোডেও বারটি হাইড রাখার জন্য */
-        #navbar-iframe { display: none !important; }
-    ]]></b:skin>
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
 
     <!-- Header Section -->
     <header class="sticky top-0 z-50 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-sm border-b border-slate-200 dark:border-slate-700">
         <div class="max-w-md mx-auto px-4 py-3.5 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-primary dark:text-blue-400">All In One Job Solution </h1>
+            <h1 class="text-2xl font-bold text-primary dark:text-blue-400">All In One Job Solution</h1>
             <div class="flex items-center space-x-3">
                 <!-- Dark Mode Toggle Button -->
                 <button id="darkModeToggle" class="p-2.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition text-lg" title="ডার্ক মোড পরিবর্তন">
@@ -84,7 +79,7 @@
                 <!-- Box 1: নতুনদের BCS প্রস্তুতি -->
                 <button onclick="openSubPage('bcsNew')" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition text-left w-full">
                     <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">নতুনদের BCS প্রস্তুতি</div>
-                    <p class="text-xs text-slate-500 dark:text-slate-400">বিসিএস জব সলিউশন, ব্যাংক, প্রাইমারি, NTRCA ইত্যাদি।</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">বিসিএস জব সলিউশন, ব্যাংক, প্রাইমারি ইত্যাদি।</p>
                 </button>
 
                 <!-- Box 2: টপিক গুরু -->
@@ -96,7 +91,7 @@
                 <!-- Box 3: জব সলিউশন -->
                 <button onclick="openSubPage('jobSolution')" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition text-left w-full">
                     <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">BCS প্রিলিমিনারি প্রশ্ন ও সমাধান</div>
-                    <p class="text-xs text-slate-500 dark:text-slate-400">৪৬ থেকে ১০ম বিসিএস প্রিলিমিনারি প্রশ্ন ও সমাধান।</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">৪৫, ৪৪, ৪০ সহ অন্যান্য বিসিএস প্রিলিমিনারি প্রশ্ন।</p>
                 </button>
 
                 <!-- Box 4: বিসিএস জব সলিউশন রিভিশন -->
@@ -124,9 +119,9 @@
                 </a>
 
                 <!-- Box 8: বার কাউন্সিল ও বিজিএসএম -->
-                <a href="https://bright-techbd.blogspot.com/2026/10/online-quiz-platform.html" target="_blank" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition block">
-                    <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">বার কাউন্সিল ও বিজিএসএম</div>
-                    <p class="text-xs text-slate-500 dark:text-slate-400">আইন ও সাধারণ জ্ঞানভিত্তিক এমসিকিউ প্রশ্ন ব্যাংক।</p>
+                <a href="contact.html" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition block">
+                    <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">যোগাযোগ ও তথ্য</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">আমাদের সাথে যোগাযোগ করার মাধ্যম ও তথ্য।</p>
                 </a>
             </div>
         </section>
@@ -142,33 +137,9 @@
             </button>
         </section>
 
-        <!-- Scroll Section -->
-        <section class="bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
-            <div class="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700/50 p-4 rounded-xl text-center mb-4">
-                <h4 class="font-bold text-amber-800 dark:text-amber-300 text-base mb-1">আপনার মেধা যাচাই করুন</h4>
-                <p class="text-xs text-amber-700 dark:text-amber-400 mb-3">১০০ নম্বরের পূর্ণাঙ্গ পরীক্ষা, সময় ও ব্যাখ্যাসহ।</p>
-                <button onclick="startExamMode()" class="bg-amber-600 hover:bg-amber-700 text-white text-xs px-4 py-2 rounded-lg font-semibold shadow transition">পরীক্ষা শুরু করুন (Exam Mode)</button>
-            </div>
-
-            <h3 class="text-lg font-bold mb-3 text-slate-700 dark:text-slate-200">আরও গুরুত্বপূর্ণ লিস্ট (ব্লগ পোস্ট ও প্রশ্নব্যাংক)</h3>
-            
-            <div class="space-y-3">
-                <a href="#post-1" onclick="alert('পোস্টটি লোড হচ্ছে...'); return false;" class="flex items-center space-x-3 p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 border border-slate-100 dark:border-slate-700 transition">
-                    <div class="w-14 h-14 bg-slate-200 dark:bg-slate-700 rounded-lg overflow-hidden flex-shrink-0 flex items-center justify-center text-xs text-slate-500">
-                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=100&auto=format&fit=crop&q=60" alt="Logo" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <h5 class="text-sm font-bold text-slate-800 dark:text-slate-100 truncate">বিসিএস প্রিলিমিনারি চূড়ান্ত প্রস্তুতি ও বিগত প্রশ্ন বিশ্লেষণ</h5>
-                        <p class="text-xs text-slate-500 dark:text-slate-400">পরীক্ষার কৌশল ও গুরুত্বপূর্ণ সাজেশন...</p>
-                    </div>
-                    <span class="text-slate-400 text-base font-bold">→</span>
-                </a>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Dynamic Sub-Page View Modal (Modern Mobile Friendly Layout) -->
+    <!-- Dynamic Sub-Page View Modal -->
     <div id="subPageModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-end sm:items-center justify-center z-50 p-0 sm:p-4">
         <div class="bg-white dark:bg-slate-800 rounded-t-3xl sm:rounded-2xl max-w-md w-full max-h-[85vh] overflow-y-auto shadow-2xl p-5 space-y-4">
             <div class="flex justify-between items-center border-b border-slate-200 dark:border-slate-700 pb-3">
@@ -181,7 +152,7 @@
         </div>
     </div>
 
-    <!-- General Info Modal (Menu / Notification / About / Terms / Privacy) -->
+    <!-- General Info Modal -->
     <div id="infoModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
         <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-sm w-full p-6 space-y-4 shadow-2xl">
             <div class="flex justify-between items-center border-b border-slate-200 dark:border-slate-700 pb-3">
@@ -197,11 +168,11 @@
     <!-- Footer -->
     <footer class="max-w-md mx-auto px-4 py-6 text-center text-sm text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800 mt-6 space-y-2">
         <div class="flex justify-center space-x-4 font-medium">
-            <a href="#about" onclick="openFooterPage('about')" class="hover:underline">About us</a>
-            <a href="#terms" onclick="openFooterPage('terms')" class="hover:underline">Terms & Condition</a>
-            <a href="#privacy" onclick="openFooterPage('privacy')" class="hover:underline">Privacy</a>
+            <a href="contact.html" class="hover:underline">About us</a>
+            <a href="disclaimer.html" class="hover:underline">Terms & Condition</a>
+            <a href="privacy.html" class="hover:underline">Privacy</a>
         </div>
-        <p>© 2026 All In One Job Solution . All rights reserved.</p>
+        <p>© 2026 All In One Job Solution. All rights reserved.</p>
     </footer>
 
     <!-- PDF Download Popup Modal -->
@@ -217,60 +188,44 @@
         </div>
     </div>
 
-    <!-- JavaScript for Dynamic Modern Sub-Pages & Features -->
+    <!-- JavaScript for Direct File Linking -->
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
         toggleBtn.addEventListener('click', () => {
             document.documentElement.classList.toggle('dark');
         });
 
-        // Sub-page Content Database
+        // Sub-page Content Database with Direct HTML File Links
         const subPagesData = {
             'bcsNew': {
                 title: 'নতুনদের BCS প্রস্তুতি ও অন্যান্য জব',
                 items: [
-                    'বিসিএস জব সলিউশন',
-                    'ব্যাংক জব সলিউশন',
-                    'প্রাইভেট ব্যাংক জব সলিউশন',
-                    'প্রাইমারি জব সলিউশন',
-                    'NTRCA জব সলিউশন',
-                    'অন্যান্য জব সলিউশন রিভিশন'
+                    { name: '৪৫তম বিসিএস প্রিলিমিনারি প্রশ্ন', file: 'bcs45.html' },
+                    { name: '৪৪তম বিসিএস প্রিলিমিনারি প্রশ্ন', file: 'bcs44.html' },
+                    { name: '৪০তম বিসিএস প্রিলিমিনারি প্রশ্ন', file: 'bcs40.html' }
                 ]
             },
             'topicGuru': {
                 title: 'টপিক গুরু - স্পেশাল লেকচার',
                 items: [
-                    'সাম্প্রতিক সমাচার পরীক্ষা',
-                    'বাংলা ভাষা ও সাহিত্য',
-                    'ইংরেজি ভাষা ও সাহিত্য',
-                    'গণিত ও গাণিতিক যুক্তি',
-                    'মানসিক দক্ষতা',
-                    'বাংলাদেশ বিষয়াবলি',
-                    'আন্তর্জাতিক বিষয়াবলি',
-                    'আইসিটি এক্সপার্ট',
-                    'ভূগোল পরিবেশ ও দুর্যোগ ব্যবস্থাপনা'
+                    { name: 'সাম্প্রতিক সমাচার পরীক্ষা', file: '#' },
+                    { name: 'বাংলা ভাষা ও সাহিত্য', file: '#' },
+                    { name: 'ইংরেজি ভাষা ও সাহিত্য', file: '#' }
                 ]
             },
             'jobSolution': {
-                title: 'বিসিএস প্রশ্ন ও সমাধান (১০ম - ৪৬তম)',
+                title: 'বিসিএস প্রশ্ন ও সমাধান (গিটহাব ফাইলসমূহ)',
                 items: [
-                    '৪৬ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
-                    '৪৫ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
-                    '৪৪ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
-                    '৪৩ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
-                    '৪২ BCS (বিশেষ) প্রিলিমিনারি প্রশ্ন ও সমাধান',
-                    '৪১ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
-                    '৪০ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান',
-                    '১০ম - ৩৯ম BCS প্রিলিমিনারি প্রশ্ন ও সমাধান'
+                    { name: '৪৫ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান', file: 'bcs45.html' },
+                    { name: '৪৪ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান', file: 'bcs44.html' },
+                    { name: '৪০ BCS প্রিলিমিনারি প্রশ্ন ও সমাধান', file: 'bcs40.html' }
                 ]
             },
             'bcsRevision': {
-                title: 'বিসিএস জব সলিউশন রিভিশন (Live Exam)',
-                isLive: true,
+                title: 'বিসিএস জব সলিউশন রিভিশন',
                 items: [
-                    '🔴 LIVE EXAM NOW: আজকের মডেল টেস্ট পরীক্ষা',
-                    'বিগত বছরের ভুল সংশোধনী ও সুপার রিভিশন সেট',
-                    'গুরুত্বপূর্ণ প্রশ্ন ব্যাংক ও স্পেশাল শর্টকাট টেস্ট'
+                    { name: '৪৫তম বিসিএস রিভিশন সেট', file: 'bcs45.html' },
+                    { name: '৪৪তম বিসিএস রিভিশন সেট', file: 'bcs44.html' }
                 ]
             }
         };
@@ -287,14 +242,14 @@
                 const btn = document.createElement('button');
                 btn.className = "w-full text-left p-3.5 rounded-xl bg-slate-100 dark:bg-slate-700/60 hover:bg-blue-50 dark:hover:bg-slate-700 hover:text-primary transition font-semibold text-sm flex items-center justify-between border border-slate-200/60 dark:border-slate-600";
                 
-                if(data.isLive && item.includes('LIVE EXAM')) {
-                    btn.className = "w-full text-left p-4 rounded-xl bg-red-600 hover:bg-red-700 text-white transition font-bold text-sm flex items-center justify-between shadow-md";
-                }
-
-                btn.innerHTML = `<span>${item}</span> <span class="text-xs opacity-70">➔</span>`;
+                btn.innerHTML = `<span>${item.name}</span> <span class="text-xs opacity-70">➔</span>`;
                 
                 btn.onclick = () => {
-                    alert(item + ' সিলেক্ট করা হয়েছে। খুব শীঘ্রই এর MCQ চার্ট লোড হবে!');
+                    if (item.file && item.file !== '#') {
+                        window.location.href = item.file;
+                    } else {
+                        alert(item.name + ' - এই পেজটি শীঘ্রই যুক্ত করা হবে!');
+                    }
                     closeSubPage();
                 };
 
@@ -329,15 +284,10 @@
             alert('কুইজ মাস্টার শুরু হচ্ছে! প্রস্তুত থাকুন।');
         }
 
-        function startExamMode() {
-            alert('১০০ নম্বরের এক্সাম মোড খুব শীঘ্রই শুরু হবে। প্রস্তুতি নিন!');
-        }
-
         function handleLinkClick(title) {
             alert(title + ' ক্যাটেগরি ভিজিট করা হচ্ছে...');
         }
 
-        // Live Search Filter Functionality
         function handleSearch() {
             const query = document.getElementById('searchInput').value.toLowerCase();
             const cards = document.querySelectorAll('.subject-card');
@@ -356,7 +306,6 @@
             alert('সব ক্যাটেগরি ও বিষয়সমূহ লোড করা হচ্ছে...');
         }
 
-        // Header and Footer Interactive Modals
         function openNotificationModal() {
             showInfoModal('নোটিফিকেশনসমূহ', '<p>বর্তমানে কোনো নতুন নোটিফিকেশন নেই। নিয়মিত আপডেট পেতে সাথেই থাকুন!</p>');
         }
@@ -364,21 +313,11 @@
         function openMenuModal() {
             showInfoModal('কুইক মেনু', `
                 <div class="space-y-2">
-                    <button onclick="closeInfoModal(); openSubPage('bcsNew');" class="w-full text-left p-2.5 rounded bg-slate-100 dark:bg-slate-700 font-medium">📌 নতুনদের প্রস্তুতি</button>
-                    <button onclick="closeInfoModal(); openSubPage('topicGuru');" class="w-full text-left p-2.5 rounded bg-slate-100 dark:bg-slate-700 font-medium">📚 টপিক গুরু</button>
-                    <button onclick="closeInfoModal(); openPdfModal();" class="w-full text-left p-2.5 rounded bg-slate-100 dark:bg-slate-700 font-medium">📥 পিডিএফ সেকশন</button>
+                    <a href="privacy.html" class="block w-full text-left p-2.5 rounded bg-slate-100 dark:bg-slate-700 font-medium">📌 প্রাইভেসি পলিসি</a>
+                    <a href="contact.html" class="block w-full text-left p-2.5 rounded bg-slate-100 dark:bg-slate-700 font-medium">📚 যোগাযোগ পেজ</a>
+                    <a href="disclaimer.html" class="block w-full text-left p-2.5 rounded bg-slate-100 dark:bg-slate-700 font-medium">📥 ডিসক্লেইমার পেজ</a>
                 </div>
             `);
-        }
-
-        function openFooterPage(type) {
-            if(type === 'about') {
-                showInfoModal('About Us', '<p>Bright-TechBD হলো একটি আধুনিক চাকরির প্রস্তুতি ও অনলাইন কুইজ প্ল্যাটফর্ম, যা প্রতিযোগিতামূলক পরীক্ষার প্রস্তুতিকে সহজতর করে।</p>');
-            } else if(type === 'terms') {
-                showInfoModal('Terms & Condition', '<p>এই ওয়েবসাইটের সকল কন্টেন্ট শিক্ষামূলক উদ্দেশ্যে ব্যবহৃত। কোনো ধরনের বাণিজ্যিক অপব্যবহার নিষিদ্ধ।</p>');
-            } else if(type === 'privacy') {
-                showInfoModal('Privacy Policy', '<p>আমরা আপনার গোপনীয়তাকে গুরুত্ব দিই এবং কোনো ব্যক্তিগত তথ্য অপব্যবহার করি না।</p>');
-            }
         }
 
         function showInfoModal(title, htmlContent) {
