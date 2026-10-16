@@ -332,6 +332,53 @@
             modal.classList.remove('flex');
             modal.classList.add('hidden');
         }
+        // Exit Modal logic for back button
+        window.history.pushState({ page: 1 }, "", "");
+
+        window.onpopstate = function (event) {
+            openExitModal();
+            window.history.pushState({ page: 1 }, "", "");
+        };
+
+        function openExitModal() {
+            const modal = document.getElementById('exitModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeExitModal() {
+            const modal = document.getElementById('exitModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        function confirmExit() {
+            window.history.back();
+        }
     </script>
+    // Exit Modal logic for back button
+        window.history.pushState({ page: 1 }, "", "");
+
+        window.onpopstate = function (event) {
+            openExitModal();
+            window.history.pushState({ page: 1 }, "", "");
+        };
+
+        function openExitModal() {
+            const modal = document.getElementById('exitModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeExitModal() {
+            const modal = document.getElementById('exitModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        function confirmExit() {
+            window.history.back();
+        }
 </body>
+    
 </html>
