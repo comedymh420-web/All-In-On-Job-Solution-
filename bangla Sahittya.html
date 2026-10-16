@@ -48,12 +48,12 @@
         <!-- Search & Filter Box -->
         <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-3">
             <div class="relative">
-                <input type="text" id="searchInput" onkeyup="filterQuestions()" placeholder="প্রশ্ন বা টপিক দিয়ে খুঁজুন..." class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-primary border border-slate-200 dark:border-slate-700">
-                <span class="absolute right-3.5 top-3 text-slate-400 text-base">🔍</span>
+                <input type="text" id="searchInput" onkeyup="filterQuestions()" placeholder="প্রশ্ন বা টপিক দিয়ে খুঁজুন..." class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-primary border border-slate-200 dark:border-slate-700">
+                <span class="absolute right-3.5 top-3 text-slate-400 text-lg">🔍</span>
             </div>
 
             <!-- Category Filter Buttons -->
-            <div class="flex gap-2 overflow-x-auto pb-1 text-xs scrollbar-none">
+            <div class="flex gap-2 overflow-x-auto pb-1 text-xs sm:text-sm scrollbar-none">
                 <button onclick="filterCategory('all')" id="cat-all" class="cat-btn px-3.5 py-2 rounded-xl font-semibold bg-primary text-white whitespace-nowrap transition shadow-sm">সব প্রশ্ন</button>
                 <button onclick="filterCategory('grammar')" id="cat-grammar" class="cat-btn px-3.5 py-2 rounded-xl font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 whitespace-nowrap transition">ব্যাকরণ (১-৫০)</button>
                 <button onclick="filterCategory('spelling')" id="cat-spelling" class="cat-btn px-3.5 py-2 rounded-xl font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 whitespace-nowrap transition">বানান ও বাগধারা (৫১-১০০)</button>
@@ -123,53 +123,54 @@
             container.innerHTML = '';
 
             if (items.length === 0) {
-                container.innerHTML = `<div class="text-center py-12 text-slate-400 text-sm font-medium">কোনো প্রশ্ন পাওয়া যায়নি!</div>`;
+                container.innerHTML = `<div class="text-center py-12 text-slate-400 text-sm sm:text-base font-medium">কোনো প্রশ্ন পাওয়া যায়নি!</div>`;
                 return;
             }
 
             items.forEach((q) => {
                 const card = document.createElement('div');
-                card.className = "bg-white dark:bg-slate-800 p-5 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-3.5 transition-all";
+                card.className = "bg-white dark:bg-slate-800 p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-4 transition-all";
 
+                // প্রশ্ন (বড় ও স্পষ্ট ফন্ট: text-base sm:text-lg)
                 let htmlContent = `
                     <div class="flex justify-between items-start gap-2">
-                        <h3 class="font-bold text-sm sm:text-base text-slate-800 dark:text-slate-100 leading-relaxed">
+                        <h3 class="font-bold text-base sm:text-lg text-slate-800 dark:text-slate-100 leading-relaxed">
                             <span class="text-primary font-bold mr-1.5">${q.id}.</span> ${q.question}
                         </h3>
                     </div>
                 `;
 
-                // অপশন লিস্ট (এখানে আর কোনো সাইডে টিক চিহ্ন বা কালার হাইলাইট থাকবে না, একদম সাধারণ ও পরিষ্কার থাকবে)
-                htmlContent += `<div class="space-y-2 pt-1">`;
+                // অপশনসমূহ (বড় ও স্পষ্ট ফন্ট: text-sm sm:text-base)
+                htmlContent += `<div class="space-y-2.5 pt-1">`;
                 q.options.forEach((opt, optIndex) => {
                     const letters = ["ক", "খ", "গ", "ঘ"];
                     htmlContent += `
-                        <div class="p-3 rounded-xl border text-xs sm:text-sm flex items-center gap-2.5 bg-slate-50 dark:bg-slate-900/50 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200">
-                            <span class="w-6 h-6 rounded-lg bg-slate-200 dark:bg-slate-700 text-xs font-bold flex items-center justify-center">${letters[optIndex]}</span>
-                            ${opt}
+                        <div class="p-3.5 sm:p-4 rounded-xl border text-sm sm:text-base flex items-center gap-3 bg-slate-50 dark:bg-slate-900/50 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 font-medium">
+                            <span class="w-7 h-7 rounded-lg bg-slate-200 dark:bg-slate-700 text-xs sm:text-sm font-bold flex items-center justify-center shrink-0">${letters[optIndex]}</span>
+                            <span>${opt}</span>
                         </div>
                     `;
                 });
                 htmlContent += `</div>`;
 
-                // সঠিক উত্তর ও ব্যাখ্যার সেকশন (ব্যাখ্যার ঠিক উপরে সঠিক উত্তর ফুটিয়ে তোলা হয়েছে)
+                // সঠিক উত্তর ও ব্যাখ্যার সেকশন (বড় ফন্ট সহ)
                 const correctLetter = ["ক", "খ", "গ", "ঘ"][q.correct];
                 const correctText = q.options[q.correct];
 
                 htmlContent += `
-                    <div class="pt-2 space-y-2.5">
+                    <div class="pt-3 space-y-3">
                         <!-- সঠিক উত্তর হাইলাইট বক্স -->
-                        <div class="text-xs sm:text-sm font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/30 px-3.5 py-2.5 rounded-xl border border-emerald-200 dark:border-emerald-800 flex items-center gap-2 shadow-sm">
-                            <span>✅ সঠিক উত্তর:</span>
-                            <span>${correctLetter}) ${correctText}</span>
+                        <div class="text-sm sm:text-base font-bold text-emerald-800 dark:text-emerald-200 bg-emerald-50 dark:bg-emerald-950/40 px-4 py-3 rounded-xl border border-emerald-300 dark:border-emerald-700 flex items-center gap-2.5 shadow-sm">
+                            <span class="text-base">✅</span>
+                            <span>সঠিক উত্তর: ${correctLetter}) ${correctText}</span>
                         </div>
 
                         <!-- ব্যাখ্যা বাটন ও বক্স -->
                         <div>
-                            <button onclick="toggleExplanation(${q.id})" id="btn-exp-${q.id}" class="text-xs sm:text-sm bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl font-semibold transition shadow-sm">
+                            <button onclick="toggleExplanation(${q.id})" id="btn-exp-${q.id}" class="text-xs sm:text-sm bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-semibold transition shadow-sm">
                                 ব্যাখ্যা দেখুন
                             </button>
-                            <div id="exp-${q.id}" class="hidden mt-2.5 p-3.5 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 rounded-xl text-xs sm:text-sm text-emerald-950 dark:text-emerald-200 leading-relaxed font-normal">
+                            <div id="exp-${q.id}" class="hidden mt-3 p-4 bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 rounded-xl text-xs sm:text-sm text-emerald-950 dark:text-emerald-200 leading-relaxed font-normal">
                                 <strong>ব্যাখ্যা:</strong> ${q.explanation}
                             </div>
                         </div>
@@ -218,11 +219,11 @@
             if (expDiv.classList.contains('hidden')) {
                 expDiv.classList.remove('hidden');
                 btn.textContent = "ব্যাখ্যা লুকান";
-                btn.className = "text-xs sm:text-sm bg-slate-600 hover:bg-slate-700 text-white px-4 py-2 rounded-xl font-semibold transition shadow-sm";
+                btn.className = "text-xs sm:text-sm bg-slate-600 hover:bg-slate-700 text-white px-4 py-2.5 rounded-xl font-semibold transition shadow-sm";
             } else {
                 expDiv.classList.add('hidden');
                 btn.textContent = "ব্যাখ্যা দেখুন";
-                btn.className = "text-xs sm:text-sm bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl font-semibold transition shadow-sm";
+                btn.className = "text-xs sm:text-sm bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-semibold transition shadow-sm";
             }
         }
 
