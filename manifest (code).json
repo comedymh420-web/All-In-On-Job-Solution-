@@ -1,28 +1,22 @@
+
 {
   "background_color": "#f7fafc",
   "dir": "auto",
   "display": "standalone",
   "name": "All In One Job Solution",
-  "orientation": "any",
-  "scope": "/",
   "short_name": "Job Solution",
-  "start_url": "https://comedymh420-web.github.io/All-In-On-Job-Solution-/",
+  "start_url": "/All-In-On-Job-Solution/",
+  "scope": "/All-In-On-Job-Solution/",
+  "id": "/All-In-On-Job-Solution/",
   "theme_color": "#2362eb",
   "description": "বাংলায় BCS, ব্যাংক, প্রাইমারি ও NTRCA পরীক্ষার প্রস্তুতি, MCQ কুইজ এবং প্রশ্নের সমাধান।",
-  "id": "Job Solution",
   "lang": "bn",
+  "orientation": "any",
   "display_override": [
-    "standalone",
-    "browser",
-    "window-controls-overlay",
-    "fullscreen",
-    "minimal-ui"
+    "standalone"
   ],
   "prefer_related_applications": false,
   "categories": [
     "education"
-  ],
-  "share_target": {
-    "method": "GET"
-  }
+  ]
 }
