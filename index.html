@@ -387,5 +387,16 @@
         </div>
     </div>
 
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("./pwabuilder-sw.js")
+      .catch(function (error) {
+        console.error("Service Worker registration failed:", error);
+      });
+  });
+}
+</script>
+
 </body>
 </html>
