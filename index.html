@@ -332,29 +332,34 @@
             modal.classList.remove('flex');
             modal.classList.add('hidden');
         }
-        // Exit Modal logic for back button
+            let allowExit = false;
+
+    // ব্রাউজারের হিস্টোরিতে একটি স্টেট পুশ করে রাখা
+    window.history.pushState({ page: 1 }, "", "");
+
+    window.onpopstate = function (event) {
+        if (allowExit) return; // যদি এক্সিট করার অনুমতি দেওয়া হয়, তবে পপআপ আসবে না
+        openExitModal();
         window.history.pushState({ page: 1 }, "", "");
+    };
 
-        window.onpopstate = function (event) {
-            openExitModal();
-            window.history.pushState({ page: 1 }, "", "");
-        };
+    function openExitModal() {
+        const modal = document.getElementById('exitModal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
 
-        function openExitModal() {
-            const modal = document.getElementById('exitModal');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-        }
+    function closeExitModal() {
+        const modal = document.getElementById('exitModal');
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+    }
 
-        function closeExitModal() {
-            const modal = document.getElementById('exitModal');
-            modal.classList.remove('flex');
-            modal.classList.add('hidden');
-        }
+    function confirmExit() {
+        allowExit = true; // ফ্ল্যাগ ট্রু করে দিলাম
+        window.history.back(); // সফলভাবে অ্যাপ বা পেছনের পেজে ফিরে যাবে
+    }
 
-        function confirmExit() {
-            window.history.back();
-        }
     </script>
     <!-- Exit Confirmation Modal -->
     <div id="exitModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
