@@ -76,7 +76,7 @@
             </h3>
             
             <div id="subjectGrid" class="grid grid-cols-2 gap-3.5">
-                <!-- Box 1: নতুনদের BCS প্রস্তুতি -->
+                <!-- Box 1: বিষয়ভিত্তিক BCS প্রস্তুতি -->
                 <button onclick="openSubPage('bcsNew')" class="subject-card bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md hover:border-blue-300 transition text-left w-full">
                     <div class="font-bold text-base mb-1.5 text-slate-800 dark:text-slate-100">বিষয়ভিত্তিক BCS প্রস্তুতি</div>
                     <p class="text-xs text-slate-500 dark:text-slate-400">বিসিএস জব সলিউশন, ব্যাংক, প্রাইমারি ইত্যাদি।</p>
@@ -198,17 +198,17 @@
         // Sub-page Content Database with Direct HTML File Links
         const subPagesData = {
             'bcsNew': {
-                title: 'নতুনদের BCS প্রস্তুতি ও অন্যান্য জব',
+                title: 'বিষয়ভিত্তিক BCS প্রস্তুতি',
                 items: [
                     { name: 'বাংলা ভাষা ও সাহিত্য', file: 'শীঘ্রই যুক্ত করা হচ্ছে' },
                     { name: 'English Language and Literature', file: 'শীঘ্রই যুক্ত করা হচ্ছে' },
-                    { name: 'বাংলাদেশ বিষয়াবলি', file: 'শীঘ্রই যুক্ত করা হচ্ছে' }
-                    { name: 'আন্তর্জাতিক বিষয়াবলি', file: 'শীঘ্রই যুক্ত করা হচ্ছে' }
-                    { name: 'গাণিতিক যুক্তি', file: 'শীঘ্রই যুক্ত করা হচ্ছে' }
-                    { name: 'মানসিক দক্ষতা', file: 'শীঘ্রই যুক্ত করা হচ্ছে' }
-                    { name: 'কম্পিউটার ও তথ্যপ্রযুক্তি', file: 'শীঘ্রই যুক্ত করা হচ্ছে' }
-                    { name: 'সাধারণ বিজ্ঞান', file: 'শীঘ্রই যুক্ত করা হচ্ছে' }
-                    { name: 'ভূগোল, পরিবেশ ও দুর্যোগ ব্যবস্থাপনা', file: 'শীঘ্রই যুক্ত করা হচ্ছে' }
+                    { name: 'বাংলাদেশ বিষয়াবলি', file: 'শীঘ্রই যুক্ত করা হচ্ছে' },
+                    { name: 'আন্তর্জাতিক বিষয়াবলি', file: 'শীঘ্রই যুক্ত করা হচ্ছে' },
+                    { name: 'গাণিতিক যুক্তি', file: 'শীঘ্রই যুক্ত করা হচ্ছে' },
+                    { name: 'মানসিক দক্ষতা', file: 'শীঘ্রই যুক্ত করা হচ্ছে' },
+                    { name: 'কম্পিউটার ও তথ্যপ্রযুক্তি', file: 'শীঘ্রই যুক্ত করা হচ্ছে' },
+                    { name: 'সাধারণ বিজ্ঞান', file: 'শীঘ্রই যুক্ত করা হচ্ছে' },
+                    { name: 'ভূগোল, পরিবেশ ও দুর্যোগ ব্যবস্থাপনা', file: 'শীঘ্রই যুক্ত করা হচ্ছে' },
                     { name: 'নৈতিকতা, মূল্যবোধ ও সুশাসন', file: 'শীঘ্রই যুক্ত করা হচ্ছে' }
                 ]
             },
@@ -252,7 +252,7 @@
                 btn.innerHTML = `<span>${item.name}</span> <span class="text-xs opacity-70">➔</span>`;
                 
                 btn.onclick = () => {
-                    if (item.file && item.file !== '#') {
+                    if (item.file && item.file !== '#' && item.file !== 'শীঘ্রই যুক্ত করা হচ্ছে') {
                         window.location.href = item.file;
                     } else {
                         alert(item.name + ' - এই পেজটি শীঘ্রই যুক্ত করা হবে!');
@@ -288,8 +288,9 @@
         }
 
         function startQuiz() {
-    window.location.href = 'quiz.html';
+            window.location.href = 'quiz.html';
         }
+
         function handleLinkClick(title) {
             alert(title + ' ক্যাটেগরি ভিজিট করা হচ্ছে...');
         }
@@ -339,35 +340,36 @@
             modal.classList.remove('flex');
             modal.classList.add('hidden');
         }
-            let allowExit = false;
 
-    // ব্রাউজারের হিস্টোরিতে একটি স্টেট পুশ করে রাখা
-    window.history.pushState({ page: 1 }, "", "");
+        let allowExit = false;
 
-    window.onpopstate = function (event) {
-        if (allowExit) return; // যদি এক্সিট করার অনুমতি দেওয়া হয়, তবে পপআপ আসবে না
-        openExitModal();
+        // ব্রাউজারের হিস্টোরিতে একটি স্টেট পুশ করে রাখা
         window.history.pushState({ page: 1 }, "", "");
-    };
 
-    function openExitModal() {
-        const modal = document.getElementById('exitModal');
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-    }
+        window.onpopstate = function (event) {
+            if (allowExit) return; 
+            openExitModal();
+            window.history.pushState({ page: 1 }, "", "");
+        };
 
-    function closeExitModal() {
-        const modal = document.getElementById('exitModal');
-        modal.classList.remove('flex');
-        modal.classList.add('hidden');
-    }
+        function openExitModal() {
+            const modal = document.getElementById('exitModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
 
-    function confirmExit() {
-        allowExit = true; // ফ্ল্যাগ ট্রু করে দিলাম
-        window.history.back(); // সফলভাবে অ্যাপ বা পেছনের পেজে ফিরে যাবে
-    }
+        function closeExitModal() {
+            const modal = document.getElementById('exitModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
 
+        function confirmExit() {
+            allowExit = true; 
+            window.history.back(); 
+        }
     </script>
+
     <!-- Exit Confirmation Modal -->
     <div id="exitModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
         <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl max-w-xs w-full shadow-2xl text-center space-y-4 border border-slate-100 dark:border-slate-700">
@@ -384,5 +386,4 @@
     </div>
 
 </body>
-    
 </html>
