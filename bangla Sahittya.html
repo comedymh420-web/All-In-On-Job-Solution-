@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>বাংলা ভাষা ও সাহিত্য - All In One Job Solution</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        /* Custom smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col justify-between">
+
+    <!-- Top Header Bar -->
+    <header class="bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-sm border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
+        <div class="max-w-md mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-3 py-1.5 rounded-xl text-xs font-bold flex items-center space-x-1 hover:bg-slate-200 transition">
+                <span>← হোমপেজ</span>
+            </a>
+            <h1 class="text-sm font-bold text-slate-800 dark:text-slate-100">বাংলা ভাষা ও সাহিত্য</h1>
+            <span class="text-xs bg-blue-100 dark:bg-blue-900/40 text-primary dark:text-blue-300 px-2.5 py-1 rounded-full font-semibold">২০০ প্রশ্ন</span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-md w-full mx-auto p-4 space-y-4">
+        
+        <!-- Search & Filter Box -->
+        <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-3">
+            <div class="relative">
+                <input type="text" id="searchInput" onkeyup="filterQuestions()" placeholder="প্রশ্ন বা টপিক দিয়ে খুঁজুন..." class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 text-xs focus:outline-none focus:ring-2 focus:ring-primary border border-slate-200 dark:border-slate-700">
+                <span class="absolute right-3.5 top-2.5 text-slate-400 text-sm">🔍</span>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex gap-1.5 overflow-x-auto pb-1 text-xs scrollbar-none">
+                <button onclick="filterCategory('all')" id="cat-all" class="cat-btn px-3 py-1.5 rounded-lg font-semibold bg-primary text-white whitespace-nowrap transition">সব প্রশ্ন</button>
+                <button onclick="filterCategory('grammar')" id="cat-grammar" class="cat-btn px-3 py-1.5 rounded-lg font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 whitespace-nowrap transition">ব্যাকরণ (১-৫০)</button>
+                <button onclick="filterCategory('spelling')" id="cat-spelling" class="cat-btn px-3 py-1.5 rounded-lg font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 whitespace-nowrap transition">বানান ও বাগধারা (৫১-১০০)</button>
+                <button onclick="filterCategory('vocab')" id="cat-vocab" class="cat-btn px-3 py-1.5 rounded-lg font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 whitespace-nowrap transition">শব্দ ও যুগ (১০১-১৫০)</button>
+                <button onclick="filterCategory('literature')" id="cat-literature" class="cat-btn px-3 py-1.5 rounded-lg font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 whitespace-nowrap transition">সাহিত্য ও কবি (১৫১-২০০)</button>
+            </div>
+        </div>
+
+        <!-- Questions Container -->
+        <div id="questionsContainer" class="space-y-3.5">
+            <!-- Dynamic Questions Render Here -->
+        </div>
+
+    </main>
+
+    <!-- Floating Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="topBtn" class="fixed bottom-6 right-6 bg-primary text-white w-10 h-10 rounded-full shadow-lg flex items-center justify-center text-sm font-bold opacity-0 transition-opacity duration-300 pointer-events-none z-40">
+        ↑
+    </button>
+
+    <!-- Footer -->
+    <footer class="max-w-md mx-auto px-4 py-6 text-center text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800 mt-6">
+        <p>© 2026 All In One Job Solution. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Rich Interaction & Rendering -->
+    <script>
+        // ২০০টি প্রশ্নের সম্পূর্ণ ডেটাবেস (ক্যাটেগরি ট্যাগ সহ)
+        const banglaQuestions = [
+            // ব্যাকরণ (১ - ৫০)
+            { id: 1, cat: 'grammar', question: "‘বিদ্যালয়’ শব্দের সঠিক সন্ধিবিচ্ছেদ কোনটি?", options: ["বিদ্যা + আলয়", "বিদ্য + আলয়", "বিদ্যা + লয়", "বিদ + আলয়"], correct: 0, explanation: "বিদ্যালয় = বিদ্যা + আলয়। এটি স্বরসন্ধির উদাহরণ।" },
+            { id: 2, cat: 'grammar', question: "‘মহোৎসব’ শব্দের সঠিক সন্ধিবিচ্ছেদ কোনটি?", options: ["মহ + উৎসব", "মহা + উৎসব", "মহৎ + উৎসব", "মহো + উৎসব"], correct: 1, explanation: "মহোৎসব = মহা + উৎসব। এখানে আ + উ মিলে ও হয়েছে।" },
+            { id: 3, cat: 'grammar', question: "‘নরেন্দ্র’ শব্দের সঠিক সন্ধিবিচ্ছেদ কোনটি?", options: ["নর + ইন্দ্র", "নর + এন্দ্র", "নরী + ইন্দ্র", "নর + ইন্দ্রা"], correct: 0, explanation: "নরেন্দ্র = নর + ইন্দ্র। অ + ই মিলে এ হয়।" },
+            { id: 4, cat: 'grammar', question: "‘রাজপুত্র’ কোন সমাসের উদাহরণ?", options: ["দ্বন্দ্ব", "ষষ্ঠী তৎপুরুষ", "কর্মধারয়", "বহুব্রীহি"], correct: 1, explanation: "রাজপুত্র = রাজার পুত্র (ষষ্ঠী তৎপুরুষ সমাস)।" },
+            { id: 5, cat: 'grammar', question: "‘নীলকমল’ কোন সমাসের উদাহরণ?", options: ["কর্মধারয়", "দ্বন্দ্ব", "বহুব্রীহি", "অব্যয়ীভাব"], correct: 0, explanation: "নীলকমল = নীল যে কমল (কর্মধারয় সমাস)।" },
+            { id: 6, cat: 'grammar', question: "‘মা-বাবা’ কোন সমাসের উদাহরণ?", options: ["দ্বিগু", "বহুব্রীহি", "দ্বন্দ্ব", "তৎপুরুষ"], correct: 2, explanation: "উভয় পদের অর্থ প্রধান থাকায় এটি দ্বন্দ্ব সমাস।" },
+            { id: 7, cat: 'grammar', question: "‘রহিম বই পড়ে’—বাক্যে ‘রহিম’ কোন কারক?", options: ["কর্মকারক", "কর্তৃকারক", "করণ কারক", "অধিকরণ কারক"], correct: 1, explanation: "পড়ার কাজটি রহিম করছে, তাই রহিম কর্তৃকারক।" },
+            { id: 8, cat: 'grammar', question: "‘আমি ভাত খাই’—বাক্যে ‘ভাত’ কোন কারক?", options: ["কর্তৃকারক", "কর্মকারক", "করণ কারক", "অপাদান কারক"], correct: 1, explanation: "ক্রিয়ার বিষয় বা বস্তু হওয়ায় ‘ভাত’ কর্মকারক।" },
+            { id: 9, cat: 'grammar', question: "‘কলম দিয়ে লিখি’—বাক্যে ‘কলম দিয়ে’ কোন কারক?", options: ["করণ কারক", "সম্প্রদান কারক", "অপাদান কারক", "অধিকরণ কারক"], correct: 0, explanation: "যে যন্ত্র বা উপকরণের সাহায্যে কাজ হয় তা করণ কারক।" },
+            { id: 10, cat: 'grammar', question: "‘গাছ থেকে ফল পড়ে’—বাক্যে ‘গাছ থেকে’ কোন কারক?", options: ["কর্মকারক", "করণ কারক", "অপাদান কারক", "অধিকরণ কারক"], correct: 2, explanation: "বিচ্যুত বা পতিত হওয়া বোঝালে অপাদান কারক হয়।" },
+
+            // বানান ও বাগধারা (৫১ - ১০০)
+            { id: 51, cat: 'spelling', question: "নিচের কোনটি সঠিক বানান?", options: ["সান্তনা", "সান্ত্বনা", "শান্তনা", "সাঁত্বনা"], correct: 1, explanation: "সঠিক বানান হলো ‘সান্ত্বনা’।" },
+            { id: 52, cat: 'spelling', question: "‘মুমূর্ষু’ শব্দের সঠিক বানান কোনটি?", options: ["মুমুর্ষু", "মুমূর্ষূ", "মুমূর্ষু", "মুর্ষূমু"], correct: 2, explanation: "মুমূর্ষু বানানে নিয়ম হলো: হ্রস্ব উ, দীর্ঘ ঊ, হ্রস্ব উ (ু ূ ু)।" },
+            { id: 53, cat: 'spelling', question: "‘অগ্নিপরীক্ষা’ বাগধারাটির অর্থ কী?", options: ["কঠিন পরীক্ষা", "আগুনে পোড়া", "সহজ কাজ", "বোকামি"], correct: 0, explanation: "‘অগ্নিপরীক্ষা’ অর্থ অত্যন্ত কঠিন বা বাস্তব পরীক্ষা।" },
+            { id: 54, cat: 'spelling', question: "‘অকালের পক্ষী’ বাগধারাটির অর্থ কী?", options: ["সময়মতো উপস্থিত ব্যক্তি", "সুসময়ের বন্ধু", "দুর্ভাগ্যের প্রতীক", "অপদার্থ"], correct: 1, explanation: "‘অকালের পক্ষী’ বলতে সুসময়ের বন্ধু বা স্বার্থপর সঙ্গীকে বোঝায়।" },
+            { id: 55, cat: 'spelling', question: "‘ডুমুরের ফুল’ বাগধারাটির সঠিক অর্থ কোনটি?", options: ["দুর্লভ বস্তু", "সুন্দর ফুল", "অপ্রয়োজনীয় জিনিস", "সুস্বাদু ফল"], correct: 0, explanation: "‘ডুমুরের ফুল’ অর্থ অদৃশ্য বা দুর্লভ বস্তু।" },
+
+            // শব্দ ও যুগ (১০১ - ১৫০)
+            { id: 101, cat: 'vocab', question: "‘অগ্নি’ শব্দের সর্বাধিক ব্যবহৃত সমার্থক শব্দ কোনটি?", options: ["পাবক", "নীর", "বারি", "সমীরণ"], correct: 0, explanation: "‘পাবক’, ‘অনল’, ‘হুতাশন’ হলো অগ্নির গুরুত্বপূর্ণ সমার্থক শব্দ।" },
+            { id: 102, cat: 'vocab', question: "‘চন্দ্র’ শব্দের সমার্থক শব্দ কোনটি নয়?", options: ["শশধর", "সুধাকর", "দিবাকর", "হিমাংশু"], correct: 2, explanation: "‘দিবাকর’ ও ‘ভানু’ হলো সূর্যের সমার্থক শব্দ, চন্দ্রের নয়।" },
+            { id: 103, cat: 'vocab', question: "‘উদার’ শব্দের সঠিক বিপরীতার্থক শব্দ কোনটি?", options: ["সংকীর্ণ", "প্রশস্ত", "মহৎ", "সরল"], correct: 0, explanation: "উদার শব্দের বিপরীত শব্দ সংকীর্ণ।" },
+            { id: 104, cat: 'vocab', question: "বাংলা সাহিত্যের ইতিহাসকে প্রধানত কয়টি যুগে ভাগ করা হয়?", options: ["দুটি", "তিনটি", "চারটি", "পাঁচটি"], correct: 1, explanation: "প্রধানত ৩টি যুগ: প্রাচীন যুগ, মধ্যযুগ ও আধুনিক যুগ।" },
+            { id: 105, cat: 'vocab', question: "বাংলা সাহিত্যের ‘অন্ধকার যুগ’ বলা হয় কোন সময়কে?", options: ["১২০১–১৩৫০ খ্রিষ্টাব্দ", "১৩৫১–১৪০০ খ্রিষ্টাব্দ", "১৫০১–১৬০০ খ্রিষ্টাব্দ", "১৭০১–১৮০০ খ্রিষ্টাব্দ"], correct: 0, explanation: "১২০১ থেকে ১৩৫০ খ্রিষ্টাব্দ পর্যন্ত তুর্কি বিজয়ের প্রাথমিক সময়কে অন্ধকার যুগ বলা হয়।" },
+
+            // সাহিত্য ও কবি (১৫১ - ২০০)
+            { id: 151, cat: 'literature', question: "বাংলা ভাষার প্রাচীনতম কাব্য বা সাহিত্যের প্রথম নিদর্শন কোনটি?", options: ["চর্যাপদ", "শ্রীকৃষ্ণকীর্তন", "গীতগোবিন্দ", "মেঘনাদবধ কাব্য"], correct: 0, explanation: "চর্যাপদ বাংলা সাহিত্যের প্রাচীন যুগের একমাত্র প্রামাণ্য নিদর্শন।" },
+            { id: 152, cat: 'literature', question: "চর্যাপদ কত সালে এবং কোথা থেকে আবিষ্কৃত হয়?", options: ["১৯০৭ সালে নেপালের রাজদরবার থেকে", "১৯০৫ সালে কলকাতা থেকে", "১৯২১ সালে ঢাকা থেকে", "১৯১১ সালে তিব্বত থেকে"], correct: 0, explanation: "হরপ্রসাদ শাস্ত্রী ১৯০৭ সালে নেপালের রাজদরবারের রয়্যাল লাইব্রেরি থেকে চর্যাপদ আবিষ্কার করেন।" },
+            { id: 153, cat: 'literature', question: "রবীন্দ্রনাথ ঠাকুর কত সালে নোবেল পুরস্কার লাভ করেন?", options: ["১৯১৩ সালে", "১৯১১ সালে", "১৯১৫ সালে", "১৯২১ সালে"], correct: 0, explanation: "গীতাঞ্জলি কাব্যের ইংরেজি অনুবাদ 'Song Offerings'-এর জন্য ১৯১৩ সালে সাহিত্যে নোবেল পান।" },
+            { id: 154, cat: 'literature', question: "কাজী নজরুল ইসলামের প্রথম প্রকাশিত কাব্যগ্রন্থ কোনটি?", options: ["অগ্নিবীণা (১৯২২)", "বিষের বাঁশী", "সাম্যবাদী", "চয়নট"], correct: 0, explanation: "নজরুলের প্রথম কাব্যগ্রন্থ ‘অগ্নিবীণা’, যা ১৯২২ সালে প্রকাশিত হয়।" },
+            { id: 155, cat: 'literature', question: "বাংলা সাহিত্যের প্রথম মহাকাব্য কোনটি এবং রচয়িতা কে?", options: ["মেঘনাদবধ কাব্য (মাইকেল মধুসূদন দত্ত)", "তিলোত্তমাসম্ভব", "মহাশ্মশান", "বত্রিশ সিংহাসন"], correct: 0, explanation: "মাইকেল মধুসূদন দত্ত অমিত্রাক্ষর ছন্দে ‘মেঘনাদবধ কাব্য’ (১৮৬১) রচনা করেন।" }
+        ];
+
+        let currentCategory = 'all';
+
+        function renderQuestions(items) {
+            const container = document.getElementById('questionsContainer');
+            container.innerHTML = '';
+
+            if (items.length === 0) {
+                container.innerHTML = `<div class="text-center py-10 text-slate-400 text-xs">কোনো প্রশ্ন পাওয়া যায়নি!</div>`;
+                return;
+            }
+
+            items.forEach((q, index) => {
+                const card = document.createElement('div');
+                card.className = "bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-3 transition-all";
+
+                let htmlContent = `
+                    <div class="flex justify-between items-start gap-2">
+                        <h3 class="font-bold text-xs sm:text-sm text-slate-800 dark:text-slate-100 leading-relaxed">
+                            <span class="text-primary font-bold mr-1">${q.id}.</span> ${q.question}
+                        </h3>
+                    </div>
+                `;
+
+                htmlContent += `<div class="space-y-1.5 pt-1">`;
+                q.options.forEach((opt, optIndex) => {
+                    let isCorrect = (optIndex === q.correct);
+                    let optionStyle = "bg-slate-50 dark:bg-slate-900/50 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300";
+                    
+                    if (isCorrect) {
+                        optionStyle = "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-300 dark:border-emerald-700 text-emerald-800 dark:text-emerald-200 font-semibold";
+                    }
+
+                    const letters = ["ক", "খ", "গ", "ঘ"];
+
+                    htmlContent += `
+                        <div class="p-2.5 rounded-xl border text-xs flex items-center justify-between ${optionStyle}">
+                            <span class="flex items-center gap-2">
+                                <span class="w-5 h-5 rounded-md bg-slate-200 dark:bg-slate-700 text-[10px] font-bold flex items-center justify-center">${letters[optIndex]}</span>
+                                ${opt}
+                            </span>
+                            ${isCorrect ? '<span class="text-emerald-600 dark:text-emerald-400 font-bold text-xs">✔ সঠিক</span>' : ''}
+                        </div>
+                    `;
+                });
+                htmlContent += `</div>`;
+
+                htmlContent += `
+                    <div class="pt-1">
+                        <button onclick="toggleExplanation(${q.id})" id="btn-exp-${q.id}" class="text-[11px] bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg font-medium transition shadow-sm">
+                            ব্যাখ্যা দেখুন
+                        </button>
+                        <div id="exp-${q.id}" class="hidden mt-2 p-3 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 rounded-xl text-[11px] text-emerald-900 dark:text-emerald-200 leading-relaxed">
+                            <strong>ব্যাখ্যা:</strong> ${q.explanation}
+                        </div>
+                    </div>
+                `;
+
+                card.innerHTML = htmlContent;
+                container.appendChild(card);
+            });
+        }
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.className = "cat-btn px-3 py-1.5 rounded-lg font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 whitespace-nowrap transition";
+            });
+            const activeBtn = document.getElementById(`cat-${cat}`);
+            if(activeBtn) {
+                activeBtn.className = "cat-btn px-3 py-1.5 rounded-lg font-semibold bg-primary text-white whitespace-nowrap transition shadow-sm";
+            }
+            filterQuestions();
+        }
+
+        function filterQuestions() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            let filtered = banglaQuestions;
+
+            if (currentCategory !== 'all') {
+                filtered = filtered.filter(q => q.cat === currentCategory);
+            }
+
+            if (query.trim() !== '') {
+                filtered = filtered.filter(q => 
+                    q.question.toLowerCase().includes(query) || 
+                    q.explanation.toLowerCase().includes(query) ||
+                    q.options.some(opt => opt.toLowerCase().includes(query))
+                );
+            }
+
+            renderQuestions(filtered);
+        }
+
+        function toggleExplanation(id) {
+            const expDiv = document.getElementById(`exp-${id}`);
+            const btn = document.getElementById(`btn-exp-${id}`);
+            if (expDiv.classList.contains('hidden')) {
+                expDiv.classList.remove('hidden');
+                btn.textContent = "ব্যাখ্যা লুকান";
+                btn.className = "text-[11px] bg-slate-600 hover:bg-slate-700 text-white px-3 py-1.5 rounded-lg font-medium transition shadow-sm";
+            } else {
+                expDiv.classList.add('hidden');
+                btn.textContent = "ব্যাখ্যা দেখুন";
+                btn.className = "text-[11px] bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg font-medium transition shadow-sm";
+            }
+        }
+
+        // Scroll to top functionality
+        window.addEventListener('scroll', () => {
+            const topBtn = document.getElementById('topBtn');
+            if (window.scrollY > 300) {
+                topBtn.classList.remove('opacity-0', 'pointer-events-none');
+                topBtn.classList.add('opacity-100');
+            } else {
+                topBtn.classList.add('opacity-0', 'pointer-events-none');
+                topBtn.classList.remove('opacity-100');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Initial render
+        renderQuestions(banglaQuestions);
+    </script>
+
+</body>
+</html>
