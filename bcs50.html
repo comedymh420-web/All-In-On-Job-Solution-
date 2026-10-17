@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17365d">
+<title>৫০তম বিসিএস প্রিলিমিনারি প্রশ্ন ও সমাধান | All In One Job Solution</title>
+
+<style>
+:root {
+  --navy: #17365d;
+  --blue: #24558a;
+  --light-blue: #edf4fc;
+  --border: #d2dbe7;
+  --text: #253247;
+  --muted: #64748b;
+  --green: #15803d;
+  --green-bg: #f0fdf4;
+  --green-border: #86efac;
+  --red: #b91c1c;
+  --red-bg: #fef2f2;
+  --red-border: #fca5a5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #edf1f6;
+  color: var(--text);
+  font-family: "SolaimanLipi", "Hind Siliguri", "Noto Sans Bengali", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+.page {
+  max-width: 880px;
+  margin: 22px auto;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 25px #172b4d12;
+  border-radius: 8px;
+}
+
+/* পরীক্ষার হেডার */
+.exam-header {
+  text-align: center;
+  padding: 12px 0 18px;
+  border-bottom: 3px double var(--navy);
+}
+
+.exam-header h1 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(22px, 4vw, 30px);
+}
+
+.exam-header h2 {
+  margin: 4px 0;
+  font-size: 21px;
+}
+
+.exam-header p {
+  margin: 3px 0;
+  color: var(--muted);
+}
+
+.set-label {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 15px;
+  border: 1px solid var(--navy);
+  border-radius: 4px;
+  color: var(--navy);
+  font-weight: bold;
+}
+
+/* পরীক্ষার তথ্য */
+.exam-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.info-item {
+  padding: 10px 12px;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.info-item strong {
+  color: var(--navy);
+}
+
+/* নির্দেশাবলি */
+.instructions {
+  padding: 12px 15px;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--navy);
+  margin: 18px 0 24px;
+}
+
+.instructions h3 {
+  margin: 0 0 5px;
+  color: var(--navy);
+  font-size: 18px;
+}
+
+.instructions ol {
+  margin: 0;
+  padding-left: 24px;
+}
+
+/* প্রশ্নের কার্ড */
+.question {
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  overflow: hidden;
+  break-inside: avoid;
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 13px;
+  background: var(--light-blue);
+  border-bottom: 1px solid var(--border);
+}
+
+.question-number {
+  color: var(--navy);
+  font-weight: bold;
+}
+
+.question-subject {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.question-body {
+  padding: 15px;
+}
+
+.question-text {
+  margin: 0 0 14px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* উত্তর নির্বাচন */
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 10px 11px;
+  background: #fff;
+  border: 1px solid #d5dce6;
+  border-radius: 6px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+  transition: background .15s, border-color .15s;
+}
+
+.option:hover:not(.locked) {
+  background: #f4f7fb;
+  border-color: #8ba9ce;
+}
+
+.option input {
+  margin-top: 7px;
+  accent-color: var(--navy);
+  flex-shrink: 0;
+}
+
+.option-letter {
+  color: var(--navy);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.option-mark {
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 19px;
+  flex-shrink: 0;
+}
+
+.option.correct {
+  background: var(--green-bg);
+  border-color: var(--green-border);
+  color: var(--green);
+}
+
+.option.correct .option-letter,
+.option.correct .option-mark {
+  color: var(--green);
+}
+
+.option.wrong {
+  background: var(--red-bg);
+  border-color: var(--red-border);
+  color: var(--red);
+}
+
+.option.wrong .option-letter,
+.option.wrong .option-mark {
+  color: var(--red);
+}
+
+.option.locked {
+  cursor: default;
+}
+
+.option.locked input {
+  pointer-events: none;
+}
+
+/* সঠিক/ভুল বার্তা */
+.feedback {
+  display: none;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.feedback.correct-feedback {
+  color: var(--green);
+  background: var(--green-bg);
+  border: 1px solid var(--green-border);
+}
+
+.feedback.wrong-feedback {
+  color: var(--red);
+  background: var(--red-bg);
+  border: 1px solid var(--red-border);
+}
+
+/* উত্তর ও ব্যাখ্যা */
+.answer-box {
+  margin-top: 14px;
+  border: 1px solid #c6d5e8;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.answer-box summary {
+  padding: 9px 12px;
+  background: #edf3fa;
+  color: var(--navy);
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.answer-content {
+  padding: 12px;
+  background: white;
+  border-top: 1px solid #c6d5e8;
+}
+
+.answer-content p {
+  margin: 5px 0;
+}
+
+.answer-label {
+  color: var(--navy);
+  font-weight: bold;
+}
+
+.note {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #fff8e5;
+  border: 1px solid #f1d48b;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #654d13;
+}
+
+.loading {
+  text-align: center;
+  padding: 30px;
+  color: var(--muted);
+  font-weight: bold;
+}
+
+/* ফুটার */
+.footer {
+  text-align: center;
+  padding-top: 18px;
+  margin-top: 28px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  body { font-size: 15px; background: #fff; }
+  .page { margin: 0; padding: 14px; border: 0; border-radius: 0; box-shadow: none; }
+  .options { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+<main class="page">
+
+  <header class="exam-header">
+    <h1>বাংলাদেশ সরকারি কর্ম কমিশন</h1>
+    <h2>৫০তম বিসিএস পরীক্ষা</h2>
+    <p>প্রিলিমিনারি টেস্ট — ২০০টি প্রশ্ন ও সমাধান</p>
+    <span class="set-label">প্রশ্ন সেট — A (সম্পূর্ণ সেট)</span>
+  </header>
+
+  <section class="exam-info">
+    <div class="info-item"><strong>পরীক্ষার নাম:</strong> ৫০তম বিসিএস</div>
+    <div class="info-item"><strong>মোট প্রশ্ন:</strong> ২০০টি MCQ</div>
+    <div class="info-item"><strong>সময়:</strong> সরকারি নির্দেশনা অনুযায়ী</div>
+    <div class="info-item"><strong>পূর্ণমান:</strong> ২০০</div>
+  </section>
+
+  <section class="instructions">
+    <h3>পরীক্ষার্থীদের জন্য নির্দেশাবলি</h3>
+    <ol>
+      <li>প্রতিটি প্রশ্নের চারটি বিকল্প থেকে একটি উত্তর নির্বাচন করুন।</li>
+      <li>একবার উত্তর নির্বাচন করলে সেটি লক হয়ে যাবে।</li>
+      <li>উত্তর ও ব্যাখ্যা দেখতে সংশ্লিষ্ট অংশে চাপ দিন।</li>
+    </ol>
+  </section>
+
+  <!-- প্রশ্ন তালিকা ধারক -->
+  <div id="question-list">
+    <div class="loading">প্রশ্নসমূহ লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</div>
+  </div>
+
+  <footer class="footer">
+    All In One Job Solution · ৫০তম বিসিএস প্রশ্ন অনুশীলন
+  </footer>
+
+</main>
+
+<script>
+const labels = {A: 'ক', B: 'খ', C: 'গ', D: 'ঘ'};
+
+// bcs50.json ফাইল থেকে ডেটা ফেচ করে রেন্ডার করা
+async function loadQuestions() {
+  try {
+    const response = await fetch('bcs50.json');
+    const DATA = await response.json();
+    renderQuestions(DATA);
+  } catch (error) {
+    document.getElementById('question-list').innerHTML = '<div class="loading" style="color:red;">প্রশ্ন লোড করতে সমস্যা হয়েছে। দয়া করে ইন্টারনেট বা ফাইলের নাম চেক করুন।</div>';
+    console.error('Error fetching questions:', error);
+  }
+}
+
+function renderQuestions(DATA) {
+  const container = document.getElementById('question-list');
+  container.innerHTML = '';
+
+  DATA.forEach((q) => {
+    const article = document.createElement('article');
+    article.className = 'question';
+    article.dataset.answer = q.answer;
+
+    let optionsHtml = '';
+    q.options.forEach(opt => {
+      const banglaLetter = labels[opt.letter] || opt.letter;
+      optionsHtml += `
+        <label class="option">
+          <input type="radio" name="q${q.n}" value="${opt.letter}">
+          <span class="option-letter">${banglaLetter})</span>
+          <span>${opt.text}</span>
+          <span class="option-mark"></span>
+        </label>
+      `;
+    });
+
+    let answerText = q.answer ? `সঠিক উত্তর: ${labels[q.answer] || q.answer} ) ${q.options.find(o => o.letter === q.answer)?.text || ''}` : 'সঠিক উত্তর পাওয়া যায়নি';
+
+    article.innerHTML = `
+      <div class="question-title">
+        <span class="question-number">প্রশ্ন ${q.n}</span>
+        <span class="question-subject">বিসিএস প্রস্তুতি</span>
+      </div>
+      <div class="question-body">
+        <p class="question-text">${q.stem}</p>
+        <div class="options">
+          ${optionsHtml}
+        </div>
+        <div class="feedback" role="status" aria-live="polite"></div>
+        <details class="answer-box">
+          <summary>উত্তর ও ব্যাখ্যা দেখুন</summary>
+          <div class="answer-content">
+            <p><span class="answer-label">সঠিক উত্তর:</span> ${answerText}</p>
+            <p><span class="answer-label">ব্যাখ্যা:</span> ${q.explanation || 'কোনো ব্যাখ্যা নেই।'}</p>
+            ${q.note ? `<div class="note"><b>যাচাই-নোট:</b> ${q.note}</div>` : ''}
+          </div>
+        </details>
+      </div>
+    `;
+
+    container.appendChild(article);
+  });
+
+  initInteraction();
+}
+
+function initInteraction() {
+  document.querySelectorAll(".question").forEach((question) => {
+    const correctAnswer = question.dataset.answer;
+    const options = question.querySelectorAll(".option");
+    const feedback = question.querySelector(".feedback");
+    let answered = false;
+
+    options.forEach((option) => {
+      const input = option.querySelector("input");
+
+      input.addEventListener("change", () => {
+        if (answered) return;
+        answered = true;
+
+        const selectedAnswer = input.value;
+        const isCorrect = selectedAnswer === correctAnswer;
+
+        options.forEach((item) => {
+          const itemInput = item.querySelector("input");
+          const mark = item.querySelector(".option-mark");
+
+          item.classList.add("locked");
+          itemInput.disabled = true;
+
+          if (itemInput.value === correctAnswer) {
+            item.classList.add("correct");
+            mark.textContent = "✓";
+          }
+        });
+
+        if (!isCorrect) {
+          option.classList.add("wrong");
+          option.querySelector(".option-mark").textContent = "✕";
+        }
+
+        feedback.style.display = "block";
+
+        if (isCorrect) {
+          feedback.className = "feedback correct-feedback";
+          feedback.textContent = "✓ সঠিক উত্তর! খুব ভালো।";
+        } else {
+          const correctOption = question.querySelector(`input[value="${correctAnswer}"]`);
+          const correctLabel = correctOption.closest(".option");
+          const letter = correctLabel.querySelector(".option-letter").textContent;
+          const answerText = correctLabel.querySelectorAll("span")[1].textContent.trim();
+
+          feedback.className = "feedback wrong-feedback";
+          feedback.textContent = "✕ ভুল উত্তর। সঠিক উত্তর: " + letter + " " + answerText;
+        }
+      });
+    });
+  });
+}
+
+// পেজ লোড হলে ফাংশন কল হবে
+window.onload = loadQuestions;
+</script>
+
+</body>
+</html>
