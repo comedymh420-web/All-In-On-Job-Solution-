@@ -360,6 +360,7 @@ button, input, textarea, select {
 </main>
 
 <script>
+const letters = ['A', 'B', 'C', 'D'];
 const labels = {A: 'ক', B: 'খ', C: 'গ', D: 'ঘ'};
 
 // bcs40.json ফাইল থেকে ডেটা ফেচ করে রেন্ডার করা
@@ -378,33 +379,42 @@ function renderQuestions(DATA) {
   const container = document.getElementById('question-list');
   container.innerHTML = '';
 
-  DATA.forEach((q) => {
+  DATA.forEach((q, index) => {
+    const qNum = q.id || (index + 1);
+    // আপনার JSON এর correct ইনডেক্স (0, 1, 2, 3) কে A, B, C, D তে রূপান্তর
+    const correctLetter = letters[q.correct];
+    
     const article = document.createElement('article');
     article.className = 'question';
-    article.dataset.answer = q.answer;
+    article.dataset.answer = correctLetter;
 
     let optionsHtml = '';
-    q.options.forEach(opt => {
-      const banglaLetter = labels[opt.letter] || opt.letter;
+    q.options.forEach((optText, optIndex) => {
+      const currentLetter = letters[optIndex];
+      const banglaLetter = labels[currentLetter];
+      // অপশনের ভেতর থেকে আগের ক), খ) প্রিফিক্স থাকলে তা সরিয়ে পরিষ্কার টেক্সট নেওয়া
+      const cleanText = optText.replace(/^[কখগঘবাABCD]\s*[\)\.-]?\s*/, '');
+
       optionsHtml += `
         <label class="option">
-          <input type="radio" name="q${q.n}" value="${opt.letter}">
+          <input type="radio" name="q${qNum}" value="${currentLetter}">
           <span class="option-letter">${banglaLetter})</span>
-          <span>${opt.text}</span>
+          <span>${cleanText}</span>
           <span class="option-mark"></span>
         </label>
       `;
     });
 
-    let answerText = q.answer ? `সঠিক উত্তর: ${labels[q.answer] || q.answer} ) ${q.options.find(o => o.letter === q.answer)?.text || ''}` : 'সঠিক উত্তর পাওয়া যায়নি';
+    const correctOptText = q.options[q.correct] ? q.options[q.correct].replace(/^[কখগঘবাABCD]\s*[\)\.-]?\s*/, '') : '';
+    let answerText = `সঠিক উত্তর: ${labels[correctLetter]} ) ${correctOptText}`;
 
     article.innerHTML = `
       <div class="question-title">
-        <span class="question-number">প্রশ্ন ${q.n}</span>
+        <span class="question-number">প্রশ্ন ${qNum}</span>
         <span class="question-subject">বিসিএস প্রস্তুতি</span>
       </div>
       <div class="question-body">
-        <p class="question-text">${q.stem}</p>
+        <p class="question-text">${q.question}</p>
         <div class="options">
           ${optionsHtml}
         </div>
@@ -414,7 +424,6 @@ function renderQuestions(DATA) {
           <div class="answer-content">
             <p><span class="answer-label">সঠিক উত্তর:</span> ${answerText}</p>
             <p><span class="answer-label">ব্যাখ্যা:</span> ${q.explanation || 'কোনো ব্যাখ্যা নেই।'}</p>
-            ${q.note ? `<div class="note"><b>যাচাই-নোট:</b> ${q.note}</div>` : ''}
           </div>
         </details>
       </div>
