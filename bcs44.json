@@ -1,2405 +1,2602 @@
 [
-    {
-        "id": 1,
-        "question": "কোন দেশ থেকে ‘আরব বসন্ত’-এর সূচনা হয়?",
-        "options": [
-            "ক. মিশর",
-            "খ. তিউনিশিয়া",
-            "গ. লিবিয়া",
-            "ঘ. সিরিয়া"
-        ],
-        "correct": 1,
-        "explanation": "২০১০ সালের শেষ দিকে তিউনিশিয়ায় শুরু হওয়া গণআন্দোলন পরবর্তীতে মধ্যপ্রাচ্য ও উত্তর আফ্রিকার বিভিন্ন দেশে ছড়িয়ে পড়ে।"
-    },
-    {
-        "id": 2,
-        "question": "কোন সালে রাশিয়া ক্রিমিয়া দখল করে?",
-        "options": [
-            "ক. ২০১০",
-            "খ. ২০১২",
-            "গ. ২০১৪",
-            "ঘ. ২০১৬"
-        ],
-        "correct": 2,
-        "explanation": "২০১৪ সালে রাশিয়া ইউক্রেনের ক্রিমিয়া উপদ্বীপের নিয়ন্ত্রণ নেয়।"
-    },
-    {
-        "id": 3,
-        "question": "কোন দেশটি ভেনিজুয়েলার প্রতিবেশী রাষ্ট্র নয়?",
-        "options": [
-            "ক. গায়ানা",
-            "খ. বলিভিয়া",
-            "গ. ব্রাজিল",
-            "ঘ. কলাম্বিয়া"
-        ],
-        "correct": 1,
-        "explanation": "ভেনিজুয়েলার স্থলসীমান্ত রয়েছে কলাম্বিয়া, ব্রাজিল ও গায়ানার সঙ্গে। বলিভিয়ার সঙ্গে ভেনিজুয়েলার সরাসরি স্থলসীমান্ত নেই।"
-    },
-    {
-        "id": 4,
-        "question": "বিগত কপ-২৬ কোন শহরে অনুষ্ঠিত হয়?",
-        "options": [
-            "ক. জেনেভা",
-            "খ. প্যারিস",
-            "গ. গ্লাসগো",
-            "ঘ. ব্রাসেলस"
-        ],
-        "correct": 2,
-        "explanation": "COP26 ২০২১ সালে যুক্তরাজ্যের গ্লাসগো শহরে অনুষ্ঠিত হয়।"
-    },
-    {
-        "id": 5,
-        "question": "বাংলাদেশ ও ভারতের মধ্যে সম্পাদিত গঙ্গার পানি বণ্টন চুক্তি কখন শেষ হবে?",
-        "options": [
-            "ক. ২০৪০",
-            "খ. ২০২৬",
-            "গ. ২০২৪",
-            "ঘ. ২০৩০"
-        ],
-        "correct": 1,
-        "explanation": "১৯৯৬ সালে স্বাক্ষরিত গঙ্গার পানি বণ্টন চুক্তির মেয়াদ ৩০ বছর।"
-    },
-    {
-        "id": 6,
-        "question": "কোন দেশকে ইউরোপের রুটির ঝুড়ি বলা হয়?",
-        "options": [
-            "ক. জার্মানি",
-            "খ. ইতালি",
-            "গ. পোল্যান্ড",
-            "ঘ. ইউক্রেন"
-        ],
-        "correct": 3,
-        "explanation": "ইউক্রেনের বিস্তীর্ণ উর্বর কৃষিজমি ও বিপুল শস্য উৎপাদনের কারণে দেশটিকে ‘Europe’s Breadbasket’ বলা হয়।"
-    },
-    {
-        "id": 7,
-        "question": "গণতন্ত্রের ধারণা উৎসারিত হয় প্রথম কোন দেশে?",
-        "options": [
-            "ক. যুক্তরাষ্ট্র",
-            "খ. প্রাচীন গ্রীস",
-            "গ. প্রাচীন রোম",
-            "ঘ. প্রাচীন ভারত"
-        ],
-        "correct": 1,
-        "explanation": "প্রাচীন এথেন্সে প্রত্যক্ষ গণতন্ত্রের চর্চা হয়েছিল।"
-    },
-    {
-        "id": 8,
-        "question": "নিচের কোন দেশটি জি-৮-এর সদস্য নয়?",
-        "options": [
-            "ক. জর্ডান",
-            "খ. ইরান",
-            "গ. মিশর",
-            "ঘ. মালয়েশিয়া"
-        ],
-        "correct": 0,
-        "explanation": "G8-এর ঐতিহাসিক সদস্য দেশগুলোর মধ্যে যুক্তরাষ্ট্র, যুক্তরাজ্য, কানাডা, ফ্রান্স, জার্মানি, ইতালি, জাপান ও রাশিয়া ছিল। জর্ডান এর সদস্য নয়।"
-    },
-    {
-        "id": 9,
-        "question": "World Economic Forum-এর বাৎসরিক অধিবেশন কোথায় অনুষ্ঠিত হয়?",
-        "options": [
-            "ক. প্যারিস",
-            "খ. জুরিখ",
-            "গ. দাভোস",
-            "ঘ. বার্ন"
-        ],
-        "correct": 2,
-        "explanation": "World Economic Forum-এর বার্ষিক সভা সুইজারল্যান্ডের দাভোসে অনুষ্ঠিত হয়।"
-    },
-    {
-        "id": 10,
-        "question": "‘তাসখন্দ চুক্তি’ কোন দুটি রাষ্ট্রের মধ্যে স্বাক্ষরিত হয়?",
-        "options": [
-            "ক. পাকিস্তান ও আফগানিস্তান",
-            "খ. ভারত ও আফগানিস্তান",
-            "গ. পাকিস্তান ও ভারত",
-            "ঘ. আফগানিস্তান ও সোভিয়েত ইউনিয়ন"
-        ],
-        "correct": 2,
-        "explanation": "১৯৬৬ সালে ভারত ও পাকিস্তানের মধ্যে তাসখন্দ চুক্তি স্বাক্ষরিত হয়।"
-    },
-    {
-        "id": 11,
-        "question": "প্রথাগতভাবে বছরের কোন দিন জাতিসংঘ সাধারণ পরিষদের বার্ষিক অধিবেশন শুরু হয়?",
-        "options": [
-            "ক. সেপ্টেম্বর মাসের প্রথম সোমবার",
-            "খ. অক্টোবর মাসের প্রথম মঙ্গলবার",
-            "গ. আগস্ট মাসের শেষ সোমবার",
-            "ঘ. সেপ্টেম্বর মাসের তৃতীয় মঙ্গলবার"
-        ],
-        "correct": 3,
-        "explanation": "প্রচলিত নিয়ম অনুযায়ী সাধারণ পরিষদের অধিবেশন সেপ্টেম্বর মাসের তৃতীয় মঙ্গলবার শুরু হয়।"
-    },
-    {
-        "id": 12,
-        "question": "কোন দুটি আরব রাষ্ট্র ক্যাম্প ডেভিড চুক্তি স্বাক্ষরের ফলশ্রুতিতে ইসরাইলের সঙ্গে পূর্ণ কূটনৈতিক সম্পর্ক স্থাপন করে?",
-        "options": [
-            "ক. জর্ডান ও মিশর",
-            "খ. কুয়েত ও বাহরাইন",
-            "গ. লিবিয়া ও ওমান",
-            "ঘ. তিউনিসিয়া ও আলজেরিয়া"
-        ],
-        "correct": 0,
-        "explanation": "মূল পেজে উত্তর হিসেবে জর্ডান ও মিশর দেওয়া হয়েছে।"
-    },
-    {
-        "id": 13,
-        "question": "কখন এবং কোথায় International Union for Conservation of Nature (IUCN) প্রতিষ্ঠিত হয়?",
-        "options": [
-            "ক. ১৯৪৮, ফ্রান্স",
-            "খ. ১৯৪৯, সুইজারল্যান্ড",
-            "গ. ১৯৬১, রোম",
-            "ঘ. ১৯৫২, লন্ডন"
-        ],
-        "correct": 0,
-        "explanation": "IUCN ১৯৪৮ সালে ফ্রান্সের Fontainebleau-তে প্রতিষ্ঠিত হয়।"
-    },
-    {
-        "id": 14,
-        "question": "‘নেকড়েযোদ্ধা কূটনীতি’ কোন দেশের সাথে সংশ্লিষ্ট?",
-        "options": [
-            "ক. ভিয়েতনাম",
-            "খ. উত্তর কোরিয়া",
-            "গ. চীন",
-            "ঘ. রাশিয়া"
-        ],
-        "correct": 2,
-        "explanation": "‘Wolf Warrior Diplomacy’ শব্দটি চীনের তুলনামূলকভাবে দৃঢ় ও আক্রমণাত্মক কূটনৈতিক অবস্থান বোঝাতে ব্যবহৃত হয়।"
-    },
-    {
-        "id": 15,
-        "question": "নিচের কোন দেশটি ASEAN জোটভুক্ত নয়?",
-        "options": [
-            "ক. লাওস",
-            "খ. হংকং",
-            "গ. ভিয়েতনাম",
-            "ঘ. কম্বোডিয়া"
-        ],
-        "correct": 1,
-        "explanation": "ASEAN-এর সদস্য দেশগুলোর মধ্যে লাওস, ভিয়েতনাম ও কম্বোডিয়া রয়েছে; হংকং ASEAN-এর সদস্য নয়।"
-    },
-    {
-        "id": 16,
-        "question": "মহান মুক্তিযুদ্ধ চলাকালীন ‘কনসার্ট ফর বাংলাদেশ (Concert for Bangladesh)’ কোথায় অনুষ্ঠিত হয়েছিল?",
-        "options": [
-            "ক. নিউইয়র্ক",
-            "খ. বোস্টন",
-            "গ. লন্ডন",
-            "ঘ. ক্যানবেরা"
-        ],
-        "correct": 0,
-        "explanation": "১৯৭১ সালে জর্জ হ্যারিসন ও রবিশঙ্করের উদ্যোগে নিউইয়র্কের Madison Square Garden-এ Concert for Bangladesh অনুষ্ঠিত হয়।"
-    },
-    {
-        "id": 17,
-        "question": "জাতিসংঘের নিরাপত্তা পরিষদের অস্থায়ী সদস্য পদ কত সময়ের জন্য?",
-        "options": [
-            "ক. ১ বছর",
-            "খ. ২ বছর",
-            "গ. ৪ বছর",
-            "ঘ. ৫ বছর"
-        ],
-        "correct": 1,
-        "explanation": "নিরাপত্তা পরিষদের অস্থায়ী সদস্যরা সাধারণ পরিষদ কর্তৃক দুই বছরের জন্য নির্বাচিত হন।"
-    },
-    {
-        "id": 18,
-        "question": "আন্তর্জাতিক আদালতের একজন বিচারক কয় বছরের জন্য নির্বাচিত হন?",
-        "options": [
-            "ক. তিন বছর",
-            "খ. সাত বছর",
-            "গ. চার বছর",
-            "ঘ. নয় বছর"
-        ],
-        "correct": 3,
-        "explanation": "International Court of Justice (ICJ)-এর বিচারকরা ৯ বছরের জন্য নির্বাচিত হন।"
-    },
-    {
-        "id": 19,
-        "question": "বাংলাদেশের প্রেক্ষিত পরিকল্পনা (Perspective Plan) সময়সীমা কত?",
-        "options": [
-            "ক. ২০২১–২০৩০",
-            "খ. ২০২৪–২০৩২",
-            "গ. ২০২১–২০৪১",
-            "ঘ. ২০২২–২০২৫"
-        ],
-        "correct": 2,
-        "explanation": "বাংলাদেশের Perspective Plan 2021–2041 দীর্ঘমেয়াদি উন্নয়ন পরিকল্পনা।"
-    },
-    {
-        "id": 20,
-        "question": "২০২২ সালে কোন দেশ জাতিসংঘের শান্তিস্থাপন কমিশনের সভাপতি নির্বাচিত হয়?",
-        "options": [
-            "ক. যুক্তরাষ্ট্র",
-            "খ. সুইজারল্যান্ড",
-            "গ. বাংলাদেশ",
-            "ঘ. ভারত"
-        ],
-        "correct": 2,
-        "explanation": "২০২২ সালে বাংলাদেশ UN Peacebuilding Commission-এর সভাপতির দায়িত্ব পালন করে।"
-    },
-    {
-        "id": 21,
-        "question": "‘ইতরবিশেষ’ বলতে বোঝায়?",
-        "options": [
-            "ক. দুর্বৃত্ত",
-            "খ. চালাকি",
-            "গ. পার্থক্য",
-            "ঘ. অপদার্থ"
-        ],
-        "correct": 2,
-        "explanation": "‘ইতরবিশেষ’ শব্দের অর্থ পার্থক্য বা বিশেষ পার্থক্য।"
-    },
-    {
-        "id": 22,
-        "question": "নিপাতনে সিদ্ধ স্বরসন্ধির দৃষ্টান্ত কোনটি?",
-        "options": [
-            "ক. গো + অক্ষ = গবাক্ষ",
-            "খ. পৌ + অক = পাবক",
-            "গ. বি + অঙ্গ = বঙ্গ",
-            "ঘ. যতি + ইন্দ্র = যতীন্দ্র"
-        ],
-        "correct": 0,
-        "explanation": "‘গবাক্ষ’ শব্দটি প্রচলিত নিয়মের বাইরে বিশেষভাবে সিদ্ধ হওয়ায় এটি নিপাতনে সিদ্ধ স্বরসন্ধির উদাহরণ।"
-    },
-    {
-        "id": 23,
-        "question": "‘চাঁদের অমাবস্যা’ উপন্যাসের যুবক-শিক্ষকের নাম কী?",
-        "options": [
-            "ক. আবদুল কাদের",
-            "খ. খতিব মিয়া",
-            "গ. আক্কাস আলী",
-            "ঘ. আরেফ আলী"
-        ],
-        "correct": 3,
-        "explanation": "সৈয়দ ওয়ালীউল্লাহর ‘চাঁদের অমাবস্যা’ উপন্যাসের যুবক-শিক্ষকের নাম আরেফ আলী।"
-    },
-    {
-        "id": 24,
-        "question": "‘মরণ রে তুঁই মম শ্যাম সমান’ পঙ্‌ক্তিটির রচয়িতা—",
-        "options": [
-            "ক. বিদ্যাপতি",
-            "খ. গোবিন্দদাস",
-            "গ. রবীন্দ্রনাথ ঠাকুর",
-            "ঘ. কৃষ্ণদাস কবিরাজ"
-        ],
-        "correct": 2,
-        "explanation": "পঙ্‌ক্তিটি রবীন্দ্রনাথ ঠাকুরের রচনা।"
-    },
-    {
-        "id": 25,
-        "question": "‘আনোয়ারা’ উপন্যাসের রচয়িতার নাম—",
-        "options": [
-            "ক. সৈয়দ মুজতবা আলী",
-            "খ. কাজী আবদুল ওদুদ",
-            "গ. নজিবর রহমান",
-            "ঘ. রোকেয়া সাখাওয়াত হোসেন"
-        ],
-        "correct": 2,
-        "explanation": "‘আনোয়ারা’ উপন্যাসের রচয়িতা নজিবর রহমান।"
-    },
-    {
-        "id": 26,
-        "question": "নিচের কোন বাক্যটি প্রয়োগগত দিক থেকে শুদ্ধ?",
-        "options": [
-            "ক. আমি কারও সাতেও নেই, সতেরোতেও নেই।",
-            "খ. আপনি স্বপরিবারে আমন্ত্রিত।",
-            "গ. তার দু’চোখ অশ্রুতে ভেসে গেল।",
-            "ঘ. সারা জীবন ভুতের মজুরি খেটে মরলাম।"
-        ],
-        "correct": 2,
-        "explanation": "প্রদত্ত বাক্যগুলোর মধ্যে প্রয়োগগতভাবে শুদ্ধ বাক্য হিসেবে এটি গ্রহণ করা হয়েছে।"
-    },
-    {
-        "id": 27,
-        "question": "নিচের কোনটি যৌগিক বাক্য?",
-        "options": [
-            "ক. দোষ স্বীকার করলে তোমাকে শাস্তি দেওয়া হবে না।",
-            "খ. তিনি বেড়াতে এসে কেনাকাটা করলেন।",
-            "গ. মহৎ মানুষ বলে সবাই তাঁকে সম্মান করেন।",
-            "ঘ. ছেলেটি চঞ্চল তবে মেধাবী।"
-        ],
-        "correct": 3,
-        "explanation": "‘তবে’ সংযোজক অব্যয়ের মাধ্যমে দুটি স্বাধীন ভাব যুক্ত হয়েছে, তাই এটি যৌগিক বাক্য।"
-    },
-    {
-        "id": 28,
-        "question": "ধ্বনি-পরিবর্তনের নিয়মে কোনটি বর্ণ-বিপর্যয়ের দৃষ্টান্ত?",
-        "options": [
-            "ক. রতন",
-            "খ. কবাট",
-            "গ. পিচাশ",
-            "ঘ. মুলুক"
-        ],
-        "correct": 2,
-        "explanation": "‘পিশাচ’ থেকে ‘পিচাশ’—বর্ণের অবস্থান পরিবর্তনের কারণে এটি বর্ণ-বিপর্যয়ের উদাহরণ।"
-    },
-    {
-        "id": 29,
-        "question": "‘অর্ধচন্দ্র’ কথাটির অর্থ—",
-        "options": [
-            "ক. অমাবস্যা",
-            "খ. গলাধাক্কা দেওয়া",
-            "গ. কাছে টানা",
-            "ঘ. কাস্তে"
-        ],
-        "correct": 1,
-        "explanation": "‘অর্ধচন্দ্র’ একটি বাগধারা; এর অর্থ গলাধাক্কা দিয়ে বের করে দেওয়া।"
-    },
-    {
-        "id": 30,
-        "question": "‘হরতাল’ কোন ভাষা থেকে আগত শব্দ?",
-        "options": [
-            "ক. পর্তুগিজ",
-            "খ. হিন্দি",
-            "গ. গুজরাটি",
-            "ঘ. ফরাসি"
-        ],
-        "correct": 2,
-        "explanation": "‘হরতাল’ শব্দটি গুজরাটি ভাষা থেকে বাংলায় এসেছে।"
-    },
-    {
-        "id": 31,
-        "question": "কোনটি ‘জিগীষা’র সম্প্রসারিত প্রকাশ?",
-        "options": [
-            "ক. জানিবার ইচ্ছা",
-            "খ. জয় করিবার ইচ্ছা",
-            "গ. হনন করিবার ইচ্ছা",
-            "ঘ. যুদ্ধ করিবার ইচ্ছা"
-        ],
-        "correct": 1,
-        "explanation": "‘জিগীষা’ শব্দের অর্থ জয় করার ইচ্ছা।"
-    },
-    {
-        "id": 32,
-        "question": "নিচের কোনটি তৎসম শব্দ?",
-        "options": [
-            "ক. পছন্দ",
-            "খ. হিসাব",
-            "গ. ধূলি",
-            "ঘ. শৌখিন"
-        ],
-        "correct": 2,
-        "explanation": "‘ধূলি’ সংস্কৃত থেকে অপরিবর্তিতভাবে বাংলায় ব্যবহৃত হয়েছে, তাই এটি তৎসম শব্দ।"
-    },
-    {
-        "id": 33,
-        "question": "নিচের কোনটি বাংলা ‘ধাতু’র দৃষ্টান্ত?",
-        "options": [
-            "ক. কহ্",
-            "খ. কথ্",
-            "গ. বুধ্",
-            "ঘ. গঠ্"
-        ],
-        "correct": 0,
-        "explanation": "‘কহ্’ বাংলা ধাতুর উদাহরণ।"
-    },
-    {
-        "id": 34,
-        "question": "ইসলাম ও সুফিমতের প্রভাবে ভারতবর্ষে ঘটেছিল—",
-        "options": [
-            "ক. বর্ণবাদের পুনরুত্থান",
-            "খ. রাষ্ট্রবিপ্লব",
-            "গ. চিন্তাবিপ্লব",
-            "ঘ. অভিবাসন বিপ্লব"
-        ],
-        "correct": 2,
-        "explanation": "ইসলাম ও সুফিবাদের প্রভাবে ভারতীয় সমাজ ও চিন্তাজগতে উল্লেখযোগ্য পরিবর্তন ঘটে।"
-    },
-    {
-        "id": 35,
-        "question": "শুদ্ধ বানান কোনটি?",
-        "options": [
-            "ক. মুমুষুর্য",
-            "খ. মূমুর্ষূ",
-            "গ. মুমূর্ষু",
-            "ঘ. মূমূর্ষু"
-        ],
-        "correct": 2,
-        "explanation": "‘মুমূর্ষু’ শব্দটির শুদ্ধ বানান। এর অর্থ মৃত্যুপথযাত্রী।"
-    },
-    {
-        "id": 36,
-        "question": "নিচের কোনটি ‘অগ্নি’র সমার্থক শব্দ নয়?",
-        "options": [
-            "ক. বহ্নি",
-            "খ. আবীর",
-            "গ. বায়ুসখা",
-            "ঘ. বৈশ্বানর"
-        ],
-        "correct": 1,
-        "explanation": "বহ্নি, বায়ুসখা ও বৈশ্বানর অগ্নির সমার্থক শব্দ; ‘আবীর’ অগ্নির সমার্থক নয়।"
-    },
-    {
-        "id": 37,
-        "question": "‘দেশের যত নদীর ধারা জল না, ওরা অশ্রুধারা’—এই উক্তিটি নিচের কোন পারিভাষিক অলংকার দ্বারা শোভিত?",
-        "options": [
-            "ক. অপহ্নুতি",
-            "খ. যমক",
-            "গ. অর্থোন্নতি",
-            "ঘ. অভিযোজন"
-        ],
-        "correct": 0,
-        "explanation": "প্রকৃত বিষয়কে অস্বীকার করে অন্য কিছুরূপে প্রকাশ করাকে অপহ্নুতি অলংকার বলে।"
-    },
-    {
-        "id": 38,
-        "question": "‘যথারীতি’ কোন সমাসের দৃষ্টান্ত?",
-        "options": [
-            "ক. অব্যয়ীভাব",
-            "খ. দ্বিগু",
-            "গ. বহুব্রীহি",
-            "ঘ. দ্বন্দ্ব"
-        ],
-        "correct": 0,
-        "explanation": "‘যথারীতি’ = রীতি অনুসারে। অব্যয়ের সঙ্গে নামপদের সমাস হওয়ায় এটি অব্যয়ীভাব সমাস।"
-    },
-    {
-        "id": 39,
-        "question": "‘মৃত্তিকা দিয়ে তৈরি’ কথাটির সংকোচন করলে হবে—",
-        "options": [
-            "ক. তন্ময়",
-            "খ. মন্ময়",
-            "গ. মৃন্ময়",
-            "ঘ. চিন্ময়"
-        ],
-        "correct": 2,
-        "explanation": "মৃত্তিকা দিয়ে তৈরি = মৃন্ময়।"
-    },
-    {
-        "id": 40,
-        "question": "‘চণ্ডীমঙ্গল’ কাব্যের উপাস্য ‘চণ্ডী’ কার স্ত্রী?",
-        "options": [
-            "ক. জগন্নাথ",
-            "খ. বিষ্ণু",
-            "গ. প্রজাপতি",
-            "ঘ. শিব"
-        ],
-        "correct": 3,
-        "explanation": "হিন্দু পুরাণে চণ্ডী দেবীকে শিবের পত্নী পার্বতীর একটি রূপ হিসেবে বিবেচনা করা হয়।"
-    },
-    {
-        "id": 41,
-        "question": "‘শ্রীকৃষ্ণকীর্তন কাব্য’ কোথা থেকে উদ্ধার করা হয়েছিল?",
-        "options": [
-            "ক. নেপালের রাজদরবার থেকে",
-            "খ. গোয়ালঘর থেকে",
-            "গ. পাঠশালা থেকে",
-            "ঘ. কান্তজীর মন্দির থেকে"
-        ],
-        "correct": 1,
-        "explanation": "বসন্তরঞ্জন রায় বিদ্বদ্বল্লভ ‘শ্রীকৃষ্ণকীর্তন’-এর পুঁথি বাঁকুড়ার কাঁকিল্যা গ্রামের একটি গোয়ালঘর থেকে উদ্ধার করেন।"
-    },
-    {
-        "id": 42,
-        "question": "বিদ্যাপতি মূলত কোন ভাষার কবি ছিলেন?",
-        "options": [
-            "ক. মারাঠি",
-            "খ. হিন্দি",
-            "গ. মৈথিলি",
-            "ঘ. গুজরাটি"
-        ],
-        "correct": 2,
-        "explanation": "বিদ্যাপতি ছিলেন মৈথিলি ভাষার বিখ্যাত মধ্যযুগীয় কবি।"
-    },
-    {
-        "id": 43,
-        "question": "‘আমার সন্তান যেন থাকে দুধেভাতে।’ এই মনোবাঞ্ছাটি কার?",
-        "options": [
-            "ক. ভবানন্দের",
-            "খ. ভাঁড়–দত্তের",
-            "গ. ঈশ্বরী পাটনীর",
-            "ঘ. ফুল্লরার"
-        ],
-        "correct": 2,
-        "explanation": "ভারতচন্দ্র রায়গুণাকরের ‘অন্নদামঙ্গল’ কাব্যে ঈশ্বরী পাটনীর এই মনোবাঞ্ছা প্রকাশ করেন।"
-    },
-    {
-        "id": 44,
-        "question": "নিচের কোন ব্যক্তি ‘বুদ্ধির মুক্তি’ আন্দোলনের সঙ্গে যুক্ত ছিলেন না?",
-        "options": [
-            "ক. কাজী আবদুল ওদুদ",
-            "খ. এস ওয়াজেদ আলি",
-            "গ. আবুল ফজল",
-            "ঘ. আবদুল কাদির"
-        ],
-        "correct": 1,
-        "explanation": "‘বুদ্ধির মুক্তি আন্দোলন’-এর সঙ্গে মুসলিম সাহিত্যিকদের একটি অংশ যুক্ত ছিলেন; প্রদত্ত উৎসে এস ওয়াজেদ আলিকে সঠিক উত্তর হিসেবে দেওয়া হয়েছে।"
-    },
-    {
-        "id": 45,
-        "question": "নিচের কোন কাব্য কাজী নজরুল ইসলামের উদারনৈতিক ঐতিহ্যভাবনার ধারক?",
-        "options": [
-            "ক. বিষের বাঁশি",
-            "খ. অগ্নি-বীণা",
-            "গ. সিন্ধু-হিন্দোল",
-            "ঘ. চক্রবাক"
-        ],
-        "correct": 1,
-        "explanation": "‘অগ্নি-বীণা’ নজরুলের অন্যতম বিখ্যাত কাব্যগ্রন্থ, যেখানে বিদ্রোহ, মানবতা ও উদারনৈতিক চেতনার প্রকাশ রয়েছে।"
-    },
-    {
-        "id": 46,
-        "question": "নিচের কোনটি বিশ শতকের পত্রিকা?",
-        "options": [
-            "ক. শনিবারের চিঠি",
-            "খ. বঙ্গদর্শন",
-            "গ. তত্ত্ববোধিনী",
-            "ঘ. সংবাদ প্রভাকর"
-        ],
-        "correct": 0,
-        "explanation": "‘শনিবারের চিঠি’ ১৯২৪ সালে প্রকাশিত হয়।"
-    },
-    {
-        "id": 47,
-        "question": "নিচের কোনটি উপন্যাস নয়?",
-        "options": [
-            "ক. দিবারাত্রির কাব্য",
-            "খ. শেষের কবিতা",
-            "গ. পল্লী-সমাজ",
-            "ঘ. কবিতার কথা"
-        ],
-        "correct": 3,
-        "explanation": "‘কবিতার কথা’ বুদ্ধদেব বসুর প্রবন্ধগ্রন্থ; এটি উপন্যাস নয়।"
-    },
-    {
-        "id": 48,
-        "question": "‘বাঙালী ও বাঙলা সাহিত্য’ গ্রন্থ কে রচনা করেছেন?",
-        "options": [
-            "ক. দীনেশচন্দ্র সেন",
-            "খ. গোপাল হালদার",
-            "গ. আহমদ শরীফ",
-            "ঘ. সুকুমার সেন"
-        ],
-        "correct": 2,
-        "explanation": "‘বাঙালী ও বাঙলা সাহিত্য’ গ্রন্থের রচয়িতা আহমদ শরীফ।"
-    },
-    {
-        "id": 49,
-        "question": "‘মনোরমা’ বঙ্কিমচন্দ্রের কোন উপন্যাসের চরিত্র?",
-        "options": [
-            "ক. কৃষ্ণকান্তের উইল",
-            "খ. দুর্গেশনন্দিনী",
-            "গ. মৃণালিনী",
-            "ঘ. বিষবৃক্ষ"
-        ],
-        "correct": 2,
-        "explanation": "‘মৃণালিনী’ উপন্যাসে মনোরমা একটি গুরুত্বপূর্ণ চরিত্র।"
-    },
-    {
-        "id": 50,
-        "question": "‘ব্যক্ত প্রেম’ ও ‘গুপ্ত প্রেম’ কবিতা দুটি রবীন্দ্রনাথের কোন কাব্যগ্রন্থের অন্তর্গত?",
-        "options": [
-            "ক. খেয়া",
-            "খ. মানসী",
-            "গ. কল্পনা",
-            "ঘ. সোনার তরী"
-        ],
-        "correct": 1,
-        "explanation": "‘ব্যক্ত প্রেম’ ও ‘গুপ্ত প্রেম’ রবীন্দ্রনাথ ঠাকুরের ‘মানসী’ কাব্যগ্রন্থের অন্তর্ভুক্ত।"
-    },
-    
-    {
-        "id": 51,
-        "question": "‘অভীক’ রবীন্দ্রনাথের কোন গল্পের নায়ক?",
-        "options": [
-            "ক. নষ্টনীড়",
-            "খ. নামঞ্জুর গল্প",
-            "গ. রবিবার",
-            "ঘ. ল্যাবরেটরি"
-        ],
-        "correct": 2,
-        "explanation": "‘অভীক’ রবীন্দ্রনাথ ঠাকুরের ‘রবিবার’ গল্পের প্রধান চরিত্র।"
-    },
-    {
-        "id": 52,
-        "question": "‘সকলের তরে সকলে আমরা/প্রত্যেকে আমরা পরের তরে।’ কার রচিত পঙ্‌ক্তি?",
-        "options": [
-            "ক. রজনীকান্ত সেন",
-            "খ. ইসমাইল হোসেন সিরাজী",
-            "গ. কামিনী রায়",
-            "ঘ. দ্বিজেন্দ্রলাল রায়"
-        ],
-        "correct": 2,
-        "explanation": "পঙ্‌ক্তিদুটি কবি কামিনী রায়ের মানবতাবাদী কবিতা থেকে নেওয়া।"
-    },
-    {
-        "id": 53,
-        "question": "‘খোকা’ ও ‘রঞ্জু’ মাহমুদুল হক-এর কোন উপন্যাসের চরিত্র?",
-        "options": [
-            "ক. কালো বরফ",
-            "খ. খেলাঘর",
-            "গ. অনুর পাঠশালা",
-            "ঘ. জীবন আমার বোন"
-        ],
-        "correct": 3,
-        "explanation": "‘খোকা’ ও ‘রঞ্জু’ মাহমুদুল হকের ‘জীবন আমার বোন’ উপন্যাসের চরিত্র।"
-    },
-    {
-        "id": 54,
-        "question": "সৈয়দ ওয়ালীউল্লাহর লেখা নাটক কোনটি?",
-        "options": [
-            "ক. কবর",
-            "খ. বহিপীর",
-            "গ. পায়ের আওয়াজ পাওয়া যায়",
-            "ঘ. ওরা কদম আলী"
-        ],
-        "correct": 1,
-        "explanation": "‘বহিপীর’ সৈয়দ ওয়ালীউল্লাহ রচিত একটি বিখ্যাত নাটক।"
-    },
-    {
-        "id": 55,
-        "question": "মীর মশাররফ হোসেনের ‘বিষাদসিন্ধু’ একটি—",
-        "options": [
-            "ক. মহাকাব্য",
-            "খ. ইতিহাস গ্রন্থ",
-            "গ. উপন্যাস",
-            "ঘ. ইতিহাস-আশ্রিত জীবনীগ্রন্থ"
-        ],
-        "correct": 2,
-        "explanation": "‘বিষাদসিন্ধু’ ঐতিহাসিক ঘটনাকে অবলম্বন করে রচিত একটি উপন্যাস।"
-    },
-    {
-        "id": 56,
-        "question": "‘By and large’ means—",
-        "options": [
-            "ক. everywhere",
-            "খ. very large",
-            "গ. mostly",
-            "ঘ. far away"
-        ],
-        "correct": 2,
-        "explanation": "‘By and large’ একটি idiom, যার অর্থ ‘mostly’ বা ‘সাধারণভাবে/মোটের ওপর’।"
-    },
-    {
-        "id": 57,
-        "question": "Francis Bacon is an illustrious—",
-        "options": [
-            "ক. essayist",
-            "খ. dramatist",
-            "গ. novelist",
-            "ঘ. journalist"
-        ],
-        "correct": 0,
-        "explanation": "Francis Bacon ইংরেজি সাহিত্যের বিখ্যাত প্রাবন্ধিক (essayist)।"
-    },
-    {
-        "id": 58,
-        "question": "‘He could not win but learnt a lot.’ Which part of speech is the word ‘but’?",
-        "options": [
-            "ক. an adverb",
-            "খ. a verb",
-            "গ. an adjective",
-            "ঘ. a conjunction"
-        ],
-        "correct": 3,
-        "explanation": "এখানে ‘but’ দুটি clause/ভাবকে যুক্ত করেছে, তাই এটি conjunction।"
-    },
-    {
-        "id": 59,
-        "question": "Select the appropriate preposition: ‘Are you doing anything special –– the weekend?’",
-        "options": [
-            "ক. at",
-            "খ. with",
-            "গ. on",
-            "ঘ. for"
-        ],
-        "correct": 0,
-        "explanation": "Biddabari-এর মূল পেজে উত্তর ‘at’ দেওয়া হয়েছে। তবে প্রচলিত ইংরেজি ব্যবহারে ‘at the weekend’ (বিশেষত British English) ব্যবহৃত হয়; American English-এ ‘on the weekend’ বেশি প্রচলিত।"
-    },
-    {
-        "id": 60,
-        "question": "What is the plural form of ‘sheep’?",
-        "options": [
-            "ক. sheeps",
-            "খ. sheep",
-            "গ. sheepes",
-            "ঘ. sheepes"
-        ],
-        "correct": 1,
-        "explanation": "‘Sheep’ একটি irregular noun; singular ও plural—দুই ক্ষেত্রেই sheep ব্যবহৃত হয়।"
-    },
-    {
-        "id": 61,
-        "question": "‘Sweet are the uses of adversity’ is quoted from Shakespeare’s—",
-        "options": [
-            "ক. Julius Caesar",
-            "খ. Macbeth",
-            "গ. Comedy of Errors",
-            "ঘ. As You Like It"
-        ],
-        "correct": 3,
-        "explanation": "উক্তিটি Shakespeare-এর ‘As You Like It’ নাটক থেকে নেওয়া।"
-    },
-    {
-        "id": 62,
-        "question": "‘To get along with’ means—",
-        "options": [
-            "ক. to adjust",
-            "খ. to interest",
-            "গ. to accompany",
-            "ঘ. to walk"
-        ],
-        "correct": 0,
-        "explanation": "‘Get along with’ অর্থ কারও সঙ্গে মানিয়ে চলা বা সুসম্পর্ক বজায় রাখা।"
-    },
-    {
-        "id": 63,
-        "question": "The synonym for ‘panoramic’ is—",
-        "options": [
-            "ক. scenic",
-            "খ. narrow",
-            "গ. limited",
-            "ঘ. restricted"
-        ],
-        "correct": 0,
-        "explanation": "‘Panoramic’ অর্থ বিস্তৃত বা মনোরম দৃশ্যসম্পন্ন; ‘scenic’ এর কাছাকাছি অর্থ বহন করে।"
-    },
-    {
-        "id": 64,
-        "question": "Alexander Pope’s ‘Essay on Man’ is a—",
-        "options": [
-            "ক. novel",
-            "খ. treatise",
-            "গ. short story",
-            "ঘ. poem"
-        ],
-        "correct": 3,
-        "explanation": "‘An Essay on Man’ Alexander Pope-এর একটি বিখ্যাত দার্শনিক কবিতা।"
-    },
-    {
-        "id": 65,
-        "question": "The antonym for ‘slothful’ is—",
-        "options": [
-            "ক. playful",
-            "খ. sluggish",
-            "গ. energetic",
-            "ঘ. quarrelsome"
-        ],
-        "correct": 2,
-        "explanation": "‘Slothful’ অর্থ অলস; এর বিপরীত শব্দ ‘energetic’ অর্থ কর্মচঞ্চল/উদ্যমী।"
-    },
-    {
-        "id": 66,
-        "question": "What is the verb form of the word ‘ability’?",
-        "options": [
-            "ক. capable",
-            "খ. inability",
-            "গ. enable",
-            "ঘ. unable"
-        ],
-        "correct": 2,
-        "explanation": "‘Ability’ হলো noun; এর verb form হিসেবে ‘enable’ ব্যবহৃত হয়।"
-    },
-    {
-        "id": 67,
-        "question": "The word ‘equivocation’ refers to—",
-        "options": [
-            "ক. starting like an author",
-            "খ. two contradictory things in the same statement",
-            "গ. free expression of opinions",
-            "ঘ. a true statement"
-        ],
-        "correct": 1,
-        "explanation": "‘Equivocation’ বলতে দ্ব্যর্থক বা অস্পষ্ট বক্তব্য বোঝায়, যেখানে কথার অর্থ ইচ্ছাকৃতভাবে অস্পষ্ট রাখা হয়।"
-    },
-    {
-        "id": 68,
-        "question": "“Life’s but a walking shadow, a poor player,\nThat struts and frets his hour upon the stage,\nAnd then is heard no more.”\n\nThese memorable lines in Shakespearean tragedy are spoken by—",
-        "options": [
-            "ক. Lady Macbeth",
-            "খ. Banquo",
-            "গ. Duncan",
-            "ঘ. Macbeth"
-        ],
-        "correct": 3,
-        "explanation": "Shakespeare-এর ‘Macbeth’ নাটকে Macbeth-এর বিখ্যাত soliloquy-এর অংশ এটি।"
-    },
-    {
-        "id": 69,
-        "question": "Which of the following words is spelt correctly?",
-        "options": [
-            "ক. authoratative",
-            "খ. autheritative",
-            "গ. authoritative",
-            "ঘ. authoratative"
-        ],
-        "correct": 2,
-        "explanation": "সঠিক বানান হলো ‘authoritative’।"
-    },
-    {
-        "id": 70,
-        "question": "Find out the active form for the sentence: ‘By whom can our country be saved?’",
-        "options": [
-            "ক. Who can save our country?",
-            "খ. Our country has been saved by who?",
-            "গ. Who save our country?",
-            "ঘ. Who will save our country?"
-        ],
-        "correct": 0,
-        "explanation": "Passive voice-এর ‘By whom’ active voice-এ ‘Who’ হবে এবং ‘can be saved’ হবে ‘can save’।"
-    },
-    {
-        "id": 71,
-        "question": "“All changed, changed utterly.\nA terrible beauty is born.”\n\nThis extract is taken from W.B. Yeats poem titled—",
-        "options": [
-            "ক. No Second Troy",
-            "খ. Easter 1916",
-            "গ. The Second Coming",
-            "ঘ. The Wild Swans at Coole"
-        ],
-        "correct": 1,
-        "explanation": "পঙ্‌ক্তিগুলো W. B. Yeats-এর বিখ্যাত কবিতা ‘Easter 1916’ থেকে নেওয়া।"
-    },
-    {
-        "id": 72,
-        "question": "Identify the correct passive form: ‘Do not close the door.’",
-        "options": [
-            "ক. Let not the door close.",
-            "খ. Let not the door be closed.",
-            "গ. Let not the door close.",
-            "ঘ. Let not door closed."
-        ],
-        "correct": 1,
-        "explanation": "Imperative sentence-এর passive রূপে সাধারণত ‘Let + object + be + past participle’ গঠন ব্যবহৃত হয়।"
-    },
-    {
-        "id": 73,
-        "question": "The poetic drama ‘Murder in the Cathedral’ was written by—",
-        "options": [
-            "ক. Harold Pinter",
-            "খ. G.B. Shaw",
-            "গ. T.S. Eliot",
-            "ঘ. Samuel Beckett"
-        ],
-        "correct": 2,
-        "explanation": "‘Murder in the Cathedral’ T. S. Eliot-এর বিখ্যাত poetic drama।"
-    },
-    {
-        "id": 74,
-        "question": "‘All for Love’ is a drama written by—",
-        "options": [
-            "ক. John Dryden",
-            "খ. William Congreve",
-            "গ. John Bunyan",
-            "ঘ. Francis Bacon"
-        ],
-        "correct": 0,
-        "explanation": "‘All for Love’ John Dryden-এর একটি heroic tragedy।"
-    },
-    {
-        "id": 75,
-        "question": "‘Sitting happily, the chicken laid eggs.’\n\nThe underlined part is a/an—",
-        "options": [
-            "ক. noun clause",
-            "খ. subordinate clause",
-            "গ. independent clause",
-            "ঘ. coordinate clause"
-        ],
-        "correct": 1,
-        "explanation": "‘Sitting happily’ একটি participial phrase; মূল পেজে এটিকে subordinate clause হিসেবে উত্তর দেওয়া হয়েছে।"
-    },
-    {
-        "id": 76,
-        "question": "Caliban is an important character from Shakespeare’s—",
-        "options": [
-            "ক. The Tempest",
-            "খ. Hamlet",
-            "গ. Macbeth",
-            "ঘ. Othello"
-        ],
-        "correct": 0,
-        "explanation": "Caliban Shakespeare-এর ‘The Tempest’ নাটকের একটি গুরুত্বপূর্ণ চরিত্র।"
-    },
-    {
-        "id": 77,
-        "question": "What kind of noun is ‘river’?",
-        "options": [
-            "ক. Material",
-            "খ. Collective",
-            "গ. Proper",
-            "ঘ. Common"
-        ],
-        "correct": 3,
-        "explanation": "‘River’ কোনো নির্দিষ্ট নদীর নাম নয়; সাধারণভাবে নদী বোঝায়। তাই এটি common noun।"
-    },
-    {
-        "id": 78,
-        "question": "‘Caesar and Cleopatra’ is—",
-        "options": [
-            "ক. a tragedy by William Shakespeare",
-            "খ. a poem by Lord Byron",
-            "গ. a play by Bernard Shaw",
-            "ঘ. a novel by S.T. Coleridge"
-        ],
-        "correct": 2,
-        "explanation": "‘Caesar and Cleopatra’ George Bernard Shaw রচিত একটি নাটক।"
-    },
-    {
-        "id": 79,
-        "question": "Identify the right tense: ‘My father –– before I came.’",
-        "options": [
-            "ক. would be leaving",
-            "খ. had been leaving",
-            "গ. had left",
-            "ঘ. will leave"
-        ],
-        "correct": 2,
-        "explanation": "অতীতে একটি কাজ অন্য একটি অতীত কাজের আগে সম্পন্ন হয়েছিল; তাই past perfect tense ‘had left’ ব্যবহৃত হয়েছে।"
-    },
-    {
-        "id": 80,
-        "question": "Which of the following words is spelt incorrectly?",
-        "options": [
-            "ক. reminescence",
-            "খ. glycerin",
-            "গ. idiosyncrasy",
-            "ঘ. lexicography"
-        ],
-        "correct": 0,
-        "explanation": "সঠিক বানান হলো ‘reminiscence’।"
-    },
-    {
-        "id": 81,
-        "question": "Who wrote the picaresque novel titled ‘Tom Jones’?",
-        "options": [
-            "ক. Samuel Richardson",
-            "খ. Horace Walpole",
-            "গ. Henry Fielding",
-            "ঘ. Laurence Sterne"
-        ],
-        "correct": 2,
-        "explanation": "‘Tom Jones’ Henry Fielding-এর বিখ্যাত picaresque novel।"
-    },
-    {
-        "id": 82,
-        "question": "The story of ‘Moby Dick’ centers on—",
-        "options": [
-            "ক. a mermaid",
-            "খ. a whale",
-            "গ. a crocodile",
-            "ঘ. a shark"
-        ],
-        "correct": 1,
-        "explanation": "Herman Melville-এর ‘Moby-Dick’ উপন্যাসের কেন্দ্রীয় বিষয় হলো সাদা তিমি Moby Dick।"
-    },
-    {
-        "id": 83,
-        "question": "‘He prayeth best, who loveth best’—Who said it?",
-        "options": [
-            "ক. John Milton",
-            "খ. John Donne",
-            "গ. Lord Byron",
-            "ঘ. S.T. Coleridge"
-        ],
-        "correct": 3,
-        "explanation": "পঙ্‌ক্তিটি Samuel Taylor Coleridge-এর ‘The Rime of the Ancient Mariner’ থেকে নেওয়া।"
-    },
-    {
-        "id": 84,
-        "question": "The controlling sentence of a paragraph is known as—",
-        "options": [
-            "ক. content modulator",
-            "খ. terminator",
-            "গ. thesis statement",
-            "ঘ. topic sentence"
-        ],
-        "correct": 3,
-        "explanation": "Paragraph-এর মূল বক্তব্য যে বাক্যে প্রকাশ পায় তাকে topic sentence বলা হয়।"
-    },
-    {
-        "id": 85,
-        "question": "Choose the correct comparative form of the sentence ‘Very few boys are as industrious as Zaman.’",
-        "options": [
-            "ক. Zaman is one of the most industrious boys.",
-            "খ. Zaman is more industrious than most other boys.",
-            "গ. Zaman is really industrious like other boys.",
-            "ঘ. Zaman is as industrious are other boys."
-        ],
-        "correct": 1,
-        "explanation": "‘Very few boys are as…as’ কাঠামোকে comparative degree-তে রূপান্তর করলে ‘more…than most other’ ব্যবহার করা যায়।"
-    },
-    {
-        "id": 86,
-        "question": "Identify the appropriate preposition: Your opinion is identical –– mine.",
-        "options": [
-            "ক. for",
-            "খ. in",
-            "গ. with",
-            "ঘ. by"
-        ],
-        "correct": 2,
-        "explanation": "সঠিক phrase হলো ‘identical with’—অর্থাৎ সম্পূর্ণ একই বা অভিন্ন।"
-    },
-    {
-        "id": 87,
-        "question": "‘Paradise Lost’ attempted to—",
-        "options": [
-            "ক. justify the ways of man to God",
-            "খ. show that Satan and God have equal power",
-            "গ. justify the ways of God to man",
-            "ঘ. explain why both good and evil are necessary"
-        ],
-        "correct": 2,
-        "explanation": "John Milton-এর ‘Paradise Lost’-এর বিখ্যাত উদ্দেশ্য হলো ‘justify the ways of God to man’।"
-    },
-    {
-        "id": 88,
-        "question": "“Oh, lift me as a wave, a leaf, a cloud!\nI fall upon the thorns of life! I bleed!”\n\nThe extract is taken from P.B. Shelley’s poem—",
-        "options": [
-            "ক. The Cloud",
-            "খ. To a Skylark",
-            "গ. Ode to the West Wind",
-            "ঘ. Adonais"
-        ],
-        "correct": 2,
-        "explanation": "পঙ্‌ক্তিগুলো Percy Bysshe Shelley-এর ‘Ode to the West Wind’ কবিতা থেকে নেওয়া।"
-    },
-    {
-        "id": 89,
-        "question": "Who wrote the short story ‘The Ant and the Grasshopper’?",
-        "options": [
-            "ক. Guy de Maupassant",
-            "খ. W. Somerset Maugham",
-            "গ. J. K. Rowling",
-            "ঘ. O. Henry"
-        ],
-        "correct": 1,
-        "explanation": "W. Somerset Maugham-এর ‘The Ant and the Grasshopper’ বিখ্যাত ছোটগল্প।"
-    },
-    {
-        "id": 90,
-        "question": "The word ‘vital’ is a/an—",
-        "options": [
-            "ক. noun",
-            "খ. adverb",
-            "গ. adjective",
-            "ঘ. verb"
-        ],
-        "correct": 2,
-        "explanation": "‘Vital’ অর্থ অত্যন্ত গুরুত্বপূর্ণ/জীবনীশক্তিসংক্রান্ত এবং এটি adjective হিসেবে ব্যবহৃত হয়।"
-    },
-    {
-        "id": 91,
-        "question": "2 log₁₀ 5 + log₁₀ 36 − log₁₀ 9 = ?",
-        "options": [
-            "ক. 2",
-            "খ. 100",
-            "গ. 37",
-            "ঘ. 4.6"
-        ],
-        "correct": 0,
-        "explanation": "2log5 = log25। তাই log25 + log36 − log9 = log(25×36/9) = log100 = 2।"
-    },
-    {
-        "id": 92,
-        "question": "ক্রয়মূল্য বিক্রয়মূল্যের দ্বিগুণ হলে শতকরা লাভ বা ক্ষতির পরিমাণ কত?",
-        "options": [
-            "ক. লাভ ২৫%",
-            "খ. ক্ষতি ২৫%",
-            "গ. লাভ ১০%",
-            "ঘ. ক্ষতি ৫০%"
-        ],
-        "correct": 3,
-        "explanation": "ক্রয়মূল্য 100 টাকা হলে বিক্রয়মূল্য 50 টাকা। ক্ষতি = 50 টাকা, অর্থাৎ 50%।"
-    },
-    {
-        "id": 93,
-        "question": "একটি ফাংশন f : R → R, f(x) = 2x + 1 দ্বারা সংজ্ঞায়িত হলে f⁻¹(2)-এর মান কত?",
-        "options": [
-            "ক. 0",
-            "খ. 1/2",
-            "গ. 5",
-            "ঘ. 1"
-        ],
-        "correct": 1,
-        "explanation": "y=2x+1 হলে y=2 বসিয়ে 2=2x+1 ⇒ x=1/2। তাই f⁻¹(2)=1/2।"
-    },
-    {
-        "id": 94,
-        "question": "ABC ত্রিভুজে B কোণের পরিমাণ ৪৮° এবং AB = AC। যদি E এবং F, AB এবং AC-কে এমনভাবে ছেদ করে যেন EF || BC হয়, তাহলে ∠A + ∠AFE = ?",
-        "options": [
-            "ক. ১৩২°",
-            "খ. ১৮০°",
-            "গ. ১০৮°",
-            "ঘ. ১৬০°"
-        ],
-        "correct": 0,
-        "explanation": "AB=AC হওয়ায় B ও C কোণ সমান। তাই A = 180°−48°−48° = 84°। EF || BC হওয়ার কারণে সংশ্লিষ্ট কোণ ব্যবহার করে ∠AFE = 48°। অতএব মোট = 84°+48° = 132°।"
-    },
-    {
-        "id": 95,
-        "question": "যদি প্রদত্ত সমীকরণটি সত্য হয়, তাহলে নিচের x-এর মান কত?",
-        "options": [
-            "ক. 0.1",
-            "খ. 0.001",
-            "গ. 1/10000",
-            "ঘ. 0.001"
-        ],
-        "correct": 0,
-        "explanation": "মূল Biddabari পেজে প্রশ্নটির গাণিতিক অংশটি ওয়েব টেক্সটে সঠিকভাবে প্রদর্শিত হয়নি; সেখানে উত্তর 0.1 দেওয়া আছে। তাই মূল সমীকরণ ছাড়া নির্ভুল ধাপ দেখানো সম্ভব নয়।"
-    },
-    {
-        "id": 96,
-        "question": "i⁻⁴⁹-এর মান কত?",
-        "options": [
-            "ক. −1",
-            "খ. i",
-            "গ. 1",
-            "ঘ. −i"
-        ],
-        "correct": 3,
-        "explanation": "i-এর ঘাত 4 পরপর পুনরাবৃত্ত হয়। −49 ≡ 3 (mod 4), তাই i⁻⁴⁹ = i³ = −i।"
-    },
-    {
-        "id": 97,
-        "question": "যদি −5, p, 1, 16 সমান্তর অনুক্রমে থাকে, তাহলে p ও q-এর মান হবে যথাক্রমে—",
-        "options": [
-            "ক. −2, 9",
-            "খ. 2, 9",
-            "গ. −2, −9",
-            "ঘ. 2, −9"
-        ],
-        "correct": 1,
-        "explanation": "−5, p, 1, q, 16 যদি সমান্তর অনুক্রম হয়, সাধারণ অন্তর 7। তাই p=2 এবং q=9।"
-    },
-    {
-        "id": 98,
-        "question": "১৮ এবং ৭২-এর গুণোত্তর গড় কোনটি?",
-        "options": [
-            "ক. ৪৫",
-            "খ. ১২৯৬",
-            "গ. ৩৬",
-            "ঘ. ৪"
-        ],
-        "correct": 2,
-        "explanation": "গুণোত্তর গড় = √(18×72) = √1296 = 36।"
-    },
-    {
-        "id": 99,
-        "question": "মূল Biddabari পেজে ৯৯ নম্বর প্রশ্নটি দেওয়া নেই।",
-        "options": [
-            "ক. তথ্য অনুপস্থিত",
-            "খ. তথ্য অনুপস্থিত",
-            "গ. তথ্য অনুপস্থিত",
-            "ঘ. তথ্য অনুপস্থিত"
-        ],
-        "correct": 0,
-        "explanation": "মূল উৎসে এই প্রশ্নটি অনুপস্থিত।"
-    },
-    {
-        "id": 100,
-        "question": "একটি সুষম বহুভুজের প্রত্যেকটি কোণ ১৬৮°। এর বাহুসংখ্যা কত?",
-        "options": [
-            "ক. ৩০",
-            "খ. ২০",
-            "গ. ১৮",
-            "ঘ. ১০"
-        ],
-        "correct": 0,
-        "explanation": "সষম বহুভুজের একটি বহিঃকোণ = 180°−168° = 12°। তাই বাহুর সংখ্যা = 360°÷12° = 30।"
-    },
-        {
-        "id": 101,
-        "question": "একটি সমবাহু ত্রিভুজের বাহুর দৈর্ঘ্য ২ সেমি এবং উচ্চতা X সেমি হলে, X-এর মান কত?",
-        "options": [
-            "ক. √২",
-            "খ. √৩",
-            "গ. ২",
-            "ঘ. ৩"
-        ],
-        "correct": 1,
-        "explanation": "সমবাহু ত্রিভুজের উচ্চতা = (√৩/২) × বাহু। তাই উচ্চতা = (√৩/২) × ২ = √৩ সেমি।"
-    },
-    {
-        "id": 102,
-        "question": "একটি সমবাহু ত্রিভুজের প্রতিটি অন্তঃকোণের পরিমাণ কত? (অতিরিক্ত অনুশীলনমূলক প্রশ্ন)",
-        "options": [
-            "ক. ৩০°",
-            "খ. ৪৫°",
-            "গ. ৬০°",
-            "ঘ. ৯০°"
-        ],
-        "correct": 2,
-        "explanation": "ত্রিভুজের তিন কোণের সমষ্টি ১৮০°। সমবাহু ত্রিভুজের তিনটি কোণ সমান, তাই প্রতিটি কোণ = ১৮০° ÷ ৩ = ৬০°।"
-    },
-    {
-        "id": 103,
-        "question": "P(A) = ১/৩, P(B) = ৩/৪ এবং A ও B স্বাধীন হলে P(A ∪ B)-এর মান কত?",
-        "options": [
-            "ক. ৩/২১",
-            "খ. ১/৩",
-            "গ. ৫/৬",
-            "ঘ. কোনোটিই নয়"
-        ],
-        "correct": 2,
-        "explanation": "P(A ∪ B) = P(A) + P(B) − P(A∩B)। স্বাধীন হলে P(A∩B) = P(A)P(B) = ১/৩ × ৩/৪ = ১/৪। তাই P(A∪B) = ১/৩ + ৩/৪ − ১/৪ = ৫/৬।"
-    },
-    {
-        "id": 104,
-        "question": "দুটি স্বাধীন ঘটনা A ও B-এর ক্ষেত্রে P(A)=১/২ এবং P(B)=১/৩ হলে P(A∩B) কত? (অতিরিক্ত অনুশীলনমূলক প্রশ্ন)",
-        "options": [
-            "ক. ১/৬",
-            "খ. ২/৩",
-            "গ. ৫/৬",
-            "ঘ. ১/৫"
-        ],
-        "correct": 0,
-        "explanation": "স্বাধীন ঘটনার ক্ষেত্রে P(A∩B) = P(A) × P(B)। তাই ১/২ × ১/৩ = ১/৬।"
-    },
-    {
-        "id": 105,
-        "question": "৬a²bc এবং ৪a³b²c²-এর গ.সা.গু. কোনটি?",
-        "options": [
-            "ক. a²bc",
-            "খ. 2a²bc",
-            "গ. 2a²b²c²",
-            "ঘ. কোনোটিই নয়"
-        ],
-        "correct": 1,
-        "explanation": "৬ ও ৪-এর গ.সা.গু. = ২। প্রতিটি চলকের সর্বনিম্ন ঘাত নেওয়া হলে a², b এবং c পাওয়া যায়। তাই গ.সা.গু. = 2a²bc।"
-    },
-    {
-        "id": 106,
-        "question": "বাংলাদেশের প্রথম কয়লানির্ভর বিদ্যুৎ কেন্দ্র কোথায় অবস্থিত?",
-        "options": [
-            "ক. কাপ্তাই, রাঙ্গামাটি",
-            "খ. সাভার, ঢাকা",
-            "গ. সীতাকুণ্ড, চট্টগ্রাম",
-            "ঘ. বড়পুকুরিয়া, দিনাজপুর"
-        ],
-        "correct": 3,
-        "explanation": "দিনাজপুরের বড়পুকুরিয়ায় বাংলাদেশের প্রথম কয়লাভিত্তিক বিদ্যুৎ কেন্দ্র স্থাপিত হয়।"
-    },
-    {
-        "id": 107,
-        "question": "কোন ধরনের শিলায় জীবাশ্ম থাকার সম্ভাবনা রয়েছে?",
-        "options": [
-            "ক. আগ্নেয় শিলা",
-            "খ. রূপান্তরিত শিলা",
-            "গ. পাললিক শিলা",
-            "ঘ. উপরের কোনোটিই নয়"
-        ],
-        "correct": 2,
-        "explanation": "জীবাশ্ম সাধারণত পাললিক শিলায় সংরক্ষিত থাকে, কারণ এগুলো স্তরে স্তরে জমা হওয়া পলি থেকে তৈরি হয়।"
-    },
-    {
-        "id": 108,
-        "question": "নিচের কোন দুর্যোগের কার্যকর পূর্বাভাস দেওয়া সম্ভব নয়?",
-        "options": [
-            "ক. বন্যা",
-            "খ. ভূমিকম্প",
-            "গ. ঘূর্ণিঝড়",
-            "ঘ. খরা"
-        ],
-        "correct": 1,
-        "explanation": "বন্যা, ঘূর্ণিঝড় ও খরার পূর্বাভাস তুলনামূলকভাবে দেওয়া যায়; কিন্তু ভূমিকম্প কখন, কোথায় ও কত শক্তিশালী হবে তা নির্ভুলভাবে পূর্বাভাস দেওয়া যায় না।"
-    },
-    {
-        "id": 109,
-        "question": "দুর্যোগ ব্যবস্থাপনা চক্রের কোন স্তরটি বেশি ব্যয়বহুল?",
-        "options": [
-            "ক. পূর্বপ্রস্তুতি",
-            "খ. সাড়াদান",
-            "গ. প্রশমন",
-            "ঘ. পুনরুদ্ধার"
-        ],
-        "correct": 2,
-        "explanation": "দুর্যোগের ক্ষতি কমানোর জন্য অবকাঠামোগত ও দীর্ঘমেয়াদি ব্যবস্থা গ্রহণে বড় ধরনের ব্যয় হতে পারে।"
-    },
-    {
-        "id": 110,
-        "question": "কোনটি নবায়নযোগ্য সম্পদ?",
-        "options": [
-            "ক. প্রাকৃতিক গ্যাস",
-            "খ. চুনাপাথর",
-            "গ. বায়ু",
-            "ঘ. কয়লা"
-        ],
-        "correct": 2,
-        "explanation": "বায়ু প্রকৃতির মাধ্যমে ক্রমাগত পুনর্নবীকরণ হয়। তাই এটি নবায়নযোগ্য সম্পদ।"
-    },
-    {
-        "id": 111,
-        "question": "নিচের কোনটি বাংলাদেশের বৃহত্তম গ্যাসক্ষেত্র?",
-        "options": [
-            "ক. বাখরাবাদ",
-            "খ. হরিপুর",
-            "গ. তিতাস",
-            "ঘ. হবিগঞ্জ"
-        ],
-        "correct": 2,
-        "explanation": "তিতাস বাংলাদেশের অন্যতম বৃহৎ ও গুরুত্বপূর্ণ গ্যাসক্ষেত্র।"
-    },
-    {
-        "id": 112,
-        "question": "বাংলাদেশে জি-কে (G-K) প্রকল্প একটি—",
-        "options": [
-            "ক. জলবিদ্যুৎ প্রকল্প",
-            "খ. নদী নিয়ন্ত্রণ প্রকল্প",
-            "গ. জল পরিবহন প্রকল্প",
-            "ঘ. সেচ প্রকল্প"
-        ],
-        "correct": 3,
-        "explanation": "G-K প্রকল্প কুষ্টিয়া-গঙ্গা-কপোতাক্ষ অঞ্চলের একটি গুরুত্বপূর্ণ সেচ প্রকল্প।"
-    },
-    {
-        "id": 113,
-        "question": "COP-26 এ COP মানে কী?",
-        "options": [
-            "ক. Conference of Paris",
-            "খ. Conference of the Power",
-            "গ. Conference of the Parties",
-            "ঘ. Conference of the Protocol"
-        ],
-        "correct": 2,
-        "explanation": "COP-এর পূর্ণরূপ Conference of the Parties। এটি UNFCCC-এর সদস্য রাষ্ট্রগুলোর সম্মেলন।"
-    },
-    {
-        "id": 114,
-        "question": "বাংলাদেশের Blue Economy-এর চ্যালেঞ্জ নয় কোনটি?",
-        "options": [
-            "ক. ঘন ঘন বন্যা",
-            "খ. সমুদ্র দূষণ",
-            "গ. ত্রুটিপূর্ণ সমুদ্র শাসন",
-            "ঘ. উপরের কোনোটিই নয়"
-        ],
-        "correct": 3,
-        "explanation": "প্রদত্ত ক, খ ও গ—তিনটিই বাংলাদেশের Blue Economy-এর ক্ষেত্রে চ্যালেঞ্জ হিসেবে বিবেচিত হতে পারে।"
-    },
-    {
-        "id": 115,
-        "question": "ডাউকি ফাটল বরাবর একটি প্রচণ্ড ভূমিকম্পের পর বাংলাদেশের কোন নদী তার গতিপথ পরিবর্তন করে?",
-        "options": [
-            "ক. ব্রহ্মপুত্র নদী",
-            "খ. পদ্মা নদী",
-            "গ. কর্ণফুলী নদী",
-            "ঘ. মেঘনা নদী"
-        ],
-        "correct": 0,
-        "explanation": "ভূতাত্ত্বিক পরিবর্তনের ফলে ব্রহ্মপুত্রের গতিপথ পরিবর্তনের ঐতিহাসিক ঘটনা বাংলাদেশের ভূগোলের গুরুত্বপূর্ণ বিষয়।"
-    },
-    {
-        "id": 116,
-        "question": "সুপরিবাহী পদার্থে Valence Band এবং Conduction Band—",
-        "options": [
-            "ক. আলাদা থাকে",
-            "খ. ওভারল্যাপ থাকে",
-            "গ. অনেক দূরে থাকে",
-            "ঘ. কোনোটিই নয়"
-        ],
-        "correct": 1,
-        "explanation": "ধাতব পরিবাহকে Valence Band ও Conduction Band পরস্পর overlap করতে পারে, ফলে ইলেকট্রন সহজে চলাচল করে।"
-    },
-    {
-        "id": 117,
-        "question": "ফটোগ্রাফিক প্লেটে আবরণ থাকে—",
-        "options": [
-            "ক. সিলভার ব্রোমাইডের",
-            "খ. সিলভার ক্লোরাইডের",
-            "গ. অ্যামোনিয়াম ক্লোরাইডের",
-            "ঘ. সিলভার ফ্লোরাইডের"
-        ],
-        "correct": 0,
-        "explanation": "প্রচলিত ফটোগ্রাফিক ফিল্মে আলো-সংবেদনশীল Silver Bromide (AgBr) ব্যবহৃত হয়।"
-    },
-    {
-        "id": 118,
-        "question": "বজ্রবৃষ্টির ফলে মাটিতে উদ্ভিদের কোন খাদ্য উপাদান বৃদ্ধি পায়?",
-        "options": [
-            "ক. নাইট্রোজেন",
-            "খ. পটাসিয়াম",
-            "গ. অক্সিজেন",
-            "ঘ. ফসফরাস"
-        ],
-        "correct": 0,
-        "explanation": "বজ্রপাতের সময় বায়ুমণ্ডলের নাইট্রোজেন অক্সিজেনের সঙ্গে বিক্রিয়া করে নাইট্রোজেনের যৌগ তৈরি করতে পারে, যা বৃষ্টির মাধ্যমে মাটিতে পৌঁছায়।"
-    },
-    {
-        "id": 119,
-        "question": "ফলিক এসিডের অন্য নাম কোনটি?",
-        "options": [
-            "ক. ভিটামিন বি-১২",
-            "খ. ভিটামিন বি-৬",
-            "গ. ভিটামিন বি-১",
-            "ঘ. ভিটামিন বি-৯"
-        ],
-        "correct": 3,
-        "explanation": "Folic acid হলো Vitamin B9।"
-    },
-    {
-        "id": 120,
-        "question": "যে কারণে শৈশব অন্ধত্ব হতে পারে তা হলো—",
-        "options": [
-            "ক. HIV/AIDS",
-            "খ. ম্যালেরিয়া",
-            "গ. হাম",
-            "ঘ. যক্ষ্মা"
-        ],
-        "correct": 2,
-        "explanation": "হাম বিশেষ করে অপুষ্টি ও ভিটামিন A-এর ঘাটতির সঙ্গে থাকলে শিশুদের চোখের গুরুতর সমস্যা ও অন্ধত্বের ঝুঁকি বাড়াতে পারে।"
-    },
-    {
-        "id": 121,
-        "question": "শিশুদের ভিটামিন A ক্যাপসুল দিতে হয়—",
-        "options": [
-            "ক. বছরে একবার",
-            "খ. বছরে দুইবার",
-            "গ. বছরে তিনবার",
-            "ঘ. এর কোনোটিই নয়"
-        ],
-        "correct": 1,
-        "explanation": "বাংলাদেশে জাতীয় Vitamin A Plus কর্মসূচির আওতায় সাধারণত বছরে দুইবার শিশুদের ভিটামিন A ক্যাপসুল দেওয়া হয়।"
-    },
-    {
-        "id": 122,
-        "question": "ব্যাকটেরিয়ার গতিশীলতার জন্য যে গঠন দায়ী তা হলো—",
-        "options": [
-            "ক. পিল্লি",
-            "খ. ফ্ল্যাজেলা",
-            "গ. শীথ",
-            "ঘ. ক্যাপসুল"
-        ],
-        "correct": 1,
-        "explanation": "Flagella বা ফ্ল্যাজেলা ব্যাকটেরিয়ার চলাচলে সাহায্য করে।"
-    },
-    {
-        "id": 123,
-        "question": "‘কেপলার-৪৫২ বি’ কী?",
-        "options": [
-            "ক. একটি মহাকাশযান",
-            "খ. পৃথিবীর মতো একটি গ্রহ",
-            "গ. সূর্যের মতো একটি নক্ষত্র",
-            "ঘ. NASA-এর অত্যাধুনিক টেলিস্কোপ"
-        ],
-        "correct": 1,
-        "explanation": "Kepler-452b হলো সূর্যের মতো একটি নক্ষত্রকে প্রদক্ষিণকারী পৃথিবীর আকারের কাছাকাছি একটি exoplanet।"
-    },
-    {
-        "id": 124,
-        "question": "ধারালো যন্ত্রপাতি জীবাণুমুক্ত করার ভালো পদ্ধতি—",
-        "options": [
-            "ক. বয়লিং",
-            "খ. বেনজিন ওয়াশ",
-            "গ. ফরমালিন ওয়াশ",
-            "ঘ. কেমিক্যাল স্টেরিলাইজেশন"
-        ],
-        "correct": 3,
-        "explanation": "প্রদত্ত অপশনগুলোর মধ্যে ধারালো যন্ত্রের জন্য chemical sterilization একটি উপযুক্ত পদ্ধতি হিসেবে ধরা হয়েছে।"
-    },
-    {
-        "id": 125,
-        "question": "সাবানের আয়নিক গ্রুপ হলো—",
-        "options": [
-            "ক. R₃NH⁺",
-            "খ. SO₃⁻Na⁺",
-            "গ. R₂NH₂",
-            "ঘ. COO⁻Na⁺"
-        ],
-        "correct": 3,
-        "explanation": "সাধারণ সাবান হলো উচ্চতর ফ্যাটি অ্যাসিডের সোডিয়াম বা পটাশিয়াম লবণ। এর প্রধান আয়নিক অংশ carboxylate group, যেমন COO⁻Na⁺।"
-    },
-    {
-        "id": 126,
-        "question": "কোন জোড়াটি বেমানান?",
-        "options": [
-            "ক. যক্ষ্মার জীবাণু : রবার্ট কচ",
-            "খ. হোমিওপ্যাথি : হ্যানিম্যান",
-            "গ. ব্যাকটেরিয়া : রবার্ট হুক",
-            "ঘ. এনাটমি : ভেসালিয়াস"
-        ],
-        "correct": 2,
-        "explanation": "Robert Hooke অণুবীক্ষণ যন্ত্রে কোষ পর্যবেক্ষণের জন্য বিখ্যাত। ব্যাকটেরিয়া আবিষ্কার ও পর্যবেক্ষণের ইতিহাসে Antonie van Leeuwenhoek গুরুত্বপূর্ণ।"
-    },
-    {
-        "id": 127,
-        "question": "এনজাইম, অ্যান্টিবডি এবং হরমোনের মৌলিক উপাদান—",
-        "options": [
-            "ক. প্রোটিন",
-            "খ. ক্যালসিয়াম",
-            "গ. ভিটামিন",
-            "ঘ. লবণ"
-        ],
-        "correct": 0,
-        "explanation": "অধিকাংশ enzyme ও antibody প্রোটিনজাত। অনেক গুরুত্বপূর্ণ hormone-ও peptide/protein প্রকৃতির।"
-    },
-    {
-        "id": 128,
-        "question": "মকরক্রান্তি রেখা কোনটি?",
-        "options": [
-            "ক. ২৩°৩০′ দক্ষিণ অক্ষাংশ",
-            "খ. ২৩°৩০′ উত্তর অক্ষাংশ",
-            "গ. ২৩°৩০′ পূর্ব দ্রাঘিমাংশ",
-            "ঘ. ২৩°৩০′ পশ্চিম দ্রাঘিমাংশ"
-        ],
-        "correct": 0,
-        "explanation": "Tropic of Capricorn বা মকরক্রান্তি রেখা প্রায় ২৩.৫° দক্ষিণ অক্ষাংশে অবস্থিত।"
-    },
-    {
-        "id": 129,
-        "question": "পরম শূন্য তাপমাত্রা কোনটি?",
-        "options": [
-            "ক. ২৭৩° সেলসিয়াস",
-            "খ. ২৭৩° ফারেনহাইট",
-            "গ. ০° সেলসিয়াস",
-            "ঘ. ০° কেলভিন"
-        ],
-        "correct": 3,
-        "explanation": "Absolute zero হলো 0 Kelvin, যা প্রায় −273.15°C।"
-    },
-    {
-        "id": 130,
-        "question": "আদর্শ ভোল্টেজ উৎসের অভ্যন্তরীণ রোধ কত?",
-        "options": [
-            "ক. অসীম",
-            "খ. শূন্য",
-            "গ. অতি ক্ষুদ্র",
-            "ঘ. অনেক বড়"
-        ],
-        "correct": 1,
-        "explanation": "Ideal voltage source-এর internal resistance শূন্য ধরা হয়।"
-    },
-    {
-        "id": 131,
-        "question": "নিচের কোনটি Structured Query Language (SQL) নয়?",
-        "options": [
-            "ক. Java",
-            "খ. MySQL",
-            "গ. Oracle",
-            "ঘ. উপরের সবগুলো"
-        ],
-        "correct": 0,
-        "explanation": "Java একটি programming language। MySQL ও Oracle SQL নয়, বরং database management system/platform।"
-    },
-    {
-        "id": 132,
-        "question": "ইন্টারনেট যোগাযোগ ব্যবস্থায় Hostname-কে IP Address-এ অনুবাদ করে—",
-        "options": [
-            "ক. FTP Server",
-            "খ. Firewall",
-            "গ. DNS Server",
-            "ঘ. Gateway"
-        ],
-        "correct": 2,
-        "explanation": "DNS বা Domain Name System domain/hostname-কে সংশ্লিষ্ট IP address-এ resolve করে।"
-    },
-    {
-        "id": 133,
-        "question": "নিচের কোন মডেলটি Cloud Computing সেবা প্রদানকারীগণ ব্যবহার করে না?",
-        "options": [
-            "ক. CaaS",
-            "খ. IaaS",
-            "গ. PaaS",
-            "ঘ. SaaS"
-        ],
-        "correct": 0,
-        "explanation": "আইডেন্টিফাইড মূল পেজের উত্তর অনুযায়ী CaaS নির্দেশ করা হয়েছে (যদিও এটি কন্টেইনার সার্ভিস হিসেবে বর্তমানে আধুনিক ক্লাউডে ব্যবহৃৎ হয়)।"
-    },
-    {
-        "id": 134,
-        "question": "অ্যামাজনের Cloud Platform কোনটি?",
-        "options": [
-            "ক. Azure",
-            "খ. AWS",
-            "গ. Cloudera",
-            "ঘ. উপরের সবগুলো"
-        ],
-        "correct": 1,
-        "explanation": "AWS-এর পূর্ণরূপ Amazon Web Services। এটি Amazon-এর cloud computing platform।"
-    },
-    {
-        "id": 135,
-        "question": "নিচের কোন Cyber Attack সংঘটিত হলে গ্রাহক নিজের computer system ব্যবহার করতে পারেন না এবং system ব্যবহার উপযোগী করতে অর্থ দাবি করা হয়?",
-        "options": [
-            "ক. Phishing",
-            "খ. Denial of Service",
-            "গ. Ransomware",
-            "ঘ. Man-in-the-Middle"
-        ],
-        "correct": 2,
-        "explanation": "Ransomware কম্পিউটারের ফাইল বা সিস্টেমকে লক/এনক্রিপ্ট করে মুক্তিপণ দাবি করতে পারে।"
-    },
-    {
-        "id": 136,
-        "question": "SCSI-এর পূর্ণরূপ কী?",
-        "options": [
-            "ক. Small Computer System Interface",
-            "খ. Small Computer Software Interface",
-            "গ. Small Computer Storage Interface",
-            "ঘ. Small Computer Standard Interface"
-        ],
-        "correct": 0,
-        "explanation": "SCSI-এর পূর্ণরূপ Small Computer System Interface।"
-    },
-    {
-        "id": 137,
-        "question": "নিচের কোন ডিভাইসটি Input এবং Output—উভয় ডিভাইস হিসেবে কাজ করে?",
-        "options": [
-            "ক. Scanner",
-            "খ. Mouse",
-            "গ. Touch Screen",
-            "ঘ. Projector"
-        ],
-        "correct": 2,
-        "explanation": "Touch screen-এ ব্যবহারকারী স্পর্শের মাধ্যমে input দেয় এবং screen-এ তথ্য display হয়।"
-    },
-    {
-        "id": 138,
-        "question": "নিচের কোন Octal সংখ্যাটি Decimal সংখ্যা ৫৫-এর সমতুল্য?",
-        "options": [
-            "ক. ৫৫",
-            "খ. ৭৭",
-            "গ. ৬৭",
-            "ঘ. ৮৭"
-        ],
-        "correct": 2,
-        "explanation": "Octal 67 = 6×8 + 7 = 48+7 = 55।"
-    },
-    {
-        "id": 139,
-        "question": "নিচের কোনটি System Software নয়?",
-        "options": [
-            "ক. Linux",
-            "খ. Android",
-            "গ. Mozilla Firefox",
-            "ঘ. Apple iOS"
-        ],
-        "correct": 2,
-        "explanation": "Linux, Android ও iOS হলো operating system; অন্যদিকে Mozilla Firefox হলো application software/web browser।"
-    },
-    {
-        "id": 140,
-        "question": "নিচের কোন Protocol-টি ইন্টারনেটে তথ্য আদান-প্রদানের নিরাপত্তা নিশ্চিত করে থাকে?",
-        "options": [
-            "ক. FTP",
-            "খ. HTTPS",
-            "গ. TCP",
-            "ঘ. DNS"
-        ],
-        "correct": 1,
-        "explanation": "HTTPS, HTTP-এর সঙ্গে encryption/security ব্যবস্থা ব্যবহার করে নিরাপদ ওয়েব যোগাযোগ নিশ্চিত করে।"
-    },
-    {
-        "id": 141,
-        "question": "Piconet কী?",
-        "options": [
-            "ক. Wi-Fi Network",
-            "খ. Wide Area Network",
-            "গ. Bluetooth Network",
-            "ঘ. 5G Network"
-        ],
-        "correct": 2,
-        "explanation": "Bluetooth প্রযুক্তিতে কাছাকাছি একাধিক ডিভাইসের তৈরি ছোট নেটওয়ার্ককে Piconet বলা হয়।"
-    },
-    {
-        "id": 142,
-        "question": "এক মেশিন থেকে অন্য মেশিনে e-mail message স্থানান্তর করলে কোন TCP/IP Protocol ব্যবহার হয়?",
-        "options": [
-            "ক. FTP",
-            "খ. RPC",
-            "গ. SNMP",
-            "ঘ. SMTP"
-        ],
-        "correct": 3,
-        "explanation": "SMTP-এর পূর্ণরূপ Simple Mail Transfer Protocol। এটি email পাঠানোর জন্য ব্যবহৃত হয়।"
-    },
-    {
-        "id": 143,
-        "question": "যে কম্পিউটার প্রোগ্রাম নিজে নিজেই অন্য কম্পিউটারে Internet-এর মাধ্যমে কপি হয় তাকে বলে—",
-        "options": [
-            "ক. Program Virus",
-            "খ. Worms",
-            "গ. Trojan Horse",
-            "ঘ. ETSI"
-        ],
-        "correct": 1,
-        "explanation": "Worm নিজে নিজেই নেটওয়ার্কের মাধ্যমে অন্য কম্পিউটারে ছড়িয়ে পড়তে পারে।"
-    },
-    {
-        "id": 144,
-        "question": "নিচের কোন প্রতিষ্ঠানটি 4G Standard প্রস্তুতকরণে সম্পৃক্ত?",
-        "options": [
-            "ক. ISO",
-            "খ. ITU",
-            "গ. 3GPP",
-            "ঘ. ETSI"
-        ],
-        "correct": 1,
-        "explanation": "মূল উৎস অনুযায়ী ITU উত্তর হিসেবে নির্ধারিত।"
-    },
-    {
-        "id": 145,
-        "question": "নিচের কোনটি Open Source Software?",
-        "options": [
-            "ক. Google Chrome",
-            "খ. Microsoft Windows",
-            "গ. Zoom",
-            "ঘ. Adobe Photoshop"
-        ],
-        "correct": 0,
-        "explanation": "প্রদত্ত অপশনগুলোর মধ্যে Google Chrome-এর Chromium ভিত্তি open-source প্রকল্প।"
-    },
-    {
-        "id": 146,
-        "question": "বাংলাদেশের সংবিধানের রক্ষক কে?",
-        "options": [
-            "ক. জাতীয় সংসদ",
-            "খ. শাসন বিভাগ",
-            "গ. সুপ্রিম কোর্ট",
-            "ঘ. আইন মন্ত্রণালয়"
-        ],
-        "correct": 2,
-        "explanation": "সংবিধানের ব্যাখ্যা ও সাংবিধানিক বিচারিক পর্যালোচনায় Supreme Court গুরুত্বপূর্ণ ভূমিকা পালন করে।"
-    },
-    {
-        "id": 147,
-        "question": "বাংলার সর্বপ্রাচীন জনপদের নাম কী?",
-        "options": [
-            "ক. পুন্ড্র",
-            "খ. তাম্রলিপ্ত",
-            "গ. গৌড়",
-            "ঘ. হরিকেল"
-        ],
-        "correct": 0,
-        "explanation": "পুন্ড্র বা পুন্ড্রবর্ধন প্রাচীন বাংলার অন্যতম প্রাচীন ও গুরুত্বপূর্ণ জনপদ।"
-    },
-    {
-        "id": 148,
-        "question": "বাংলাদেশের বৃহত্তর ঢাকা জেলা প্রাচীনকালে কোন জনপদের অন্তর্ভুক্ত ছিল?",
-        "options": [
-            "ক. সমতট",
-            "খ. পুন্ড্র",
-            "গ. বঙ্গ",
-            "ঘ. হরিকেল"
-        ],
-        "correct": 2,
-        "explanation": "ঢাকা ও এর আশপাশের বৃহৎ অঞ্চল প্রাচীন বঙ্গ জনপদের অন্তর্ভুক্ত ছিল।"
-    },
-    {
-        "id": 149,
-        "question": "কোন শাসকদের আমলে বাংলাভাষী অঞ্চল ‘বাঙ্গালা’ নামে পরিচিত হয়ে ওঠে?",
-        "options": [
-            "ক. মৌর্য",
-            "খ. গুপ্ত",
-            "গ. পাল",
-            "ঘ. মুসলিম"
-        ],
-        "correct": 3,
-        "explanation": "মধ্যযুগে মুসলিম শাসনামলে ‘বাঙ্গালা’ নামটি বৃহত্তর বাংলা অঞ্চলের জন্য ব্যাপকভাবে ব্যবহৃত হতে থাকে।"
-    },
-    {
-        "id": 150,
-        "question": "বাংলার প্রথম স্বাধীন নবাব কে ছিলেন?",
-        "options": [
-            "ক. শশাঙ্ক",
-            "খ. মুর্শিদ কুলি খান",
-            "গ. সিরাজউদ্দৌলা",
-            "ঘ. আব্বাস আলী মীর্জা"
-        ],
-        "correct": 1,
-        "explanation": "পরীক্ষার প্রচলিত প্রশ্নভিত্তিক উত্তরে মুর্শিদ কুলি খানকে বাংলার প্রথম স্বাধীন নবাব বলা হয়।"
-    },
-        {
-        "id": 151,
-        "question": "চীনদেশের কোন ভ্রমণকারী গুপ্তযুগে বাংলাদেশে আগমন করেন?",
-        "options": [
-            "ক. হিউয়েন সাং",
-            "খ. ফা হিয়েন",
-            "গ. আই সিং",
-            "ঘ. এদের সকলেই"
-        ],
-        "correct": 1,
-        "explanation": "চীনা পর্যটক ফা হিয়েন গুপ্তযুগে ভারতে ভ্রমণ করেন এবং বাংলার বিভিন্ন অঞ্চলেও তাঁর আগমনের উল্লেখ পাওয়া যায়।"
-    },
-    {
-        "id": 152,
-        "question": "বঙ্গভঙ্গের কারণে কোন নতুন প্রদেশ সৃষ্টি হয়েছিল?",
-        "options": [
-            "ক. পূর্ববঙ্গ ও বিহার",
-            "খ. পূর্ববঙ্গ ও আসাম",
-            "গ. পূর্ববঙ্গ ও উড়িষ্যা",
-            "ঘ. পূর্ববঙ্গ ও পশ্চিমবঙ্গ"
-        ],
-        "correct": 1,
-        "explanation": "১৯০৫ সালের বঙ্গভঙ্গের ফলে ‘পূর্ববঙ্গ ও আসাম’ নামে নতুন প্রদেশ গঠিত হয়।"
-    },
-    {
-        "id": 153,
-        "question": "‘তমদ্দুন মজলিশ’ কে প্রতিষ্ঠা করেন?",
-        "options": [
-            "ক. হাজী শরিয়তউল্লাহ",
-            "খ. শেরে বাংলা এ. কে. ফজলুল হক",
-            "গ. আবুল কাশেম",
-            "ঘ. মাওলানা আবদুল হামিদ খান ভাসানী"
-        ],
-        "correct": 2,
-        "explanation": "অধ্যাপক আবুল কাশেম ১৯৪৭ সালে তমদ্দুন মজলিশ প্রতিষ্ঠা করেন।"
-    },
-    {
-        "id": 154,
-        "question": "‘আমার ভাইয়ের রক্তে রাঙানো একুশে ফেব্রুয়ারি, আমি কি ভুলিতে পারি’—গানটি কে রচনা করেন?",
-        "options": [
-            "ক. মুনীর চৌধুরী",
-            "খ. জহির রায়হান",
-            "গ. আবদুল গাফফার চৌধুরী",
-            "ঘ. কাজী নজরুল ইসলাম"
-        ],
-        "correct": 2,
-        "explanation": "ভাষা আন্দোলনের স্মরণীয় গানটির গীতিকার আবদুল গাফফার চৌধুরী।"
-    },
-    {
-        "id": 155,
-        "question": "কোন দেশ বাংলা ভাষাকে তাদের অন্যতম রাষ্ট্রভাষা হিসেবে স্বীকৃতি দিয়েছে?",
-        "options": [
-            "ক. লাইবেরিয়া",
-            "খ. নামিবিয়া",
-            "গ. হাইতি",
-            "ঘ. সিয়েরা লিওন"
-        ],
-        "correct": 3,
-        "explanation": "সিয়েরা লিওনের সাবেক প্রেসিডেন্ট আহমাদ তেজান কাব্বাহ বাংলা ভাষার প্রতি সম্মান প্রদর্শন করেছিলেন। তবে ‘রাষ্ট্রভাষা’ হিসেবে বাংলা স্বীকৃত—এই প্রশ্নটির ভাষা নিয়ে ঐতিহাসিকভাবে কিছু বিতর্ক আছে। পরীক্ষার প্রচলিত উত্তর: সিয়েরা লিওন।"
-    },
-    {
-        "id": 156,
-        "question": "বাংলাদেশের ক্ষুদ্র নৃগোষ্ঠীর সংখ্যা কত?",
-        "options": [
-            "ক. ২০",
-            "খ. ৪৮",
-            "গ. ২৫",
-            "ঘ. ৩২"
-        ],
-        "correct": 1,
-        "explanation": "৪৪তম বিসিএসের প্রশ্নে প্রচলিত উত্তর ছিল ৪৮। Biddabari পেজেও নোট দিয়ে বর্তমানে ৫০ উল্লেখ করা হয়েছে। তাই পরীক্ষার সময়কার উত্তর ও বর্তমান তথ্য আলাদা করে মনে রাখা ভালো।"
-    },
-    {
-        "id": 157,
-        "question": "নিচের কোন পত্রিকাটির প্রকাশনা উপলক্ষ্যে রবীন্দ্রনাথ ঠাকুর আশীর্বাণী পাঠিয়েছিলেন?",
-        "options": [
-            "ক. সবুজপত্র",
-            "খ. শনিবারের চিঠি",
-            "গ. কল্লোল",
-            "ঘ. ধূমকেতু"
-        ],
-        "correct": 3,
-        "explanation": "কাজী নজরুল ইসলামের সম্পাদিত ‘ধূমকেতু’ পত্রিকার প্রকাশনা উপলক্ষে রবীন্দ্রনাথ আশীর্বাণী পাঠিয়েছিলেন।"
-    },
-    {
-        "id": 158,
-        "question": "বাংলাদেশের জাতীয় প্রতীকে কয়টি তারকা আছে?",
-        "options": [
-            "ক. ২টি",
-            "খ. ৩টি",
-            "গ. ৪টি",
-            "ঘ. ৫টি"
-        ],
-        "correct": 2,
-        "explanation": "বাংলাদেশের জাতীয় প্রতীকে শাপলা, ধানের শীষ, পাটপাতা এবং চারটি তারকা রয়েছে।"
-    },
-    {
-        "id": 159,
-        "question": "বাঙালির মুক্তির সনদ ‘ছয় দফা’ কোন তারিখে আনুষ্ঠানিকভাবে ঘোষণা করা হয়েছিল?",
-        "options": [
-            "ক. ২১ ফেব্রুয়ারি, ১৯৫৪",
-            "খ. ২২ মার্চ, ১৯৫৮",
-            "গ. ২০ এপ্রিল, ১৯৬২",
-            "ঘ. ২৩ মার্চ, ১৯৬৬"
-        ],
-        "correct": 3,
-        "explanation": "১৯৬৬ সালে বঙ্গবন্ধু শেখ মুজিবুর রহমানের নেতৃত্বে ছয় দফা বাঙালির রাজনৈতিক অধিকার আদায়ের গুরুত্বপূর্ণ কর্মসূচিতে পরিণত হয়।"
-    },
-    {
-        "id": 160,
-        "question": "‘এবারের সংগ্রাম আমাদের মুক্তির সংগ্রাম, এবারের সংগ্রাম স্বাধীনতার সংগ্রাম’—এই ঘোষণা কবে দেওয়া হয়?",
-        "options": [
-            "ক. ২৬ মার্চ, ১৯৭১",
-            "খ. ৭ মার্চ, ১৯৭১",
-            "গ. ৩ মার্চ, ১৯৭১",
-            "ঘ. ২৩ মার্চ, ১৯৭১"
-        ],
-        "correct": 1,
-        "explanation": "১৯৭১ সালের ৭ মার্চ ঢাকার রেসকোর্স ময়দানে দেওয়া ঐতিহাসিক ভাষণে বঙ্গবন্ধু এই ঘোষণা দেন।"
-    },
-    {
-        "id": 161,
-        "question": "বাংলাদেশে জুম চাষ কোথায় হয়?",
-        "options": [
-            "ক. বান্দরবান",
-            "খ. ময়মনসিংহ",
-            "গ. রাজশাহী",
-            "ঘ. দিনাজপুর"
-        ],
-        "correct": 0,
-        "explanation": "পার্বত্য চট্টগ্রামের পাহাড়ি অঞ্চলে, বিশেষ করে বান্দরবান এলাকায় জুম চাষ প্রচলিত।"
-    },
-    {
-        "id": 162,
-        "question": "বাংলাদেশের কোন জেলায় সবচেয়ে বেশি চা বাগান রয়েছে?",
-        "options": [
-            "ক. চট্টগ্রাম",
-            "খ. সিলেট",
-            "গ. পঞ্চগড়",
-            "ঘ. মৌলভীবাজার"
-        ],
-        "correct": 3,
-        "explanation": "বাংলাদেশের চা শিল্পের অন্যতম প্রধান কেন্দ্র মৌলভীবাজার।"
-    },
-    {
-        "id": 163,
-        "question": "‘ধর্মীয় স্বাধীনতা’ বাংলাদেশ সংবিধানের কোন অনুচ্ছেদে অন্তর্ভুক্ত?",
-        "options": [
-            "ক. অনুচ্ছেদ ৩৮",
-            "খ. অনুচ্ছেদ ৫০",
-            "গ. অনুচ্ছেদ ৪১",
-            "ঘ. অনুচ্ছেদ ১০০"
-        ],
-        "correct": 2,
-        "explanation": "সংবিধানের ৪১ অনুচ্ছেদে ধর্মীয় স্বাধীনতার অধিকার নিশ্চিত করা হয়েছে।"
-    },
-    {
-        "id": 164,
-        "question": "বাংলাদেশে প্রথম আদমশুমারি (জনগণনা) কবে অনুষ্ঠিত হয়?",
-        "options": [
-            "ক. ১৯৭২ সালে",
-            "খ. ১৯৭৩ সালে",
-            "গ. ১৯৭৪ সালে",
-            "ঘ. ১৯৭৫ সালে"
-        ],
-        "correct": 2,
-        "explanation": "স্বাধীন বাংলাদেশের প্রথম আদমশুমারি ১৯৭৪ সালে অনুষ্ঠিত হয়।"
-    },
-    {
-        "id": 165,
-        "question": "বাংলাদেশের GDP-তে কোন খাতের অবদান সবচেয়ে বেশি?",
-        "options": [
-            "ক. কৃষি",
-            "খ. শিল্প",
-            "গ. বাণিজ্য",
-            "ঘ. সেবা"
-        ],
-        "correct": 3,
-        "explanation": "বাংলাদেশের অর্থনীতিতে সেবা খাত GDP-এর সবচেয়ে বড় অংশ জুড়ে রয়েছে।"
-    },
-    {
-        "id": 166,
-        "question": "২০২০–২০২১ অর্থবছরে বাংলাদেশের GDP প্রবৃদ্ধির হার কত ছিল?",
-        "options": [
-            "ক. ৫.৬৮%",
-            "খ. ৯.৯৪%",
-            "গ. ৭.৬৬%",
-            "ঘ. ৬.৯৪%"
-        ],
-        "correct": 3,
-        "explanation": "২০২০–২১ অর্থবছরের জন্য প্রশ্নে প্রদত্ত সরকারি/পরীক্ষাভিত্তিক পরিসংখ্যান অনুযায়ী উত্তর ৬.৯৪%।"
-    },
-    {
-        "id": 167,
-        "question": "বিশ্বব্যাংক কবে বাংলাদেশকে নিম্ন-মধ্যম আয়ের দেশ হিসেবে তালিকাভুক্ত করে?",
-        "options": [
-            "ক. ১ জুন ২০১৪",
-            "খ. ১ জুন ২০১৫",
-            "গ. ১ জুলাই ২০১৫",
-            "ঘ. ১ জুলাই ২০১৬"
-        ],
-        "correct": 2,
-        "explanation": "বিশ্বব্যাংকের শ্রেণিবিন্যাস অনুযায়ী ২০১৫ সালের জুলাই থেকে বাংলাদেশ নিম্ন-মধ্যম আয়ের দেশের তালিকায় আসে।"
-    },
-    {
-        "id": 168,
-        "question": "বঙ্গবন্ধু স্যাটেলাইট-২ কী ধরনের স্যাটেলাইট হবে?",
-        "options": [
-            "ক. কমিউনিকেশন স্যাটেলাইট",
-            "খ. ওয়েদার স্যাটেলাইট",
-            "গ. আর্থ অবজারভেশন স্যাটেলাইট",
-            "ঘ. ন্যাভিগেশন স্যাটেলাইট"
-        ],
-        "correct": 2,
-        "explanation": "প্রসঙ্গে প্রচলিত পরিকল্পনা অনুযায়ী বঙ্গবন্ধু স্যাটেলাইট-২কে Earth Observation বা পৃথিবী পর্যবেক্ষণ স্যাটেলাইট হিসেবে উল্লেখ করা হয়েছিল।"
-    },
-    {
-        "id": 169,
-        "question": "কোনো নাগরিকের মৌলিক অধিকার লঙ্ঘিত হলে সংবিধানের কোন অনুচ্ছেদের বিধান অনুযায়ী তিনি মামলা করতে পারেন?",
-        "options": [
-            "ক. ৪৪",
-            "খ. ৪৭",
-            "গ. ১০২",
-            "ঘ. ১০৩"
-        ],
-        "correct": 2,
-        "explanation": "সংবিধানের ১০২ অনুচ্ছেদের অধীনে হাইকোর্ট বিভাগে রিট আবেদন করা যায়।"
-    },
-    {
-        "id": 170,
-        "question": "বাংলাদেশের সরকার পদ্ধতি—",
-        "options": [
-            "ক. এককেন্দ্রিক",
-            "খ. যুক্তরাষ্ট্রীয়",
-            "গ. রাজতন্ত্র",
-            "ঘ. রাষ্ট্রপতিশাসিত"
-        ],
-        "correct": 0,
-        "explanation": "বাংলাদেশ একটি এককেন্দ্রিক (Unitary) রাষ্ট্রব্যবস্থা অনুসরণ করে।"
-    },
-    {
-        "id": 171,
-        "question": "BSTI-এর পূর্ণরূপ কী?",
-        "options": [
-            "ক. Bangladesh Salt Testing Institute",
-            "খ. Bangladesh Strategic Training Institute",
-            "গ. Bangladesh Standards and Testing Institution",
-            "ঘ. Bangladesh Society for Telecommunication and Information"
-        ],
-        "correct": 2,
-        "explanation": "BSTI-এর পূর্ণরূপ Bangladesh Standards and Testing Institution।"
-    },
-    {
-        "id": 172,
-        "question": "বাংলাদেশের স্বাধীনতা যুদ্ধে কতজন মুক্তিযোদ্ধাকে ‘বীর বিক্রম’ খেতাবে ভূষিত করা হয়?",
-        "options": [
-            "ক. ৭ জন",
-            "খ. ৬৮ জন",
-            "গ. ১৭৫ জন",
-            "ঘ. ৪২৬ জন"
-        ],
-        "correct": 2,
-        "explanation": "বীর বিক্রম বাংলাদেশের তৃতীয় সর্বোচ্চ সামরিক বীরত্বসূচক খেতাব। মোট ১৭৫ জনকে এই খেতাব দেওয়া হয়।"
-    },
-    {
-        "id": 173,
-        "question": "মুজিবনগর সরকারের ত্রাণ ও পুনর্বাসন মন্ত্রী কে ছিলেন?",
-        "options": [
-            "ক. তাজউদ্দীন আহমদ",
-            "খ. এ. এইচ. এম. কামারুজ্জামান",
-            "গ. সৈয়দ নজরুল ইসলাম",
-            "ঘ. এম. মনসুর আলী"
-        ],
-        "correct": 1,
-        "explanation": "মুজিবনগর সরকারের মন্ত্রিসভায় এ. এইচ. এম. কামারুজ্জামান ত্রাণ ও পুনর্বাসন মন্ত্রণালয়ের দায়িত্বে ছিলেন।"
-    },
-    {
-        "id": 174,
-        "question": "কোনটি জাতীয় কবি কাজী নজরুল ইসলাম রচিত গ্রন্থ নয়?",
-        "options": [
-            "ক. ব্যথার দান",
-            "খ. দোলনচাঁপা",
-            "গ. শিউলিমালা",
-            "ঘ. সোনার তরী"
-        ],
-        "correct": 3,
-        "explanation": "‘সোনার তরী’ রবীন্দ্রনাথ ঠাকুরের কাব্যগ্রন্থ; এটি নজরুলের রচনা নয়।"
-    },
-    {
-        "id": 175,
-        "question": "UNESCO কত তারিখে ২১ ফেব্রুয়ারিকে আন্তর্জাতিক মাতৃভাষা দিবস হিসেবে স্বীকৃতি দেয়?",
-        "options": [
-            "ক. ১৮ নভেম্বর ১৯৯৯",
-            "খ. ১৭ নভেম্বর ১৯৯৯",
-            "গ. ১৯ নভেম্বর ২০০১",
-            "ঘ. ২০ নভেম্বর ২০০১"
-        ],
-        "correct": 1,
-        "explanation": "UNESCO-এর সাধারণ সম্মেলনে ১৯৯৯ সালের ১৭ নভেম্বর ২১ ফেব্রুয়ারিকে International Mother Language Day হিসেবে স্বীকৃতি দেওয়া হয়।"
-    },
-    {
-        "id": 176,
-        "question": "যে গুণের মাধ্যমে মানুষ ‘ভুল’ ও ‘শুদ্ধ’-এর পার্থক্য নির্ধারণ করতে পারে, তা হচ্ছে—",
-        "options": [
-            "ক. সততা",
-            "খ. সদাচার",
-            "গ. কর্তব্যবোধ",
-            "ঘ. মূল্যবোধ"
-        ],
-        "correct": 3,
-        "explanation": "মূল্যবোধ মানুষের ভালো-মন্দ, ন্যায়-অন্যায় এবং ভুল-শুদ্ধ বিচার করার নৈতিক ভিত্তি তৈরি করে।"
-    },
-    {
-        "id": 177,
-        "question": "জাতীয় শুদ্ধাচার কৌশল অনুসারে ‘শুদ্ধাচার’ হচ্ছে—",
-        "options": [
-            "ক. শুদ্ধভাবে কার্যসম্পাদনের কৌশল",
-            "খ. সরকারি কর্মকর্তাদের আচরণের মানদণ্ড",
-            "গ. সততা ও নৈতিকতা দ্বারা প্রভাবিত আচরণগত উৎকর্ষ",
-            "ঘ. দৈনন্দিন কার্যক্রমে অনুসৃতব্য মান"
-        ],
-        "correct": 2,
-        "explanation": "শুদ্ধাচার মূলত সততা, নৈতিকতা ও সুশাসনভিত্তিক আচরণের উৎকর্ষকে বোঝায়।"
-    },
-    {
-        "id": 178,
-        "question": "বাংলাদেশে দুর্নীতিকে দণ্ডনীয় ঘোষণা করা হয়েছে যে বিধানে—",
-        "options": [
-            "ক. ১৮৬০ সালে প্রণীত দণ্ডবিধিতে",
-            "খ. ২০০৪ সালে প্রণীত দুর্নীতি দমন কমিশন আইনে",
-            "গ. ২০১৮ সালে প্রণীত সরকারি কর্মচারী (শৃঙ্খলা ও আপীল) বিধিমালাতে",
-            "ঘ. উপরের সবগুলোতে"
-        ],
-        "correct": 3,
-        "explanation": "প্রদত্ত পরীক্ষাভিত্তিক উত্তর অনুযায়ী তিনটি আইনি কাঠামোর মধ্যেই দুর্নীতিসংক্রান্ত শাস্তিমূলক বিধান রয়েছে।"
-    },
-    {
-        "id": 179,
-        "question": "অর্থনৈতিক ক্ষেত্রে সুশাসন প্রতিষ্ঠিত হলে—",
-        "options": [
-            "ক. বিনিয়োগ বৃদ্ধি পায়",
-            "খ. দুর্নীতি দূর হয়",
-            "গ. প্রতিষ্ঠানের সুনাম হয়",
-            "ঘ. যোগাযোগ বৃদ্ধি পায়"
-        ],
-        "correct": 0,
-        "explanation": "সুশাসন বিনিয়োগের পরিবেশকে আরও স্থিতিশীল ও আস্থাশীল করতে সহায়তা করে।"
-    },
-    {
-        "id": 180,
-        "question": "জাতিসংঘের দুর্নীতিবিরোধী কনভেনশনের নাম—",
-        "options": [
-            "ক. UNCLOS",
-            "খ. UNCTAD",
-            "গ. UNCAC",
-            "ঘ. CEDAW"
-        ],
-        "correct": 2,
-        "explanation": "UNCAC-এর পূর্ণরূপ United Nations Convention against Corruption।"
-    },
-    {
-        "id": 181,
-        "question": "গণতান্ত্রিক মূল্যবোধের সবচেয়ে গুরুত্বপূর্ণ উপাদান—",
-        "options": [
-            "ক. নেতৃত্বের প্রতি আনুগত্য",
-            "খ. স্বচ্ছ নির্বাচন কমিশন",
-            "গ. শক্তিশালী রাজনৈতিক দল",
-            "ঘ. পরমতসহিষ্ণুতা"
-        ],
-        "correct": 3,
-        "explanation": "গণতান্ত্রিক সমাজে ভিন্ন মত ও মতাদর্শের প্রতি সহনশীলতা একটি গুরুত্বপূর্ণ মূল্যবোধ।"
-    },
-    {
-        "id": 182,
-        "question": "সরকারি সিদ্ধান্তের ক্ষেত্রে ‘স্বার্থের সংঘাত’ (Conflict of Interest)-এর উদ্ভব হয় যখন গৃহীতব্য সিদ্ধান্তের সঙ্গে—",
-        "options": [
-            "ক. সিদ্ধান্ত গ্রহণকারী কর্মকর্তার নিজের বা পরিবারের সদস্যদের স্বার্থ জড়িত থাকে",
-            "খ. প্রভাবশালী ব্যক্তি বা ব্যক্তিবর্গের স্বার্থ জড়িত থাকে",
-            "গ. সরকারি স্বার্থ জড়িত থাকে",
-            "ঘ. ঊর্ধ্বতন কর্তৃপক্ষের স্বার্থ জড়িত থাকে"
-        ],
-        "correct": 0,
-        "explanation": "ব্যক্তিগত স্বার্থ যদি সরকারি দায়িত্ব পালনের সিদ্ধান্তকে প্রভাবিত করতে পারে, তখন Conflict of Interest তৈরি হয়।"
-    },
-    {
-        "id": 183,
-        "question": "রাষ্ট্র ও সমাজে দুর্নীতিপ্রবণতার জন্য সবচেয়ে বেশি দায়ী—",
-        "options": [
-            "ক. আইনের প্রয়োগের অভাব",
-            "খ. নৈতিকতা ও মূল্যবোধের অভাব",
-            "গ. দুর্বল পরিবীক্ষণ ব্যবস্থা",
-            "ঘ. অসৎ নেতৃত্ব"
-        ],
-        "correct": 1,
-        "explanation": "প্রশ্নটির পরীক্ষাভিত্তিক উত্তর হলো নৈতিকতা ও মূল্যবোধের অভাব।"
-    },
-    {
-        "id": 184,
-        "question": "প্রাথমিকভাবে একজন মানুষের মানবীয় গুণাবলি ও সামাজিক মূল্যবোধের বিকাশ ঘটে—",
-        "options": [
-            "ক. সমাজে বসবাসের মাধ্যমে",
-            "খ. বিদ্যালয়ে",
-            "গ. পরিবারে",
-            "ঘ. রাষ্ট্রের মাধ্যমে"
-        ],
-        "correct": 2,
-        "explanation": "শিশুর প্রাথমিক মূল্যবোধ, আচরণ ও সামাজিকীকরণ মূলত পরিবার থেকেই শুরু হয়।"
-    },
-    {
-        "id": 185,
-        "question": "‘সততার জন্য সদিচ্ছা’র কথা বলেছেন—",
-        "options": [
-            "ক. ডেকার্ট",
-            "খ. ডেভিড হিউম",
-            "গ. ইমানুয়েল কান্ট",
-            "ঘ. জন লক"
-        ],
-        "correct": 2,
-        "explanation": "কান্টের নীতিদর্শনে ‘Good Will’ বা সদিচ্ছা একটি গুরুত্বপূর্ণ ধারণা।"
-    },
-    {
-        "id": 186,
-        "question": "প্রশ্নবোধক চিহ্নের স্থানে কোন চিত্রটি বসবে?",
-        "options": [
-            "ক. ১",
-            "খ. ২",
-            "গ. ৩",
-            "ঘ. ৪"
-        ],
-        "correct": 1,
-        "explanation": "এটি চিত্রভিত্তিক মানসিক দক্ষতার প্রশ্ন। মূল প্রশ্নপত্রের চিত্রটি ছাড়া পূর্ণ ধাপ দেখানো সম্ভব নয়। প্রকাশিত প্রশ্ন-সমাধানে উত্তর ‘২’ দেওয়া হয়েছে।"
-    },
-    {
-        "id": 187,
-        "question": "P এবং Q দুই ভাই। R এবং S দুই বোন। P-এর ছেলে হলো S-এর ভাই। তাহলে Q হলো R-এর—",
-        "options": [
-            "ক. পুত্র",
-            "খ. ভাই",
-            "গ. পিতা",
-            "ঘ. চাচা"
-        ],
-        "correct": 3,
-        "explanation": "P-এর ছেলে R ও S-এর ভাই। P ও Q ভাই হওয়ায় Q হলো সেই সন্তানের চাচা। তাই R-এরও চাচা Q।"
-    },
-    {
-        "id": 188,
-        "question": "স্টেপলারের সাথে যেমন স্টেপল, সুচের সাথে তেমন—",
-        "options": [
-            "ক. ছিদ্র",
-            "খ. কাপড়",
-            "গ. সুতা",
-            "ঘ. সেলাই"
-        ],
-        "correct": 2,
-        "explanation": "Stapler-এর সঙ্গে Staple ব্যবহৃত হয়; তেমনি Needle-এর সঙ্গে Thread বা সুতা ব্যবহৃত হয়।"
-    },
-    {
-        "id": 189,
-        "question": "165135 যদি PEACE হয়, তবে 1215225 হবে—",
-        "options": [
-            "ক. Lead",
-            "খ. Love",
-            "গ. Loop",
-            "ঘ. Castle"
-        ],
-        "correct": 1,
-        "explanation": "অক্ষরগুলোর অবস্থান/কোড অনুসরণ করে 1215225 থেকে LOVE পাওয়া যায়।"
-    },
-    {
-        "id": 190,
-        "question": "নিচের চিত্রে মোট কতটি ত্রিভুজ আছে?",
-        "options": [
-            "ক. ১০টি",
-            "খ. ১২টি",
-            "গ. ১৪টি",
-            "ঘ. ১৬টি"
-        ],
-        "correct": 3,
-        "explanation": "এটি চিত্রভিত্তিক প্রশ্ন। বিভিন্ন ছোট ও বড় ত্রিভুজ গণনা করলে মোট ১৬টি পাওয়া যায়।"
-    },
-    {
-        "id": 191,
-        "question": "ভারসাম্য রক্ষা করতে নিচের চিত্রের বামদিকে কত ওজন রাখতে হবে?",
-        "options": [
-            "ক. ৪ কেজি",
-            "খ. ৬ কেজি",
-            "গ. ৮ কেজি",
-            "ঘ. ১০ কেজি"
-        ],
-        "correct": 1,
-        "explanation": "এটি লিভার/ভারসাম্যভিত্তিক চিত্রের প্রশ্ন। প্রদত্ত দূরত্ব ও ওজনের ভারসাম্য রক্ষা করে বাম পাশে প্রয়োজনীয় ওজন ৬ কেজি।"
-    },
-    {
-        "id": 192,
-        "question": "২০১৮ সালের ১২ জানুয়ারি শুক্রবার হলে, একই বছরের ১৭ মার্চ কী বার ছিল?",
-        "options": [
-            "ক. শনিবার",
-            "খ. সোমবার",
-            "গ. বৃহস্পতিবার",
-            "ঘ. শুক্রবার"
-        ],
-        "correct": 0,
-        "explanation": "১২ জানুয়ারি থেকে ১৭ মার্চ পর্যন্ত মোট ৬৪ দিন। ৬৪ ÷ ৭ করলে ভাগশেষ ১; তাই শুক্রবারের এক দিন পর শনিবার।"
-    },
-    {
-        "id": 193,
-        "question": "৫, ৭, ১০, ১৪, …… ২৫ ধারার শূন্যস্থানের সংখ্যাটি কত?",
-        "options": [
-            "ক. ১৭",
-            "খ. ১৮",
-            "গ. ১৯",
-            "ঘ. ২১"
-        ],
-        "correct": 2,
-        "explanation": "ধারায় পার্থক্যগুলো ২, ৩, ৪, ৫, ৬। তাই ১৪ + ৫ = ১৯ এবং এরপর ১৯ + ৬ = ২৫।"
-    },
-    {
-        "id": 194,
-        "question": "‘MEMORY’ শব্দটির আয়নার প্রতিবিম্ব কোনটি?",
-        "options": [
-            "ক. ১",
-            "খ. ২",
-            "গ. ৩",
-            "ঘ. ৪"
-        ],
-        "correct": 1,
-        "explanation": "আয়নায় শব্দটি বাম-ডান উল্টোভাবে প্রতিফলিত হবে। প্রকাশিত সমাধানে সঠিক চিত্রটি ২ নম্বর।"
-    },
-    {
-        "id": 195,
-        "question": "প্রশ্ন-চিহ্নিত স্থানে কোন সংখ্যা বসবে?",
-        "options": [
-            "ক. ৬৪",
-            "খ. ৬৬",
-            "গ. ৬৮",
-            "ঘ. ৭২"
-        ],
-        "correct": 2,
-        "explanation": "এটি চিত্রভিত্তিক সংখ্যার প্যাটার্নের প্রশ্ন। প্রকাশিত প্রশ্ন-সমাধানে উত্তর ৬৮ দেওয়া হয়েছে।"
-    },
-    {
-        "id": 196,
-        "question": "কোনো কিছুর কারণ জানতে হলে আমরা ইংরেজিতে যে প্রশ্ন করি তা সাধারণত কোন শব্দটি দিয়ে শুরু হয়?",
-        "options": [
-            "ক. How",
-            "খ. What",
-            "গ. Why",
-            "ঘ. Who"
-        ],
-        "correct": 2,
-        "explanation": "কারণ জানতে ইংরেজিতে সাধারণত “Why” ব্যবহার করা হয়।"
-    },
-    {
-        "id": 197,
-        "question": "নিম্নের কোন গুচ্ছের শব্দগুলো বর্ণানুক্রমিকভাবে সাজানো রয়েছে?",
-        "options": [
-            "ক. নিম্নোক্ত, নিদর্শন, নিরাসক্ত, নিরাময়, নিষ্ক্রিয়, নিসর্গ",
-            "খ. নিদর্শন, নিম্নোক্ত, নিরাময়, নিরাসক্ত, নিষ্ক্রিয়, নিসর্গ",
-            "গ. নিষ্ক্রিয়, নিসর্গ, নিম্নোক্ত, নিদর্শন, নিরাসক্ত, নিরাময়",
-            "ঘ. নিদর্শন, নিরাসক্ত, নিষ্ক্রিয়, নিসর্গ, নিম্নোক্ত, নিরাময়"
-        ],
-        "correct": 1,
-        "explanation": "বাংলা বর্ণানুক্রমের নিয়ম অনুসারে শব্দগুলোর প্রাথমিক ও পরবর্তী বর্ণ তুলনা করে খ নম্বর ক্রমটি সঠিক।"
-    },
-    {
-        "id": 198,
-        "question": "যদি PLAY-এর কোড ৮১২৩ এবং RHYME-এর কোড ৪৯৩৬৭ হয়, তাহলে MALE-এর কোড হবে—",
-        "options": [
-            "ক. ৬৩২৩",
-            "খ. ৬১৯৮",
-            "গ. ৬২১৭",
-            "ঘ. ৬২৮৫"
-        ],
-        "correct": 2,
-        "explanation": "প্রদত্ত কোডগুলোর অক্ষর-সংখ্যা সম্পর্ক অনুসরণ করলে MALE-এর কোড ৬২১৭ পাওয়া যায়।"
-    },
-    {
-        "id": 199,
-        "question": "এই সিরিজটিতে পরের সংখ্যাটি কত?",
-        "options": [
-            "ক. ২৪",
-            "খ. ২৬",
-            "গ. ২৯",
-            "ঘ. ৩৪"
-        ],
-        "correct": 3,
-        "explanation": "৩, ৫, ৮, ১৩, ২১—প্রতিটি সংখ্যা আগের দুই সংখ্যার যোগফল: ১৩ + ২১ = ৩৪।"
-    },
-    {
-        "id": 200,
-        "question": "একটি দেয়ালঘড়িতে যখন ৩টা বাজে তখন ঘণ্টার কাঁটা যদি পূর্বদিকে থাকে তবে মিনিটের কাঁটা কোন দিকে থাকবে?",
-        "options": [
-            "ক. উত্তর",
-            "খ. পশ্চিম",
-            "গ. দক্ষিণ",
-            "ঘ. পূর্ব"
-        ],
-        "correct": 0,
-        "explanation": "৩টার সময় ঘণ্টার কাঁটা ৩-এর দিকে এবং মিনিটের কাঁটা ১২-এর দিকে থাকে। যদি ৩-এর দিককে পূর্ব ধরা হয়, তাহলে ১২-এর দিক হবে উত্তর। তাই উত্তর সঠিক।"
-    }
+  {
+    "n": 1,
+    "stem": "কোন দেশ থেকে ‘আরব বসন্ত’-এর সূচনা হয়?",
+    "options": [
+      {"letter": "A", "text": "মিশর"},
+      {"letter": "B", "text": "তিউনিশিয়া"},
+      {"letter": "C", "text": "লিবিয়া"},
+      {"letter": "D", "text": "সিরিয়া"}
+    ],
+    "explanation": "২০১০ সালের শেষ দিকে তিউনিশিয়ায় শুরু হওয়া গণআন্দোলন পরবর্তীতে মধ্যপ্রাচ্য ও উত্তর আফ্রিকার বিভিন্ন দেশে ছড়িয়ে পড়ে[span_0](start_span)[span_0](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 2,
+    "stem": "কোন সালে রাশিয়া ক্রিমিয়া দখল করে?",
+    "options": [
+      {"letter": "A", "text": "২০১০"},
+      {"letter": "B", "text": "২০১২"},
+      {"letter": "C", "text": "২০১৪"},
+      {"letter": "D", "text": "২০১৬"}
+    ],
+    "explanation": "২০১৪ সালে রাশিয়া ইউক্রেনের ক্রিমিয়া উপদ্বীপের নিয়ন্ত্রণ নেয়[span_1](start_span)[span_1](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 3,
+    "stem": "কোন দেশটি ভেনিজুয়েলার প্রতিবেশী রাষ্ট্র নয়?",
+    "options": [
+      {"letter": "A", "text": "গায়ানা"},
+      {"letter": "B", "text": "বলিভিয়া"},
+      {"letter": "C", "text": "ব্রাজিল"},
+      {"letter": "D", "text": "কলাম্বিয়া"}
+    ],
+    "explanation": "ভেনিজুয়েলার স্থলসীমান্ত রয়েছে কলাম্বিয়া, ব্রাজিল ও গায়ানার সঙ্গে। বলিভিয়ার সঙ্গে ভেনিজুয়েলার সরাসরি স্থলসীমান্ত নেই[span_2](start_span)[span_2](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 4,
+    "stem": "বিগত কপ-২৬ কোন শহরে অনুষ্ঠিত হয়?",
+    "options": [
+      {"letter": "A", "text": "জেনেভা"},
+      {"letter": "B", "text": "প্যারিস"},
+      {"letter": "C", "text": "গ্লাসগো"},
+      {"letter": "D", "text": "ব্রাসেলস"}
+    ],
+    "explanation": "COP26 ২০২১ সালে যুক্তরাজ্যের গ্লাসগো শহরে অনুষ্ঠিত হয়[span_3](start_span)[span_3](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 5,
+    "stem": "বাংলাদেশ ও ভারতের মধ্যে সম্পাদিত গঙ্গার পানি বণ্টন চুক্তি কখন শেষ হবে?",
+    "options": [
+      {"letter": "A", "text": "২০৪০"},
+      {"letter": "B", "text": "২০২৬"},
+      {"letter": "C", "text": "২০২৪"},
+      {"letter": "D", "text": "২০৩০"}
+    ],
+    "explanation": "১৯৯৬ সালে স্বাক্ষরিত গঙ্গার পানি বণ্টন চুক্তির মেয়াদ ৩০ বছর[span_4](start_span)[span_4](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 6,
+    "stem": "কোন দেশকে ইউরোপের রুটির ঝুড়ি বলা হয়?",
+    "options": [
+      {"letter": "A", "text": "জার্মানি"},
+      {"letter": "B", "text": "ইতালি"},
+      {"letter": "C", "text": "পোল্যান্ড"},
+      {"letter": "D", "text": "ইউক্রেন"}
+    ],
+    "explanation": "ইউক্রেনের বিস্তীর্ণ উর্বর কৃষিজমি ও বিপুল শস্য উৎপাদনের কারণে দেশটিকে ‘Europe’s Breadbasket’ বলা হয়[span_5](start_span)[span_5](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 7,
+    "stem": "গণতন্ত্রের ধারণা উৎসারিত হয় প্রথম কোন দেশে?",
+    "options": [
+      {"letter": "A", "text": "যুক্তরাষ্ট্র"},
+      {"letter": "B", "text": "প্রাচীন গ্রীস"},
+      {"letter": "C", "text": "প্রাচীন রোম"},
+      {"letter": "D", "text": "প্রাচীন ভারত"}
+    ],
+    "explanation": "প্রাচীন এথেন্সে প্রত্যক্ষ গণতন্ত্রের চর্চা হয়েছিল[span_6](start_span)[span_6](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 8,
+    "stem": "নিচের কোন দেশটি জি-৮-এর সদস্য নয়?",
+    "options": [
+      {"letter": "A", "text": "জর্ডান"},
+      {"letter": "B", "text": "ইরান"},
+      {"letter": "C", "text": "মিশর"},
+      {"letter": "D", "text": "মালয়েশিয়া"}
+    ],
+    "explanation": "G8-এর ঐতিহাসিক সদস্য দেশগুলোর মধ্যে যুক্তরাষ্ট্র, যুক্তরাজ্য, কানাডা, ফ্রান্স, জার্মানি, ইতালি, জাপান ও রাশিয়া ছিল। জর্ডান এর সদস্য নয়[span_7](start_span)[span_7](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 9,
+    "stem": "World Economic Forum-এর বাৎসরিক অধিবেশন কোথায় অনুষ্ঠিত হয়?",
+    "options": [
+      {"letter": "A", "text": "প্যারিস"},
+      {"letter": "B", "text": "জুরিখ"},
+      {"letter": "C", "text": "দাভোস"},
+      {"letter": "D", "text": "বার্ন"}
+    ],
+    "explanation": "World Economic Forum-এর বার্ষিক সভা সুইজারল্যান্ডের দাভোসে অনুষ্ঠিত হয়[span_8](start_span)[span_8](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 10,
+    "stem": "‘তাসখন্দ চুক্তি’ কোন দুটি রাষ্ট্রের মধ্যে স্বাক্ষরিত হয়?",
+    "options": [
+      {"letter": "A", "text": "পাকিস্তান ও আফগানিস্তান"},
+      {"letter": "B", "text": "ভারত ও আফগানিস্তান"},
+      {"letter": "C", "text": "পাকিস্তান ও ভারত"},
+      {"letter": "D", "text": "আফগানিস্তান ও সোভিয়েত ইউনিয়ন"}
+    ],
+    "explanation": "১৯৬৬ সালে ভারত ও পাকিস্তানের মধ্যে তাসখন্দ চুক্তি স্বাক্ষরিত হয়[span_9](start_span)[span_9](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 11,
+    "stem": "প্রথাগতভাবে বছরের কোন দিন জাতিসংঘ সাধারণ পরিষদের বার্ষিক অধিবেশন শুরু হয়?",
+    "options": [
+      {"letter": "A", "text": "সেপ্টেম্বর মাসের প্রথম সোমবার"},
+      {"letter": "B", "text": "অক্টোবর মাসের প্রথম মঙ্গলবার"},
+      {"letter": "C", "text": "আগস্ট মাসের শেষ সোমবার"},
+      {"letter": "D", "text": "সেপ্টেম্বর মাসের তৃতীয় মঙ্গলবার"}
+    ],
+    "explanation": "প্রচলিত নিয়ম অনুযায়ী সাধারণ পরিষদের অধিবেশন সেপ্টেম্বর মাসের তৃতীয় মঙ্গলবার শুরু হয়[span_10](start_span)[span_10](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 12,
+    "stem": "কোন দুটি আরব রাষ্ট্র ক্যাম্প ডেভিড চুক্তি স্বাক্ষরের ফলশ্রুতিতে ইসরাইলের সঙ্গে পূর্ণ কূটনৈতিক সম্পর্ক স্থাপন করে?",
+    "options": [
+      {"letter": "A", "text": "জর্ডান ও মিশর"},
+      {"letter": "B", "text": "কুয়েত ও বাহরাইন"},
+      {"letter": "C", "text": "লিবিয়া ও ওমান"},
+      {"letter": "D", "text": "তিউনিসিয়া ও আলজেরিয়া"}
+    ],
+    "explanation": "মূল পেজে উত্তর হিসেবে জর্ডান ও মিশর দেওয়া হয়েছে[span_11](start_span)[span_11](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 13,
+    "stem": "কখন এবং কোথায় International Union for Conservation of Nature (IUCN) প্রতিষ্ঠিত হয়?",
+    "options": [
+      {"letter": "A", "text": "১৯৪৮, ফ্রান্স"},
+      {"letter": "B", "text": "১৯৪৯, সুইজারল্যান্ড"},
+      {"letter": "C", "text": "১৯৬১, রোম"},
+      {"letter": "D", "text": "১৯৫২, লন্ডন"}
+    ],
+    "explanation": "IUCN ১৯৪৮ সালে ফ্রান্সের Fontainebleau-তে প্রতিষ্ঠিত হয়[span_12](start_span)[span_12](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 14,
+    "stem": "‘নেকড়েযোদ্ধা কূটনীতি’ কোন দেশের সাথে সংশ্লিষ্ট?",
+    "options": [
+      {"letter": "A", "text": "ভিয়েতনাম"},
+      {"letter": "B", "text": "উত্তর কোরিয়া"},
+      {"letter": "C", "text": "চীন"},
+      {"letter": "D", "text": "রাশিয়া"}
+    ],
+    "explanation": "‘Wolf Warrior Diplomacy’ শব্দটি চীনের তুলনামূলকভাবে দৃঢ় ও আক্রমণাত্মক কূটনৈতিক অবস্থান বোঝাতে ব্যবহৃত হয়[span_13](start_span)[span_13](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 15,
+    "stem": "নিচের কোন দেশটি ASEAN জোটভুক্ত নয়?",
+    "options": [
+      {"letter": "A", "text": "লাওস"},
+      {"letter": "B", "text": "হংকং"},
+      {"letter": "C", "text": "ভিয়েতনাম"},
+      {"letter": "D", "text": "কম্বোডিয়া"}
+    ],
+    "explanation": "ASEAN-এর সদস্য দেশগুলোর মধ্যে লাওস, ভিয়েতনাম ও কম্বোডিয়া রয়েছে; হংকং ASEAN-এর সদস্য নয়[span_14](start_span)[span_14](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 16,
+    "stem": "মহান মুক্তিযুদ্ধ চলাকালীন ‘কনসার্ট ফর বাংলাদেশ (Concert for Bangladesh)’ কোথায় অনুষ্ঠিত হয়েছিল?",
+    "options": [
+      {"letter": "A", "text": "নিউইয়র্ক"},
+      {"letter": "B", "text": "বোস্টন"},
+      {"letter": "C", "text": "লন্ডন"},
+      {"letter": "D", "text": "ক্যানবেরা"}
+    ],
+    "explanation": "১৯৭১ সালে জর্জ হ্যারিসন ও রবিশঙ্করের উদ্যোগে নিউইয়র্কের Madison Square Garden-এ Concert for Bangladesh অনুষ্ঠিত হয়[span_15](start_span)[span_15](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 17,
+    "stem": "জাতিসংঘের নিরাপত্তা পরিষদের অস্থায়ী সদস্য পদ কত সময়ের জন্য?",
+    "options": [
+      {"letter": "A", "text": "১ বছর"},
+      {"letter": "B", "text": "২ বছর"},
+      {"letter": "C", "text": "৪ বছর"},
+      {"letter": "D", "text": "৫ বছর"}
+    ],
+    "explanation": "নিরাপত্তা পরিষদের অস্থায়ী সদস্যরা সাধারণ পরিষদ কর্তৃক দুই বছরের জন্য নির্বাচিত হন[span_16](start_span)[span_16](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 18,
+    "stem": "আন্তর্জাতিক আদালতের একজন বিচারক কয় বছরের জন্য নির্বাচিত হন?",
+    "options": [
+      {"letter": "A", "text": "তিন বছর"},
+      {"letter": "B", "text": "সাত বছর"},
+      {"letter": "C", "text": "চার বছর"},
+      {"letter": "D", "text": "নয় বছর"}
+    ],
+    "explanation": "International Court of Justice (ICJ)-এর বিচারকরা ৯ বছরের জন্য নির্বাচিত হন[span_17](start_span)[span_17](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 19,
+    "stem": "বাংলাদেশের প্রেক্ষিত পরিকল্পনা (Perspective Plan) সময়সীমা কত?",
+    "options": [
+      {"letter": "A", "text": "২০২১–২০৩০"},
+      {"letter": "B", "text": "২০২৪–২০৩২"},
+      {"letter": "C", "text": "২০২১–২০৪১"},
+      {"letter": "D", "text": "২০২২–২০২৫"}
+    ],
+    "explanation": "বাংলাদেশের Perspective Plan 2021–2041 দীর্ঘমেয়াদি উন্নয়ন পরিকল্পনা[span_18](start_span)[span_18](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 20,
+    "stem": "২০২২ সালে কোন দেশ জাতিসংঘের শান্তিস্থাপন কমিশনের সভাপতি নির্বাচিত হয়?",
+    "options": [
+      {"letter": "A", "text": "যুক্তরাষ্ট্র"},
+      {"letter": "B", "text": "সুইজারল্যান্ড"},
+      {"letter": "C", "text": "বাংলাদেশ"},
+      {"letter": "D", "text": "ভারত"}
+    ],
+    "explanation": "২০২২ সালে বাংলাদেশ UN Peacebuilding Commission-এর সভাপতির দায়িত্ব পালন করে[span_19](start_span)[span_19](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 21,
+    "stem": "‘ইতরবিশেষ’ বলতে বোঝায়?",
+    "options": [
+      {"letter": "A", "text": "দুর্বৃত্ত"},
+      {"letter": "B", "text": "চালাকি"},
+      {"letter": "C", "text": "পার্থক্য"},
+      {"letter": "D", "text": "অপদার্থ"}
+    ],
+    "explanation": "‘ইতরবিশেষ’ শব্দের অর্থ পার্থক্য বা বিশেষ পার্থক্য[span_20](start_span)[span_20](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 22,
+    "stem": "নিপাতনে সিদ্ধ স্বরসন্ধির দৃষ্টান্ত কোনটি?",
+    "options": [
+      {"letter": "A", "text": "গো + অক্ষ = গবাক্ষ"},
+      {"letter": "B", "text": "পৌ + অক = পাবক"},
+      {"letter": "C", "text": "বি + অঙ্গ = বঙ্গ"},
+      {"letter": "D", "text": "যতি + ইন্দ্র = যতীন্দ্র"}
+    ],
+    "explanation": "‘গবাক্ষ’ শব্দটি প্রচলিত নিয়মের বাইরে বিশেষভাবে সিদ্ধ হওয়ায় এটি নিপাতনে সিদ্ধ স্বরসন্ধির উদাহরণ[span_21](start_span)[span_21](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 23,
+    "stem": "‘চাঁদের অমাবস্যা’ উপন্যাসের যুবক-শিক্ষকের নাম কী?",
+    "options": [
+      {"letter": "A", "text": "আবদুল কাদের"},
+      {"letter": "B", "text": "খতিব মিয়া"},
+      {"letter": "C", "text": "আক্কাস আলী"},
+      {"letter": "D", "text": "আরেফ আলী"}
+    ],
+    "explanation": "সৈয়দ ওয়ালীউল্লাহর ‘চাঁদের অমাবস্যা’ উপন্যাসের যুবক-শিক্ষকের নাম আরেফ আলী[span_22](start_span)[span_22](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 24,
+    "stem": "‘মরণ রে তুঁই মম শ্যাম সমান’ পঙ্‌ক্তিটির রচয়িতা—",
+    "options": [
+      {"letter": "A", "text": "বিদ্যাপতি"},
+      {"letter": "B", "text": "গোবিন্দদাস"},
+      {"letter": "C", "text": "রবীন্দ্রনাথ ঠাকুর"},
+      {"letter": "D", "text": "কৃষ্ণদাস কবিরাজ"}
+    ],
+    "explanation": "পঙ্‌ক্তিটি রবীন্দ্রনাথ ঠাকুরের রচনা[span_23](start_span)[span_23](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 25,
+    "stem": "‘আনোয়ারা’ উপন্যাসের রচয়িতার নাম—",
+    "options": [
+      {"letter": "A", "text": "সৈয়দ মুজতবা আলী"},
+      {"letter": "B", "text": "কাজী আবদুল ওদুদ"},
+      {"letter": "C", "text": "নজিবর রহমান"},
+      {"letter": "D", "text": "রোকেয়া সাখাওয়াত হোসেন"}
+    ],
+    "explanation": "‘আনোয়ারা’ উপন্যাসের রচয়িতা নজিবর রহমান[span_24](start_span)[span_24](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 26,
+    "stem": "নিচের কোন বাক্যটি প্রয়োগগত দিক থেকে শুদ্ধ?",
+    "options": [
+      {"letter": "A", "text": "আমি কারও সাতেও নেই, সতেরোতেও নেই।"},
+      {"letter": "B", "text": "আপনি স্বপরিবারে আমন্ত্রিত।"},
+      {"letter": "C", "text": "তার দু’চোখ অশ্রুতে ভেসে গেল।"},
+      {"letter": "D", "text": "সারা জীবন ভুতের মজুরি খেটে মরলাম."}
+    ],
+    "explanation": "প্রদত্ত বাক্যগুলোর মধ্যে প্রয়োগগতভাবে শুদ্ধ বাক্য হিসেবে এটি গ্রহণ করা হয়েছে[span_25](start_span)[span_25](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 27,
+    "stem": "নিচের কোনটি যৌগিক বাক্য?",
+    "options": [
+      {"letter": "A", "text": "দোষ স্বীকার করলে তোমাকে শাস্তি দেওয়া হবে না।"},
+      {"letter": "B", "text": "তিনি বেড়াতে এসে কেনাকাটা করলেন।"},
+      {"letter": "C", "text": "মহৎ মানুষ বলে সবাই তাঁকে সম্মান করেন।"},
+      {"letter": "D", "text": "ছেলেটি চঞ্চল তবে মেধাবী।"}
+    ],
+    "explanation": "‘তবে’ সংযোজক অব্যয়ের মাধ্যমে দুটি স্বাধীন ভাব যুক্ত হয়েছে, তাই এটি যৌগিক বাক্য[span_26](start_span)[span_26](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 28,
+    "stem": "ধ্বনি-পরিবর্তনের নিয়মে কোনটি বর্ণ-বিপর্যয়ের দৃষ্টান্ত?",
+    "options": [
+      {"letter": "A", "text": "রতন"},
+      {"letter": "B", "text": "কবাট"},
+      {"letter": "C", "text": "পিচাশ"},
+      {"letter": "D", "text": "মুলুক"}
+    ],
+    "explanation": "‘পিশাচ’ থেকে ‘পিচাশ’—বর্ণের অবস্থান পরিবর্তনের কারণে এটি বর্ণ-বিপর্যয়ের উদাহরণ[span_27](start_span)[span_27](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 29,
+    "stem": "‘অর্ধচন্দ্র’ কথাটির অর্থ—",
+    "options": [
+      {"letter": "A", "text": "অমাবস্যা"},
+      {"letter": "B", "text": "গলাধাক্কা দেওয়া"},
+      {"letter": "C", "text": "কাছে টানা"},
+      {"letter": "D", "text": "কাস্তে"}
+    ],
+    "explanation": "‘অর্ধচন্দ্র’ একটি বাগধারা; এর অর্থ গলাধাক্কা দিয়ে বের করে দেওয়া[span_28](start_span)[span_28](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 30,
+    "stem": "‘হরতাল’ কোন ভাষা থেকে আগত শব্দ?",
+    "options": [
+      {"letter": "A", "text": "পর্তুগিজ"},
+      {"letter": "B", "text": "হিন্দি"},
+      {"letter": "C", "text": "গুজরাটি"},
+      {"letter": "D", "text": "ফরাসি"}
+    ],
+    "explanation": "‘হরতাল’ শব্দটি গুজরাটি ভাষা থেকে বাংলায় এসেছে[span_29](start_span)[span_29](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 31,
+    "stem": "কোনটি ‘জিগীষা’র সম্প্রসারিত প্রকাশ?",
+    "options": [
+      {"letter": "A", "text": "জানিবার ইচ্ছা"},
+      {"letter": "B", "text": "জয় করিবার ইচ্ছা"},
+      {"letter": "C", "text": "হনন করিবার ইচ্ছা"},
+      {"letter": "D", "text": "যুদ্ধ করিবার ইচ্ছা"}
+    ],
+    "explanation": "‘জিগীষা’ শব্দের অর্থ জয় করার ইচ্ছা[span_30](start_span)[span_30](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 32,
+    "stem": "নিচের কোনটি তৎসম শব্দ?",
+    "options": [
+      {"letter": "A", "text": "পছন্দ"},
+      {"letter": "B", "text": "হিসাব"},
+      {"letter": "C", "text": "ধূলি"},
+      {"letter": "D", "text": "শৌখিন"}
+    ],
+    "explanation": "‘ধূলি’ সংস্কৃত থেকে অপরিবর্তিতভাবে বাংলায় ব্যবহৃত হয়েছে, তাই এটি তৎসম শব্দ[span_31](start_span)[span_31](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 33,
+    "stem": "নিচের কোনটি বাংলা ‘ধাতু’র দৃষ্টান্ত?",
+    "options": [
+      {"letter": "A", "text": "কহ্"},
+      {"letter": "B", "text": "কথ্"},
+      {"letter": "C", "text": "বুধ্"},
+      {"letter": "D", "text": "গঠ্"}
+    ],
+    "explanation": "‘কহ্’ বাংলা ধাতুর উদাহরণ[span_32](start_span)[span_32](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 34,
+    "stem": "ইসলাম ও সুফিমতের প্রভাবে ভারতবর্ষে ঘটেছিল—",
+    "options": [
+      {"letter": "A", "text": "বর্ণবাদের পুনরুত্থান"},
+      {"letter": "B", "text": "রাষ্ট্রবিপ্লব"},
+      {"letter": "C", "text": "চিন্তাবিপ্লব"},
+      {"letter": "D", "text": "অভিবাসন বিপ্লব"}
+    ],
+    "explanation": "ইসলাম ও সুফিবাদের প্রভাবে ভারতীয় সমাজ ও চিন্তাজগতে উল্লেখযোগ্য পরিবর্তন ঘটে[span_33](start_span)[span_33](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 35,
+    "stem": "শুদ্ধ বানান কোনটি?",
+    "options": [
+      {"letter": "A", "text": "মুমুষুর্য"},
+      {"letter": "B", "text": "মূমুর্ষূ"},
+      {"letter": "C", "text": "মুমূর্ষু"},
+      {"letter": "D", "text": "মূমূর্ষু"}
+    ],
+    "explanation": "‘মুমূর্ষু’ শব্দটির শুদ্ধ বানান। এর অর্থ মৃত্যুপথযাত্রী[span_34](start_span)[span_34](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 36,
+    "stem": "নিচের কোনটি ‘অগ্নি’র সমার্থক শব্দ নয়?",
+    "options": [
+      {"letter": "A", "text": "বহ্নি"},
+      {"letter": "B", "text": "আবীর"},
+      {"letter": "C", "text": "বায়ুসখা"},
+      {"letter": "D", "text": "বৈশ্বানর"}
+    ],
+    "explanation": "বহ্নি, বায়ুসখা ও বৈশ্বানর অগ্নির সমার্থক শব্দ; ‘আবীর’ অগ্নির সমার্থক নয়[span_35](start_span)[span_35](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 37,
+    "stem": "‘দেশের যত নদীর ধারা জল না, ওরা অশ্রুধারা’—এই উক্তিটি নিচের কোন পারিভাষিক অলংকার দ্বারা শোভিত?",
+    "options": [
+      {"letter": "A", "text": "অপহ্নুতি"},
+      {"letter": "B", "text": "যমক"},
+      {"letter": "C", "text": "অর্থোন্নতি"},
+      {"letter": "D", "text": "অভিযোজন"}
+    ],
+    "explanation": "প্রকৃত বিষয়কে অস্বীকার করে অন্য কিছুরূপে প্রকাশ করাকে অপহ্নুতি অলংকার বলে[span_36](start_span)[span_36](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 38,
+    "stem": "‘যথারীতি’ কোন সমাসের দৃষ্টান্ত?",
+    "options": [
+      {"letter": "A", "text": "অব্যয়ীভাব"},
+      {"letter": "B", "text": "দ্বিগু"},
+      {"letter": "C", "text": "বহুব্রীহি"},
+      {"letter": "D", "text": "দ্বন্দ্ব"}
+    ],
+    "explanation": "‘যথারীতি’ = রীতি অনুসারে। অব্যয়ের সঙ্গে নামপদের সমাস হওয়ায় এটি অব্যয়ীভাব সমাস[span_37](start_span)[span_37](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 39,
+    "stem": "‘মৃত্তিকা দিয়ে তৈরি’ কথাটির সংকোচন করলে হবে—",
+    "options": [
+      {"letter": "A", "text": "তন্ময়"},
+      {"letter": "B", "text": "মন্ময়"},
+      {"letter": "C", "text": "মৃন্ময়"},
+      {"letter": "D", "text": "চিন্ময়"}
+    ],
+    "explanation": "মৃত্তিকা দিয়ে তৈরি = মৃন্ময়[span_38](start_span)[span_38](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 40,
+    "stem": "‘চণ্ডীমঙ্গল’ কাব্যের উপাস্য ‘চণ্ডী’ কার স্ত্রী?",
+    "options": [
+      {"letter": "A", "text": "জগন্নাথ"},
+      {"letter": "B", "text": "বিষ্ণু"},
+      {"letter": "C", "text": "প্রজাপতি"},
+      {"letter": "D", "text": "শিব"}
+    ],
+    "explanation": "হিন্দু পুরাণে চণ্ডী দেবীকে শিবের পত্নী পার্বতীর একটি রূপ হিসেবে বিবেচনা করা হয়[span_39](start_span)[span_39](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 41,
+    "stem": "‘শ্রীকৃষ্ণকীর্তন কাব্য’ কোথা থেকে উদ্ধার করা হয়েছিল?",
+    "options": [
+      {"letter": "A", "text": "নেপালের রাজদরবার থেকে"},
+      {"letter": "B", "text": "গোয়ালঘর থেকে"},
+      {"letter": "C", "text": "পাঠশালা থেকে"},
+      {"letter": "D", "text": "কান্তজীর মন্দির থেকে"}
+    ],
+    "explanation": "বসন্তরঞ্জন রায় বিদ্বদ্বল্লভ ‘শ্রীকৃষ্ণকীর্তন’-এর পুঁথি বাঁকুড়ার কাঁকিল্যা গ্রামের একটি গোয়ালঘর থেকে উদ্ধার করেন[span_40](start_span)[span_40](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 42,
+    "stem": "বিদ্যাপতি মূলত কোন ভাষার কবি ছিলেন?",
+    "options": [
+      {"letter": "A", "text": "মারাঠি"},
+      {"letter": "B", "text": "হিন্দি"},
+      {"letter": "C", "text": "মৈথিলি"},
+      {"letter": "D", "text": "গুজরাটি"}
+    ],
+    "explanation": "বিদ্যাপতি ছিলেন মৈথিলি ভাষার বিখ্যাত মধ্যযুগীয় কবি[span_41](start_span)[span_41](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 43,
+    "stem": "‘আমার সন্তান যেন থাকে দুধেভাতে।’ এই মনোবাঞ্ছাটি কার?",
+    "options": [
+      {"letter": "A", "text": "ভবানন্দের"},
+      {"letter": "B", "text": "ভাঁড়–দত্তের"},
+      {"letter": "C", "text": "ঈশ্বরী পাটনীর"},
+      {"letter": "D", "text": "ফুল্লরার"}
+    ],
+    "explanation": "ভারতচন্দ্র রায়গুণাকরের ‘অন্নদামঙ্গল’ কাব্যে ঈশ্বরী পাটনীর এই মনোবাঞ্ছা প্রকাশ করেন[span_42](start_span)[span_42](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 44,
+    "stem": "নিচের কোন ব্যক্তি ‘বুদ্ধির মুক্তি’ আন্দোলনের সঙ্গে যুক্ত ছিলেন না?",
+    "options": [
+      {"letter": "A", "text": "কাজী আবদুল ওদুদ"},
+      {"letter": "B", "text": "এস ওয়াজেদ আলি"},
+      {"letter": "C", "text": "আবুল ফজল"},
+      {"letter": "D", "text": "আবদুল কাদির"}
+    ],
+    "explanation": "‘বুদ্ধির মুক্তি আন্দোলন’-এর সঙ্গে মুসলিম সাহিত্যিকদের একটি অংশ যুক্ত ছিলেন; প্রদত্ত উৎসে এস ওয়াজেদ আলিকে সঠিক উত্তর হিসেবে দেওয়া হয়েছে[span_43](start_span)[span_43](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 45,
+    "stem": "নিচের কোন কাব্য কাজী নজরুল ইসলামের উদারনৈতিক ঐতিহ্যভাবনার ধারক?",
+    "options": [
+      {"letter": "A", "text": "বিষের বাঁশি"},
+      {"letter": "B", "text": "অগ্নি-বীণা"},
+      {"letter": "C", "text": "সিন্ধু-হিন্দোল"},
+      {"letter": "D", "text": "চক্রবাক"}
+    ],
+    "explanation": "‘অগ্নি-বীণা’ নজরুলের অন্যতম বিখ্যাত কাব্যগ্রন্থ, যেখানে বিদ্রোহ, মানবতা ও উদারনৈতিক চেতনার প্রকাশ রয়েছে[span_44](start_span)[span_44](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 46,
+    "stem": "নিচের কোনটি বিশ শতকের পত্রিকা?",
+    "options": [
+      {"letter": "A", "text": "শনিবারের চিঠি"},
+      {"letter": "B", "text": "বঙ্গদর্শন"},
+      {"letter": "C", "text": "তত্ত্ববোধিনী"},
+      {"letter": "D", "text": "সংবাদ প্রভাকর"}
+    ],
+    "explanation": "‘শনিবারের চিঠি’ ১৯২৪ সালে প্রকাশিত হয়[span_45](start_span)[span_45](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 47,
+    "stem": "নিচের কোনটি উপন্যাস নয়?",
+    "options": [
+      {"letter": "A", "text": "দিবারাত্রির কাব্য"},
+      {"letter": "B", "text": "শেষের কবিতা"},
+      {"letter": "C", "text": "পল্লী-সমাজ"},
+      {"letter": "D", "text": "কবিতার কথা"}
+    ],
+    "explanation": "‘কবিতার কথা’ বুদ্ধদেব বসুর প্রবন্ধগ্রন্থ; এটি উপন্যাস নয়[span_46](start_span)[span_46](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 48,
+    "stem": "‘বাঙালী ও বাঙলা সাহিত্য’ গ্রন্থ কে রচনা করেছেন?",
+    "options": [
+      {"letter": "A", "text": "দীনেশচন্দ্র সেন"},
+      {"letter": "B", "text": "গোপাল হালদার"},
+      {"letter": "C", "text": "আহমদ শরীফ"},
+      {"letter": "D", "text": "সুকুমার সেন"}
+    ],
+    "explanation": "‘বাঙালী ও বাঙলা সাহিত্য’ গ্রন্থের রচয়িতা আহমদ শরীফ[span_47](start_span)[span_47](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 49,
+    "stem": "‘মনোরমা’ বঙ্কিমচন্দ্রের কোন উপন্যাসের চরিত্র?",
+    "options": [
+      {"letter": "A", "text": "কৃষ্ণকান্তের উইল"},
+      {"letter": "B", "text": "দুর্গেশনন্দিনী"},
+      {"letter": "C", "text": "মৃণালিনী"},
+      {"letter": "D", "text": "বিষবৃক্ষ"}
+    ],
+    "explanation": "‘মৃণালিনী’ উপন্যাসে মনোরমা একটি গুরুত্বপূর্ণ চরিত্র[span_48](start_span)[span_48](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 50,
+    "stem": "‘ব্যক্ত প্রেম’ ও ‘গুপ্ত প্রেম’ কবিতা দুটি রবীন্দ্রনাথের কোন কাব্যগ্রন্থের অন্তর্গত?",
+    "options": [
+      {"letter": "A", "text": "খেয়া"},
+      {"letter": "B", "text": "মানসী"},
+      {"letter": "C", "text": "কল্পনা"},
+      {"letter": "D", "text": "সোনা তরীর"}
+    ],
+    "explanation": "‘ব্যক্ত প্রেম’ ও ‘গুপ্ত প্রেম’ রবীন্দ্রনাথ ঠাকুরের ‘মানসী’ কাব্যগ্রন্থের অন্তর্ভুক্ত[span_49](start_span)[span_49](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 51,
+    "stem": "‘অভীক’ রবীন্দ্রনাথের কোন গল্পের নায়ক?",
+    "options": [
+      {"letter": "A", "text": "নষ্টনীড়"},
+      {"letter": "B", "text": "নামঞ্জুর গল্প"},
+      {"letter": "C", "text": "রবিবার"},
+      {"letter": "D", "text": "ল্যাবরেটরি"}
+    ],
+    "explanation": "‘অভীক’ রবীন্দ্রনাথ ঠাকুরের ‘রবিবার’ গল্পের প্রধান চরিত্র[span_50](start_span)[span_50](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 52,
+    "stem": "‘সকলের তরে সকলে আমরা/প্রত্যেকে আমরা পরের তরে।’ কার রচিত পঙ্‌ক্তি?",
+    "options": [
+      {"letter": "A", "text": "রজনীকান্ত সেন"},
+      {"letter": "B", "text": "ইসমাইল হোসেন সিরাজী"},
+      {"letter": "C", "text": "কামিনী রায়"},
+      {"letter": "D", "text": "দ্বিজেন্দ্রলাল রায়"}
+    ],
+    "explanation": "পঙ্‌ক্তিদুটি কবি কামিনী রায়ের মানবতাবাদী কবিতা থেকে নেওয়া[span_51](start_span)[span_51](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 53,
+    "stem": "‘খোকা’ ও ‘রঞ্জু’ মাহমুদুল হক-এর কোন উপন্যাসের চরিত্র?",
+    "options": [
+      {"letter": "A", "text": "কালো বরফ"},
+      {"letter": "B", "text": "খেলাঘর"},
+      {"letter": "C", "text": "অনুর পাঠশালা"},
+      {"letter": "D", "text": "জীবন আমার বোন"}
+    ],
+    "explanation": "‘খোকা’ ও ‘রঞ্জু’ মাহমুদুল হকের ‘জীবন আমার বোন’ উপন্যাসের চরিত্র[span_52](start_span)[span_52](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 54,
+    "stem": "সৈয়দ ওয়ালীউল্লাহর লেখা নাটক কোনটি?",
+    "options": [
+      {"letter": "A", "text": "কবর"},
+      {"letter": "B", "text": "বহিপীর"},
+      {"letter": "C", "text": "পায়ের আওয়াজ পাওয়া যায়"},
+      {"letter": "D", "text": "ওরা কদম আলী"}
+    ],
+    "explanation": "‘বহিপীর’ সৈয়দ ওয়ালীউল্লাহ রচিত একটি বিখ্যাত নাটক[span_53](start_span)[span_53](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 55,
+    "stem": "মীর মশাররফ হোসেনের ‘বিষাদসিন্ধু’ একটি—",
+    "options": [
+      {"letter": "A", "text": "মহাকাব্য"},
+      {"letter": "B", "text": "ইতিহাস গ্রন্থ"},
+      {"letter": "C", "text": "উপন্যাস"},
+      {"letter": "D", "text": "ইতিহাস-আশ্রিত জীবনীগ্রন্থ"}
+    ],
+    "explanation": "‘বিষাদসিন্ধু’ ঐতিহাসিক ঘটনাকে অবলম্বন করে রচিত একটি উপন্যাস[span_54](start_span)[span_54](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 56,
+    "stem": "‘By and large’ means—",
+    "options": [
+      {"letter": "A", "text": "everywhere"},
+      {"letter": "B", "text": "very large"},
+      {"letter": "C", "text": "mostly"},
+      {"letter": "D", "text": "far away"}
+    ],
+    "explanation": "‘By and large’ একটি idiom, যার অর্থ ‘mostly’ বা ‘সাধারণভাবে/মোটের ওপর[span_55](start_span)’[span_55](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 57,
+    "stem": "Francis Bacon is an illustrious—",
+    "options": [
+      {"letter": "A", "text": "essayist"},
+      {"letter": "B", "text": "dramatist"},
+      {"letter": "C", "text": "novelist"},
+      {"letter": "D", "text": "journalist"}
+    ],
+    "explanation": "Francis Bacon ইংরেজি সাহিত্যের বিখ্যাত প্রাবন্ধিক (essayist)[span_56](start_span)[span_56](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 58,
+    "stem": "‘He could not win but learnt a lot.’ Which part of speech is the word ‘but’?",
+    "options": [
+      {"letter": "A", "text": "an adverb"},
+      {"letter": "B", "text": "a verb"},
+      {"letter": "C", "text": "an adjective"},
+      {"letter": "D", "text": "a conjunction"}
+    ],
+    "explanation": "এখানে ‘but’ দুটি clause/ভাবকে যুক্ত করেছে, তাই এটি conjunction[span_57](start_span)[span_57](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 59,
+    "stem": "Select the appropriate preposition: ‘Are you doing anything special –– the weekend?’",
+    "options": [
+      {"letter": "A", "text": "at"},
+      {"letter": "B", "text": "with"},
+      {"letter": "C", "text": "on"},
+      {"letter": "D", "text": "for"}
+    ],
+    "explanation": "মূল পেজে উত্তর ‘at’ দেওয়া হয়েছে[span_58](start_span)[span_58](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 60,
+    "stem": "What is the plural form of ‘sheep’?",
+    "options": [
+      {"letter": "A", "text": "sheeps"},
+      {"letter": "B", "text": "sheep"},
+      {"letter": "C", "text": "sheepes"},
+      {"letter": "D", "text": "sheeves"}
+    ],
+    "explanation": "‘Sheep’ একটি irregular noun; singular ও plural—দুই ক্ষেত্রেই sheep ব্যবহৃত হয়[span_59](start_span)[span_59](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 61,
+    "stem": "‘Sweet are the uses of adversity’ is quoted from Shakespeare’s—",
+    "options": [
+      {"letter": "A", "text": "Julius Caesar"},
+      {"letter": "B", "text": "Macbeth"},
+      {"letter": "C", "text": "Comedy of Errors"},
+      {"letter": "D", "text": "As You Like It"}
+    ],
+    "explanation": "উক্তিটি Shakespeare-এর ‘As You Like It’ নাটক থেকে নেওয়া[span_60](start_span)[span_60](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 62,
+    "stem": "‘To get along with’ means—",
+    "options": [
+      {"letter": "A", "text": "to adjust"},
+      {"letter": "B", "text": "to interest"},
+      {"letter": "C", "text": "to accompany"},
+      {"letter": "D", "text": "to walk"}
+    ],
+    "explanation": "‘Get along with’ অর্থ কারও সঙ্গে মানিয়ে চলা বা সুসম্পর্ক বজায় রাখা[span_61](start_span)[span_61](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 63,
+    "stem": "The synonym for ‘panoramic’ is—",
+    "options": [
+      {"letter": "A", "text": "scenic"},
+      {"letter": "B", "text": "narrow"},
+      {"letter": "C", "text": "limited"},
+      {"letter": "D", "text": "restricted"}
+    ],
+    "explanation": "‘Panoramic’ অর্থ বিস্তৃত বা মনোরম দৃশ্যসম্পন্ন; ‘scenic’ এর কাছাকাছি অর্থ বহন করে[span_62](start_span)[span_62](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 64,
+    "stem": "Alexander Pope’s ‘Essay on Man’ is a—",
+    "options": [
+      {"letter": "A", "text": "novel"},
+      {"letter": "B", "text": "treatise"},
+      {"letter": "C", "text": "short story"},
+      {"letter": "D", "text": "poem"}
+    ],
+    "explanation": "‘An Essay on Man’ Alexander Pope-এর একটি বিখ্যাত দার্শনিক কবিতা[span_63](start_span)[span_63](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 65,
+    "stem": "The antonym for ‘slothful’ is—",
+    "options": [
+      {"letter": "A", "text": "playful"},
+      {"letter": "B", "text": "sluggish"},
+      {"letter": "C", "text": "energetic"},
+      {"letter": "D", "text": "quarrelsome"}
+    ],
+    "explanation": "‘Slothful’ অর্থ অলস; এর বিপরীত শব্দ ‘energetic’ অর্থ কর্মচঞ্চল/উদ্যমী[span_64](start_span)[span_64](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 66,
+    "stem": "What is the verb form of the word ‘ability’?",
+    "options": [
+      {"letter": "A", "text": "capable"},
+      {"letter": "B", "text": "inability"},
+      {"letter": "C", "text": "enable"},
+      {"letter": "D", "text": "unable"}
+    ],
+    "explanation": "‘Ability’ হলো noun; এর verb form হিসেবে ‘enable’ ব্যবহৃত হয়[span_65](start_span)[span_65](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 67,
+    "stem": "The word ‘equivocation’ refers to—",
+    "options": [
+      {"letter": "A", "text": "starting like an author"},
+      {"letter": "B", "text": "two contradictory things in the same statement"},
+      {"letter": "C", "text": "free expression of opinions"},
+      {"letter": "D", "text": "a true statement"}
+    ],
+    "explanation": "‘Equivocation’ বলতে দ্ব্যর্থক বা অস্পষ্ট বক্তব্য বোঝায়, যেখানে কথার অর্থ ইচ্ছাকৃতভাবে অস্পষ্ট রাখা হয়[span_66](start_span)[span_66](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 68,
+    "stem": "“Life’s but a walking shadow, a poor player, That struts and frets his hour upon the stage, And then is heard no more.” These memorable lines in Shakespearean tragedy are spoken by—",
+    "options": [
+      {"letter": "A", "text": "Lady Macbeth"},
+      {"letter": "B", "text": "Banquo"},
+      {"letter": "C", "text": "Duncan"},
+      {"letter": "D", "text": "Macbeth"}
+    ],
+    "explanation": "Shakespeare-এর ‘Macbeth’ নাটকে Macbeth-এর বিখ্যাত soliloquy-এর অংশ এটি[span_67](start_span)[span_67](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 69,
+    "stem": "Which of the following words is spelt correctly?",
+    "options": [
+      {"letter": "A", "text": "authoratative"},
+      {"letter": "B", "text": "autheritative"},
+      {"letter": "C", "text": "authoritative"},
+      {"letter": "D", "text": "authoratativ"}
+    ],
+    "explanation": "সঠিক বানান হলো ‘authoritative[span_68](start_span)’[span_68](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 70,
+    "stem": "Find out the active form for the sentence: ‘By whom can our country be saved?’",
+    "options": [
+      {"letter": "A", "text": "Who can save our country?"},
+      {"letter": "B", "text": "Our country has been saved by who?"},
+      {"letter": "C", "text": "Who save our country?"},
+      {"letter": "D", "text": "Who will save our country?"}
+    ],
+    "explanation": "Passive voice-এর ‘By whom’ active voice-এ ‘Who’ হবে এবং ‘can be saved’ হবে ‘can save[span_69](start_span)’[span_69](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 71,
+    "stem": "“All changed, changed utterly. A terrible beauty is born.” This extract is taken from W.B. Yeats poem titled—",
+    "options": [
+      {"letter": "A", "text": "No Second Troy"},
+      {"letter": "B", "text": "Easter 1916"},
+      {"letter": "C", "text": "The Second Coming"},
+      {"letter": "D", "text": "The Wild Swans at Coole"}
+    ],
+    "explanation": "পঙ্‌ক্তিগুলো W. B. Yeats-এর বিখ্যাত কবিতা ‘Easter 1916’ থেকে নেওয়া[span_70](start_span)[span_70](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 72,
+    "stem": "Identify the correct passive form: ‘Do not close the door.’",
+    "options": [
+      {"letter": "A", "text": "Let not the door close."},
+      {"letter": "B", "text": "Let not the door be closed."},
+      {"letter": "C", "text": "Let open not the door."},
+      {"letter": "D", "text": "Let not door closed."}
+    ],
+    "explanation": "Imperative sentence-এর passive রূপে সাধারণত ‘Let + object + be + past participle’ গঠন ব্যবহৃত হয়[span_71](start_span)[span_71](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 73,
+    "stem": "The poetic drama ‘Murder in the Cathedral’ was written by—",
+    "options": [
+      {"letter": "A", "text": "Harold Pinter"},
+      {"letter": "B", "text": "G.B. Shaw"},
+      {"letter": "C", "text": "T.S. Eliot"},
+      {"letter": "D", "text": "Samuel Beckett"}
+    ],
+    "explanation": "‘Murder in the Cathedral’ T. S. Eliot-এর বিখ্যাত poetic drama[span_72](start_span)[span_72](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 74,
+    "stem": "‘All for Love’ is a drama written by—",
+    "options": [
+      {"letter": "A", "text": "John Dryden"},
+      {"letter": "B", "text": "William Congreve"},
+      {"letter": "C", "text": "John Bunyan"},
+      {"letter": "D", "text": "Francis Bacon"}
+    ],
+    "explanation": "‘All for Love’ John Dryden-এর একটি heroic tragedy[span_73](start_span)[span_73](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 75,
+    "stem": "‘Sitting happily, the chicken laid eggs.’ The underlined part is a/an—",
+    "options": [
+      {"letter": "A", "text": "noun clause"},
+      {"letter": "B", "text": "subordinate clause"},
+      {"letter": "C", "text": "independent clause"},
+      {"letter": "D", "text": "coordinate clause"}
+    ],
+    "explanation": "‘Sitting happily’ একটি participial phrase; মূল পেজে এটিকে subordinate clause হিসেবে উত্তর দেওয়া হয়েছে[span_74](start_span)[span_74](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 76,
+    "stem": "Caliban is an important character from Shakespeare’s—",
+    "options": [
+      {"letter": "A", "text": "The Tempest"},
+      {"letter": "B", "text": "Hamlet"},
+      {"letter": "C", "text": "Macbeth"},
+      {"letter": "D", "text": "Othello"}
+    ],
+    "explanation": "Caliban Shakespeare-এর ‘The Tempest’ নাটকের একটি গুরুত্বপূর্ণ চরিত্র[span_75](start_span)[span_75](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 77,
+    "stem": "What kind of noun is ‘river’?",
+    "options": [
+      {"letter": "A", "text": "Material"},
+      {"letter": "B", "text": "Collective"},
+      {"letter": "C", "text": "Proper"},
+      {"letter": "D", "text": "Common"}
+    ],
+    "explanation": "‘River’ কোনো নির্দিষ্ট নদীর নাম নয়; সাধারণভাবে নদী বোঝায়। তাই এটি common noun[span_76](start_span)[span_76](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 78,
+    "stem": "‘Caesar and Cleopatra’ is—",
+    "options": [
+      {"letter": "A", "text": "a tragedy by William Shakespeare"},
+      {"letter": "B", "text": "a poem by Lord Byron"},
+      {"letter": "C", "text": "a play by Bernard Shaw"},
+      {"letter": "D", "text": "a novel by S.T. Coleridge"}
+    ],
+    "explanation": "‘Caesar and Cleopatra’ George Bernard Shaw রচিত একটি নাটক[span_77](start_span)[span_77](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 79,
+    "stem": "Identify the right tense: ‘My father –– before I came.’",
+    "options": [
+      {"letter": "A", "text": "would be leaving"},
+      {"letter": "B", "text": "had been leaving"},
+      {"letter": "C", "text": "had left"},
+      {"letter": "D", "text": "will leave"}
+    ],
+    "explanation": "অতীতে একটি কাজ অন্য একটি অতীত কাজের আগে সম্পন্ন হয়েছিল; তাই past perfect tense ‘had left’ ব্যবহৃত হয়েছে[span_78](start_span)[span_78](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 80,
+    "stem": "Which of the following words is spelt incorrectly?",
+    "options": [
+      {"letter": "A", "text": "reminescence"},
+      {"letter": "B", "text": "glycerin"},
+      {"letter": "C", "text": "idiosyncrasy"},
+      {"letter": "D", "text": "lexicography"}
+    ],
+    "explanation": "সঠিক বানান হলো ‘reminiscence[span_79](start_span)’[span_79](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 81,
+    "stem": "Who wrote the picaresque novel titled ‘Tom Jones’?",
+    "options": [
+      {"letter": "A", "text": "Samuel Richardson"},
+      {"letter": "B", "text": "Horace Walpole"},
+      {"letter": "C", "text": "Henry Fielding"},
+      {"letter": "D", "text": "Laurence Sterne"}
+    ],
+    "explanation": "‘Tom Jones’ Henry Fielding-এর বিখ্যাত picaresque novel[span_80](start_span)[span_80](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 82,
+    "stem": "The story of ‘Moby Dick’ centers on—",
+    "options": [
+      {"letter": "A", "text": "a mermaid"},
+      {"letter": "B", "text": "a whale"},
+      {"letter": "C", "text": "a crocodile"},
+      {"letter": "D", "text": "a shark"}
+    ],
+    "explanation": "Herman Melville-এর ‘Moby-Dick’ উপন্যাসের কেন্দ্রীয় বিষয় হলো সাদা তিমি Moby Dick[span_81](start_span)[span_81](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 83,
+    "stem": "‘He prayeth best, who loveth best’—Who said it?",
+    "options": [
+      {"letter": "A", "text": "John Milton"},
+      {"letter": "B", "text": "John Donne"},
+      {"letter": "C", "text": "Lord Byron"},
+      {"letter": "D", "text": "S.T. Coleridge"}
+    ],
+    "explanation": "পঙ্‌ক্তিটি Samuel Taylor Coleridge-এর ‘The Rime of the Ancient Mariner’ থেকে নেওয়া[span_82](start_span)[span_82](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 84,
+    "stem": "The controlling sentence of a paragraph is known as—",
+    "options": [
+      {"letter": "A", "text": "content modulator"},
+      {"letter": "B", "text": "terminator"},
+      {"letter": "C", "text": "thesis statement"},
+      {"letter": "D", "text": "topic sentence"}
+    ],
+    "explanation": "Paragraph-এর মূল বক্তব্য যে বাক্যে প্রকাশ পায় তাকে topic sentence বলা হয়[span_83](start_span)[span_83](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 85,
+    "stem": "Choose the correct comparative form of the sentence ‘Very few boys are as industrious as Zaman.’",
+    "options": [
+      {"letter": "A", "text": "Zaman is one of the most industrious boys."},
+      {"letter": "B", "text": "Zaman is more industrious than most other boys."},
+      {"letter": "C", "text": "Zaman is really industrious like other boys."},
+      {"letter": "D", "text": "Zaman is as industrious are other boys."}
+    ],
+    "explanation": "‘Very few boys are as…as’ কাঠামোকে comparative degree-তে রূপান্তর করলে ‘more…than most other’ ব্যবহার করা যায়[span_84](start_span)[span_84](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 86,
+    "stem": "Identify the appropriate preposition: Your opinion is identical –– mine.",
+    "options": [
+      {"letter": "A", "text": "for"},
+      {"letter": "B", "text": "in"},
+      {"letter": "C", "text": "with"},
+      {"letter": "D", "text": "by"}
+    ],
+    "explanation": "সঠিক phrase হলো ‘identical with’—অর্থাৎ সম্পূর্ণ একই বা অভিন্ন[span_85](start_span)[span_85](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 87,
+    "stem": "‘Paradise Lost’ attempted to—",
+    "options": [
+      {"letter": "A", "text": "justify the ways of man to God"},
+      {"letter": "B", "text": "show that Satan and God have equal power"},
+      {"letter": "C", "text": "justify the ways of God to man"},
+      {"letter": "D", "text": "explain why both good and evil are necessary"}
+    ],
+    "explanation": "John Milton-এর ‘Paradise Lost’-এর বিখ্যাত উদ্দেশ্য হলো ‘justify the ways of God to man[span_86](start_span)’[span_86](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 88,
+    "stem": "“Oh, lift me as a wave, a leaf, a cloud! I fall upon the thorns of life! I bleed!” The extract is taken from P.B. Shelley’s poem—",
+    "options": [
+      {"letter": "A", "text": "The Cloud"},
+      {"letter": "B", "text": "To a Skylark"},
+      {"letter": "C", "text": "Ode to the West Wind"},
+      {"letter": "D", "text": "Adonais"}
+    ],
+    "explanation": "পঙ্‌ক্তিগুলো Percy Bysshe Shelley-এর ‘Ode to the West Wind’ কবিতা থেকে নেওয়া[span_87](start_span)[span_87](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 89,
+    "stem": "Who wrote the short story ‘The Ant and the Grasshopper’?",
+    "options": [
+      {"letter": "A", "text": "Guy de Maupassant"},
+      {"letter": "B", "text": "W. Somerset Maugham"},
+      {"letter": "C", "text": "J. K. Rowling"},
+      {"letter": "D", "text": "O. Henry"}
+    ],
+    "explanation": "W. Somerset Maugham-এর ‘The Ant and the Grasshopper’ বিখ্যাত ছোটগল্প[span_88](start_span)[span_88](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 90,
+    "stem": "The word ‘vital’ is a/an—",
+    "options": [
+      {"letter": "A", "text": "noun"},
+      {"letter": "B", "text": "adverb"},
+      {"letter": "C", "text": "adjective"},
+      {"letter": "D", "text": "verb"}
+    ],
+    "explanation": "‘Vital’ অর্থ অত্যন্ত গুরুত্বপূর্ণ/জীবনীশক্তিসংক্রান্ত এবং এটি adjective হিসেবে ব্যবহৃত হয়[span_89](start_span)[span_89](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 91,
+    "stem": "2 log₁₀ 5 + log₁₀ 36 − log₁₀ 9 = ?",
+    "options": [
+      {"letter": "A", "text": "2"},
+      {"letter": "B", "text": "100"},
+      {"letter": "C", "text": "37"},
+      {"letter": "D", "text": "4.6"}
+    ],
+    "explanation": "2log5 = log25। তাই log25 + log36 − log9 = log(25×36/9) = log100 = 2[span_90](start_span)[span_90](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 92,
+    "stem": "ক্রয়মূল্য বিক্রয়মূল্যের দ্বিগুণ হলে শতকরা লাভ বা ক্ষতির পরিমাণ কত?",
+    "options": [
+      {"letter": "A", "text": "লাভ ২৫%"},
+      {"letter": "B", "text": "ক্ষতি ২৫%"},
+      {"letter": "C", "text": "লাভ ১০%"},
+      {"letter": "D", "text": "ক্ষতি ৫০%"}
+    ],
+    "explanation": "ক্রয়মূল্য 100 টাকা হলে বিক্রয়মূল্য 50 টাকা। ক্ষতি = 50 টাকা, অর্থাৎ 50%[span_91](start_span)[span_91](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 93,
+    "stem": "একটি ফাংশন f : R → R, f(x) = 2x + 1 দ্বারা সংজ্ঞায়িত হলে f⁻¹(2)-এর মান কত?",
+    "options": [
+      {"letter": "A", "text": "0"},
+      {"letter": "B", "text": "1/2"},
+      {"letter": "C", "text": "5"},
+      {"letter": "D", "text": "1"}
+    ],
+    "explanation": "y=2x+1 হলে y=2 বসিয়ে 2=2x+1 ⇒ x=1/2। তাই f⁻¹(2)=1/2[span_92](start_span)[span_92](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 94,
+    "stem": "ABC ত্রিভুজে B কোণের পরিমাণ ৪৮° এবং AB = AC। যদি E এবং F, AB এবং AC-কে এমনভাবে ছেদ করে যেন EF || BC হয়, তাহলে ∠A + ∠AFE = ?",
+    "options": [
+      {"letter": "A", "text": "১৩২°"},
+      {"letter": "B", "text": "১৮০°"},
+      {"letter": "C", "text": "১০৮°"},
+      {"letter": "D", "text": "১৬০°"}
+    ],
+    "explanation": "AB=AC হওয়ায় B ও C কোণ সমান। তাই A = 180°−48°−48° = 84°। EF || BC হওয়ার কারণে সংশ্লিষ্ট কোণ ব্যবহার করে ∠AFE = 48°। অতএব মোট = 84°+48° = 132°[span_93](start_span)[span_93](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 95,
+    "stem": "যদি প্রদত্ত সমীকরণটি সত্য হয়, তাহলে নিচের x-এর মান কত?",
+    "options": [
+      {"letter": "A", "text": "0.1"},
+      {"letter": "B", "text": "0.001"},
+      {"letter": "C", "text": "1/10000"},
+      {"letter": "D", "text": "0.001"}
+    ],
+    "explanation": "মূল Biddabari পেজে প্রশ্নটির গাণিতিক অংশটি ওয়েব টেক্সটে সঠিকভাবে প্রদর্শিত হয়নি; সেখানে উত্তর 0.1 দেওয়া আছে[span_94](start_span)[span_94](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 96,
+    "stem": "i⁻⁴⁹-এর মান কত?",
+    "options": [
+      {"letter": "A", "text": "−1"},
+      {"letter": "B", "text": "i"},
+      {"letter": "C", "text": "1"},
+      {"letter": "D", "text": "−i"}
+    ],
+    "explanation": "i-এর ঘাত 4 পরপর পুনরাবৃত্ত হয়। −49 ≡ 3 (mod 4), তাই i⁻⁴⁹ = i³ = −i[span_95](start_span)[span_95](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 97,
+    "stem": "যদি −5, p, 1, 16 সমান্তর অনুক্রমে থাকে, তাহলে p ও q-এর মান হবে যথাক্রমে—",
+    "options": [
+      {"letter": "A", "text": "−2, 9"},
+      {"letter": "B", "text": "2, 9"},
+      {"letter": "C", "text": "−2, −9"},
+      {"letter": "D", "text": "2, −9"}
+    ],
+    "explanation": "−5, p, 1, q, 16 যদি সমান্তর অনুক্রম হয়, সাধারণ অন্তর 7। তাই p=2 এবং q=9[span_96](start_span)[span_96](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 98,
+    "stem": "১৮ এবং ৭২-এর গুণোত্তর গড় কোনটি?",
+    "options": [
+      {"letter": "A", "text": "৪৫"},
+      {"letter": "B", "text": "১২৯৬"},
+      {"letter": "C", "text": "৩৬"},
+      {"letter": "D", "text": "৪"}
+    ],
+    "explanation": "গুণোত্তর গড় = √(18×72) = √1296 = 36[span_97](start_span)[span_97](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 99,
+    "stem": "মূল Biddabari পেজে ৯৯ নম্বর প্রশ্নটি দেওয়া নেই।",
+    "options": [
+      {"letter": "A", "text": "তথ্য অনুপস্থিত"},
+      {"letter": "B", "text": "তথ্য অনুপস্থিত"},
+      {"letter": "C", "text": "তথ্য অনুপস্থিত"},
+      {"letter": "D", "text": "তথ্য অনুপস্থিত"}
+    ],
+    "explanation": "মূল উৎসে এই প্রশ্নটি অনুপস্থিত[span_98](start_span)[span_98](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 100,
+    "stem": "একটি সুষম বহুভুজের প্রত্যেকটি কোণ ১৬৮°। এর বাহুসংখ্যা কত?",
+    "options": [
+      {"letter": "A", "text": "৩০"},
+      {"letter": "B", "text": "২০"},
+      {"letter": "C", "text": "১৮"},
+      {"letter": "D", "text": "১০"}
+    ],
+    "explanation": "সষম বহুভুজের একটি বহিঃকোণ = 180°−168° = 12°। তাই বাহুর সংখ্যা = 360°÷12° = 30[span_99](start_span)[span_99](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 101,
+    "stem": "একটি সমবাহু ত্রিভুজের বাহুর দৈর্ঘ্য ২ সেমি এবং উচ্চতা X সেমি হলে, X-এর মান কত?",
+    "options": [
+      {"letter": "A", "text": "√২"},
+      {"letter": "B", "text": "√৩"},
+      {"letter": "C", "text": "২"},
+      {"letter": "D", "text": "৩"}
+    ],
+    "explanation": "সমবাহু ত্রিভুজের উচ্চতা = (√৩/২) × বাহু। তাই উচ্চতা = (√৩/২) × ২ = √৩ সেমি[span_100](start_span)[span_100](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 102,
+    "stem": "একটি সমবাহু ত্রিভুজের প্রতিটি অন্তঃকোণের পরিমাণ কত? (অতিরিক্ত অনুশীলনমূলক প্রশ্ন)",
+    "options": [
+      {"letter": "A", "text": "৩০°"},
+      {"letter": "B", "text": "৪৫°"},
+      {"letter": "C", "text": "৬০°"},
+      {"letter": "D", "text": "৯০°"}
+    ],
+    "explanation": "ত্রিভুজের তিন কোণের সমষ্টি ১৮০°। সমবাহু ত্রিভুজের তিনটি কোণ সমান, তাই প্রতিটি কোণ = ১৮০° ÷ ৩ = ৬০°[span_101](start_span)[span_101](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 103,
+    "stem": "P(A) = ১/৩, P(B) = ৩/৪ এবং A ও B স্বাধীন হলে P(A ∪ B)-এর মান কত?",
+    "options": [
+      {"letter": "A", "text": "৩/২১"},
+      {"letter": "B", "text": "১/৩"},
+      {"letter": "C", "text": "৫/৬"},
+      {"letter": "D", "text": "কোনোটিই নয়"}
+    ],
+    "explanation": "P(A ∪ B) = P(A) + P(B) − P(A∩B)। স্বাধীন হলে P(A∩B) = P(A)P(B) = ১/৩ × ৩/৪ = ১/৪। তাই P(A∪B) = ১/৩ + ৩/৪ − ১/৪ = ৫/৬[span_102](start_span)[span_102](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 104,
+    "stem": "দুটি স্বাধীন ঘটনা A ও B-এর ক্ষেত্রে P(A)=১/২ এবং P(B)=১/৩ হলে P(A∩B) কত? (অতিরিক্ত অনুশীলনমূলক প্রশ্ন)",
+    "options": [
+      {"letter": "A", "text": "১/৬"},
+      {"letter": "B", "text": "২/৩"},
+      {"letter": "C", "text": "৫/৬"},
+      {"letter": "D", "text": "১/৫"}
+    ],
+    "explanation": "স্বাধীন ঘটনার ক্ষেত্রে P(A∩B) = P(A) × P(B)। তাই ১/২ × ১/৩ = ১/৬[span_103](start_span)[span_103](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 105,
+    "stem": "৬a²bc এবং ৪a³b²c²-এর গ.সা.গু. কোনটি?",
+    "options": [
+      {"letter": "A", "text": "a²bc"},
+      {"letter": "B", "text": "2a²bc"},
+      {"letter": "C", "text": "2a²b²c²"},
+      {"letter": "D", "text": "কোনোটিই নয়"}
+    ],
+    "explanation": "৬ ও ৪-এর গ.সা.গু. = ২। প্রতিটি চলকের সর্বনিম্ন ঘাত নেওয়া হলে a², b এবং c পাওয়া যায়। তাই গ.সা.গু. = 2a²bc[span_104](start_span)[span_104](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 106,
+    "stem": "বাংলাদেশের প্রথম কয়লানির্ভর বিদ্যুৎ কেন্দ্র কোথায় অবস্থিত?",
+    "options": [
+      {"letter": "A", "text": "কাপ্তাই, রাঙ্গামাটি"},
+      {"letter": "B", "text": "সাভার, ঢাকা"},
+      {"letter": "C", "text": "সীতাকুণ্ড, চট্টগ্রাম"},
+      {"letter": "D", "text": "বড়পুকুরিয়া, দিনাজপুর"}
+    ],
+    "explanation": "দিনাজপুরের বড়পুকুরিয়ায় বাংলাদেশের প্রথম কয়লাভিত্তিক বিদ্যুৎ কেন্দ্র স্থাপিত হয়[span_105](start_span)[span_105](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 107,
+    "stem": "কোন ধরনের শিলায় জীবাশ্ম থাকার সম্ভাবনা রয়েছে?",
+    "options": [
+      {"letter": "A", "text": "আগ্নেয় শিলা"},
+      {"letter": "B", "text": "রূপান্তরিত শিলা"},
+      {"letter": "C", "text": "পাললিক শিলা"},
+      {"letter": "D", "text": "উপরের কোনোটিই নয়"}
+    ],
+    "explanation": "জীবাশ্ম সাধারণত পাললিক শিলায় সংরক্ষিত থাকে, কারণ এগুলো স্তরে স্তরে জমা হওয়া পলি থেকে তৈরি হয়[span_106](start_span)[span_106](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 108,
+    "stem": "নিচের কোন দুর্যোগের কার্যকর পূর্বাভাস দেওয়া সম্ভব নয়?",
+    "options": [
+      {"letter": "A", "text": "বন্যা"},
+      {"letter": "B", "text": "ভূমিকম্প"},
+      {"letter": "C", "text": "ঘূর্ণিঝড়"},
+      {"letter": "D", "text": "খরা"}
+    ],
+    "explanation": "বন্যা, ঘূর্ণিঝড় ও খরার পূর্বাভাস তুলনামূলকভাবে দেওয়া যায়; কিন্তু ভূমিকম্প কখন, কোথায় ও কত শক্তিশালী হবে তা নির্ভুলভাবে পূর্বাভাস দেওয়া যায় না[span_107](start_span)[span_107](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 109,
+    "stem": "দুর্যোগ ব্যবস্থাপনা চক্রের কোন স্তরটি বেশি ব্যয়বহুল?",
+    "options": [
+      {"letter": "A", "text": "পূর্বপ্রস্তুতি"},
+      {"letter": "B", "text": "সাড়াদান"},
+      {"letter": "C", "text": "প্রশমন"},
+      {"letter": "D", "text": "পুনরুদ্ধার"}
+    ],
+    "explanation": "দুর্যোগের ক্ষতি কমানোর জন্য অবকাঠামোগত ও দীর্ঘমেয়াদি ব্যবস্থা গ্রহণে বড় ধরনের ব্যয় হতে পারে[span_108](start_span)[span_108](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 110,
+    "stem": "কোনটি নবায়নযোগ্য সম্পদ?",
+    "options": [
+      {"letter": "A", "text": "প্রাকৃতিক গ্যাস"},
+      {"letter": "B", "text": "চুনাপাথর"},
+      {"letter": "C", "text": "বায়ু"},
+      {"letter": "D", "text": "কয়লা"}
+    ],
+    "explanation": "বায়ু প্রকৃতির মাধ্যমে ক্রমাগত পুনর্নবীকরণ হয়। তাই এটি নবায়নযোগ্য সম্পদ[span_109](start_span)[span_109](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 111,
+    "stem": "নিচের কোনটি বাংলাদেশের বৃহত্তম গ্যাসক্ষেত্র?",
+    "options": [
+      {"letter": "A", "text": "বাখরাবাদ"},
+      {"letter": "B", "text": "হরিপুর"},
+      {"letter": "C", "text": "তিতাস"},
+      {"letter": "D", "text": "হবিগঞ্জ"}
+    ],
+    "explanation": "তিতাস বাংলাদেশের অন্যতম বৃহৎ ও গুরুত্বপূর্ণ গ্যাসক্ষেত্র[span_110](start_span)[span_110](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 112,
+    "stem": "বাংলাদেশে জি-কে (G-K) প্রকল্প একটি—",
+    "options": [
+      {"letter": "A", "text": "জলবিদ্যুৎ প্রকল্প"},
+      {"letter": "B", "text": "নদী নিয়ন্ত্রণ প্রকল্প"},
+      {"letter": "C", "text": "জল পরিবহন প্রকল্প"},
+      {"letter": "D", "text": "সেচ প্রকল্প"}
+    ],
+    "explanation": "G-K প্রকল্প কুষ্টিয়া-গঙ্গা-কপোতাক্ষ অঞ্চলের একটি গুরুত্বপূর্ণ সেচ প্রকল্প[span_111](start_span)[span_111](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 113,
+    "stem": "COP-26 এ COP মানে কী?",
+    "options": [
+      {"letter": "A", "text": "Conference of Paris"},
+      {"letter": "B", "text": "Conference of the Power"},
+      {"letter": "C", "text": "Conference of the Parties"},
+      {"letter": "D", "text": "Conference of the Protocol"}
+    ],
+    "explanation": "COP-এর পূর্ণরূপ Conference of the Parties। এটি UNFCCC-এর সদস্য রাষ্ট্রগুলোর সম্মেলন[span_112](start_span)[span_112](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 114,
+    "stem": "বাংলাদেশের Blue Economy-এর চ্যালেঞ্জ নয় কোনটি?",
+    "options": [
+      {"letter": "A", "text": "ঘন ঘন বন্যা"},
+      {"letter": "B", "text": "সমুদ্র দূষণ"},
+      {"letter": "C", "text": "ত্রুটিপূর্ণ সমুদ্র শাসন"},
+      {"letter": "D", "text": "উপরের কোনোটিই নয়"}
+    ],
+    "explanation": "প্রদত্ত ক, খ ও গ—তিনটিই বাংলাদেশের Blue Economy-এর ক্ষেত্রে চ্যালেঞ্জ হিসেবে বিবেচিত হতে পারে[span_113](start_span)[span_113](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 115,
+    "stem": "ডাউকি ফাটল বরাবর একটি প্রচণ্ড ভূমিকম্পের পর বাংলাদেশের কোন নদী তার গতিপথ পরিবর্তন করে?",
+    "options": [
+      {"letter": "A", "text": "ব্রহ্মপুত্র নদী"},
+      {"letter": "B", "text": "পদ্মা নদী"},
+      {"letter": "C", "text": "কর্ণফুলী নদী"},
+      {"letter": "D", "text": "মেঘনা নদী"}
+    ],
+    "explanation": "ভূতাত্ত্বিক পরিবর্তনের ফলে ব্রহ্মপুত্রের গতিপথ পরিবর্তনের ঐতিহাসিক ঘটনা বাংলাদেশের ভূগোলের গুরুত্বপূর্ণ বিষয়[span_114](start_span)[span_114](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 116,
+    "stem": "সুপরিবাহী পদার্থে Valence Band এবং Conduction Band—",
+    "options": [
+      {"letter": "A", "text": "আলাদা থাকে"},
+      {"letter": "B", "text": "ওভারল্যাপ থাকে"},
+      {"letter": "C", "text": "অনেক দূরে থাকে"},
+      {"letter": "D", "text": "কোনোটিই নয়"}
+    ],
+    "explanation": "ধাতব পরিবাহকে Valence Band ও Conduction Band পরস্পর overlap করতে পারে, ফলে ইলেকট্রন সহজে চলাচল করে[span_115](start_span)[span_115](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 117,
+    "stem": "ফটোগ্রাফিক প্লেটে আবরণ থাকে—",
+    "options": [
+      {"letter": "A", "text": "সিলভার ব্রোমাইডের"},
+      {"letter": "B", "text": "সিলভার ক্লোরাইডের"},
+      {"letter": "C", "text": "অ্যামোনিয়াম ক্লোরাইডের"},
+      {"letter": "D", "text": "সিলভার ফ্লোরাইডের"}
+    ],
+    "explanation": "প্রচলিত ফটোগ্রাফিক ফিল্মে আলো-সংবেদনশীল Silver Bromide (AgBr) ব্যবহৃত হয়[span_116](start_span)[span_116](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 118,
+    "stem": "বজ্রবৃষ্টির ফলে মাটিতে উদ্ভিদের কোন খাদ্য উপাদান বৃদ্ধি পায়?",
+    "options": [
+      {"letter": "A", "text": "নাইট্রোজেন"},
+      {"letter": "B", "text": "পটাসিয়াম"},
+      {"letter": "C", "text": "অক্সিজেন"},
+      {"letter": "D", "text": "ফসফরাস"}
+    ],
+    "explanation": "বজ্রপাতের সময় বায়ুমণ্ডলের নাইট্রোজেন অক্সিজেনের সঙ্গে বিক্রিয়া করে নাইট্রোজেনের যৌগ তৈরি করতে পারে, যা বৃষ্টির মাধ্যমে মাটিতে পৌঁছায়[span_117](start_span)[span_117](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 119,
+    "stem": "ফলিক এসিডের অন্য নাম কোনটি?",
+    "options": [
+      {"letter": "A", "text": "ভিটামিন বি-১২"},
+      {"letter": "B", "text": "ভিটামিন বি-৬"},
+      {"letter": "C", "text": "ভিটামিন বি-১"},
+      {"letter": "D", "text": "ভিটামিন বি-৯"}
+    ],
+    "explanation": "Folic acid হলো Vitamin B9[span_118](start_span)[span_118](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 120,
+    "stem": "যে কারণে শৈশব অন্ধত্ব হতে পারে তা হলো—",
+    "options": [
+      {"letter": "A", "text": "HIV/AIDS"},
+      {"letter": "B", "text": "ম্যালেরিয়া"},
+      {"letter": "C", "text": "হাম"},
+      {"letter": "D", "text": "যক্ষ্মা"}
+    ],
+    "explanation": "হাম বিশেষ করে অপুষ্টি ও ভিটামিন A-এর ঘাটতির সঙ্গে থাকলে শিশুদের চোখের গুরুতর সমস্যা ও অন্ধত্বের ঝুঁকি বাড়াতে পারে[span_119](start_span)[span_119](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 121,
+    "stem": "শিশুদের ভিটামিন A ক্যাপসুল দিতে হয়—",
+    "options": [
+      {"letter": "A", "text": "বছরে একবার"},
+      {"letter": "B", "text": "বছরে দুইবার"},
+      {"letter": "C", "text": "বছরে তিনবার"},
+      {"letter": "D", "text": "এর কোনোটিই নয়"}
+    ],
+    "explanation": "বাংলাদেশে জাতীয় Vitamin A Plus কর্মসূচির আওতায় সাধারণত বছরে দুইবার শিশুদের ভিটামিন A ক্যাপসুল দেওয়া হয়[span_120](start_span)[span_120](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 122,
+    "stem": "ব্যাকটেরিয়ার গতিশীলতার জন্য যে গঠন দায়ী তা হলো—",
+    "options": [
+      {"letter": "A", "text": "পিল্লি"},
+      {"letter": "B", "text": "ফ্ল্যাজেলা"},
+      {"letter": "C", "text": "শীথ"},
+      {"letter": "D", "text": "ক্যাপসুল"}
+    ],
+    "explanation": "Flagella বা ফ্ল্যাজেলা ব্যাকটেরিয়ার চলাচলে সাহায্য করে[span_121](start_span)[span_121](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 123,
+    "stem": "‘কেপলার-৪৫২ বি’ কী?",
+    "options": [
+      {"letter": "A", "text": "একটি মহাকাশযান"},
+      {"letter": "B", "text": "পৃথিবীর মতো একটি গ্রহ"},
+      {"letter": "C", "text": "সূর্যের মতো একটি নক্ষত্র"},
+      {"letter": "D", "text": "NASA-এর অত্যাধুনিক টেলিস্কোপ"}
+    ],
+    "explanation": "Kepler-452b হলো সূর্যের মতো একটি নক্ষত্রকে প্রদক্ষিণকারী পৃথিবীর আকারের কাছাকাছি একটি exoplanet[span_122](start_span)[span_122](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 124,
+    "stem": "ধারালো যন্ত্রপাতি জীবাণুমুক্ত করার ভালো পদ্ধতি—",
+    "options": [
+      {"letter": "A", "text": "বয়লিং"},
+      {"letter": "B", "text": "বেনজিন ওয়াশ"},
+      {"letter": "C", "text": "ফরমালিন ওয়াশ"},
+      {"letter": "D", "text": "কেমিক্যাল স্টেরিলাইজেশন"}
+    ],
+    "explanation": "প্রদত্ত অপশনগুলোর মধ্যে ধারালো যন্ত্রের জন্য chemical sterilization একটি উপযুক্ত পদ্ধতি হিসেবে ধরা হয়েছে[span_123](start_span)[span_123](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 125,
+    "stem": "সাবানের আয়নিক গ্রুপ হলো—",
+    "options": [
+      {"letter": "A", "text": "R₃NH⁺"},
+      {"letter": "B", "text": "SO₃⁻Na⁺"},
+      {"letter": "C", "text": "R₂NH₂"},
+      {"letter": "D", "text": "COO⁻Na⁺"}
+    ],
+    "explanation": "সাধারণ সাবান হলো উচ্চতর ফ্যাটি অ্যাসিডের সোডিয়াম বা পটাশিয়াম লবণ। এর প্রধান আয়নিক অংশ carboxylate group, যেমন COO⁻Na⁺[span_124](start_span)[span_124](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 126,
+    "stem": "কোন জোড়াটি বেমানান?",
+    "options": [
+      {"letter": "A", "text": "যক্ষ্মার জীবাণু : রবার্ট কচ"},
+      {"letter": "B", "text": "হোমিওপ্যাথি : হ্যানিম্যান"},
+      {"letter": "C", "text": "ব্যাকটেরিয়া : রবার্ট হুক"},
+      {"letter": "D", "text": "এনাটমি : ভেসালিয়াস"}
+    ],
+    "explanation": "Robert Hooke অণুবীক্ষণ যন্ত্রে কোষ পর্যবেক্ষণের জন্য বিখ্যাত। ব্যাকটেরিয়া আবিষ্কার ও পর্যবেক্ষণের ইতিহাসে Antonie van Leeuwenhoek গুরুত্বপূর্ণ[span_125](start_span)[span_125](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 127,
+    "stem": "এনজাইম, অ্যান্টিবডি এবং হরমোনের মৌলিক উপাদান—",
+    "options": [
+      {"letter": "A", "text": "প্রোটিন"},
+      {"letter": "B", "text": "ক্যালসিয়াম"},
+      {"letter": "C", "text": "ভিটামিন"},
+      {"letter": "D", "text": "লবণ"}
+    ],
+    "explanation": "অধিকাংশ enzyme ও antibody প্রোটিনজাত। অনেক গুরুত্বপূর্ণ hormone-ও peptide/protein প্রকৃতির[span_126](start_span)[span_126](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 128,
+    "stem": "মকরক্রান্তি রেখা কোনটি?",
+    "options": [
+      {"letter": "A", "text": "২৩°৩০′ দক্ষিণ অক্ষাংশ"},
+      {"letter": "B", "text": "২৩°৩০′ উত্তর অক্ষাংশ"},
+      {"letter": "C", "text": "২৩°৩০′ পূর্ব দ্রাঘিমাংশ"},
+      {"letter": "D", "text": "২৩°৩০′ পশ্চিম দ্রাঘিমাংশ"}
+    ],
+    "explanation": "Tropic of Capricorn বা মকরক্রান্তি রেখা প্রায় ২৩.৫° দক্ষিণ অক্ষাংশে অবস্থিত[span_127](start_span)[span_127](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 129,
+    "stem": "পরম শূন্য তাপমাত্রা কোনটি?",
+    "options": [
+      {"letter": "A", "text": "২৭৩° সেলসিয়াস"},
+      {"letter": "B", "text": "২৭৩° ফারেনহাইট"},
+      {"letter": "C", "text": "০° সেলসিয়াস"},
+      {"letter": "D", "text": "০° কেলভিন"}
+    ],
+    "explanation": "Absolute zero হলো 0 Kelvin, যা প্রায় −273.15°C[span_128](start_span)[span_128](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 130,
+    "stem": "আদর্শ ভোল্টেজ উৎসের অভ্যন্তরীণ রোধ কত?",
+    "options": [
+      {"letter": "A", "text": "অসীম"},
+      {"letter": "B", "text": "শূন্য"},
+      {"letter": "C", "text": "অতি ক্ষুদ্র"},
+      {"letter": "D", "text": "অনেক বড়"}
+    ],
+    "explanation": "Ideal voltage source-এর internal resistance শূন্য ধরা হয়[span_129](start_span)[span_129](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 131,
+    "stem": "নিচের কোনটি Structured Query Language (SQL) নয়?",
+    "options": [
+      {"letter": "A", "text": "Java"},
+      {"letter": "B", "text": "MySQL"},
+      {"letter": "C", "text": "Oracle"},
+      {"letter": "D", "text": "উপরের সবগুলো"}
+    ],
+    "explanation": "Java একটি programming language। MySQL ও Oracle SQL নয়, বরং database management system/platform[span_130](start_span)[span_130](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 132,
+    "stem": "ইন্টারনেট যোগাযোগ ব্যবস্থায় Hostname-কে IP Address-এ অনুবাদ করে—",
+    "options": [
+      {"letter": "A", "text": "FTP Server"},
+      {"letter": "B", "text": "Firewall"},
+      {"letter": "C", "text": "DNS Server"},
+      {"letter": "D", "text": "Gateway"}
+    ],
+    "explanation": "DNS বা Domain Name System domain/hostname-কে সংশ্লিষ্ট IP address-এ resolve করে[span_131](start_span)[span_131](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 133,
+    "stem": "নিচের কোন মডেলটি Cloud Computing সেবা প্রদানকারীগণ ব্যবহার করে না?",
+    "options": [
+      {"letter": "A", "text": "CaaS"},
+      {"letter": "B", "text": "IaaS"},
+      {"letter": "C", "text": "PaaS"},
+      {"letter": "D", "text": "SaaS"}
+    ],
+    "explanation": "আইডেন্টিফাইড মূল পেজের উত্তর অনুযায়ী CaaS নির্দেশ করা হয়েছে[span_132](start_span)[span_132](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 134,
+    "stem": "অ্যামাজনের Cloud Platform কোনটি?",
+    "options": [
+      {"letter": "A", "text": "Azure"},
+      {"letter": "B", "text": "AWS"},
+      {"letter": "C", "text": "Cloudera"},
+      {"letter": "D", "text": "উপরের সবগুলো"}
+    ],
+    "explanation": "AWS-এর পূর্ণরূপ Amazon Web Services। এটি Amazon-এর cloud computing platform[span_133](start_span)[span_133](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 135,
+    "stem": "নিচের কোন Cyber Attack সংঘটিত হলে গ্রাহক নিজের computer system ব্যবহার করতে পারেন না এবং system ব্যবহার উপযোগী করতে অর্থ দাবি করা হয়?",
+    "options": [
+      {"letter": "A", "text": "Phishing"},
+      {"letter": "B", "text": "Denial of Service"},
+      {"letter": "C", "text": "Ransomware"},
+      {"letter": "D", "text": "Man-in-the-Middle"}
+    ],
+    "explanation": "Ransomware কম্পিউটারের ফাইল বা সিস্টেমকে লক/এনক্রিপ্ট করে মুক্তিপণ দাবি করতে পারে[span_134](start_span)[span_134](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 136,
+    "stem": "SCSI-এর পূর্ণরূপ কী?",
+    "options": [
+      {"letter": "A", "text": "Small Computer System Interface"},
+      {"letter": "B", "text": "Small Computer Software Interface"},
+      {"letter": "C", "text": "Small Computer Storage Interface"},
+      {"letter": "D", "text": "Small Computer Standard Interface"}
+    ],
+    "explanation": "SCSI-এর পূর্ণরূপ Small Computer System Interface[span_135](start_span)[span_135](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 137,
+    "stem": "নিচের কোন ডিভাইসটি Input এবং Output—উভয় ডিভাইস হিসেবে কাজ করে?",
+    "options": [
+      {"letter": "A", "text": "Scanner"},
+      {"letter": "B", "text": "Mouse"},
+      {"letter": "C", "text": "Touch Screen"},
+      {"letter": "D", "text": "Projector"}
+    ],
+    "explanation": "Touch screen-এ ব্যবহারকারী স্পর্শের মাধ্যমে input দেয় এবং screen-এ তথ্য display হয়[span_136](start_span)[span_136](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 138,
+    "stem": "নিচের কোন Octal সংখ্যাটি Decimal সংখ্যা ৫৫-এর সমতুল্য?",
+    "options": [
+      {"letter": "A", "text": "৫৫"},
+      {"letter": "B", "text": "৭৭"},
+      {"letter": "C", "text": "৬৭"},
+      {"letter": "D", "text": "৮৭"}
+    ],
+    "explanation": "Octal 67 = 6×8 + 7 = 48+7 = 55[span_137](start_span)[span_137](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 139,
+    "stem": "নিচের কোনটি System Software নয়?",
+    "options": [
+      {"letter": "A", "text": "Linux"},
+      {"letter": "B", "text": "Android"},
+      {"letter": "C", "text": "Mozilla Firefox"},
+      {"letter": "D", "text": "Apple iOS"}
+    ],
+    "explanation": "Linux, Android ও iOS হলো operating system; অন্যদিকে Mozilla Firefox হলো application software/web browser[span_138](start_span)[span_138](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 140,
+    "stem": "নিচের কোন Protocol-টি ইন্টারনেটে তথ্য আদান-প্রদানের নিরাপত্তা নিশ্চিত করে থাকে?",
+    "options": [
+      {"letter": "A", "text": "FTP"},
+      {"letter": "B", "text": "HTTPS"},
+      {"letter": "C", "text": "TCP"},
+      {"letter": "D", "text": "DNS"}
+    ],
+    "explanation": "HTTPS, HTTP-এর সঙ্গে encryption/security ব্যবস্থা ব্যবহার করে নিরাপদ ওয়েব যোগাযোগ নিশ্চিত করে[span_139](start_span)[span_139](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 141,
+    "stem": "Piconet কী?",
+    "options": [
+      {"letter": "A", "text": "Wi-Fi Network"},
+      {"letter": "B", "text": "Wide Area Network"},
+      {"letter": "C", "text": "Bluetooth Network"},
+      {"letter": "D", "text": "5G Network"}
+    ],
+    "explanation": "Bluetooth প্রযুক্তিতে কাছাকাছি একাধিক ডিভাইসের তৈরি ছোট নেটওয়ার্ককে Piconet বলা হয়[span_140](start_span)[span_140](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 142,
+    "stem": "এক মেশিন থেকে অন্য মেশিনে e-mail message স্থানান্তর করলে কোন TCP/IP Protocol ব্যবহার হয়?",
+    "options": [
+      {"letter": "A", "text": "FTP"},
+      {"letter": "B", "text": "RPC"},
+      {"letter": "C", "text": "SNMP"},
+      {"letter": "D", "text": "SMTP"}
+    ],
+    "explanation": "SMTP-এর পূর্ণরূপ Simple Mail Transfer Protocol। এটি email পাঠানোর জন্য ব্যবহৃত হয়[span_141](start_span)[span_141](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 143,
+    "stem": "যে কম্পিউটার প্রোগ্রাম নিজে নিজেই অন্য কম্পিউটারে Internet-এর মাধ্যমে কপি হয় তাকে বলে—",
+    "options": [
+      {"letter": "A", "text": "Program Virus"},
+      {"letter": "B", "text": "Worms"},
+      {"letter": "C", "text": "Trojan Horse"},
+      {"letter": "D", "text": "ETSI"}
+    ],
+    "explanation": "Worm নিজে নিজেই নেটওয়ার্কের মাধ্যমে অন্য কম্পিউটারে ছড়িয়ে পড়তে পারে[span_142](start_span)[span_142](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 144,
+    "stem": "নিচের কোন প্রতিষ্ঠানটি 4G Standard প্রস্তুতকরণে সম্পৃক্ত?",
+    "options": [
+      {"letter": "A", "text": "ISO"},
+      {"letter": "B", "text": "ITU"},
+      {"letter": "C", "text": "3GPP"},
+      {"letter": "D", "text": "ETSI"}
+    ],
+    "explanation": "মূল উৎস অনুযায়ী ITU উত্তর হিসেবে নির্ধারিত[span_143](start_span)[span_143](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 145,
+    "stem": "নিচের কোনটি Open Source Software?",
+    "options": [
+      {"letter": "A", "text": "Google Chrome"},
+      {"letter": "B", "text": "Microsoft Windows"},
+      {"letter": "C", "text": "Zoom"},
+      {"letter": "D", "text": "Adobe Photoshop"}
+    ],
+    "explanation": "প্রদত্ত অপশনগুলোর মধ্যে Google Chrome-এর Chromium ভিত্তি open-source প্রকল্প[span_144](start_span)[span_144](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 146,
+    "stem": "বাংলাদেশের সংবিধানের রক্ষক কে?",
+    "options": [
+      {"letter": "A", "text": "জাতীয় সংসদ"},
+      {"letter": "B", "text": "শাসন বিভাগ"},
+      {"letter": "C", "text": "সুপ্রিম কোর্ট"},
+      {"letter": "D", "text": "আইন মন্ত্রণালয়"}
+    ],
+    "explanation": "সংবিধানের ব্যাখ্যা ও সাংবিধানিক বিচারিক পর্যালোচনায় Supreme Court গুরুত্বপূর্ণ ভূমিকা পালন করে[span_145](start_span)[span_145](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 147,
+    "stem": "বাংলার সর্বপ্রাচীন জনপদের নাম কী?",
+    "options": [
+      {"letter": "A", "text": "পুন্ড্র"},
+      {"letter": "B", "text": "তাম্রলিপ্ত"},
+      {"letter": "C", "text": "গৌড়"},
+      {"letter": "D", "text": "হরিকেল"}
+    ],
+    "explanation": "পুন্ড্র বা পুন্ড্রবর্ধন প্রাচীন বাংলার অন্যতম প্রাচীন ও গুরুত্বপূর্ণ জনপদ[span_146](start_span)[span_146](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 148,
+    "stem": "বাংলাদেশের বৃহত্তর ঢাকা জেলা প্রাচীনকালে কোন জনপদের অন্তর্ভুক্ত ছিল?",
+    "options": [
+      {"letter": "A", "text": "সমতট"},
+      {"letter": "B", "text": "পুন্ড্র"},
+      {"letter": "C", "text": "বঙ্গ"},
+      {"letter": "D", "text": "হরিকেল"}
+    ],
+    "explanation": "ঢাকা ও এর আশপাশের বৃহৎ অঞ্চল প্রাচীন বঙ্গ জনপদের অন্তর্ভুক্ত ছিল[span_147](start_span)[span_147](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 149,
+    "stem": "কোন শাসকদের আমলে বাংলাভাষী অঞ্চল ‘বাঙ্গালা’ নামে পরিচিত হয়ে ওঠে?",
+    "options": [
+      {"letter": "A", "text": "মৌর্য"},
+      {"letter": "B", "text": "গুপ্ত"},
+      {"letter": "C", "text": "পাল"},
+      {"letter": "D", "text": "মুসলিম"}
+    ],
+    "explanation": "মধ্যযুগে মুসলিম শাসনামলে ‘বাঙ্গালা’ নামটি বৃহত্তর বাংলা অঞ্চলের জন্য ব্যাপকভাবে ব্যবহৃত হতে থাকে[span_148](start_span)[span_148](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 150,
+    "stem": "বাংলার প্রথম স্বাধীন নবাব কে ছিলেন?",
+    "options": [
+      {"letter": "A", "text": "শশাঙ্ক"},
+      {"letter": "B", "text": "মুর্শিদ কুলি খান"},
+      {"letter": "C", "text": "সিরাজউদ্দৌলা"},
+      {"letter": "D", "text": "আব্বাস আলী মীর্জা"}
+    ],
+    "explanation": "পরীক্ষার প্রচলিত প্রশ্নভিত্তিক উত্তরে মুর্শিদ কুলি খানকে বাংলার প্রথম স্বাধীন নবাব বলা হয়[span_149](start_span)[span_149](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 151,
+    "stem": "চীনদেশের কোন ভ্রমণকারী গুপ্তযুগে বাংলাদেশে আগমন করেন?",
+    "options": [
+      {"letter": "A", "text": "হিউয়েন সাং"},
+      {"letter": "B", "text": "ফা হিয়েন"},
+      {"letter": "C", "text": "আই সিং"},
+      {"letter": "D", "text": "এদের সকলেই"}
+    ],
+    "explanation": "চীনা পর্যটক ফা হিয়েন গুপ্তযুগে ভারতে ভ্রমণ করেন এবং বাংলার বিভিন্ন অঞ্চলেও তাঁর আগমনের উল্লেখ পাওয়া যায়[span_150](start_span)[span_150](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 152,
+    "stem": "বঙ্গভঙ্গের কারণে কোন নতুন প্রদেশ সৃষ্টি হয়েছিল?",
+    "options": [
+      {"letter": "A", "text": "পূর্ববঙ্গ ও বিহার"},
+      {"letter": "B", "text": "পূর্ববঙ্গ ও আসাম"},
+      {"letter": "C", "text": "পূর্ববঙ্গ ও উড়িষ্যা"},
+      {"letter": "D", "text": "পূর্ববঙ্গ ও পশ্চিমবঙ্গ"}
+    ],
+    "explanation": "১৯০৫ সালের বঙ্গভঙ্গের ফলে ‘পূর্ববঙ্গ ও আসাম’ নামে নতুন প্রদেশ গঠিত হয়[span_151](start_span)[span_151](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 153,
+    "stem": "‘তমদ্দুন মজলিশ’ কে প্রতিষ্ঠা করেন?",
+    "options": [
+      {"letter": "A", "text": "হাজী শরিয়তউল্লাহ"},
+      {"letter": "B", "text": "শেরে বাংলা এ. কে. ফজলুল হক"},
+      {"letter": "C", "text": "আবুল কাশেম"},
+      {"letter": "D", "text": "মাওলানা আবদুল হামিদ খান ভাসানী"}
+    ],
+    "explanation": "অধ্যাপক আবুল কাশেম ১৯৪৭ সালে তমদ্দুন মজলিশ প্রতিষ্ঠা করেন[span_152](start_span)[span_152](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 154,
+    "stem": "‘আমার ভাইয়ের রক্তে রাঙানো একুশে ফেব্রুয়ারি, আমি কি ভুলিতে পারি’—গানটি কে রচনা করেন?",
+    "options": [
+      {"letter": "A", "text": "মুনীর চৌধুরী"},
+      {"letter": "B", "text": "জহির রায়হান"},
+      {"letter": "C", "text": "আবদুল গাফফার চৌধুরী"},
+      {"letter": "D", "text": "কাজী নজরুল ইসলাম"}
+    ],
+    "explanation": "ভাষা আন্দোলনের স্মরণীয় গানটির গীতিকার আবদুল গাফফার চৌধুরী[span_153](start_span)[span_153](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 155,
+    "stem": "কোন দেশ বাংলা ভাষাকে তাদের অন্যতম রাষ্ট্রভাষা হিসেবে স্বীকৃতি দিয়েছে?",
+    "options": [
+      {"letter": "A", "text": "লাইবেরিয়া"},
+      {"letter": "B", "text": "নামিবিয়া"},
+      {"letter": "C", "text": "হাইতি"},
+      {"letter": "D", "text": "সিয়েরা লিওন"}
+    ],
+    "explanation": "সিয়েরা লিওনের সাবেক প্রেসিডেন্ট আহমাদ তেজান কাব্বাহ বাংলা ভাষার প্রতি সম্মান প্রদর্শন করেছিলেন[span_154](start_span)[span_154](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 156,
+    "stem": "বাংলাদেশের ক্ষুদ্র নৃগোষ্ঠীর সংখ্যা কত?",
+    "options": [
+      {"letter": "A", "text": "২০"},
+      {"letter": "B", "text": "৪৮"},
+      {"letter": "C", "text": "২৫"},
+      {"letter": "D", "text": "৩২"}
+    ],
+    "explanation": "৪৪তম বিসিএসের প্রশ্নে প্রচলিত উত্তর ছিল ৪৮[span_155](start_span)[span_155](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 157,
+    "stem": "নিচের কোন পত্রিকাটির প্রকাশনা উপলক্ষ্যে রবীন্দ্রনাথ ঠাকুর আশীর্বাণী পাঠিয়েছিলেন?",
+    "options": [
+      {"letter": "A", "text": "সবুজপত্র"},
+      {"letter": "B", "text": "শনিবারের চিঠি"},
+      {"letter": "C", "text": "কল্লোল"},
+      {"letter": "D", "text": "ধূমকেতু"}
+    ],
+    "explanation": "কাজী নজরুল ইসলামের সম্পাদিত ‘ধূমকেতু’ পত্রিকার প্রকাশনা উপলক্ষে রবীন্দ্রনাথ আশীর্বাণী পাঠিয়েছিলেন[span_156](start_span)[span_156](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 158,
+    "stem": "বাংলাদেশের জাতীয় প্রতীকে কয়টি তারকা আছে?",
+    "options": [
+      {"letter": "A", "text": "২টি"},
+      {"letter": "B", "text": "৩টি"},
+      {"letter": "C", "text": "৪টি"},
+      {"letter": "D", "text": "৫টি"}
+    ],
+    "explanation": "বাংলাদেশের জাতীয় প্রতীকে শাপলা, ধানের শীষ, পাটপাতা এবং চারটি তারকা রয়েছে[span_157](start_span)[span_157](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 159,
+    "stem": "বাঙালির মুক্তির সনদ ‘ছয় দফা’ কোন তারিখে আনুষ্ঠানিকভাবে ঘোষণা করা হয়েছিল?",
+    "options": [
+      {"letter": "A", "text": "২১ ফেব্রুয়ারি, ১৯৫৪"},
+      {"letter": "B", "text": "২২ মার্চ, ১৯৫৮"},
+      {"letter": "C", "text": "২০ এপ্রিল, ১৯৬২"},
+      {"letter": "D", "text": "২৩ মার্চ, ১৯৬৬"}
+    ],
+    "explanation": "১৯৬৬ সালে বঙ্গবন্ধু শেখ মুজিবুর রহমানের নেতৃত্বে ছয় দফা বাঙালির রাজনৈতিক অধিকার আদায়ের গুরুত্বপূর্ণ কর্মসূচিতে পরিণত হয়[span_158](start_span)[span_158](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 160,
+    "stem": "‘এবারের সংগ্রাম আমাদের মুক্তির সংগ্রাম, এবারের সংগ্রাম স্বাধীনতার সংগ্রাম’—এই ঘোষণা কবে দেওয়া হয়?",
+    "options": [
+      {"letter": "A", "text": "২৬ মার্চ, ১৯৭১"},
+      {"letter": "B", "text": "৭ মার্চ, ১৯৭১"},
+      {"letter": "C", "text": "৩ মার্চ, ১৯৭১"},
+      {"letter": "D", "text": "২৩ মার্চ, ১৯৭১"}
+    ],
+    "explanation": "১৯৭১ সালের ৭ মার্চ ঢাকার রেসকোর্স ময়দানে দেওয়া ঐতিহাসিক ভাষণে বঙ্গবন্ধু এই ঘোষণা দেন[span_159](start_span)[span_159](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 161,
+    "stem": "বাংলাদেশে জুম চাষ কোথায় হয়?",
+    "options": [
+      {"letter": "A", "text": "বান্দরবান"},
+      {"letter": "B", "text": "ময়মনসিংহ"},
+      {"letter": "C", "text": "রাজশাহী"},
+      {"letter": "D", "text": "দিনাজপুর"}
+    ],
+    "explanation": "পার্বত্য চট্টগ্রামের পাহাড়ি অঞ্চলে, বিশেষ করে বান্দরবান এলাকায় জুম চাষ প্রচলিত[span_160](start_span)[span_160](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 162,
+    "stem": "বাংলাদেশের কোন জেলায় সবচেয়ে বেশি চা বাগান রয়েছে?",
+    "options": [
+      {"letter": "A", "text": "চট্টগ্রাম"},
+      {"letter": "B", "text": "সিলেট"},
+      {"letter": "C", "text": "পঞ্চগড়"},
+      {"letter": "D", "text": "মৌলভীবাজার"}
+    ],
+    "explanation": "বাংলাদেশের চা শিল্পের অন্যতম প্রধান কেন্দ্র মৌলভীবাজার[span_161](start_span)[span_161](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 163,
+    "stem": "‘ধর্মীয় স্বাধীনতা’ বাংলাদেশ সংবিধানের কোন অনুচ্ছেদে অন্তর্ভুক্ত?",
+    "options": [
+      {"letter": "A", "text": "অনুচ্ছেদ ৩৮"},
+      {"letter": "B", "text": "অনুচ্ছেদ ৫০"},
+      {"letter": "C", "text": "অনুচ্ছেদ ৪১"},
+      {"letter": "D", "text": "অনুচ্ছেদ ১০০"}
+    ],
+    "explanation": "সংবিধানের ৪১ অনুচ্ছেদে ধর্মীয় স্বাধীনতার অধিকার নিশ্চিত করা হয়েছে[span_162](start_span)[span_162](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 164,
+    "stem": "বাংলাদেশে প্রথম আদমশুমারি (জনগণনা) কবে অনুষ্ঠিত হয়?",
+    "options": [
+      {"letter": "A", "text": "১৯৭২ সালে"},
+      {"letter": "B", "text": "১৯৭৩ সালে"},
+      {"letter": "C", "text": "১৯৭৪ সালে"},
+      {"letter": "D", "text": "১৯৭৫ সালে"}
+    ],
+    "explanation": "স্বাধীন বাংলাদেশের প্রথম আদমশুমারি ১৯৭৪ সালে অনুষ্ঠিত হয়[span_163](start_span)[span_163](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 165,
+    "stem": "বাংলাদেশের GDP-তে কোন খাতের অবদান সবচেয়ে বেশি?",
+    "options": [
+      {"letter": "A", "text": "কৃষি"},
+      {"letter": "B", "text": "শিল্প"},
+      {"letter": "C", "text": "বাণিজ্য"},
+      {"letter": "D", "text": "সেবা"}
+    ],
+    "explanation": "বাংলাদেশের অর্থনীতিতে সেবা খাত GDP-এর সবচেয়ে বড় অংশ জুড়ে রয়েছে[span_164](start_span)[span_164](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 166,
+    "stem": "২০২০–২০২১ অর্থবছরে বাংলাদেশের GDP প্রবৃদ্ধির হার কত ছিল?",
+    "options": [
+      {"letter": "A", "text": "৫.৬৮%"},
+      {"letter": "B", "text": "৯.৯৪%"},
+      {"letter": "C", "text": "৭.৬৬%"},
+      {"letter": "D", "text": "৬.৯৪%"}
+    ],
+    "explanation": "২০২০–২১ অর্থবছরের জন্য প্রশ্নে প্রদত্ত সরকারি/পরীক্ষাভিত্তিক পরিসংখ্যান অনুযায়ী উত্তর ৬.৯৪%[span_165](start_span)[span_165](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 167,
+    "stem": "বিশ্বব্যাংক কবে বাংলাদেশকে নিম্ন-মধ্যম আয়ের দেশ হিসেবে তালিকাভুক্ত করে?",
+    "options": [
+      {"letter": "A", "text": "১ জুন ২০১৪"},
+      {"letter": "B", "text": "১ জুন ২০১৫"},
+      {"letter": "C", "text": "১ জুলাই ২০১৫"},
+      {"letter": "D", "text": "১ জুলাই ২০১৬"}
+    ],
+    "explanation": "বিশ্বব্যাংকের শ্রেণিবিন্যাস অনুযায়ী ২০১৫ সালের জুলাই থেকে বাংলাদেশ নিম্ন-মধ্যম আয়ের দেশের তালিকায় আসে[span_166](start_span)[span_166](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 168,
+    "stem": "বঙ্গবন্ধু স্যাটেলাইট-২ কী ধরনের স্যাটেলাইট হবে?",
+    "options": [
+      {"letter": "A", "text": "কমিউনিকেশন স্যাটেলাইট"},
+      {"letter": "B", "text": "ওয়েদার স্যাটেলাইট"},
+      {"letter": "C", "text": "আর্থ অবজারভেশন স্যাটেলাইট"},
+      {"letter": "D", "text": "ন্যাভিগেশন স্যাটেলাইট"}
+    ],
+    "explanation": "প্রসঙ্গে প্রচলিত পরিকল্পনা অনুযায়ী বঙ্গবন্ধু স্যাটেলাইট-২কে Earth Observation বা পৃথিবী পর্যবেক্ষণ স্যাটেলাইট হিসেবে উল্লেখ করা হয়েছিল[span_167](start_span)[span_167](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 169,
+    "stem": "কোনো নাগরিকের মৌলিক অধিকার লঙ্ঘিত হলে সংবিধানের কোন অনুচ্ছেদের বিধান অনুযায়ী তিনি মামলা করতে পারেন?",
+    "options": [
+      {"letter": "A", "text": "৪৪"},
+      {"letter": "B", "text": "৪৭"},
+      {"letter": "C", "text": "১০২"},
+      {"letter": "D", "text": "১০৩"}
+    ],
+    "explanation": "সংবিধানের ১০২ অনুচ্ছেদের অধীনে হাইকোর্ট বিভাগে রিট আবেদন করা যায়[span_168](start_span)[span_168](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 170,
+    "stem": "বাংলাদেশের সরকার পদ্ধতি—",
+    "options": [
+      {"letter": "A", "text": "এককেন্দ্রিক"},
+      {"letter": "B", "text": "যুক্তরাষ্ট্রীয়"},
+      {"letter": "C", "text": "রাজতন্ত্র"},
+      {"letter": "D", "text": "রাষ্ট্রপতিশাসিত"}
+    ],
+    "explanation": "বাংলাদেশ একটি এককেন্দ্রিক (Unitary) রাষ্ট্রব্যবস্থা অনুসরণ করে[span_169](start_span)[span_169](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 171,
+    "stem": "BSTI-এর পূর্ণরূপ কী?",
+    "options": [
+      {"letter": "A", "text": "Bangladesh Salt Testing Institute"},
+      {"letter": "B", "text": "Bangladesh Strategic Training Institute"},
+      {"letter": "C", "text": "Bangladesh Standards and Testing Institution"},
+      {"letter": "D", "text": "Bangladesh Society for Telecommunication and Information"}
+    ],
+    "explanation": "BSTI-এর পূর্ণরূপ Bangladesh Standards and Testing Institution[span_170](start_span)[span_170](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 172,
+    "stem": "বাংলাদেশের স্বাধীনতা যুদ্ধে কতজন মুক্তিযোদ্ধাকে ‘বীর বিক্রম’ খেতাবে ভূষিত করা হয়?",
+    "options": [
+      {"letter": "A", "text": "৭ জন"},
+      {"letter": "B", "text": "৬৮ জন"},
+      {"letter": "C", "text": "১৭৫ জন"},
+      {"letter": "D", "text": "৪২৬ জন"}
+    ],
+    "explanation": "বীর বিক্রম বাংলাদেশের তৃতীয় সর্বোচ্চ সামরিক বীরত্বসূচক খেতাব। মোট ১৭৫ জনকে এই খেতাব দেওয়া হয়[span_171](start_span)[span_171](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 173,
+    "stem": "মুজিবনগর সরকারের ত্রাণ ও পুনর্বাসন মন্ত্রী কে ছিলেন?",
+    "options": [
+      {"letter": "A", "text": "তাজউদ্দীন আহমদ"},
+      {"letter": "B", "text": "এ. এইচ. এম. কামারুজ্জামান"},
+      {"letter": "C", "text": "সৈয়দ নজরুল ইসলাম"},
+      {"letter": "D", "text": "এম. মনসুর আলী"}
+    ],
+    "explanation": "মুজিবনগর সরকারের মন্ত্রিসভায় এ. এইচ. এম. কামারুজ্জামান ত্রাণ ও পুনর্বাসন মন্ত্রণালয়ের দায়িত্বে ছিলেন[span_172](start_span)[span_172](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 174,
+    "stem": "কোনটি জাতীয় কবি কাজী নজরুল ইসলাম রচিত গ্রন্থ নয়?",
+    "options": [
+      {"letter": "A", "text": "ব্যথার দান"},
+      {"letter": "B", "text": "দোলনচাঁপা"},
+      {"letter": "C", "text": "শিউলিমালা"},
+      {"letter": "D", "text": "সোনার তরী"}
+    ],
+    "explanation": "‘সোনার তরী’ রবীন্দ্রনাথ ঠাকুরের কাব্যগ্রন্থ; এটি নজরুলের রচনা নয়[span_173](start_span)[span_173](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 175,
+    "stem": "UNESCO কত তারিখে ২১ ফেব্রুয়ারিকে আন্তর্জাতিক মাতৃভাষা দিবস হিসেবে স্বীকৃতি দেয়?",
+    "options": [
+      {"letter": "A", "text": "১৮ নভেম্বর ১৯৯৯"},
+      {"letter": "B", "text": "১৭ নভেম্বর ১৯৯৯"},
+      {"letter": "C", "text": "১৯ নভেম্বর ২০০১"},
+      {"letter": "D", "text": "২০ নভেম্বর ২০০১"}
+    ],
+    "explanation": "UNESCO-এর সাধারণ সম্মেলনে ১৯৯৯ সালের ১৭ নভেম্বর ২১ ফেব্রুয়ারিকে International Mother Language Day হিসেবে স্বীকৃতি দেওয়া হয়[span_174](start_span)[span_174](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 176,
+    "stem": "যে গুণের মাধ্যমে মানুষ ‘ভুল’ ও ‘শুদ্ধ’-এর পার্থক্য নির্ধারণ করতে পারে, তা হচ্ছে—",
+    "options": [
+      {"letter": "A", "text": "সততা"},
+      {"letter": "B", "text": "সদাচার"},
+      {"letter": "C", "text": "কর্তব্যবোধ"},
+      {"letter": "D", "text": "মূল্যবোধ"}
+    ],
+    "explanation": "মূল্যবোধ মানুষের ভালো-মন্দ, ন্যায়-অন্যায় এবং ভুল-শুদ্ধ বিচার করার নৈতিক ভিত্তি তৈরি করে[span_175](start_span)[span_175](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 177,
+    "stem": "জাতীয় শুদ্ধাচার কৌশল অনুসারে ‘শুদ্ধাচার’ হচ্ছে—",
+    "options": [
+      {"letter": "A", "text": "শুদ্ধভাবে কার্যসম্পাদনের কৌশল"},
+      {"letter": "B", "text": "সরকারি কর্মকর্তাদের আচরণের মানদণ্ড"},
+      {"letter": "C", "text": "সততা ও নৈতিকতা দ্বারা প্রভাবিত আচরণগত উৎকর্ষ"},
+      {"letter": "D", "text": "দৈনন্দিন কার্যক্রমে অনুসৃতব্য মান"}
+    ],
+    "explanation": "শুদ্ধাচার মূলত সততা, নৈতিকতা ও সুশাসনভিত্তিক আচরণের উৎকর্ষকে বোঝায়[span_176](start_span)[span_176](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 178,
+    "stem": "বাংলাদেশে দুর্নীতিকে দণ্ডনীয় ঘোষণা করা হয়েছে যে বিধানে—",
+    "options": [
+      {"letter": "A", "text": "১৮৬০ সালে প্রণীত দণ্ডবিধিতে"},
+      {"letter": "B", "text": "২০০৪ সালে প্রণীত দুর্নীতি দমন কমিশন আইনে"},
+      {"letter": "C", "text": "২০১৮ সালে প্রণীত সরকারি কর্মচারী (শৃঙ্খলা ও আপীল) বিধিমালাতে"},
+      {"letter": "D", "text": "উপরের সবগুলোতে"}
+    ],
+    "explanation": "প্রদত্ত পরীক্ষাভিত্তিক উত্তর অনুযায়ী তিনটি আইনি কাঠামোর মধ্যেই দুর্নীতিসংক্রান্ত শাস্তিমূলক বিধান রয়েছে[span_177](start_span)[span_177](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 179,
+    "stem": "অর্থনৈতিক ক্ষেত্রে সুশাসন প্রতিষ্ঠিত হলে—",
+    "options": [
+      {"letter": "A", "text": "বিনিয়োগ বৃদ্ধি পায়"},
+      {"letter": "B", "text": "দুর্নীতি দূর হয়"},
+      {"letter": "C", "text": "প্রতিষ্ঠানের সুনাম হয়"},
+      {"letter": "D", "text": "যোগাযোগ বৃদ্ধি পায়"}
+    ],
+    "explanation": "সুশাসন বিনিয়োগের পরিবেশকে আরও স্থিতিশীল ও আস্থাশীল করতে সহায়তা করে[span_178](start_span)[span_178](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 180,
+    "stem": "জাতিসংঘের দুর্নীতিবিরোধী কনভেনশনের নাম—",
+    "options": [
+      {"letter": "A", "text": "UNCLOS"},
+      {"letter": "B", "text": "UNCTAD"},
+      {"letter": "C", "text": "UNCAC"},
+      {"letter": "D", "text": "CEDAW"}
+    ],
+    "explanation": "UNCAC-এর পূর্ণরূপ United Nations Convention against Corruption[span_179](start_span)[span_179](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 181,
+    "stem": "গণতান্ত্রিক মূল্যবোধের সবচেয়ে গুরুত্বপূর্ণ উপাদান—",
+    "options": [
+      {"letter": "A", "text": "নেতৃত্বের প্রতি আনুগত্য"},
+      {"letter": "B", "text": "স্বচ্ছ নির্বাচন কমিশন"},
+      {"letter": "C", "text": "শক্তিশালী রাজনৈতিক দল"},
+      {"letter": "D", "text": "পরমতসহিষ্ণুতা"}
+    ],
+    "explanation": "গণতান্ত্রিক সমাজে ভিন্ন মত ও মতাদর্শের প্রতি সহনশীলতা একটি গুরুত্বপূর্ণ মূল্যবোধ[span_180](start_span)[span_180](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 182,
+    "stem": "সরকারি সিদ্ধান্তের ক্ষেত্রে ‘স্বার্থের সংঘাত’ (Conflict of Interest)-এর উদ্ভব হয় যখন গৃহীতব্য সিদ্ধান্তের সঙ্গে—",
+    "options": [
+      {"letter": "A", "text": "সিদ্ধান্ত গ্রহণকারী কর্মকর্তার নিজের বা পরিবারের সদস্যদের স্বার্থ জড়িত থাকে"},
+      {"letter": "B", "text": "প্রভাবশালী ব্যক্তি বা ব্যক্তিবর্গের স্বার্থ জড়িত থাকে"},
+      {"letter": "C", "text": "সরকারি স্বার্থ জড়িত থাকে"},
+      {"letter": "D", "text": "ঊর্ধ্বতন কর্তৃপক্ষের স্বার্থ জড়িত থাকে"}
+    ],
+    "explanation": "ব্যক্তিগত স্বার্থ যদি সরকারি দায়িত্ব পালনের সিদ্ধান্তকে প্রভাবিত করতে পারে, তখন Conflict of Interest তৈরি হয়[span_181](start_span)[span_181](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 183,
+    "stem": "রাষ্ট্র ও সমাজে দুর্নীতিপ্রবণতার জন্য সবচেয়ে বেশি দায়ী—",
+    "options": [
+      {"letter": "A", "text": "আইনের প্রয়োগের অভাব"},
+      {"letter": "B", "text": "নৈতিকতা ও মূল্যবোধের অভাব"},
+      {"letter": "C", "text": "দুর্বল পরিবীক্ষণ ব্যবস্থা"},
+      {"letter": "D", "text": "অসৎ নেতৃত্ব"}
+    ],
+    "explanation": "প্রশ্নটির পরীক্ষাভিত্তিক উত্তর হলো নৈতিকতা ও মূল্যবোধের অভাব[span_182](start_span)[span_182](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 184,
+    "stem": "প্রাথমিকভাবে একজন মানুষের মানবীয় গুণাবলি ও সামাজিক মূল্যবোধের বিকাশ ঘটে—",
+    "options": [
+      {"letter": "A", "text": "সমাজে বসবাসের মাধ্যমে"},
+      {"letter": "B", "text": "বিদ্যালয়ে"},
+      {"letter": "C", "text": "পরিবারে"},
+      {"letter": "D", "text": "রাষ্ট্রের মাধ্যমে"}
+    ],
+    "explanation": "শিশুর প্রাথমিক মূল্যবোধ, আচরণ ও সামাজিকীকরণ মূলত পরিবার থেকেই শুরু হয়[span_183](start_span)[span_183](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 185,
+    "stem": "‘সততার জন্য সদিচ্ছা’র কথা বলেছেন—",
+    "options": [
+      {"letter": "A", "text": "ডেকার্ট"},
+      {"letter": "B", "text": "ডেভিড হিউম"},
+      {"letter": "C", "text": "ইমানুয়েল কান্ট"},
+      {"letter": "D", "text": "জন লক"}
+    ],
+    "explanation": "কান্টের নীতিদর্শনে ‘Good Will’ বা সদিচ্ছা একটি গুরুত্বপূর্ণ ধারণা[span_184](start_span)[span_184](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 186,
+    "stem": "প্রশ্নবোধক চিহ্নের স্থানে কোন চিত্রটি বসবে?",
+    "options": [
+      {"letter": "A", "text": "১"},
+      {"letter": "B", "text": "২"},
+      {"letter": "C", "text": "৩"},
+      {"letter": "D", "text": "৪"}
+    ],
+    "explanation": "এটি চিত্রভিত্তিক মানসিক দক্ষতার প্রশ্ন। মূল প্রশ্নপত্রের চিত্রটি ছাড়া পূর্ণ ধাপ দেখানো সম্ভব নয়। প্রকাশিত প্রশ্ন-সমাধানে উত্তর ‘২’ দেওয়া হয়েছে[span_185](start_span)[span_185](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 187,
+    "stem": "P এবং Q দুই ভাই। R এবং S দুই বোন। P-এর ছেলে হলো S-এর ভাই। তাহলে Q হলো R-এর—",
+    "options": [
+      {"letter": "A", "text": "পুত্র"},
+      {"letter": "B", "text": "ভাই"},
+      {"letter": "C", "text": "পিতা"},
+      {"letter": "D", "text": "চাচা"}
+    ],
+    "explanation": "P-এর ছেলে R ও S-এর ভাই। P ও Q ভাই হওয়ায় Q হলো সেই সন্তানের চাচা। তাই R-এরও চাচা Q[span_186](start_span)[span_186](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 188,
+    "stem": "স্টেপলারের সাথে যেমন স্টেপল, সুচের সাথে তেমন—",
+    "options": [
+      {"letter": "A", "text": "ছিদ্র"},
+      {"letter": "B", "text": "কাপড়"},
+      {"letter": "C", "text": "সুতা"},
+      {"letter": "D", "text": "সেলাই"}
+    ],
+    "explanation": "Stapler-এর সঙ্গে Staple ব্যবহৃত হয়; তেমনি Needle-এর সঙ্গে Thread বা সুতা ব্যবহৃত হয়[span_187](start_span)[span_187](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 189,
+    "stem": "165135 যদি PEACE হয়, তবে 1215225 হবে—",
+    "options": [
+      {"letter": "A", "text": "Lead"},
+      {"letter": "B", "text": "Love"},
+      {"letter": "C", "text": "Loop"},
+      {"letter": "D", "text": "Castle"}
+    ],
+    "explanation": "অক্ষরগুলোর অবস্থান/কোড অনুসরণ করে 1215225 থেকে LOVE পাওয়া যায়[span_188](start_span)[span_188](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 190,
+    "stem": "নিচের চিত্রে মোট কতটি ত্রিভুজ আছে?",
+    "options": [
+      {"letter": "A", "text": "১০টি"},
+      {"letter": "B", "text": "১২টি"},
+      {"letter": "C", "text": "১৪টি"},
+      {"letter": "D", "text": "১৬টি"}
+    ],
+    "explanation": "এটি চিত্রভিত্তিক প্রশ্ন। বিভিন্ন ছোট ও বড় ত্রিভুজ গণনা করলে মোট ১৬টি পাওয়া যায়[span_189](start_span)[span_189](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 191,
+    "stem": "ভারসাম্য রক্ষা করতে নিচের চিত্রের বামদিকে কত ওজন রাখতে হবে?",
+    "options": [
+      {"letter": "A", "text": "৪ কেজি"},
+      {"letter": "B", "text": "৬ কেজি"},
+      {"letter": "C", "text": "৮ কেজি"},
+      {"letter": "D", "text": "১০ কেজি"}
+    ],
+    "explanation": "এটি লিভার/ভারসাম্যভিত্তিক চিত্রের প্রশ্ন। প্রদত্ত দূরত্ব ও ওজনের ভারসাম্য রক্ষা করে বাম পাশে প্রয়োজনীয় ওজন ৬ কেজি[span_190](start_span)[span_190](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 192,
+    "stem": "২০১৮ সালের ১২ জানুয়ারি শুক্রবার হলে, একই বছরের ১৭ মার্চ কী বার ছিল?",
+    "options": [
+      {"letter": "A", "text": "শনিবার"},
+      {"letter": "B", "text": "সোমবার"},
+      {"letter": "C", "text": "বৃহস্পতিবার"},
+      {"letter": "D", "text": "শুক্রবার"}
+    ],
+    "explanation": "১২ জানুয়ারি থেকে ১৭ মার্চ পর্যন্ত মোট ৬৪ দিন। ৬৪ ÷ ৭ করলে ভাগশেষ ১; তাই শুক্রবারের এক দিন পর শনিবার[span_191](start_span)[span_191](end_span).",
+    "answer": "A",
+    "note": ""
+  },
+  {
+    "n": 193,
+    "stem": "৫, ৭, ১০, ১৪, …… ২৫ ধারার শূন্যস্থানের সংখ্যাটি কত?",
+    "options": [
+      {"letter": "A", "text": "১৭"},
+      {"letter": "B", "text": "১৮"},
+      {"letter": "C", "text": "১৯"},
+      {"letter": "D", "text": "২১"}
+    ],
+    "explanation": "ধারায় পার্থক্যগুলো ২, ৩, ৪, ৫, ৬। তাই ১৪ + ৫ = ১৯ এবং এরপর ১৯ + ৬ = ২৫[span_192](start_span)[span_192](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 194,
+    "stem": "‘MEMORY’ শব্দটির আয়নার প্রতিবিম্ব কোনটি?",
+    "options": [
+      {"letter": "A", "text": "১"},
+      {"letter": "B", "text": "২"},
+      {"letter": "C", "text": "৩"},
+      {"letter": "D", "text": "৪"}
+    ],
+    "explanation": "আয়নায় শব্দটি বাম-ডান উল্টোভাবে প্রতিফলিত হবে। প্রকাশিত সমাধানে সঠিক চিত্রটি ২ নম্বর[span_193](start_span)[span_193](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 195,
+    "stem": "প্রশ্ন-চিহ্নিত স্থানে কোন সংখ্যা বসবে?",
+    "options": [
+      {"letter": "A", "text": "৬৪"},
+      {"letter": "B", "text": "৬৬"},
+      {"letter": "C", "text": "৬৮"},
+      {"letter": "D", "text": "৭২"}
+    ],
+    "explanation": "এটি চিত্রভিত্তিক সংখ্যার প্যাটার্নের প্রশ্ন। প্রকাশিত প্রশ্ন-সমাধানে উত্তর ৬৮ দেওয়া হয়েছে[span_194](start_span)[span_194](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 196,
+    "stem": "কোনো কিছুর কারণ জানতে হলে আমরা ইংরেজিতে যে প্রশ্ন করি তা সাধারণত কোন শব্দটি দিয়ে শুরু হয়?",
+    "options": [
+      {"letter": "A", "text": "How"},
+      {"letter": "B", "text": "What"},
+      {"letter": "C", "text": "Why"},
+      {"letter": "D", "text": "Who"}
+    ],
+    "explanation": "কারণ জানতে ইংরেজিতে সাধারণত “Why” ব্যবহার করা হয়[span_195](start_span)[span_195](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 197,
+    "stem": "নিম্নের কোন গুচ্ছের শব্দগুলো বর্ণানুক্রমিকভাবে সাজানো রয়েছে?",
+    "options": [
+      {"letter": "A", "text": "নিম্নোক্ত, নিদর্শন, নিরাসক্ত, নিরাময়, নিষ্ক্রিয়, নিসর্গ"},
+      {"letter": "B", "text": "নিদর্শন, নিম্নোক্ত, নিরাময়, নিরাসক্ত, নিষ্ক্রিয়, নিসর্গ"},
+      {"letter": "C", "text": "নিষ্ক্রিয়, নিসর্গ, নিম্নোক্ত, নিদর্শন, নিরাসক্ত, নিরাময়"},
+      {"letter": "D", "text": "নিদর্শন, নিরাসক্ত, নিষ্ক্রিয়, নিসর্গ, নিম্নোক্ত, নিরাময়"}
+    ],
+    "explanation": "বাংলা বর্ণানুক্রমের নিয়ম অনুসারে শব্দগুলোর প্রাথমিক ও পরবর্তী বর্ণ তুলনা করে খ নম্বর ক্রমটি সঠিক[span_196](start_span)[span_196](end_span).",
+    "answer": "B",
+    "note": ""
+  },
+  {
+    "n": 198,
+    "stem": "যদি PLAY-এর কোড ৮১২৩ এবং RHYME-এর কোড ৪৯৩৬৭ হয়, তাহলে MALE-এর কোড হবে—",
+    "options": [
+      {"letter": "A", "text": "৬৩২৩"},
+      {"letter": "B", "text": "৬১৯৮"},
+      {"letter": "C", "text": "৬২১৭"},
+      {"letter": "D", "text": "৬২৮৫"}
+    ],
+    "explanation": "প্রদত্ত কোডগুলোর অক্ষর-সংখ্যা সম্পর্ক অনুসরণ করলে MALE-এর কোড ৬২১৭ পাওয়া যায়[span_197](start_span)[span_197](end_span).",
+    "answer": "C",
+    "note": ""
+  },
+  {
+    "n": 199,
+    "stem": "এই সিরিজটিতে পরের সংখ্যাটি কত?",
+    "options": [
+      {"letter": "A", "text": "২৪"},
+      {"letter": "B", "text": "২৬"},
+      {"letter": "C", "text": "২৯"},
+      {"letter": "D", "text": "৩৪"}
+    ],
+    "explanation": "৩, ৫, ৮, ১৩, ২১—প্রতিটি সংখ্যা আগের দুই সংখ্যার যোগফল: ১৩ + ২১ = ৩৪[span_198](start_span)[span_198](end_span).",
+    "answer": "D",
+    "note": ""
+  },
+  {
+    "n": 200,
+    "stem": "একটি দেয়ালঘড়িতে যখন ৩টা বাজে তখন ঘণ্টার কাঁটা যদি পূর্বদিকে থাকে তবে মিনিটের কাঁটা কোন দিকে থাকবে?",
+    "options": [
+      {"letter": "A", "text": "উত্তর"},
+      {"letter": "B", "text": "পশ্চিম"},
+      {"letter": "C", "text": "দক্ষিণ"},
+      {"letter": "D", "text": "পূর্ব"}
+    ],
+    "explanation": "৩টার সময় ঘণ্টার কাঁটা ৩-এর দিকে এবং মিনিটের কাঁটা ১২-এর দিকে থাকে। যদি ৩-এর দিককে পূর্ব ধরা হয়, তাহলে ১২-এর দিক হবে উত্তর। তাই উত্তর সঠিক[span_199](start_span)[span_199](end_span).",
+    "answer": "A",
+    "note": ""
+  }
 ]
-
-  
